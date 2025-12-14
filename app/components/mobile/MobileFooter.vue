@@ -1,17 +1,14 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, computed } from "vue";
 
 const colorMode = useColorMode();
 const { locales, setLocale } = useI18n();
 
-const toggleColorMode = () => {
-  if (colorMode.value === "dark") {
-    colorMode.preference = "light";
-  } else {
-    colorMode.preference = "dark";
-  }
-};
+const isDark = computed(() => colorMode.value === "dark");
 
+const toggleColorMode = () => {
+  colorMode.preference = isDark.value ? "light" : "dark";
+};
 const isMenuOpen = ref(false);
 
 const toggleMenu = () => {
@@ -42,23 +39,23 @@ const closeMenu = () => {
 
         <li>
           <NuxtLink
-            to="/books"
+            to="/books-display"
             aria-label="えほん"
             class="flex flex-col items-center justify-center"
           >
             <Icon name="heroicons:book-open" class="text-2xl" />
-            <span>えほん</span>
+            <span>{{ $t("footer.nav.books") }}</span>
           </NuxtLink>
         </li>
 
         <li>
           <NuxtLink
-            to="/about"
+            to="/about-us"
             aria-label="わたしたちについて"
             class="flex flex-col items-center justify-center"
           >
             <Icon name="ph:cat" class="text-2xl" />
-            <span>わたしたち</span>
+            <span>{{ $t("footer.nav.about") }}</span>
           </NuxtLink>
         </li>
 
@@ -71,7 +68,7 @@ const closeMenu = () => {
             class="flex flex-col items-center justify-center"
           >
             <Icon name="heroicons:bars-3" class="text-2xl" />
-            <span>メニュー</span>
+            <span>{{ $t("footer.nav.menu") }}</span>
           </button>
         </li>
       </ul>
@@ -89,8 +86,13 @@ const closeMenu = () => {
           aria-label="フルメニュー"
           class="flex flex-col justify-center items-center h-full text-2xl font-yomogi"
         >
-          <button type="button" @click="toggleColorMode">
-            ダーク / ライト
+          <button
+            type="button"
+            @click="toggleColorMode"
+            aria-label="テーマ切り替え"
+          >
+            <Icon v-if="isDark" name="heroicons:moon" />
+            <Icon v-else name="heroicons:sun" />
           </button>
 
           <img
@@ -101,69 +103,57 @@ const closeMenu = () => {
           <h2 class="font-bold text-2xl mb-8">The Language Friends</h2>
           <ul class="space-y-2">
             <li>
-              <NuxtLink to="/start" @click="closeMenu">
+              <NuxtLink to="/new-customers" @click="closeMenu">
                 <Icon
                   name="heroicons:information-circle"
-                  class="mr-2 text-moko-blue"
+                  class="text-moko-blue mr-2"
                 />
                 <span>{{ $t("footer.menu.start") }}</span>
               </NuxtLink>
             </li>
+
             <li>
-              <p>locale: {{ $i18n.locale }}</p>
-            </li>
-            <li>
-              <NuxtLink to="/characters" @click="closeMenu">
+              <NuxtLink to="/character-info" @click="closeMenu">
                 <Icon
                   name="heroicons:face-smile"
-                  class="mr-2 text-niko-purple"
+                  class="text-niko-purple mr-2"
                 />
-                <span>キャラクター</span>
+                <span>{{ $t("footer.menu.characters") }}</span>
               </NuxtLink>
             </li>
 
             <li>
-              <NuxtLink to="/kids" @click="closeMenu">
+              <NuxtLink to="/kids-corner" @click="closeMenu">
                 <Icon
                   name="heroicons:puzzle-piece"
                   class="mr-2 text-okja-yellow"
                 />
-                <span>キッズコーナー</span>
+                <span>{{ $t("footer.menu.kids") }}</span>
               </NuxtLink>
             </li>
 
             <li>
-              <NuxtLink to="/contact" @click="closeMenu">
+              <NuxtLink to="/contact-us" @click="closeMenu">
                 <Icon
                   name="heroicons:envelope"
                   class="mr-2 text-green-signifier"
                 />
-                <span>お問い合わせ</span>
+                <span>{{ $t("footer.menu.contact") }}</span>
               </NuxtLink>
             </li>
 
-            <li>
-              <button
-                type="button"
-                aria-label="言語を切り替える"
-                aria-pressed="false"
-              >
-                <Icon
-                  name="heroicons:language"
-                  class="mr-2 text-red-signifier"
-                />
-                <span>EN / JP</span>
-              </button>
-            </li>
             <button
               v-for="l in locales"
               :key="l.code"
               @click="setLocale(l.code)"
+              class="mr-4"
             >
-              {{ l.name }}
+              <span
+                ><Icon
+                  name="heroicons:language"
+                  class="mr-2 text-red-signifier" /></span
+              >{{ l.name }}
             </button>
-
-            <h1>{{ $t("footer.menu.start") }}</h1>
           </ul>
           <ul aria-label="ソーシャルリンク" class="grid grid-cols-4 gap-4 mt-4">
             <li>
