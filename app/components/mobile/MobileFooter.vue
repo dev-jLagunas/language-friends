@@ -2,8 +2,7 @@
 import { ref } from "vue";
 
 const colorMode = useColorMode();
-
-console.log("colorMode:", colorMode);
+const { locales, setLocale } = useI18n();
 
 const toggleColorMode = () => {
   if (colorMode.value === "dark") {
@@ -37,7 +36,7 @@ const closeMenu = () => {
             class="flex flex-col items-center justify-center"
           >
             <Icon name="heroicons:home" class="text-2xl" />
-            <span>ホーム</span>
+            <span>{{ $t("footer.nav.home") }}</span>
           </NuxtLink>
         </li>
 
@@ -107,10 +106,12 @@ const closeMenu = () => {
                   name="heroicons:information-circle"
                   class="mr-2 text-moko-blue"
                 />
-                <span>はじめての方へ</span>
+                <span>{{ $t("footer.menu.start") }}</span>
               </NuxtLink>
             </li>
-
+            <li>
+              <p>locale: {{ $i18n.locale }}</p>
+            </li>
             <li>
               <NuxtLink to="/characters" @click="closeMenu">
                 <Icon
@@ -154,6 +155,15 @@ const closeMenu = () => {
                 <span>EN / JP</span>
               </button>
             </li>
+            <button
+              v-for="l in locales"
+              :key="l.code"
+              @click="setLocale(l.code)"
+            >
+              {{ l.name }}
+            </button>
+
+            <h1>{{ $t("footer.menu.start") }}</h1>
           </ul>
           <ul aria-label="ソーシャルリンク" class="grid grid-cols-4 gap-4 mt-4">
             <li>

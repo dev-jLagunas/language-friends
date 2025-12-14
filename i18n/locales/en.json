@@ -1,0 +1,19 @@
+{
+  "footer": {
+    "nav": {
+      "home": "Home",
+      "books": "Books",
+      "about": "About",
+      "menu": "Menu"
+    },
+    "menu": {
+      "darkLight": "Dark / Light",
+      "title": "The Language Friends",
+      "start": "Getting Started",
+      "characters": "Characters",
+      "kids": "Kids Corner",
+      "contact": "Contact",
+      "languageToggle": "EN / JP"
+    }
+  }
+}

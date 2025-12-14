@@ -1,0 +1,19 @@
+{
+  "footer": {
+    "nav": {
+      "home": "ホーム",
+      "books": "えほん",
+      "about": "わたしたち",
+      "menu": "メニュー"
+    },
+    "menu": {
+      "darkLight": "ダーク / ライト",
+      "title": "The Language Friends",
+      "start": "はじめての方へ",
+      "characters": "キャラクター",
+      "kids": "キッズコーナー",
+      "contact": "お問い合わせ",
+      "languageToggle": "EN / JP"
+    }
+  }
+}

@@ -19,7 +19,6 @@ export default defineNuxtConfig({
     },
   },
   ssr: false,
-
   compatibilityDate: "2025-07-15",
   devtools: { enabled: false },
   css: ["./app/assets/css/main.css"],
@@ -27,7 +26,7 @@ export default defineNuxtConfig({
     mode: "css",
     cssLayer: "base",
   },
-  modules: ["@nuxt/icon", "@nuxtjs/color-mode"],
+  modules: ["@nuxt/icon", "@nuxtjs/color-mode", "@nuxtjs/i18n"],
   colorMode: {
     classSuffix: "",
     preference: "system",
@@ -36,5 +35,13 @@ export default defineNuxtConfig({
   },
   vite: {
     plugins: [tailwindcss()],
+  },
+  i18n: {
+    locales: [
+      { code: "ja", name: "日本語", file: "ja.json" },
+      { code: "en", name: "English", file: "en.json" },
+    ],
+    defaultLocale: "ja",
+    strategy: "prefix_except_default",
   },
 });
