@@ -18,6 +18,8 @@ export default defineNuxtConfig({
       ],
     },
   },
+  ssr: false,
+
   compatibilityDate: "2025-07-15",
   devtools: { enabled: false },
   css: ["./app/assets/css/main.css"],
@@ -25,7 +27,13 @@ export default defineNuxtConfig({
     mode: "css",
     cssLayer: "base",
   },
-  modules: ["@nuxt/icon"],
+  modules: ["@nuxt/icon", "@nuxtjs/color-mode"],
+  colorMode: {
+    classSuffix: "",
+    preference: "system",
+    fallback: "light",
+    storageKey: "color-mode",
+  },
   vite: {
     plugins: [tailwindcss()],
   },

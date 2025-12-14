@@ -1,6 +1,18 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
+const colorMode = useColorMode();
+
+console.log("colorMode:", colorMode);
+
+const toggleColorMode = () => {
+  if (colorMode.value === "dark") {
+    colorMode.preference = "light";
+  } else {
+    colorMode.preference = "dark";
+  }
+};
+
 const isMenuOpen = ref(false);
 
 const toggleMenu = () => {
@@ -16,7 +28,7 @@ const closeMenu = () => {
   <footer>
     <nav aria-label="モバイルフッターナビゲーション">
       <ul
-        class="flex justify-evenly items-center border-t border-dashed py-3 font-yomogi text-base bg-light-primary"
+        class="flex justify-evenly items-center border-t border-dashed py-3 font-yomogi text-base bg-light-primary dark:bg-dark-secondary dark:text-light-primary"
       >
         <li>
           <NuxtLink
@@ -72,12 +84,16 @@ const closeMenu = () => {
         id="mobile-menu"
         role="dialog"
         aria-modal="true"
-        class="bg-light-primary border-b border-l border-t border-dashed"
+        class="bg-light-primary border-b border-l border-t border-dashed dark:bg-dark-secondary dark:text-light-primary"
       >
         <nav
           aria-label="フルメニュー"
           class="flex flex-col justify-center items-center h-full text-2xl font-yomogi"
         >
+          <button type="button" @click="toggleColorMode">
+            ダーク / ライト
+          </button>
+
           <img
             src="/images/everyone/cats-on-eachother.png"
             alt="Language Friends characters playing"
