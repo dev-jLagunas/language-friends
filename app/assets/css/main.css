@@ -6,6 +6,8 @@
 
 body {
   max-width: 1600px;
+  font-family: "Work Sans", sans-serif;
+  background-color: var(--color-light-primary);
 }
 
 /********************************************
@@ -14,7 +16,20 @@ body {
 
 @theme {
   /* brand colors */
-  --color-brand-blue: #004898;
+  --color-moko-blue: #0077ff;
+  --color-okja-yellow: #ffc800;
+  --color-niko-purple: #9a42ff;
+  --color-text-primary: #333333;
+  --color-text-secondary: #222222;
+  --color-light-primary: #f5f5f5;
+  --color-light-secondary: #e0e0e0;
+  --color-green-signifier: #00c853;
+  --color-red-signifier: #ff1744;
+
+  /* TYPOGRAPHY  */
+  --font-cherry: "Cherry Bomb One", sans-serif;
+  --font-yomogi: "Yomogi", cursive;
+  --font-work: "Work Sans", sans-serif;
 }
 
 /********************************************
@@ -29,8 +44,3 @@ body {
 /********************************************
         Custom Classes
 ********************************************/
-
-/* Back Top Btn */
-.back-top-btn {
-  @apply fixed bottom-20 right-6 z-40 bg-brand-blue/75 text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg hover:bg-brand-blue hover:cursor-pointer md:bottom-10 lg:right-10;
-}

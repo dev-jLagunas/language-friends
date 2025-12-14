@@ -1,13 +1,15 @@
 <template>
-  <div>
+  <div class="min-h-screen flex flex-col">
     <header>
       <h1>Welcome to My Vue App</h1>
     </header>
-    <main>
-      <nuxt-page />
+
+    <main class="flex-1">
+      <NuxtPage />
     </main>
+
     <footer>
-      <p>&copy; 2024 My Vue App</p>
+      <MobileFooter />
     </footer>
   </div>
 </template>
