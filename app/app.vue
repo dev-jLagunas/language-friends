@@ -3,15 +3,15 @@
     class="min-h-screen flex flex-col dark:bg-dark-secondary dark:text-light-primary"
   >
     <header>
-      <h1>Welcome to My Vue App</h1>
+      <TheNavbar />
     </header>
 
-    <main class="flex-1">
+    <main class="flex-1 mt-4">
       <NuxtPage />
     </main>
 
     <footer>
-      <MobileFooter />
+      <MobileFooter class="desktop:hidden" />
     </footer>
   </div>
 </template>

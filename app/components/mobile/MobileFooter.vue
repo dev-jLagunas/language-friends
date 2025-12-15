@@ -31,6 +31,7 @@ const closeMenu = () => {
             to="/"
             aria-label="ホーム"
             class="flex flex-col items-center justify-center"
+            active-class="border-b border-dashed border-dark-primary dark:border-light-primary"
           >
             <Icon name="heroicons:home" class="text-2xl" />
             <span>{{ $t("footer.nav.home") }}</span>
@@ -42,8 +43,12 @@ const closeMenu = () => {
             to="/books-display"
             aria-label="えほん"
             class="flex flex-col items-center justify-center"
+            active-class="border-b border-dashed border-sunny-orange"
           >
-            <Icon name="heroicons:book-open" class="text-2xl" />
+            <Icon
+              name="heroicons:book-open"
+              class="text-2xl text-sunny-orange"
+            />
             <span>{{ $t("footer.nav.books") }}</span>
           </NuxtLink>
         </li>
@@ -53,8 +58,9 @@ const closeMenu = () => {
             to="/about-us"
             aria-label="わたしたちについて"
             class="flex flex-col items-center justify-center"
+            active-class="border-b border-dashed border-soft-pink"
           >
-            <Icon name="ph:cat" class="text-2xl" />
+            <Icon name="ph:cat" class="text-2xl text-soft-pink" />
             <span>{{ $t("footer.nav.about") }}</span>
           </NuxtLink>
         </li>

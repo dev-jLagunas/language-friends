@@ -3,6 +3,8 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
   app: {
+    baseURL: "/",
+    buildAssetsDir: "assets",
     head: {
       link: [
         { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -18,6 +20,10 @@ export default defineNuxtConfig({
       ],
     },
   },
+  components: [
+    { path: "~/components", pathPrefix: false },
+    { path: "~/app/components", pathPrefix: false },
+  ],
   ssr: false,
   compatibilityDate: "2025-07-15",
   devtools: { enabled: false },
@@ -39,7 +45,7 @@ export default defineNuxtConfig({
   i18n: {
     locales: [
       { code: "ja", name: "日本語", file: "ja.json" },
-      { code: "en", name: "English", file: "en.json" },
+      { code: "en", name: "EN", file: "en.json" },
     ],
     defaultLocale: "ja",
     strategy: "prefix_except_default",

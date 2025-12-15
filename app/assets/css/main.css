@@ -7,7 +7,6 @@
 ********************************************/
 
 body {
-  max-width: 1600px;
   font-family: "Work Sans", sans-serif;
   background-color: var(--color-light-primary);
 }
@@ -27,11 +26,15 @@ body {
   --color-light-secondary: #e0e0e0;
   --color-green-signifier: #00c853;
   --color-red-signifier: #ff1744;
+  --color-sunny-orange: #ff8a00;
+  --color-soft-pink: #ff4f9a;
 
   /* TYPOGRAPHY  */
   --font-cherry: "Cherry Bomb One", sans-serif;
   --font-yomogi: "Yomogi", cursive;
   --font-work: "Work Sans", sans-serif;
+  /* BREAKPOINTS */
+  --breakpoint-desktop: 968px;
 }
 
 /********************************************
