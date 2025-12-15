@@ -28,7 +28,7 @@ const isDark = computed(() => colorMode.value === "dark");
         <!-- 1. Home -->
         <li class="group">
           <NuxtLink
-            to="/"
+            :to="$localePath('/')"
             :aria-label="$t('footer.nav.home')"
             class="flex flex-col items-center"
             active-class="border-b border-dashed border-dark-primary dark:border-light-primary"
@@ -44,7 +44,7 @@ const isDark = computed(() => colorMode.value === "dark");
         <!-- 2. First time customers -->
         <li class="group">
           <NuxtLink
-            to="/new-customers"
+            :to="$localePath('/new-customers')"
             :aria-label="$t('footer.menu.start')"
             class="flex flex-col items-center"
             active-class="border-b border-dashed border-moko-blue"
@@ -60,7 +60,7 @@ const isDark = computed(() => colorMode.value === "dark");
         <!-- 3. About us -->
         <li class="group">
           <NuxtLink
-            to="/about-us"
+            :to="$localePath('/about-us')"
             :aria-label="$t('footer.nav.about')"
             class="flex flex-col items-center"
             active-class="border-b border-dashed border-soft-pink"
@@ -76,7 +76,7 @@ const isDark = computed(() => colorMode.value === "dark");
         <!-- 5. Characters -->
         <li class="group">
           <NuxtLink
-            to="/character-info"
+            :to="$localePath('/character-info')"
             :aria-label="$t('footer.menu.characters')"
             class="flex flex-col items-center"
             active-class="border-b border-dashed border-niko-purple"
@@ -92,7 +92,7 @@ const isDark = computed(() => colorMode.value === "dark");
         <!-- 4. Logo / Brand -->
         <li class="group">
           <NuxtLink
-            to="/"
+            :to="$localePath('/')"
             aria-label="The Language Friends"
             class="flex flex-col items-center"
           >
@@ -104,7 +104,7 @@ const isDark = computed(() => colorMode.value === "dark");
         <!-- 6. Book series -->
         <li class="group">
           <NuxtLink
-            to="/books-display"
+            :to="$localePath('/books-display')"
             :aria-label="$t('footer.nav.books')"
             class="flex flex-col items-center"
             active-class="border-b border-dashed border-sunny-orange"
@@ -120,7 +120,7 @@ const isDark = computed(() => colorMode.value === "dark");
         <!-- 7. Kids corner -->
         <li class="group">
           <NuxtLink
-            to="/kids-corner"
+            :to="$localePath('/kids-corner')"
             :aria-label="$t('footer.menu.kids')"
             class="flex flex-col items-center"
             active-class="border-b border-dashed border-okja-yellow"
@@ -136,7 +136,7 @@ const isDark = computed(() => colorMode.value === "dark");
         <!-- 8. Contact -->
         <li class="group">
           <NuxtLink
-            to="/contact-us"
+            :to="$localePath('/contact-us')"
             :aria-label="$t('footer.menu.contact')"
             class="flex flex-col items-center"
             active-class="border-b border-dashed border-green-signifier"

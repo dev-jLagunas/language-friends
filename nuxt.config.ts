@@ -49,5 +49,8 @@ export default defineNuxtConfig({
     ],
     defaultLocale: "ja",
     strategy: "prefix_except_default",
+    detectBrowserLanguage: {
+      useCookie: true,
+    },
   },
 });

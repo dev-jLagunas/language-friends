@@ -28,7 +28,7 @@ const closeMenu = () => {
       >
         <li>
           <NuxtLink
-            to="/"
+            :to="$localePath('/')"
             aria-label="ホーム"
             class="flex flex-col items-center justify-center"
             active-class="border-b border-dashed border-dark-primary dark:border-light-primary"
@@ -40,7 +40,7 @@ const closeMenu = () => {
 
         <li>
           <NuxtLink
-            to="/books-display"
+            :to="$localePath('/books-display')"
             aria-label="えほん"
             class="flex flex-col items-center justify-center"
             active-class="border-b border-dashed border-sunny-orange"
@@ -55,7 +55,7 @@ const closeMenu = () => {
 
         <li>
           <NuxtLink
-            to="/about-us"
+            :to="$localePath('/about-us')"
             aria-label="わたしたちについて"
             class="flex flex-col items-center justify-center"
             active-class="border-b border-dashed border-soft-pink"
