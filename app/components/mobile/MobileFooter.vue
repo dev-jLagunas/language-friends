@@ -21,7 +21,7 @@ const closeMenu = () => {
 </script>
 
 <template>
-  <footer>
+  <footer class="fixed bottom-0 left-0 w-full z-50">
     <nav aria-label="モバイルフッターナビゲーション">
       <ul
         class="flex justify-evenly items-center border-t border-dashed py-3 font-yomogi text-base bg-light-primary dark:bg-dark-secondary dark:text-light-primary"
@@ -218,7 +218,7 @@ const closeMenu = () => {
   top: 0;
   left: 0;
   width: 100%;
-  height: 88vh;
+  height: 90vh;
   z-index: 50;
 }
 
