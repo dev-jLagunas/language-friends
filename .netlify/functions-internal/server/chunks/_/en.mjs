@@ -1,0 +1,48 @@
+var footer = {
+	nav: {
+		home: "Home",
+		books: "Books",
+		about: "About",
+		menu: "Menu"
+	},
+	menu: {
+		title: "The Language Friends",
+		start: "Getting Started",
+		characters: "Characters",
+		kids: "Kids Corner",
+		contact: "Contact",
+		languageToggle: "EN / JP"
+	}
+};
+var navbar = {
+	tagline: "Fun English Picture Books to Read with Your Child"
+};
+var hero = {
+	title: "The Language Friends",
+	subtitle: "Fun English picture books for kids",
+	tagline: "Learn English together at home",
+	description: "A gentle, playful English book series designed for young children and their parents.",
+	emailPlaceholder: "Your email address",
+	subscribeButton: "Subscribe",
+	note: "Sign up to receive updates about new books and reading tips. Get the first e-book free as a thank-you.",
+	prompt1: "We learn English together.",
+	prompt2: "English is part of our day.",
+	prompt3: "We enjoy English together."
+};
+var characters = {
+	moko: "moko",
+	mokoGreet: "Hi, I'm Moko",
+	niko: "niko",
+	nikoGreet: "Hi, I'm Niko",
+	okja: "okja",
+	okjaGreet: "Hiya, I'm Okja"
+};
+const en = {
+	footer: footer,
+	navbar: navbar,
+	hero: hero,
+	characters: characters
+};
+
+export { characters, en as default, footer, hero, navbar };
+//# sourceMappingURL=en.mjs.map

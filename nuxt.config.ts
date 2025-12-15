@@ -32,6 +32,9 @@ export default defineNuxtConfig({
     mode: "css",
     cssLayer: "base",
   },
+  nitro: {
+    preset: "netlify",
+  },
   modules: ["@nuxt/icon", "@nuxtjs/color-mode", "@nuxtjs/i18n"],
   colorMode: {
     classSuffix: "",
