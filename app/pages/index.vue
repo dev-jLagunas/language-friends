@@ -2,7 +2,7 @@
 
 <template>
   <main class="dark:bg-dark-secondary dark:text-light-primary">
-    <h1>Welcome to the Index Page</h1>
+    <MobileHero />
   </main>
 </template>
 

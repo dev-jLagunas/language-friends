@@ -17,5 +17,22 @@
   },
   "navbar": {
     "tagline": "Fun English Picture Books to Read with Your Child"
+  },
+  "hero": {
+    "title": "The Language Friends",
+    "subtitle": "Fun English picture books for kids",
+    "tagline": "Learn English together at home",
+    "description": "A gentle, playful English book series designed for young children and their parents.",
+    "emailPlaceholder": "Your email address",
+    "subscribeButton": "Subscribe",
+    "note": "Get updates about new books and reading tips.",
+    "prompt1": "We learn English together.",
+    "prompt2": "English is part of our day.",
+    "prompt3": "We enjoy English together."
+  },
+  "characters": {
+    "moko": "moko",
+    "niko": "niko",
+    "okja": "okja"
   }
 }

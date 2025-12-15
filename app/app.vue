@@ -1,6 +1,6 @@
 <template>
   <div
-    class="min-h-screen flex flex-col dark:bg-dark-secondary dark:text-light-primary"
+    class="min-h-screen flex flex-col bg-light-primary dark:bg-dark-secondary text-dark-primary dark:text-light-primary"
   >
     <header>
       <TheNavbar />

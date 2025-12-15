@@ -96,7 +96,7 @@ const isDark = computed(() => colorMode.value === "dark");
             aria-label="The Language Friends"
             class="flex flex-col items-center"
           >
-            <Icon name="heroicons:heart" />
+            <!-- <Icon name="heroicons:heart" /> -->
             <span class="font-bold">The Language Friends</span>
           </NuxtLink>
         </li>

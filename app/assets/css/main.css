@@ -7,8 +7,7 @@
 ********************************************/
 
 body {
-  font-family: "Work Sans", sans-serif;
-  background-color: var(--color-light-primary);
+  margin-inline: auto;
 }
 
 /********************************************
@@ -35,6 +34,7 @@ body {
   --font-work: "Work Sans", sans-serif;
   /* BREAKPOINTS */
   --breakpoint-desktop: 968px;
+  --breakpoint-xs: 425px;
 }
 
 /********************************************
