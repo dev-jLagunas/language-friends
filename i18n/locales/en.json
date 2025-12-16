@@ -40,5 +40,21 @@
   },
   "ui": {
     "closeMenu": "Close Menu"
+  },
+  "firstTime": {
+    "title": "First time here?",
+    "what": {
+      "title": "What is this?",
+      "text": "The Language Friends is a children’s English picture book series made for reading together at home."
+    },
+    "who": {
+      "title": "Who is it for?",
+      "text": "For young children and parents who want to enjoy English together, even if they don’t speak English confidently."
+    },
+    "why": {
+      "title": "Why is it safe and easy?",
+      "text": "Simple sentences, gentle repetition, and friendly characters help children learn naturally, without pressure or testing."
+    },
+    "cta": "Learn more"
   }
 }

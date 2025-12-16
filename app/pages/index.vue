@@ -3,6 +3,7 @@
 <template>
   <main class="dark:bg-dark-secondary dark:text-light-primary">
     <TheHero />
+    <HomeNewCustomers />
   </main>
 </template>
 

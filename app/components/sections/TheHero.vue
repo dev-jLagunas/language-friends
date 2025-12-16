@@ -26,7 +26,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <section class="mb-4 pb-50">
+  <section class="mb-4">
     <header class="relative md:mb-8">
       <h1
         :class="heroTitleFont"
@@ -59,7 +59,7 @@ onUnmounted(() => {
           <p class="text-sm md:text-3xl">
             {{ $t("characters.mokoGreet") }}
           </p>
-          <button class="bg-green-signifier px-3 py-1 font-work text-sm mt-2">
+          <button class="bg-moko-blue px-3 py-1 font-work text-sm mt-2">
             Learn More
           </button>
         </div>
@@ -80,7 +80,7 @@ onUnmounted(() => {
           class="card-content absolute bg-light-primary/95 w-full py-2 flex flex-col justify-center items-center px-2 text-dark-primary font-yomogi text-lg font-bold shadow-2xl md:w-fit md:px-8"
         >
           <p class="text-sm md:text-3xl">{{ $t("characters.nikoGreet") }}</p>
-          <button class="bg-green-signifier px-3 text-sm py-1 font-work mt-2">
+          <button class="bg-niko-purple px-3 text-sm py-1 font-work mt-2">
             Learn More
           </button>
         </div>
@@ -101,7 +101,7 @@ onUnmounted(() => {
           class="card-content absolute bg-light-primary/95 w-full py-2 flex flex-col justify-center items-center px-2 text-dark-primary font-yomogi text-lg font-bold shadow-2xl md:w-fit md:px-8"
         >
           <p class="text-sm md:text-3xl">{{ $t("characters.okjaGreet") }}</p>
-          <button class="bg-green-signifier px-3 py-1 text-sm font-work mt-2">
+          <button class="bg-okja-yellow px-3 py-1 text-sm font-work mt-2">
             Learn More
           </button>
         </div>
