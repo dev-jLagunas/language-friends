@@ -30,7 +30,7 @@ onUnmounted(() => {
     <header class="relative md:mb-8">
       <h1
         :class="heroTitleFont"
-        class="font-bold px-4 text-3xl mb-2 text-dark-primary dark:text-light-primary tracking-wider xs:text-4xl md:text-6xl lg:text-8xl text-center"
+        class="font-bold px-4 text-3xl mb-2 text-dark-primary dark:text-light-primary tracking-wider xs:text-4xl md:text-6xl lg:text-7xl xl:text-8xl text-center"
       >
         {{ $t("hero.title") }}
       </h1>
@@ -54,7 +54,7 @@ onUnmounted(() => {
         <span class="font-cherry text-2xl">{{ $t("characters.moko") }}</span>
         <!-- Hidden expandable content -->
         <div
-          class="card-content absolute bg-light-primary/95 w-full py-2 flex flex-col justify-center items-center px-2 text-dark-primary font-yomogi text-lg font-bold shadow-2xl md:w-fit md:px-8"
+          class="card-content absolute bg-light-primary/95 w-full py-2 flex flex-col justify-center items-center px-2 text-dark-primary font-yomogi text-lg font-bold shadow-2xl md:w-fit md:px-4"
         >
           <p class="text-sm md:text-3xl">
             {{ $t("characters.mokoGreet") }}

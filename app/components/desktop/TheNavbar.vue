@@ -17,13 +17,13 @@ const isDark = computed(() => colorMode.value === "dark");
 
 <template>
   <div>
-    <MobileNavHeader class="desktop:hidden" />
+    <MobileNavHeader class="" />
     <nav
       aria-label="デスクトップナビゲーション"
       class="hidden font-yomogi desktop:flex"
     >
       <ul
-        class="flex justify-around items-center border-b w-full border-dashed py-4"
+        class="flex justify-around items-center border-b w-full border-b-dark-primary/20 py-4 dark:border-b-light-primary/20"
       >
         <!-- 1. Home -->
         <li class="group">

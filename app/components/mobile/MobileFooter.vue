@@ -21,10 +21,10 @@ const closeMenu = () => {
 </script>
 
 <template>
-  <footer class="fixed bottom-0 left-0 w-full z-50">
+  <footer class="fixed bottom-0 left-0 w-full z-100">
     <nav aria-label="モバイルフッターナビゲーション">
       <ul
-        class="flex justify-evenly items-center border-t border-dashed py-3 font-yomogi text-base bg-light-primary dark:bg-dark-secondary dark:text-light-primary"
+        class="flex justify-evenly items-center border-t border-dark-primary/20 shadow-sm dark:border-light-primary/20 py-4 font-yomogi text-base bg-light-primary dark:bg-dark-secondary dark:text-light-primary"
       >
         <li>
           <NuxtLink
@@ -219,7 +219,7 @@ const closeMenu = () => {
   left: 0;
   width: 100%;
   height: 90vh;
-  z-index: 50;
+  z-index: 10;
 }
 
 .slide-down-enter-active,
