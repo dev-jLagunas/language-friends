@@ -98,10 +98,12 @@ onMounted(() => {
               />
             </figure>
 
-            <h2 class="font-bold text-lg md:text-3xl">
+            <h2 class="font-bold text-lg md:text-3xl dark:text-light-primary">
               {{ $t("firstTime.what.title") }}
             </h2>
-            <p class="leading-5 text-base md:text-3xl md:leading-8">
+            <p
+              class="leading-5 text-base md:text-3xl md:leading-8 dark:text-light-primary"
+            >
               {{ $t("firstTime.what.text") }}
             </p>
           </div>
@@ -120,10 +122,12 @@ onMounted(() => {
                 class="w-full h-full object-cover"
               />
             </figure>
-            <h2 class="font-bold text-lg md:text-3xl">
+            <h2 class="font-bold text-lg md:text-3xl dark:text-light-primary">
               {{ $t("firstTime.who.title") }}
             </h2>
-            <p class="leading-5 text-base md:text-3xl md:leading-8">
+            <p
+              class="leading-5 text-base md:text-3xl md:leading-8 dark:text-light-primary"
+            >
               {{ $t("firstTime.who.text") }}
             </p>
           </div>
@@ -142,10 +146,12 @@ onMounted(() => {
                 class="w-full h-full object-cover"
               />
             </figure>
-            <h2 class="font-bold text-lg md:text-3xl">
+            <h2 class="font-bold text-lg md:text-3xl dark:text-light-primary">
               {{ $t("firstTime.why.title") }}
             </h2>
-            <p class="leading-5 text-base md:text-3xl md:leading-8">
+            <p
+              class="leading-5 text-base md:text-3xl md:leading-8 dark:text-light-primary"
+            >
               {{ $t("firstTime.why.text") }}
             </p>
           </div>

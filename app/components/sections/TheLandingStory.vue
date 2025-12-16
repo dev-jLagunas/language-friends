@@ -3,6 +3,7 @@
 <template>
   <main>
     <HomeSectionOne />
+    <HomeSectionTwo />
   </main>
 </template>
 
