@@ -49,3 +49,8 @@ body {
 /********************************************
         Custom Classes
 ********************************************/
+@layer utilities {
+  .bg-moko-textured {
+    background: linear-gradient(180deg, #0077ff 0%, #0a7fff 50%, #0072f0 100%);
+  }
+}

@@ -68,41 +68,92 @@ onMounted(() => {
   <section class="">
     <div class="spacer"></div>
 
-    <div class="wrapper desktop:grid xl:grid-cols-2 xl:place-items-center">
+    <div
+      class="wrapper place-content-start xl:grid xl:grid-cols-2 xl:place-items-center xl:place-content-center"
+    >
       <div class="flex flex-col items-center">
         <img
-          src="/images/moko/moko-holding-sign.png"
+          src="/images/everyone/cats-together-bike.png"
           alt=""
-          class="h-auto w-1/6"
+          class="h-auto w-2/5 md:w-1/6 xl:w-3/4"
         />
         <h2
           :class="heroTitleFont"
-          class="text-4xl text-dark-primary dark:text-light-primary text-center mx-auto mb-4 w-fit px-8 py-1"
+          class="text-4xl text-dark-primary leading-9 dark:text-light-primary text-center mx-auto mb-4 w-fit px-8 py-1 xl:text-6xl"
         >
           {{ $t("firstTime.title") }}
         </h2>
       </div>
       <div class="slider mx-auto">
-        <div class="slide center bg-moko-blue">
-          <div class="">
-            <h2>はじめての方へ</h2>
-            <p>Language Friendsは、たのしく学ぶえいごえほんです。</p>
+        <div
+          class="slide center bg-moko-blue/50 flex flex-col justify-center items-center shadow-lg"
+        >
+          <div
+            class="font-yomogi text-dark-primary flex flex-col justify-center items-center gap-2"
+          >
+            <figure class="w-full h-30 md:h-75 xl:h-100">
+              <img
+                src="/images/mockups/mon-and-son1.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </figure>
+
+            <h2 class="font-bold text-lg md:text-3xl">
+              {{ $t("firstTime.what.title") }}
+            </h2>
+            <p class="leading-5 text-base md:text-3xl md:leading-8">
+              {{ $t("firstTime.what.text") }}
+            </p>
           </div>
         </div>
 
-        <div class="slide center bg-niko-purple">
-          <div>
-            <h2>学びかた</h2>
-            <p>えを見て、聞いて、まねをする。</p>
+        <div
+          class="slide center bg-niko-purple/50 flex flex-col justify-center items-center shadow-lg"
+        >
+          <div
+            class="font-yomogi text-dark-primary flex flex-col justify-center items-center gap-2"
+          >
+            <figure class="w-full h-30 md:h-75 xl:h-100">
+              <img
+                src="/images/mockups/mom-and-son2.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </figure>
+            <h2 class="font-bold text-lg md:text-3xl">
+              {{ $t("firstTime.who.title") }}
+            </h2>
+            <p class="leading-5 text-base md:text-3xl md:leading-8">
+              {{ $t("firstTime.who.text") }}
+            </p>
           </div>
         </div>
 
-        <div class="slide center bg-okja-yellow">
-          <div>
-            <h2>キャラクター</h2>
-            <p>ともだちのようなキャラクターが教えてくれます。</p>
+        <div
+          class="slide center bg-okja-yellow/50 flex flex-col justify-center items-centers shadow-lg"
+        >
+          <div
+            class="font-yomogi text-dark-primary flex flex-col justify-center items-center gap-2"
+          >
+            <figure class="w-full h-30 md:h-75 xl:h-100">
+              <img
+                src="/images/mockups/mom-and-son3.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </figure>
+            <h2 class="font-bold text-lg md:text-3xl">
+              {{ $t("firstTime.why.title") }}
+            </h2>
+            <p class="leading-5 text-base md:text-3xl md:leading-8">
+              {{ $t("firstTime.why.text") }}
+            </p>
           </div>
         </div>
+      </div>
+      <div class="text-center mt-4">
+        <button class="border-2 xl border-dashed px-4">Learn More</button>
       </div>
     </div>
 
@@ -127,6 +178,13 @@ onMounted(() => {
     width: 600px;
     height: 600px;
     perspective: 900px;
+  }
+
+  @media (width >= 1480px) {
+    width: 700px;
+    height: 700px;
+    perspective: 1200px;
+    rotate: 3deg;
   }
 }
 
@@ -157,6 +215,6 @@ onMounted(() => {
 }
 
 .spacer {
-  height: 10vh;
+  height: 15vh;
 }
 </style>
