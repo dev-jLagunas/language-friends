@@ -65,9 +65,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="">
+  <section class="relative">
     <div class="spacer"></div>
-
     <div
       class="wrapper place-content-start xl:grid xl:grid-cols-2 xl:place-items-center xl:place-content-center"
     >
