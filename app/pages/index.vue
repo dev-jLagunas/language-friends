@@ -2,7 +2,7 @@
 
 <template>
   <main class="dark:bg-dark-secondary dark:text-light-primary">
-    <MobileHero />
+    <TheHero />
   </main>
 </template>
 

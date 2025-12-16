@@ -7,7 +7,7 @@
       "menu": "メニュー"
     },
     "menu": {
-      "title": "The Language Friends",
+      "title": "ザ・ランゲージ・フレンズ",
       "start": "はじめての方へ",
       "characters": "キャラクター",
       "kids": "キッズコーナー",
@@ -37,5 +37,8 @@
     "nikoGreet": "こんにちは、ニコです",
     "okja": "おくじゃ",
     "okjaGreet": "こんにちは、オクジャです"
+  },
+  "ui": {
+    "closeMenu": "メニューをとじる"
   }
 }

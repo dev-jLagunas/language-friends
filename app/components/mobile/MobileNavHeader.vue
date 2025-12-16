@@ -13,11 +13,13 @@ const switchableLocales = computed(() =>
 
 <template>
   <div
-    class="py-6 border-b shadow-sm border-dark-primary/20 px-2 font-yomogi dark:border-light-primary/20 desktop:hidden"
+    class="py-6 border-b border-dark-primary/20 px-2 font-yomogi dark:border-light-primary/20 desktop:hidden"
   >
-    <section class="md:grid md:grid-cols-2">
+    <section class="md:grid md:grid-cols-2 md:place-items-center">
       <div class="md:flex md:flex-col">
-        <p class="text-2xl mx-auto text-center font-bold">
+        <p
+          class="text-2xl mx-auto text-center font-bold md:text-start md:w-full"
+        >
           The Language Friends
         </p>
         <p class="text-center text-sm text-wrap">
@@ -25,8 +27,18 @@ const switchableLocales = computed(() =>
         </p>
       </div>
       <div
-        class="text-center flex justify-around items-center gap-4 mt-4 mx-auto sm:gap-8 sm:w-fit"
+        class="text-center flex justify-center items-center gap-4 mt-4 mx-auto sm:gap-8 sm:w-fit"
       >
+        <button
+          v-for="l in switchableLocales"
+          :key="l.code"
+          type="button"
+          @click="setLocale(l.code)"
+          :aria-label="l.name"
+          class="flex flex-row items-center hover:cursor-pointer"
+        >
+          <span>{{ l.name }}</span>
+        </button>
         <label class="switch">
           <input
             checked="true"
@@ -47,17 +59,7 @@ const switchableLocales = computed(() =>
             </svg>
           </span>
         </label>
-        <button
-          v-for="l in switchableLocales"
-          :key="l.code"
-          type="button"
-          @click="setLocale(l.code)"
-          :aria-label="l.name"
-          class="flex flex-row items-center hover:cursor-pointer"
-        >
-          <Icon name="heroicons:language" class="text-red-signifier mr-2" />
-          <span>{{ l.name }}</span>
-        </button>
+
         <button
           class="cursor-pointer relative group overflow-hidden border-2 px-4 py-1 border-green-signifier rounded-sm"
         >

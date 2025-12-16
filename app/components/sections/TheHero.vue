@@ -157,47 +157,47 @@ onUnmounted(() => {
    *************** BOTTOM GRID************************* -->
     <div class="px-4 space-y-2 mt-4 grid grid-cols-3 gap-4">
       <figure
-        class="border border-dark-primary dark:border-light-primary border-dashed flex flex-col items-center justify-center gap-2 p-2 md:flex-col md:py-4"
+        class="border border-dark-primary/50 dark:border-light-primary/50 border-dashed flex flex-col items-center justify-center gap-2 p-2 md:flex-col md:py-4"
       >
         <figcaption class="font-yomogi leading-5 text-center sm:text-xl">
           {{ $t("hero.prompt1") }}
         </figcaption>
         <img
-          src="/images/everyone/cats-together-bike.png"
+          src="/images/mockups/book-mockup-2.png"
           alt=""
-          class="w-full max-w-50"
+          class="w-full max-w-50 hover:scale-110 transition-all ease duration-300"
         />
       </figure>
 
       <figure
-        class="border border-dark-primary border-dashed dark:border-light-primary flex flex-col items-center justify-center gap-2 p-2 md:flex-col md:py-4"
+        class="border border-dark-primary/50 border-dashed dark:border-light-primary/50 flex flex-col items-center justify-center gap-2 p-2 md:flex-col md:py-4"
       >
         <figcaption class="font-yomogi leading-5 text-center sm:text-xl">
           {{ $t("hero.prompt2") }}
         </figcaption>
 
         <img
-          src="/images/everyone/cats-together-hug.png"
+          src="/images/mockups/book-mockup.png"
           alt=""
-          class="w-full max-w-50"
+          class="w-full max-w-50 hover:scale-110 transition-all ease duration-300"
         />
       </figure>
       <figure
-        class="border border-dark-primary border-dashed dark:border-light-primary flex flex-col items-center justify-center gap-2 p-2 md:flex-col md:py-4"
+        class="border border-dark-primary/50 border-dashed dark:border-light-primary/50 flex flex-col items-center justify-center gap-2 p-2 md:flex-col md:py-4"
       >
         <figcaption class="font-yomogi leading-5 text-center sm:text-xl">
           {{ $t("hero.prompt3") }}
         </figcaption>
 
         <img
-          src="/images/everyone/cats-together-school.png"
+          src="/images/mockups/book-mockup-2.png"
           alt=""
-          class="w-full max-w-50"
+          class="w-full max-w-50 hover:scale-110 transition-all ease duration-300"
         />
       </figure>
       <form
         aria-label="メール登録CTA"
-        class="border col-span-3 border-dark-primary border-dashed px-2 py-2 dark:border-light-primary"
+        class="border col-span-3 border-dark-primary/50 border-dashed px-2 py-2 dark:border-light-primary/50"
       >
         <label for="email" class="sr-only">
           {{ $t("hero.emailPlaceholder") }}
@@ -220,7 +220,7 @@ onUnmounted(() => {
             :placeholder="$t('hero.emailPlaceholder')"
             autocomplete="email"
             required
-            class="w-full py-2 bg-moko-blue/20 mb-2 px-2 h-10 placeholder:text-dark-primary dark:placeholder:text-light-primary"
+            class="w-full py-2 bg-dark-primary/10 dark:bg-light-primary mb-2 px-2 h-10 placeholder:text--primary dark:placeholder:text-dark-primary"
           />
 
           <button
