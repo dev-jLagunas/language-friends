@@ -43,9 +43,27 @@ onBeforeUnmount(() => {
     <h1 class="thankyou-text">Thank you</h1>
 
     <div class="characters">
-      <div class="character moko">Moko</div>
-      <div class="character niko">Niko</div>
-      <div class="character okja">Okja</div>
+      <div class="character moko">
+        <img
+          src="/images/moko/moko-hello-1.png"
+          alt=""
+          class="animate-bounce"
+        />
+      </div>
+      <div class="character niko">
+        <img
+          src="/images/niko/niko-hello-1.png"
+          alt=""
+          class="animate-bounce"
+        />
+      </div>
+      <div class="character okja">
+        <img
+          src="/images/okja/okja-hello-1.png"
+          alt=""
+          class="animate-bounce"
+        />
+      </div>
     </div>
   </section>
 </template>

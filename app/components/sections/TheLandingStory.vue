@@ -7,7 +7,7 @@
     <HomeSectionTwo />
     <HomeSectionThree />
     <HomeSectionFour />
-    <HomeSectionFive />
+    <!-- <HomeSectionFive /> -->
     <HomeSectionSix />
     <HomeSectionFinal />
   </main>

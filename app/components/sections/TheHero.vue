@@ -202,11 +202,7 @@ onUnmounted(() => {
         <label for="email" class="sr-only">
           {{ $t("hero.emailPlaceholder") }}
         </label>
-        <!-- <img
-          src="/images/everyone/cats-with-sign.png"
-          alt=""
-          class="w-32 mx-auto max-w-50"
-        /> -->
+
         <h3
           class="font-yomogi tracking-tight text-center text-lg font-bold mt-2 leading-5 md:leading-7 md:text-2xl"
         >

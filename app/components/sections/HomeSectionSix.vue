@@ -97,59 +97,158 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div id="page" ref="pageRef">
+  <div id="page" ref="pageRef" class="font-yomogi">
     <main ref="mainRef">
       <!-- Slide 1: SNS -->
-      <section class="panel bg-moko-blue">
-        <h2 class="panel__number">1</h2>
+      <section
+        class="panel bg-moko-blue/50 saturate-70 relative place-content-center md:grid md:grid-cols-1 md:place-items-center"
+      >
+        <h2
+          class="opacity-30 text-7xl md:text-9xl dark:text-light-primary md:absolute md:left-10 md:top-5"
+        >
+          15.
+        </h2>
 
         <div class="panel-content">
-          <h3>Connect With Us</h3>
-          <p>
-            Follow The Language Friends for updates, previews, and new releases.
+          <h3 class="font-bold mb-2 text-xl mt-4 xs:text-4xl">
+            {{ $t("homeSectionSix.connect.title") }}
+          </h3>
+          <p class="leading-5 text-lg xs:text-2xl">
+            {{ $t("homeSectionSix.connect.text") }}
           </p>
-
           <!-- Placeholder for big SNS icons -->
-          <div class="sns-links">
-            <div>Instagram</div>
-            <div>LINE</div>
-            <div>YouTube</div>
-          </div>
+          <nav class="sns-links mt-4 md:mt-8" aria-label="Social links">
+            <ul class="flex gap-4 text-2xl md:text-4xl">
+              <li>
+                <a
+                  href="YOUR_INSTAGRAM_URL"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
+                  <Icon name="mdi:instagram" />
+                  <span class="sr-only">Instagram</span>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="YOUR_LINE_URL"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LINE"
+                >
+                  <Icon name="simple-icons:line" />
+                  <span class="sr-only">LINE</span>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="YOUR_YOUTUBE_URL"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="YouTube"
+                >
+                  <Icon name="mdi:youtube" />
+                  <span class="sr-only">YouTube</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <img src="/images/moko/moko-cellphone.png" alt="" class="md:w-1/2" />
         </div>
       </section>
 
       <!-- Slide 2: Contact info -->
-      <section class="panel green bg-niko-purple">
-        <h2 class="panel__number">2</h2>
+      <section
+        class="panel green bg-niko-purple saturate-80 md:place-content-center"
+      >
+        <h2
+          class="opacity-30 text-7xl md:text-9xl dark:text-light-primary md:absolute md:left-10 md:top-5"
+        >
+          16.
+        </h2>
 
         <div class="panel-content">
-          <h3>Contact Information</h3>
-          <p>
-            The Language Friends is an independent picture book project created
-            to support gentle English learning for children in Japan.
+          <h3 class="font-bold mb-2 text-xl mt-4 xs:text-4xl">
+            {{ $t("homeSectionSix.contact.title") }}
+          </h3>
+          <p class="leading-5 text-lg xs:text-2xl md:leading-8">
+            {{ $t("homeSectionSix.contact.description") }}
           </p>
 
-          <ul>
-            <li>Email: hello@thelanguagefriends.com</li>
-            <li>Phone: 000-0000-0000</li>
-            <li>Author: The Language Friends Team</li>
+          <ul class="space-y-2 mt-4">
+            <li class="flex flex-col items-start xs:text-xl">
+              <Icon name="mdi:email-outline" class="font-bold" />
+              <span> {{ $t("homeSectionSix.contact.email") }}</span>
+            </li>
+
+            <li class="flex flex-col items-start xs:text-xl">
+              <Icon name="mdi:phone-outline" />
+              <span> {{ $t("homeSectionSix.contact.phone") }}</span>
+            </li>
+
+            <li class="flex flex-col items-start xs:text-xl">
+              <Icon name="mdi:account-group-outline" />
+              <span> {{ $t("homeSectionSix.contact.author") }}</span>
+            </li>
           </ul>
+          <img
+            src="/images/niko/niko-cellphone.png"
+            alt=""
+            class="mx-auto h-76 w-auto"
+          />
         </div>
       </section>
 
       <!-- Slide 3: Final CTA -->
-      <section class="panel bg-okja-yellow">
-        <h2 class="panel__number">3</h2>
+      <section class="panel bg-okja-yellow saturate-70 md:place-content-center">
+        <h2
+          class="opacity-30 text-7xl md:text-9xl dark:text-light-primary md:absolute md:left-10 md:top-5"
+        >
+          17.
+        </h2>
 
         <div class="panel-content">
-          <h3>Get Updates by Email</h3>
-          <p>
-            Be the first to hear about new books, releases, and special content.
-          </p>
+          <h3 class="font-bold mb-2 text-xl mt-4 xs:text-4xl">
+            Get Updates by Email
+          </h3>
 
-          <!-- Placeholder for email form -->
-          <button>Join the Email List</button>
+          <form
+            aria-label="メール登録CTA"
+            class="border col-span-3 border-dark-primary/50 border-dashed px-2 py-2 dark:border-light-primary/50"
+          >
+            <label for="email" class="sr-only">
+              {{ $t("hero.emailPlaceholder") }}
+            </label>
+
+            <h3
+              class="font-yomogi tracking-tight text-center text-lg font-bold mt-2 leading-5 md:leading-7 md:text-2xl"
+            >
+              {{ $t("hero.note") }}
+            </h3>
+            <div class="mt-4 md:flex md:w-1/2 md:mx-auto">
+              <input
+                id="email"
+                type="email"
+                name="email"
+                :placeholder="$t('hero.emailPlaceholder')"
+                autocomplete="email"
+                required
+                class="w-full py-2 bg-dark-primary/10 dark:bg-light-primary mb-2 px-2 h-10 placeholder:text--primary dark:placeholder:text-dark-primary"
+              />
+
+              <button
+                type="submit"
+                class="bg-green-signifier px-3 w-full text-dark-primary font-bold h-10 font-work md:w-1/2"
+              >
+                {{ $t("hero.subscribeButton") }}
+              </button>
+            </div>
+          </form>
         </div>
+        <img src="/images/okja/okja-please.png" alt="" class="xs:max-h-125" />
       </section>
     </main>
   </div>
