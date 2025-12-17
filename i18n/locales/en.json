@@ -39,7 +39,8 @@
     "okjaGreet": "Hiya, I'm Okja"
   },
   "ui": {
-    "closeMenu": "Close Menu"
+    "closeMenu": "Close Menu",
+    "cta": "Learn more"
   },
   "firstTime": {
     "title": "First time here?",
@@ -54,7 +55,20 @@
     "why": {
       "title": "Why is it safe and easy?",
       "text": "Simple sentences, gentle repetition, and friendly characters help children learn naturally, without pressure or testing."
+    }
+  },
+  "homeSectionTwo": {
+    "sectionA": {
+      "title": "How The Language Friends Began",
+      "text": "The Language Friends began with a simple question: how can young children learn English naturally, without pressure or memorization? We wanted to create something gentle, playful, and realistic for families raising children in Japan."
     },
-    "cta": "Learn more"
+    "sectionB": {
+      "title": "Designed for Japanese Families",
+      "text": "Our books are created specifically for children growing up in Japan. Short sentences, familiar situations, and a pace that feels comfortable for both parents and kids."
+    },
+    "sectionC": {
+      "title": "English Through Everyday Life",
+      "text": "Children learn best when language feels useful and familiar. The Language Friends focuses on everyday actions like eating, playing, and going outside so English feels natural, not academic."
+    }
   }
 }

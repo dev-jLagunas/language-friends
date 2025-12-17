@@ -14,6 +14,8 @@ onMounted(async () => {
 
   gsap.registerPlugin(ScrollTrigger);
 
+  const isDesktop = window.matchMedia("(min-width: 768px)").matches;
+
   ctx = gsap.context(() => {
     const panels = gsap.utils.toArray<HTMLElement>(".panel", wrapper.value!);
     const totalWidth = panels.reduce((acc, p) => acc + p.offsetWidth, 0);
@@ -28,6 +30,13 @@ onMounted(async () => {
         scrub: true,
         pin: true,
         anticipatePin: 1,
+        snap: isDesktop
+          ? {
+              snapTo: 1 / (panels.length - 1),
+              duration: 0.2,
+              ease: "ease",
+            }
+          : false,
       },
     });
   }, container.value);
@@ -40,65 +49,95 @@ onBeforeUnmount(() => {
 
 <template>
   <section ref="container" class="relative overflow-hidden">
-    <div ref="wrapper" class="wrapper">
-      <section class="panel section place-content-start">
-        <h2 class="panel__number">A</h2>
+    <div ref="wrapper" class="wrapper font-yomogi leading-5">
+      <section
+        class="panel section place-content-center relative bg-moko-blue/50"
+      >
+        <h2
+          class="panel__number opacity-30 font-extralight text-9xl dark:text-light-primary desktop:text-9x absolute -top-1 left-4 md:left-10"
+        >
+          4
+        </h2>
 
-        <div class="panel__content md:text-4xl">
-          <h3>How The Language Friends Began</h3>
-          <p>
-            The Language Friends began with a simple question: how can young
-            children learn English naturally, without pressure or memorization?
-            We wanted to create something gentle, playful, and realistic for
-            families raising children in Japan.
+        <div class="panel__content px-8 md:mx-8 desktop:w-2/3">
+          <h3 class="font-bold text-2xl leading-6 mb-2 md:text-4xl md:mb-4">
+            {{ $t("homeSectionTwo.sectionA.title") }}
+          </h3>
+          <p class="md:text-2xl">
+            {{ $t("homeSectionTwo.sectionA.text") }}
           </p>
 
-          <img src="" alt="" />
+          <img
+            src="/images/everyone/cats-together-school.png"
+            alt=""
+            class="w-3/4 md:w-1/2 max-w-95"
+          />
+
+          <button
+            class="border border-dashed border-dark-primary px-6 py-1 mr-auto"
+          >
+            {{ $t("ui.cta") }}
+          </button>
         </div>
       </section>
 
-      <section class="panel section bg-moko-blue/50 place-content-center">
-        <h2 class="panel__number">B</h2>
+      <section
+        class="panel section place-content-center bg-niko-purple/50 relative"
+      >
+        <h2
+          class="opacity-30 font-extralight text-9xl dark:text-light-primary desktop:text-9xl absolute -top-1 left-4"
+        >
+          5
+        </h2>
 
-        <div class="panel__content">
-          <h3>Designed for Japanese Families</h3>
-          <p>
-            Our books are created specifically for children growing up in Japan.
-            Short sentences, familiar situations, and a pace that feels
-            comfortable for both parents and kids.
+        <div class="panel__content md:text-4xl px-8 md:mx-8 desktop:w-2/3">
+          <h3 class="font-bold text-2xl leading-6 mb-2 md:text-4xl md:mb-4">
+            {{ $t("homeSectionTwo.sectionB.title") }}
+          </h3>
+          <p class="md:text-2xl">
+            {{ $t("homeSectionTwo.sectionB.text") }}
           </p>
 
-          <img src="" alt="" />
+          <img
+            src="/images/everyone/cats-together-hug.png"
+            alt=""
+            class="w-3/4 md:w-1/2 max-w-95"
+          />
+          <button
+            class="border border-dashed border-dark-primary px-6 py-1 mx-auto place-items-center"
+          >
+            {{ $t("ui.cta") }}
+          </button>
         </div>
       </section>
 
-      <section class="panel section bg-niko-purple place-content-center">
-        <h2 class="panel__number">C</h2>
+      <section
+        class="panel section bg-okja-yellow/50 place-content-center relative"
+      >
+        <h2
+          class="panel__number opacity-30 font-extralight text-9xl dark:text-light-primary desktop:text-9xl absolute -top-1 left-4"
+        >
+          6
+        </h2>
 
-        <div class="panel__content">
-          <h3>English Through Everyday Life</h3>
-          <p>
-            Children learn best when language feels useful and familiar. The
-            Language Friends focuses on everyday actions like eating, playing,
-            and going outside so English feels natural, not academic.
+        <div class="panel__content md:text-4xl px-8 md:mx-8 desktop:w-2/3">
+          <h3 class="font-bold text-2xl leading-6 mb-2 md:text-4xl md:mb-4">
+            {{ $t("homeSectionTwo.sectionC.title") }}
+          </h3>
+          <p class="md:text-2xl">
+            {{ $t("homeSectionTwo.sectionC.text") }}
           </p>
 
-          <img src="" alt="" />
-        </div>
-      </section>
-
-      <section class="panel section bg-okja-yellow place-content-center">
-        <h2 class="panel__number">D</h2>
-
-        <div class="panel__content">
-          <h3>A Gentle First Step into English</h3>
-          <p>
-            The Language Friends is not about fast results. It’s about building
-            confidence, curiosity, and positive feelings toward English that
-            children can grow with over time.
-          </p>
-
-          <img src="" alt="" />
+          <img
+            src="/images/everyone/cats-with-sign.png"
+            alt=""
+            class="w-3/4 md:w-1/2 max-w-95"
+          />
+          <button
+            class="border border-dashed border-dark-primary px-6 py-1 mx-auto place-items-center"
+          >
+            {{ $t("ui.cta") }}
+          </button>
         </div>
       </section>
     </div>
@@ -115,18 +154,5 @@ onBeforeUnmount(() => {
 .section {
   width: 100vw;
   flex-shrink: 0;
-}
-
-.section--large {
-  width: 150vw;
-}
-
-.section--small {
-  width: 46rem;
-}
-
-.panel__number {
-  font-size: clamp(6rem, 15vw, 14rem);
-  opacity: 0.1;
 }
 </style>
