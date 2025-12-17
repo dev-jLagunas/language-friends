@@ -90,5 +90,30 @@
       "niko": "About Niko",
       "okja": "About Okja"
     }
+  },
+  "homeSectionFour": {
+    "title": "Book Series",
+    "series": {
+      "like": {
+        "title": "The Like Series",
+        "text": "Children learn simple sentence patterns using “like” through familiar activities, food, and everyday moments."
+      },
+      "verb": {
+        "title": "The Verb Series",
+        "text": "This series introduces basic action verbs through movement, play, and daily routines children already know."
+      },
+      "adjective": {
+        "title": "The Adjective Series",
+        "text": "Children explore describing words like big, small, happy, and sad using clear visual comparisons."
+      },
+      "dislike": {
+        "title": "The Doesn’t Like Series",
+        "text": "This series helps children express preferences and feelings by learning how to say what they don’t like."
+      },
+      "friends": {
+        "title": "The Friends Series",
+        "text": "Children learn social language through friendships, sharing, and simple interactions between characters."
+      }
+    }
   }
 }

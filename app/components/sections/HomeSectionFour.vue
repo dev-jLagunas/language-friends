@@ -75,7 +75,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <section ref="sectionRef">
+  <section ref="sectionRef" class="font-yomogi">
     <div class="description panel hr-bottom">
       <div class="scroll-down">
         <div class="arrow"></div>
@@ -84,57 +84,108 @@ onBeforeUnmount(() => {
 
     <section class="black">
       <div class="text-wrap">
-        <div class="panel-text">
-          <h2>Book Series 1</h2>
-          <p>
-            A gentle introduction to English through daily routines and familiar
-            actions. Designed to help children hear and recognize simple English
-            naturally.
+        <div class="panel-text pl-2 relative md:px-8">
+          <p
+            class="opacity-30 -top-24 md:-top-52 left-4 text-7xl md:text-9xl absolute dark:text-light-primary"
+          >
+            10.
           </p>
+          <h2 class="font-bold text-xl mb-2 sm:text-2xl md:text-3xl">
+            {{ $t("homeSectionFour.series.like.title") }}
+          </h2>
+          <p class="leading-4 sm:text-lg md:text-2xl md:leading-6">
+            {{ $t("homeSectionFour.series.like.text") }}
+          </p>
+          <button
+            class="border border-dashed border-dark-primary mt-4 px-6 py-1 md:text-2xl dark:border-light-primary"
+          >
+            {{ $t("ui.cta") }}
+          </button>
         </div>
 
-        <div class="panel-text">
-          <h2>Book Series 2</h2>
-          <p>
-            Expands vocabulary using play, movement, and emotions. Encourages
-            listening and repetition without pressure or testing.
+        <div class="panel-text pl-2 relative md:px-8">
+          <p
+            class="opacity-30 -top-24 md:-top-52 left-4 text-7xl md:text-9xl absolute dark:text-light-primary"
+          >
+            11.
           </p>
+          <h2 class="font-bold text-xl mb-2 sm:text-2xl md:text-3xl">
+            {{ $t("homeSectionFour.series.verb.title") }}
+          </h2>
+          <p class="leading-4 sm:text-lg md:text-2xl md:leading-6">
+            {{ $t("homeSectionFour.series.verb.text") }}
+          </p>
+          <button
+            class="border border-dashed border-dark-primary mt-4 px-6 py-1 md:text-2xl dark:border-light-primary"
+          >
+            {{ $t("ui.cta") }}
+          </button>
         </div>
 
-        <div class="panel-text">
-          <h2>Book Series 3</h2>
-          <p>
-            Focuses on short sentences and simple interactions between
-            characters. Helps children connect meaning through context and
-            pictures.
+        <div class="panel-text pl-2 relative md:px-8">
+          <p
+            class="opacity-30 -top-24 md:-top-52 left-4 text-7xl md:text-9xl absolute dark:text-light-primary"
+          >
+            12.
           </p>
+          <h2 class="font-bold text-xl mb-2 sm:text-2xl md:text-3xl">
+            {{ $t("homeSectionFour.series.adjective.title") }}
+          </h2>
+          <p class="leading-4 sm:text-lg md:text-2xl md:leading-6">
+            {{ $t("homeSectionFour.series.adjective.text") }}
+          </p>
+          <button
+            class="border border-dashed border-dark-primary mt-4 px-6 py-1 md:text-2xl dark:border-light-primary"
+          >
+            {{ $t("ui.cta") }}
+          </button>
         </div>
 
-        <div class="panel-text">
-          <h2>Book Series 4</h2>
-          <p>
-            Introduces slightly longer phrases while keeping language calm and
-            familiar. Supports confidence as children become more comfortable
-            with English.
+        <div class="panel-text pl-2 md:px-8 relative">
+          <p
+            class="opacity-30 -top-24 md:-top-52 left-4 text-7xl md:text-9xl absolute dark:text-light-primary"
+          >
+            13.
           </p>
+          <h2 class="font-bold text-xl mb-2 sm:text-2xl md:text-3xl">
+            {{ $t("homeSectionFour.series.dislike.title") }}
+          </h2>
+          <p class="leading-4 sm:text-lg md:text-2xl md:leading-6">
+            {{ $t("homeSectionFour.series.dislike.text") }}
+          </p>
+          <button
+            class="border border-dashed border-dark-primary mt-4 px-6 py-1 md:text-2xl dark:border-light-primary"
+          >
+            {{ $t("ui.cta") }}
+          </button>
         </div>
 
-        <div class="panel-text">
-          <h2>Book Series 5</h2>
-          <p>
-            A natural continuation of the series, reinforcing patterns learned
-            earlier. Designed as a bridge toward more independent English
-            exposure.
+        <div class="panel-text pl-2 md:px-8 relative">
+          <p
+            class="opacity-30 -top-24 md:-top-52 left-4 text-7xl md:text-9xl absolute dark:text-light-primary"
+          >
+            14.
           </p>
+          <h2 class="font-bold text-xl mb-2 sm:text-2xl md:text-3xl">
+            {{ $t("homeSectionFour.series.friends.title") }}
+          </h2>
+          <p class="leading-4 sm:text-lg md:text-2xl md:leading-6">
+            {{ $t("homeSectionFour.series.friends.text") }}
+          </p>
+          <button
+            class="border border-dashed border-dark-primary mt-4 px-6 py-1 md:text-2xl dark:border-light-primary"
+          >
+            {{ $t("ui.cta") }}
+          </button>
         </div>
       </div>
 
       <div class="p-wrap">
-        <div class="block one bg-moko-blue"></div>
-        <div class="block two bg-niko-purple"></div>
-        <div class="block three bg-okja-yellow"></div>
-        <div class="block four bg-moko-blue"></div>
-        <div class="block five bg-niko-purple"></div>
+        <div class="block one"></div>
+        <div class="block two"></div>
+        <div class="block three"></div>
+        <div class="block four"></div>
+        <div class="block five"></div>
       </div>
     </section>
 
@@ -164,8 +215,7 @@ onBeforeUnmount(() => {
 
 .text-wrap {
   position: relative;
-  overflow: hidden;
-  width: 450px;
+  width: 800px;
   height: 80vh;
 }
 
@@ -178,7 +228,6 @@ onBeforeUnmount(() => {
   z-index: 1;
   width: 100%;
   height: 100%;
-  text-align: center;
   transform: translateY(100%);
   opacity: 0;
 }
@@ -200,9 +249,9 @@ onBeforeUnmount(() => {
   z-index: 1;
   width: 100%;
   height: 100%;
-  background-image: url("/images/mockups/book-mockup.png");
+  background-image: url("/images/mockups/book-mockup-2.png");
   background-position: 50% 50%;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -210,7 +259,7 @@ onBeforeUnmount(() => {
   background-image: url("/images/mockups/book-mockup-2.png");
 }
 .block.three {
-  background-image: url("/images/mockups/book-mockup.png");
+  background-image: url("/images/mockups/book-mockup-2.png");
 }
 .block.four {
   background-image: url("/images/mockups/book-mockup-2.png");
