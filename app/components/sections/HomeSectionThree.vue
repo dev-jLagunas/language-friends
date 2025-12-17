@@ -38,6 +38,17 @@ onMounted(async () => {
     rows.forEach((row, i) => {
       const heading = row.querySelector(".left");
       if (!heading) return;
+      const image = row.querySelector("img");
+      if (!image) return;
+
+      ScrollTrigger.create({
+        trigger: heading,
+        start: () => `top ${offsets[i]}`,
+        endTrigger: sectionRef.value!,
+        end: () => `bottom ${totalOffset}`,
+        onEnter: () => gsap.to(image, { autoAlpha: 0, duration: 0.3 }),
+        onLeaveBack: () => gsap.to(image, { autoAlpha: 1, duration: 0.3 }),
+      });
 
       ScrollTrigger.create({
         trigger: heading,
