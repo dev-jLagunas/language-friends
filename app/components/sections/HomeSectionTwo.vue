@@ -56,7 +56,7 @@ onBeforeUnmount(() => {
         <h2
           class="panel__number opacity-30 font-extralight text-9xl dark:text-light-primary desktop:text-9x absolute -top-1 left-4 md:left-10"
         >
-          4
+          4.
         </h2>
 
         <div class="panel__content px-8 md:mx-8 desktop:w-2/3">
@@ -74,7 +74,7 @@ onBeforeUnmount(() => {
           />
 
           <button
-            class="border border-dashed border-dark-primary px-6 py-1 mr-auto"
+            class="border border-dashed border-dark-primary px-6 py-1 md:text-2xl dark:border-light-primary"
           >
             {{ $t("ui.cta") }}
           </button>
@@ -87,10 +87,10 @@ onBeforeUnmount(() => {
         <h2
           class="opacity-30 font-extralight text-9xl dark:text-light-primary desktop:text-9xl absolute -top-1 left-4"
         >
-          5
+          5.
         </h2>
 
-        <div class="panel__content md:text-4xl px-8 md:mx-8 desktop:w-2/3">
+        <div class="panel__content px-8 md:mx-8 desktop:w-2/3">
           <h3 class="font-bold text-2xl leading-6 mb-2 md:text-4xl md:mb-4">
             {{ $t("homeSectionTwo.sectionB.title") }}
           </h3>
@@ -104,7 +104,7 @@ onBeforeUnmount(() => {
             class="w-3/4 md:w-1/2 max-w-95"
           />
           <button
-            class="border border-dashed border-dark-primary px-6 py-1 mx-auto place-items-center"
+            class="border border-dashed border-dark-primary px-6 py-1 mx-auto place-items-center md:text-2xl dark:border-light-primary"
           >
             {{ $t("ui.cta") }}
           </button>
@@ -117,10 +117,10 @@ onBeforeUnmount(() => {
         <h2
           class="panel__number opacity-30 font-extralight text-9xl dark:text-light-primary desktop:text-9xl absolute -top-1 left-4"
         >
-          6
+          6.
         </h2>
 
-        <div class="panel__content md:text-4xl px-8 md:mx-8 desktop:w-2/3">
+        <div class="panel__content px-8 md:mx-8 desktop:w-2/3">
           <h3 class="font-bold text-2xl leading-6 mb-2 md:text-4xl md:mb-4">
             {{ $t("homeSectionTwo.sectionC.title") }}
           </h3>
@@ -134,7 +134,7 @@ onBeforeUnmount(() => {
             class="w-3/4 md:w-1/2 max-w-95"
           />
           <button
-            class="border border-dashed border-dark-primary px-6 py-1 mx-auto place-items-center"
+            class="border border-dashed border-dark-primary px-6 py-1 mx-auto place-items-center mr-auto md:text-2xl dark:border-light-primary"
           >
             {{ $t("ui.cta") }}
           </button>

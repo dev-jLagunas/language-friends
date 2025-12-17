@@ -60,47 +60,117 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <section ref="sectionRef">
-    <div class="panel plain">Meet The Language Friends</div>
+  <section ref="sectionRef" class="font-yomogi relative">
+    <div class="text-center my-8 font-bold text-xl md:text-4xl md:my-16">
+      {{ $t("homeSectionThree.title") }}
+    </div>
 
     <div class="row-wrap">
       <div class="row">
         <div class="left">
-          <h1>Moko</h1>
+          <h1 class="font-black text-6xl text-center">
+            {{ $t("homeSectionThree.moko.name") }}
+          </h1>
+          <img
+            src="/images/moko/moko-hello-1.png"
+            alt=""
+            class="lg:max-w-100 md:mx-auto"
+          />
         </div>
-        <div class="right border-2 h-120 place-content-center">
-          Hi, I’m Moko. I love moving my body, riding my bike, and exploring the
-          world around me. I learn English by doing everyday things and noticing
-          what’s happening around me. Sometimes I make mistakes, and that’s
-          okay. Learning is more fun when we take it one step at a time.
+        <div
+          class="right h-120 place-content-center bg-moko-blue/50 leading-5 px-2 shadow-sm relative sm:px-8"
+        >
+          <p
+            class="opacity-30 top-0 left-4 text-9xl absolute dark:text-light-primary"
+          >
+            7.
+          </p>
+          <h4 class="font-bold text-lg md:text-4xl">
+            {{ $t("homeSectionThree.about.moko") }}
+          </h4>
+          <p class="md:text-2xl md:leading-6 md:mt-2">
+            {{ $t("homeSectionThree.moko.text") }}
+          </p>
+
+          <button
+            class="border border-dashed border-dark-primary mt-4 px-6 py-1 md:text-2xl dark:border-light-primary"
+          >
+            {{ $t("ui.cta") }}
+          </button>
         </div>
       </div>
 
       <div class="row">
         <div class="left">
-          <h1>Niko</h1>
+          <h1 class="font-black text-6xl text-center">
+            {{ $t("homeSectionThree.niko.name") }}
+          </h1>
+          <img
+            src="/images/niko/niko-hello-1.png"
+            alt=""
+            class="lg:max-w-100 md:mx-auto"
+          />
         </div>
-        <div class="right h-120 place-content-center">
-          Hello, I’m Niko. I’m curious and I like asking questions about new
-          things. I enjoy learning English through simple words and familiar
-          situations. I don’t rush, and I don’t worry about being perfect. I
-          just keep listening, trying, and growing.
+        <div
+          class="right h-120 place-content-center bg-niko-purple/50 leading-5 px-2 shadow-sm relative sm:px-8"
+        >
+          <p
+            class="opacity-30 top-0 left-4 text-9xl absolute dark:text-light-primary"
+          >
+            8.
+          </p>
+          <h4 class="font-bold text-lg md:text-4xl">
+            {{ $t("homeSectionThree.about.niko") }}
+          </h4>
+          <p class="md:text-2xl md:leading-6 md:mt-2">
+            {{ $t("homeSectionThree.niko.text") }}
+          </p>
+          <button
+            class="border border-dashed border-dark-primary mt-4 px-6 py-1 md:text-2xl dark:border-light-primary"
+          >
+            {{ $t("ui.cta") }}
+          </button>
         </div>
       </div>
 
       <div class="row">
         <div class="left">
-          <h1>Okja</h1>
+          <h1 class="font-black text-6xl text-center">
+            {{ $t("homeSectionThree.okja.name") }}
+          </h1>
+          <img
+            src="/images/okja/okja-hello-1.png"
+            alt=""
+            class="lg:max-w-100 md:mx-auto"
+          />
         </div>
-        <div class="right h-120 place-content-center">
-          I’m Okja. I’m calm, thoughtful, and I like to take my time. I learn
-          English by watching, listening, and repeating what I hear. There’s no
-          pressure and no tests here. Just stories, feelings, and gentle
-          learning together.
+        <div
+          class="right h-120 place-content-center bg-okja-yellow/50 leading-5 px-2 shadow-sm relative sm:px-8"
+        >
+          <p
+            class="opacity-30 top-0 left-4 text-9xl absolute dark:text-light-primary"
+          >
+            9.
+          </p>
+          <h4 class="font-bold text-lg md:text-4xl">
+            {{ $t("homeSectionThree.about.okja") }}
+          </h4>
+          <p class="md:text-2xl md:leading-6 md:mt-2">
+            {{ $t("homeSectionThree.okja.text") }}
+          </p>
+          <button
+            class="border border-dashed border-dark-primary mt-4 px-6 py-1 md:text-2xl dark:border-light-primary"
+          >
+            {{ $t("ui.cta") }}
+          </button>
         </div>
       </div>
     </div>
-
+    <h5
+      class="text-6xl font-bold absolute bottom-20 left-1/2 md:bottom-96 md:text-9xl"
+    >
+      Our Books
+    </h5>
     <div style="height: 100vh"></div>
   </section>
 </template>
@@ -108,7 +178,7 @@ onBeforeUnmount(() => {
 <style scoped>
 .row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding: 1rem;
   border-top: dashed 1px var(--mid);
 }
@@ -124,12 +194,5 @@ onBeforeUnmount(() => {
 .pin-spacer {
   /* to get around an odd browser rounding issue that happens when it gets converted to pixels */
   width: 40% !important;
-}
-
-h1 {
-  padding: 0;
-  margin: 0;
-  font-size: 2rem;
-  border: 2px solid red;
 }
 </style>

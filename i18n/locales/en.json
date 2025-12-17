@@ -70,5 +70,25 @@
       "title": "English Through Everyday Life",
       "text": "Children learn best when language feels useful and familiar. The Language Friends focuses on everyday actions like eating, playing, and going outside so English feels natural, not academic."
     }
+  },
+  "homeSectionThree": {
+    "title": "Meet The Language Friends!",
+    "moko": {
+      "name": "Moko",
+      "text": "Moko is adventurous and curious. He loves taking walks, exploring new places, and trying fun things."
+    },
+    "niko": {
+      "name": "Niko",
+      "text": "Niko is gentle and kind. She enjoys quiet moments, learning new things, and helping her friends."
+    },
+    "okja": {
+      "name": "Okja",
+      "text": "Okja is energetic and playful. He’s always moving, making noise, and turning everyday moments into fun."
+    },
+    "about": {
+      "moko": "About Moko",
+      "niko": "About Niko",
+      "okja": "About Okja"
+    }
   }
 }
