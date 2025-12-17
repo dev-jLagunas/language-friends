@@ -41,7 +41,7 @@ onBeforeUnmount(() => {
 <template>
   <section ref="container" class="relative overflow-hidden">
     <div ref="wrapper" class="wrapper">
-      <section class="panel section bg-moko-blue/50 place-content-center">
+      <section class="panel section place-content-start">
         <h2 class="panel__number">A</h2>
 
         <div class="panel__content md:text-4xl">
@@ -57,7 +57,7 @@ onBeforeUnmount(() => {
         </div>
       </section>
 
-      <section class="panel section bg-niko-purple/50 place-content-center">
+      <section class="panel section bg-moko-blue/50 place-content-center">
         <h2 class="panel__number">B</h2>
 
         <div class="panel__content">
@@ -72,7 +72,7 @@ onBeforeUnmount(() => {
         </div>
       </section>
 
-      <section class="panel section bg-okja-yellow/50 place-content-center">
+      <section class="panel section bg-niko-purple place-content-center">
         <h2 class="panel__number">C</h2>
 
         <div class="panel__content">
@@ -87,7 +87,7 @@ onBeforeUnmount(() => {
         </div>
       </section>
 
-      <section class="panel section place-content-center">
+      <section class="panel section bg-okja-yellow place-content-center">
         <h2 class="panel__number">D</h2>
 
         <div class="panel__content">

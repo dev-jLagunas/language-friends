@@ -15,8 +15,8 @@ onMounted(() => {
   const slides = gsap.utils.toArray<HTMLElement>(".slide");
   const delay = 0.5;
 
-  const depth = window.matchMedia("(width >= 768px)").matches ? -300 : -150;
-
+  const height = 500;
+  const depth = -height / 2;
   const transformOrigin = `center center ${depth}px`;
 
   const tl = gsap.timeline({
@@ -71,14 +71,14 @@ onMounted(() => {
       class="wrapper place-content-start xl:grid xl:grid-cols-2 xl:place-items-center xl:place-content-center"
     >
       <div class="flex flex-col items-center">
-        <img
+        <!-- <img
           src="/images/everyone/cats-together-bike.png"
           alt=""
-          class="h-auto w-2/5 md:w-1/6 xl:w-3/4"
-        />
+          class="h-auto w-2/6 md:w-1/6 xl:w-3/4"
+        /> -->
         <h2
           :class="heroTitleFont"
-          class="text-4xl text-dark-primary leading-9 dark:text-light-primary text-center mx-auto mb-4 w-fit px-8 py-1 xl:text-6xl"
+          class="text-4xl text-dark-primary leading-8 dark:text-light-primary text-center mx-auto mb-4 w-fit px-8 py-1 xl:text-6xl"
         >
           {{ $t("firstTime.title") }}
         </h2>
@@ -88,9 +88,17 @@ onMounted(() => {
           class="slide center bg-moko-blue/50 flex flex-col justify-center items-center shadow-lg"
         >
           <div
-            class="font-yomogi text-dark-primary flex flex-col justify-center items-center gap-2"
+            class="font-yomogi text-dark-primary flex flex-col justify-center items-start gap-2 relative"
           >
-            <figure class="w-full h-30 md:h-75 xl:h-100">
+            <p
+              class="absolute -top-15 -left-2 opacity-30 font-extralight text-6xl dark:text-light-primary desktop:text-9xl desktop:-top-30"
+            >
+              1.
+            </p>
+            <h2 class="font-bold text-2xl md:text-3xl dark:text-light-primary">
+              {{ $t("firstTime.what.title") }}
+            </h2>
+            <figure class="w-full h-60 md:h-75 xl:h-100">
               <img
                 src="/images/mockups/mon-and-son1.png"
                 alt=""
@@ -98,9 +106,6 @@ onMounted(() => {
               />
             </figure>
 
-            <h2 class="font-bold text-lg md:text-3xl dark:text-light-primary">
-              {{ $t("firstTime.what.title") }}
-            </h2>
             <p
               class="leading-5 text-base md:text-3xl md:leading-8 dark:text-light-primary"
             >
@@ -113,18 +118,26 @@ onMounted(() => {
           class="slide center bg-niko-purple/50 flex flex-col justify-center items-center shadow-lg"
         >
           <div
-            class="font-yomogi text-dark-primary flex flex-col justify-center items-center gap-2"
+            class="font-yomogi text-dark-primary flex flex-col justify-center items-start gap-2 relative"
           >
-            <figure class="w-full h-30 md:h-75 xl:h-100">
+            <p
+              class="absolute -top-15 -left-2 opacity-30 font-extralight text-6xl dark:text-light-primary desktop:text-9xl desktop:-top-30"
+            >
+              2.
+            </p>
+            <h2
+              class="font-bold text-2xl text-center md:text-3xl dark:text-light-primary"
+            >
+              {{ $t("firstTime.who.title") }}
+            </h2>
+            <figure class="w-full h-60 md:h-75 xl:h-100">
               <img
                 src="/images/mockups/mom-and-son2.png"
                 alt=""
                 class="w-full h-full object-cover"
               />
             </figure>
-            <h2 class="font-bold text-lg md:text-3xl dark:text-light-primary">
-              {{ $t("firstTime.who.title") }}
-            </h2>
+
             <p
               class="leading-5 text-base md:text-3xl md:leading-8 dark:text-light-primary"
             >
@@ -137,18 +150,24 @@ onMounted(() => {
           class="slide center bg-okja-yellow/50 flex flex-col justify-center items-centers shadow-lg"
         >
           <div
-            class="font-yomogi text-dark-primary flex flex-col justify-center items-center gap-2"
+            class="font-yomogi text-dark-primary flex flex-col justify-center items-start gap-2 relative"
           >
-            <figure class="w-full h-30 md:h-75 xl:h-100">
+            <p
+              class="absolute -top-15 -left-2 opacity-30 font-extralight text-6xl dark:text-light-primary desktop:text-9xl desktop:-top-30"
+            >
+              3.
+            </p>
+            <h2 class="font-bold text-xl md:text-3xl dark:text-light-primary">
+              {{ $t("firstTime.why.title") }}
+            </h2>
+            <figure class="w-full h-60 md:h-75 xl:h-100">
               <img
                 src="/images/mockups/mom-and-son3.png"
                 alt=""
                 class="w-full h-full object-cover"
               />
             </figure>
-            <h2 class="font-bold text-lg md:text-3xl dark:text-light-primary">
-              {{ $t("firstTime.why.title") }}
-            </h2>
+
             <p
               class="leading-5 text-base md:text-3xl md:leading-8 dark:text-light-primary"
             >
@@ -174,7 +193,7 @@ onMounted(() => {
 
 .slider {
   width: 300px;
-  height: 300px;
+  height: 500px;
   position: relative;
   perspective: 500px;
   transform-style: preserve-3d;

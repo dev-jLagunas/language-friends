@@ -2,6 +2,7 @@
 
 <template>
   <main>
+    <!-- <ScrollPath /> -->
     <HomeSectionOne />
     <HomeSectionTwo />
     <HomeSectionThree />
