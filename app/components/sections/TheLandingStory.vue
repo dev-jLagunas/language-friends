@@ -7,6 +7,7 @@
     <HomeSectionThree />
     <HomeSectionFour />
     <HomeSectionFive />
+    <HomeSectionSix />
   </main>
 </template>
 
