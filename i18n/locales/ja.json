@@ -43,6 +43,10 @@
     "closeMenu": "メニューをとじる",
     "cta": "くわしく見る"
   },
+  "tour": {
+    "intro": "スクロールしながら、The Language Friendsについて簡単にご紹介します。",
+    "instruction": "下にスクロールするだけで大丈夫です。"
+  },
   "firstTime": {
     "title": "はじめてのかたへ",
     "what": {

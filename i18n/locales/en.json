@@ -39,6 +39,10 @@
     "okja": "Okja",
     "okjaGreet": "Hiya, I'm Okja"
   },
+  "tour": {
+    "intro": "Take a short interactive tour to learn what The Language Friends is all about.",
+    "instruction": "Just scroll down and follow along."
+  },
   "ui": {
     "closeMenu": "Close Menu",
     "cta": "Learn more"

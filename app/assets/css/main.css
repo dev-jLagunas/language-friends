@@ -17,7 +17,10 @@ body {
   /* BRAND COLORS */
   --color-moko-blue: #0077ff;
   --color-okja-yellow: #ffc800;
+  --color-okja-yellow-soft: #ffd35a;
   --color-niko-purple: #9a42ff;
+  --color-niko-purple-soft: #c7a3ff;
+  --color-moko-blue-soft: #7fb6ff;
   --color-dark-primary: #333333;
   --color-dark-secondary: #222222;
   --color-light-primary: #ffffff;
@@ -62,6 +65,9 @@ body {
   @apply flex flex-col items-center justify-center;
 }
 
+@utility flex-col-center-start {
+  @apply flex flex-col justify-center items-start;
+}
 @utility theme-toggle-styles {
   @apply bg-light-primary text-dark-primary dark:bg-dark-secondary dark:text-light-primary;
 }
@@ -71,7 +77,7 @@ body {
 }
 
 @utility dashed-btn {
-  @apply border border-dashed py-1 px-4 rounded-sm shadow-sm hover:shadow-xl hover:border-solid transition-all duration-300  hover:cursor-pointer;
+  @apply border border-dashed border-dark-primary dark:border-light-primary py-1 px-4 rounded-sm shadow-sm hover:shadow-xl hover:border-solid transition-all duration-300  hover:cursor-pointer;
 }
 
 @utility dashed-border {
@@ -91,4 +97,8 @@ body {
 ********************************************/
 .mobile-footer-wrapper {
   @apply border-t border-dark-primary/20 shadow-sm dark:border-light-primary/20;
+}
+
+.section-big-numbers {
+  @apply opacity-30 font-extralight text-8xl dark:text-light-primary;
 }

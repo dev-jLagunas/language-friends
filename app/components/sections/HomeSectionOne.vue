@@ -3,8 +3,8 @@ const { locale } = useI18n();
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { onMounted } from "vue";
-let intervalId: number;
 
+// Cherry Font Logic
 const heroTitleFont = computed(() =>
   locale.value === "ja" ? "font-cherry" : "font-yomogi"
 );
@@ -65,37 +65,46 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="relative">
+  <section class="relative font-yomogi">
+    <img
+      src="/images/bg-icons/abc-bg.png"
+      alt="bg-icon-img"
+      class="absolute opacity-10 -left-10 -rotate-12 w-1/2 md:w-1/3"
+    />
+    <img
+      src="/images/bg-icons/whiteboard-bg.png"
+      alt="bg-icon-img"
+      class="absolute opacity-10 bottom-10 right-0 rotate-12 w-1/2 md:-bottom-10 md:w-1/3"
+    />
     <div class="spacer"></div>
     <div
-      class="wrapper place-content-start xl:grid xl:grid-cols-2 xl:place-items-center xl:place-content-center"
+      class="wrapper place-content-start xl:grid xl:grid-cols-2 xl:place-content-center"
     >
-      <div class="flex flex-col items-center">
-        <!-- <img
-          src="/images/everyone/cats-together-bike.png"
-          alt=""
-          class="h-auto w-2/6 md:w-1/6 xl:w-3/4"
-        /> -->
+      <div class="flex-col-center-center mb-4 md:mb-8">
         <h2
           :class="heroTitleFont"
-          class="text-4xl text-dark-primary leading-8 dark:text-light-primary text-center mx-auto mb-4 w-fit px-8 py-1 xl:text-6xl"
+          class="text-4xl font-bold text-center mx-auto mb-2 md:text-6xl md:mb-4"
         >
           {{ $t("firstTime.title") }}
         </h2>
+        <p class="text-center px-4 leading-5 xs:w-3/4 md:text-2xl md:leading-7">
+          {{ $t("tour.intro") }}
+        </p>
+        <div class="text-center mt-4 hidden xl:flex">
+          <button class="dashed-btn">{{ $t("ui.cta") }}</button>
+        </div>
       </div>
       <div class="slider mx-auto">
         <div
-          class="slide center bg-moko-blue/50 flex flex-col justify-center items-center shadow-lg"
+          class="slide center bg-moko-blue-soft flex-col-center-center shadow-lg"
         >
-          <div
-            class="font-yomogi text-dark-primary flex flex-col justify-center items-start gap-2 relative"
-          >
+          <div class="text-dark-primary space-y-2 relative">
             <p
-              class="absolute -top-15 -left-2 opacity-30 font-extralight text-6xl dark:text-light-primary desktop:text-9xl desktop:-top-30"
+              class="absolute -top-26 -left-2 section-big-numbers desktop:-top-30"
             >
               1.
             </p>
-            <h2 class="font-bold text-2xl md:text-3xl dark:text-light-primary">
+            <h2 class="font-bold text-2xl md:text-4xl">
               {{ $t("firstTime.what.title") }}
             </h2>
             <figure class="w-full h-60 md:h-75 xl:h-100">
@@ -106,28 +115,24 @@ onMounted(() => {
               />
             </figure>
 
-            <p
-              class="leading-5 text-base md:text-3xl md:leading-8 dark:text-light-primary"
-            >
+            <p class="leading-5 text-lg md:leading-9 md:text-3xl">
               {{ $t("firstTime.what.text") }}
             </p>
           </div>
         </div>
 
         <div
-          class="slide center bg-niko-purple/50 flex flex-col justify-center items-center shadow-lg"
+          class="slide center bg-niko-purple-soft flex-col-center-center shadow-lg"
         >
           <div
-            class="font-yomogi text-dark-primary flex flex-col justify-center items-start gap-2 relative"
+            class="text-dark-primary flex flex-col justify-center items-start gap-2 relative"
           >
             <p
-              class="absolute -top-15 -left-2 opacity-30 font-extralight text-6xl dark:text-light-primary desktop:text-9xl desktop:-top-30"
+              class="absolute -top-26 -left-2 section-big-numbers desktop:-top-30"
             >
               2.
             </p>
-            <h2
-              class="font-bold text-2xl text-center md:text-3xl dark:text-light-primary"
-            >
+            <h2 class="font-bold text-2xl md:text-4xl">
               {{ $t("firstTime.who.title") }}
             </h2>
             <figure class="w-full h-60 md:h-75 xl:h-100">
@@ -138,26 +143,22 @@ onMounted(() => {
               />
             </figure>
 
-            <p
-              class="leading-5 text-base md:text-3xl md:leading-8 dark:text-light-primary"
-            >
+            <p class="leading-5 text-lg md:leading-9 md:text-3xl">
               {{ $t("firstTime.who.text") }}
             </p>
           </div>
         </div>
 
         <div
-          class="slide center bg-okja-yellow/50 flex flex-col justify-center items-centers shadow-lg"
+          class="slide center bg-okja-yellow-soft flex-col-center-center shadow-lg"
         >
-          <div
-            class="font-yomogi text-dark-primary flex flex-col justify-center items-start gap-2 relative"
-          >
+          <div class="text-dark-primary flex-col-center-start gap-2 relative">
             <p
-              class="absolute -top-15 -left-2 opacity-30 font-extralight text-6xl dark:text-light-primary desktop:text-9xl desktop:-top-30"
+              class="absolute -top-26 -left-2 section-big-numbers desktop:-top-30"
             >
               3.
             </p>
-            <h2 class="font-bold text-xl md:text-3xl dark:text-light-primary">
+            <h2 class="font-bold text-2xl md:text-4xl">
               {{ $t("firstTime.why.title") }}
             </h2>
             <figure class="w-full h-60 md:h-75 xl:h-100">
@@ -168,16 +169,14 @@ onMounted(() => {
               />
             </figure>
 
-            <p
-              class="leading-5 text-base md:text-3xl md:leading-8 dark:text-light-primary"
-            >
+            <p class="leading-5 text-lg md:leading-9 md:text-3xl">
               {{ $t("firstTime.why.text") }}
             </p>
           </div>
         </div>
       </div>
-      <div class="text-center mt-4">
-        <button class="border-2 xl border-dashed px-4">Learn More</button>
+      <div class="text-center mt-4 xl:hidden">
+        <button class="dashed-btn">Learn More</button>
       </div>
     </div>
 
@@ -189,6 +188,7 @@ onMounted(() => {
 .wrapper {
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 
 .slider {
