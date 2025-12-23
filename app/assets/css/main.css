@@ -1,5 +1,4 @@
 @import "tailwindcss";
-
 @custom-variant dark (&:where(.dark, .dark *));
 
 /********************************************
@@ -15,7 +14,7 @@ body {
 ********************************************/
 
 @theme {
-  /* brand colors */
+  /* BRAND COLORS */
   --color-moko-blue: #0077ff;
   --color-okja-yellow: #ffc800;
   --color-niko-purple: #9a42ff;
@@ -32,25 +31,52 @@ body {
   --font-cherry: "Cherry Bomb One", sans-serif;
   --font-yomogi: "Yomogi", cursive;
   --font-work: "Work Sans", sans-serif;
+
   /* BREAKPOINTS */
   --breakpoint-desktop: 968px;
   --breakpoint-xs: 425px;
 }
 
 /********************************************
-        Reusable Custom Tailwind Classes
+        UTILITY CLASSES
 ********************************************/
 
 /* Flex */
-@utility flex-row-between {
+@utility flex-row-between-center {
   @apply flex flex-row justify-between items-center;
 }
 
+@utility flex-row-evenly-center {
+  @apply flex flex-row justify-evenly items-center;
+}
+
+@utility flex-row-center-center {
+  @apply flex flex-row justify-center items-center;
+}
+
+@utility flex-col-center-center {
+  @apply flex flex-col items-center justify-center;
+}
+
+@utility theme-toggle-styles {
+  @apply bg-light-primary text-dark-primary dark:bg-dark-secondary dark:text-light-primary;
+}
+
+@utility group-hover-rotate {
+  @apply group-hover:rotate-5 group-hover:scale-110 transition-transform;
+}
+
+@utility dashed-btn {
+  @apply border border-dashed py-1 px-4 rounded-sm shadow-sm hover:shadow-xl hover:border-solid transition-all duration-300  hover:cursor-pointer;
+}
+
 /********************************************
-        Custom Classes
+        CUSTOM CLASSES
 ********************************************/
-@layer utilities {
-  .bg-moko-textured {
-    background: linear-gradient(180deg, #0077ff 0%, #0a7fff 50%, #0072f0 100%);
-  }
+
+/********************************************
+        MOBILE FOOTER
+********************************************/
+.mobile-footer-wrapper {
+  @apply border-t border-dark-primary/20 shadow-sm dark:border-light-primary/20;
 }
