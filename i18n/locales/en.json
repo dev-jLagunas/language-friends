@@ -32,11 +32,11 @@
     "prompt3": "We enjoy English together."
   },
   "characters": {
-    "moko": "moko",
+    "moko": "Moko",
     "mokoGreet": "Hi, I'm Moko",
-    "niko": "niko",
+    "niko": "Niko",
     "nikoGreet": "Hi, I'm Niko",
-    "okja": "okja",
+    "okja": "Okja",
     "okjaGreet": "Hiya, I'm Okja"
   },
   "ui": {
