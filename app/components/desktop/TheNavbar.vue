@@ -1,26 +1,24 @@
 <script setup lang="ts">
-import type MobileNavHeaderVue from "../mobile/MobileNavHeader.vue";
+import { ref } from "vue";
 
-const toggleColorMode = () => {
-  colorMode.preference = isDark.value ? "light" : "dark";
+const isStartOpen = ref(false);
+
+const toggleStart = () => {
+  isStartOpen.value = !isStartOpen.value;
 };
 
-const colorMode = useColorMode();
-const { locales, setLocale, locale } = useI18n();
-
-const switchableLocales = computed(() =>
-  locales.value.filter((l) => l.code !== locale.value)
-);
-
-const isDark = computed(() => colorMode.value === "dark");
+const closeStart = () => {
+  isStartOpen.value = false;
+};
 </script>
 
 <template>
   <div>
-    <MobileNavHeader class="" />
+    <MobileNavHeader />
+
     <nav
       aria-label="デスクトップナビゲーション"
-      class="hidden font-yomogi desktop:flex flex-col"
+      class="hidden font-yomogi md:block"
     >
       <ul
         class="flex justify-around items-center border-b w-full border-b-dark-primary/20 py-4 dark:border-b-light-primary/20"
@@ -33,83 +31,83 @@ const isDark = computed(() => colorMode.value === "dark");
             class="flex flex-col items-center"
             active-class="border-b border-dashed border-dark-primary dark:border-light-primary"
           >
-            <Icon
-              name="heroicons:home"
-              class="group-hover:rotate-5 group-hover:scale-110 transition-transform"
-            />
-            <span class="hover:font-bold lg:text-lg">{{
-              $t("footer.nav.home")
-            }}</span>
+            <Icon name="heroicons:home" class="text-3xl group-hover-rotate" />
+            <span class="hover:font-bold lg:text-lg">
+              {{ $t("footer.nav.home") }}
+            </span>
           </NuxtLink>
         </li>
 
-        <!-- 2. First time customers -->
-        <li class="group">
-          <NuxtLink
-            :to="$localePath('/new-customers')"
-            :aria-label="$t('footer.menu.start')"
-            class="flex flex-col items-center"
-            active-class="border-b border-dashed border-moko-blue"
+        <!-- Start Here (click dropdown) -->
+        <li class="relative">
+          <button
+            type="button"
+            @click="toggleStart"
+            @mouseenter="isStartOpen = true"
+            @mouseleave="isStartOpen = false"
+            class="flex-col-center-center group focus:outline-none"
+            aria-haspopup="true"
+            :aria-expanded="isStartOpen"
           >
             <Icon
-              name="heroicons:information-circle"
-              class="text-moko-blue group-hover:rotate-5 group-hover:scale-110 transition-transform"
+              name="heroicons:information-circle  group-hover-rotate"
+              class="text-moko-blue text-3xl"
             />
-            <span class="hover:font-bold lg:text-lg">{{
-              $t("footer.menu.start")
-            }}</span>
-          </NuxtLink>
-        </li>
 
-        <!-- 3. About us -->
-        <li class="group">
-          <NuxtLink
-            :to="$localePath('/about-us')"
-            :aria-label="$t('footer.nav.about')"
-            class="flex flex-col items-center"
-            active-class="border-b border-dashed border-soft-pink"
+            <div class="flex items-center gap-1">
+              <span class="hover:font-bold lg:text-lg">
+                {{ $t("footer.menu.start") }}
+              </span>
+
+              <!-- Caret -->
+              <Icon
+                name="heroicons:chevron-down"
+                class="w-4 h-4 transition-transform"
+                :class="{ 'rotate-180': isStartOpen }"
+              />
+            </div>
+          </button>
+
+          <!-- Dropdown -->
+          <ul
+            v-show="isStartOpen"
+            @mouseenter="isStartOpen = true"
+            @mouseleave="isStartOpen = false"
+            class="absolute top-full pt-3 w-48 bg-white dark:bg-dark-primary shadow-lg rounded-sm z-50"
           >
-            <Icon
-              name="ph:cat"
-              class="text-soft-pink group-hover:rotate-5 group-hover:scale-110 transition-transform"
-            />
-            <span class="hover:font-bold lg:text-lg">{{
-              $t("footer.nav.about")
-            }}</span>
-          </NuxtLink>
+            <li>
+              <NuxtLink
+                :to="$localePath('/new-customers')"
+                @click="closeStart"
+                class="block px-4 py-2 hover:bg-moko-blue/10"
+              >
+                {{ $t("footer.menu.firstTime") }}
+              </NuxtLink>
+            </li>
+
+            <li>
+              <NuxtLink
+                :to="$localePath('/about-us')"
+                @click="closeStart"
+                class="block px-4 py-2 hover:bg-niko-purple/10"
+              >
+                {{ $t("footer.nav.about") }}
+              </NuxtLink>
+            </li>
+
+            <li>
+              <NuxtLink
+                :to="$localePath('/character-info')"
+                @click="closeStart"
+                class="block px-4 py-2 hover:bg-okja-yellow/10"
+              >
+                {{ $t("footer.menu.characters") }}
+              </NuxtLink>
+            </li>
+          </ul>
         </li>
 
-        <!-- 5. Characters -->
-        <li class="group">
-          <NuxtLink
-            :to="$localePath('/character-info')"
-            :aria-label="$t('footer.menu.characters')"
-            class="flex flex-col items-center"
-            active-class="border-b border-dashed border-niko-purple"
-          >
-            <Icon
-              name="heroicons:face-smile"
-              class="text-niko-purple group-hover:rotate-5 group-hover:scale-110 transition-transform"
-            />
-            <span class="hover:font-bold lg:text-lg">{{
-              $t("footer.menu.characters")
-            }}</span>
-          </NuxtLink>
-        </li>
-
-        <!-- 4. Logo / Brand -->
-        <li class="group">
-          <NuxtLink
-            :to="$localePath('/')"
-            aria-label="The Language Friends"
-            class="flex flex-col items-center"
-          >
-            <!-- <Icon name="heroicons:heart" /> -->
-            <span class="font-bold">The Language Friends</span>
-          </NuxtLink>
-        </li>
-
-        <!-- 6. Book series -->
+        <!-- 3. Books -->
         <li class="group">
           <NuxtLink
             :to="$localePath('/books-display')"
@@ -118,16 +116,16 @@ const isDark = computed(() => colorMode.value === "dark");
             active-class="border-b border-dashed border-sunny-orange"
           >
             <Icon
-              name="heroicons:book-open"
-              class="text-sunny-orange group-hover:rotate-5 group-hover:scale-110 transition-transform"
+              name="heroicons:book-open  group-hover-rotate"
+              class="text-sunny-orange text-3xl"
             />
-            <span class="hover:font-bold lg:text-lg">{{
-              $t("footer.nav.books")
-            }}</span>
+            <span class="hover:font-bold lg:text-lg">
+              {{ $t("footer.nav.books") }}
+            </span>
           </NuxtLink>
         </li>
 
-        <!-- 7. Kids corner -->
+        <!-- 4. Kids Corner -->
         <li class="group">
           <NuxtLink
             :to="$localePath('/kids-corner')"
@@ -137,15 +135,15 @@ const isDark = computed(() => colorMode.value === "dark");
           >
             <Icon
               name="heroicons:puzzle-piece"
-              class="text-okja-yellow group-hover:rotate-5 group-hover:scale-110 transition-transform"
+              class="text-okja-yellow text-3xl group-hover-rotate"
             />
-            <span class="hover:font-bold lg:text-lg">{{
-              $t("footer.menu.kids")
-            }}</span>
+            <span class="hover:font-bold lg:text-lg">
+              {{ $t("footer.menu.kids") }}
+            </span>
           </NuxtLink>
         </li>
 
-        <!-- 8. Contact -->
+        <!-- 5. Contact -->
         <li class="group">
           <NuxtLink
             :to="$localePath('/contact-us')"
@@ -154,149 +152,25 @@ const isDark = computed(() => colorMode.value === "dark");
             active-class="border-b border-dashed border-green-signifier"
           >
             <Icon
-              name="heroicons:envelope"
-              class="text-green-signifier group-hover:rotate-5 group-hover:scale-110 transition-transform"
+              name="heroicons:envelope  group-hover-rotate"
+              class="text-green-signifier text-3xl"
             />
-            <span class="hover:font-bold lg:text-lg">{{
-              $t("footer.menu.contact")
-            }}</span>
+            <span class="hover:font-bold lg:text-lg">
+              {{ $t("footer.menu.contact") }}
+            </span>
           </NuxtLink>
         </li>
-
-        <!-- 9. Language toggle -->
-      </ul>
-      <div class="group flex items-center mt-4 w-fit mx-auto gap-8">
-        <button
-          v-for="l in switchableLocales"
-          :key="l.code"
-          type="button"
-          @click="setLocale(l.code)"
-          :aria-label="l.name"
-          class="flex flex-col items-center hover:cursor-pointer"
+        <li
+          class="flex-col-center-center gap-2 xl:flex-row-center-center xl:gap-4"
         >
-          <span>{{ l.name }}</span>
-        </button>
+          <ThemeToggleBtn />
+          <LangToggleBtn />
+        </li>
+      </ul>
 
-        <label class="switch">
-          <input
-            checked="true"
-            id="checkbox"
-            type="checkbox"
-            @click="toggleColorMode"
-          />
-          <span class="slider">
-            <div class="star star_1"></div>
-            <div class="star star_2"></div>
-            <div class="star star_3"></div>
-            <svg viewBox="0 0 16 16" class="cloud_1 cloud">
-              <path
-                transform="matrix(.77976 0 0 .78395-299.99-418.63)"
-                fill="#fff"
-                d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"
-              ></path>
-            </svg>
-          </span>
-        </label>
-      </div>
+      <div class="flex items-center mt-4 w-fit mx-auto gap-8"></div>
     </nav>
   </div>
 </template>
 
-<style scoped>
-/* From Uiverse.io by JustCode14 */
-/* Theme Switch */
-/* The switch - the box around the slider */
-.switch {
-  font-size: 10px;
-  position: relative;
-  display: inline-block;
-  width: 4em;
-  height: 2em;
-  border-radius: 30px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #2a2a2a;
-  transition: 0.4s;
-  border-radius: 30px;
-  overflow: hidden;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 1.2em;
-  width: 1.2em;
-  border-radius: 20px;
-  left: 0.5em;
-  bottom: 0.5em;
-  transition: 0.4s;
-  transition-timing-function: cubic-bezier(0.81, -0.04, 0.38, 1.5);
-  box-shadow: inset 8px -4px 0px 0px #fff;
-}
-
-.switch input:checked + .slider {
-  background-color: #0077ff;
-}
-
-.switch input:checked + .slider:before {
-  transform: translateX(1.8em);
-  box-shadow: inset 15px -4px 0px 15px #ffcf48;
-}
-
-.star {
-  background-color: #fff;
-  border-radius: 50%;
-  position: absolute;
-  width: 5px;
-  transition: all 0.4s;
-  height: 5px;
-}
-
-.star_1 {
-  left: 2.5em;
-  top: 0.5em;
-}
-
-.star_2 {
-  left: 2.2em;
-  top: 1.2em;
-}
-
-.star_3 {
-  left: 3em;
-  top: 0.9em;
-}
-
-.switch input:checked ~ .slider .star {
-  opacity: 0;
-}
-
-.cloud {
-  width: 3.5em;
-  position: absolute;
-  bottom: -1.4em;
-  left: -1.1em;
-  opacity: 0;
-  transition: all 0.4s;
-}
-
-.switch input:checked ~ .slider .cloud {
-  opacity: 1;
-}
-</style>
+<style scoped></style>

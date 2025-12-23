@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount } from "vue";
 
+// Scroll
 const showButton = ref(false);
 
 const scrollToTop = () => {
@@ -11,6 +12,7 @@ const onScroll = () => {
   showButton.value = window.scrollY > 300;
 };
 
+// Lifecycle Hooks
 onMounted(() => {
   window.addEventListener("scroll", onScroll);
 });
@@ -21,20 +23,18 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div
-    class="min-h-screen flex flex-col bg-light-primary dark:bg-dark-secondary text-dark-primary dark:text-light-primary"
-  >
+  <div class="theme-toggle-styles min-h-screen">
     <header>
       <TheNavbar />
     </header>
 
-    <main class="flex-1 mt-4 bg-light-primary dark:bg-dark-secondary">
+    <main class="flex-1 mt-4 bg-light-primary">
       <NuxtPage />
     </main>
 
     <footer>
-      <MobileFooter class="desktop:hidden" />
-      <DesktopFooter class="hidden desktop:flex" />
+      <MobileFooter class="md:hidden" />
+      <DesktopFooter class="hidden md:flex" />
     </footer>
     <button
       v-if="showButton"

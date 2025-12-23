@@ -54,6 +54,10 @@ body {
   @apply flex flex-row justify-center items-center;
 }
 
+@utility flex-row-around-center {
+  @apply flex flex-row justify-around items-center;
+}
+
 @utility flex-col-center-center {
   @apply flex flex-col items-center justify-center;
 }
@@ -68,6 +72,10 @@ body {
 
 @utility dashed-btn {
   @apply border border-dashed py-1 px-4 rounded-sm shadow-sm hover:shadow-xl hover:border-solid transition-all duration-300  hover:cursor-pointer;
+}
+
+@utility green-cta-btn {
+  @apply bg-green-signifier px-4 py-1 rounded-sm text-dark-primary font-work transition-all duration-300 ease-in hover:bg-green-signifier/90 hover:cursor-pointer hover:shadow-lg shadow-sm;
 }
 
 /********************************************

@@ -8,7 +8,8 @@
     },
     "menu": {
       "title": "The Language Friends",
-      "start": "Getting Started",
+      "start": "New Visitors",
+      "firstTime": "Take Tour",
       "characters": "Characters",
       "kids": "Kids Corner",
       "contact": "Contact",

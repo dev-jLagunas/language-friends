@@ -108,51 +108,6 @@ onUnmounted(() => {
       </article>
     </section>
 
-    <!-- <div class="grid grid-cols-3 gap-2 px-4">
-      <figure
-        class="bg-moko-blue flex flex-col items-center justify-center py-8 max-h-75"
-      >
-        <img
-          src="/images/moko/moko-hello-1.png"
-          alt=""
-          class="w-full max-w-50"
-        />
-        <figcaption
-          class="font-cherry text-2xl text-light-primary tracking-widest"
-        >
-          {{ $t("characters.moko") }}
-        </figcaption>
-      </figure>
-      <figure
-        class="bg-niko-purple flex flex-col items-center justify-center max-h-75"
-      >
-        <img
-          src="/images/niko/niko-hello-1.png"
-          alt=""
-          class="w-full max-w-50"
-        />
-        <figcaption
-          class="font-cherry text-2xl text-light-primary tracking-widest"
-        >
-          {{ $t("characters.niko") }}
-        </figcaption>
-      </figure>
-      <figure
-        class="bg-okja-yellow flex flex-col items-center justify-center max-h-75"
-      >
-        <img
-          src="/images/okja/okja-hello-1.png"
-          alt=""
-          class="w-full max-w-50"
-        />
-        <figcaption
-          class="font-cherry text-2xl text-light-primary tracking-widest"
-        >
-          {{ $t("characters.okja") }}
-        </figcaption>
-      </figure>
-    </div> -->
-
     <!--*************************************************** 
    *************** BOTTOM GRID************************* -->
     <div class="px-4 space-y-2 mt-4 grid grid-cols-3 gap-4">
