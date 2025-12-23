@@ -1,13 +1,7 @@
 <script setup lang="ts">
-const { locale } = useI18n();
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { onMounted } from "vue";
-
-// Cherry Font Logic
-const heroTitleFont = computed(() =>
-  locale.value === "ja" ? "font-cherry" : "font-yomogi"
-);
 
 onMounted(() => {
   gsap.registerPlugin(ScrollTrigger);
@@ -82,8 +76,7 @@ onMounted(() => {
     >
       <div class="flex-col-center-center mb-4 md:mb-8">
         <h2
-          :class="heroTitleFont"
-          class="text-4xl font-bold text-center mx-auto mb-2 md:text-6xl md:mb-4"
+          class="text-4xl font-bold text-center mx-auto mb-2 md:text-6xl md:mb-4 2xl:text-8xl"
         >
           {{ $t("firstTime.title") }}
         </h2>

@@ -6,7 +6,8 @@
     <HomeSectionOne />
     <HomeSectionTwo />
     <HomeSectionThree />
-    <HomeSectionFour />
+    <HomeSectionFour class="hidden md:block" />
+    <HomeSectionFourMobile class="md:hidden" />
     <!-- <HomeSectionFive /> -->
     <HomeSectionSix />
     <HomeSectionFinal />

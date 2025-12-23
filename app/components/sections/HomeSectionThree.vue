@@ -71,11 +71,17 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <section ref="sectionRef" class="font-yomogi relative">
-    <div class="text-center my-8 font-bold text-xl md:text-4xl md:my-16">
+  <section ref="sectionRef" class="font-yomogi relative xs:mt-40">
+    <h2
+      class="text-4xl font-bold text-center mx-auto px-2 mb-2 md:text-6xl md:mb-4"
+    >
       {{ $t("homeSectionThree.title") }}
-    </div>
-
+    </h2>
+    <p
+      class="text-center px-4 leading-5 mb-4 md:text-2xl md:leading-7 md:mb-16"
+    >
+      {{ $t("tour.intro") }}
+    </p>
     <div class="row-wrap">
       <div class="row">
         <div class="left">
@@ -178,10 +184,15 @@ onBeforeUnmount(() => {
       </div>
     </div>
     <h5
-      class="text-6xl font-bold absolute bottom-20 left-1/2 md:bottom-96 md:text-9xl"
+      class="text-6xl font-bold text-center absolute bottom-20 left-1/2 md:bottom-96 md:text-9xl"
     >
-      Our Books
+      {{ $t("homeSectionThree.books") }}
     </h5>
+    <img
+      src="/images/bg-icons/arrow-bg.png"
+      alt=""
+      class="absolute -bottom-70 -rotate-12"
+    />
     <div style="height: 100vh"></div>
   </section>
 </template>

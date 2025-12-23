@@ -203,6 +203,7 @@ onBeforeUnmount(() => {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: flex-col;
   height: 100vh;
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
@@ -234,7 +235,6 @@ onBeforeUnmount(() => {
 
 .p-wrap {
   position: relative;
-  overflow: hidden;
   width: 50%;
   max-width: 600px;
   height: 80vh;

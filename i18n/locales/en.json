@@ -78,6 +78,7 @@
   },
   "homeSectionThree": {
     "title": "Meet The Language Friends!",
+    "intro": "Get to know The Language Friends and meet the characters who guide children through gentle English learning.",
     "moko": {
       "name": "Moko",
       "text": "Moko is adventurous and curious. He loves taking walks, exploring new places, and trying fun things."
@@ -94,7 +95,8 @@
       "moko": "About Moko",
       "niko": "About Niko",
       "okja": "About Okja"
-    }
+    },
+    "books": "Our Books"
   },
   "homeSectionFour": {
     "title": "Book Series",

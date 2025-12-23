@@ -78,6 +78,7 @@
   },
   "homeSectionThree": {
     "title": "The Language Friends にあってみよう!",
+    "intro": "The Language Friends の仲間たちをご紹介します。やさしく英語の世界へ案内してくれるキャラクターたちです。",
     "moko": {
       "name": "もこ",
       "text": "モコは冒険が大好きで、好奇心いっぱい。おさんぽをしたり、いろいろなことに挑戦するのが好きです。"
@@ -94,7 +95,8 @@
       "moko": "モコについて",
       "niko": "ニコについて",
       "okja": "オクジャについて"
-    }
+    },
+    "books": "私たちの本"
   },
   "homeSectionFour": {
     "title": "えほんシリーズ",
