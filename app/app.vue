@@ -23,7 +23,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="theme-toggle-styles min-h-screen xl:px-10">
+  <div class="theme-toggle-styles min-h-screen">
     <header>
       <TheNavbar />
     </header>

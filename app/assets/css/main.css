@@ -100,5 +100,5 @@ body {
 }
 
 .section-big-numbers {
-  @apply opacity-30 font-extralight text-8xl dark:text-light-primary;
+  @apply opacity-30 font-extralight text-8xl dark:text-light-primary lg:text-9xl;
 }
