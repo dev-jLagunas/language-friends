@@ -101,24 +101,29 @@ onBeforeUnmount(() => {
     <main ref="mainRef">
       <!-- Slide 1: SNS -->
       <section
-        class="panel bg-moko-blue/50 saturate-70 relative place-content-center md:grid md:grid-cols-1 md:place-items-center"
+        class="panel bg-moko-blue-soft relative place-content-center md:grid md:grid-cols-1 md:place-items-center"
       >
-        <h2
-          class="opacity-30 text-7xl md:text-9xl dark:text-light-primary md:absolute md:left-10 md:top-5"
-        >
-          15.
-        </h2>
+        <img
+          src="/images/bg-icons/textbooks-bg.png"
+          alt="background-icon"
+          class="absolute opacity-25 w-40 right-0 rotate-12 top-0 lg:w-1/5"
+        />
+        <img
+          src="/images/bg-icons/whiteboard-light-bg.png"
+          alt="background-icon"
+          class="hidden opacity-25 lg:block lg:-rotate-12 lg:absolute lg:bottom-0 lg:left-0"
+        />
+        <h2 class="section-big-numbers md:absolute md:left-4 md:top-0">15.</h2>
 
         <div class="panel-content">
           <h3 class="font-bold mb-2 text-xl mt-4 xs:text-4xl">
             {{ $t("homeSectionSix.connect.title") }}
           </h3>
-          <p class="leading-5 text-lg xs:text-2xl">
+          <p class="leading-6 text-lg xs:text-2xl">
             {{ $t("homeSectionSix.connect.text") }}
           </p>
-          <!-- Placeholder for big SNS icons -->
           <nav class="sns-links mt-4 md:mt-8" aria-label="Social links">
-            <ul class="flex gap-4 text-2xl md:text-4xl">
+            <ul class="flex gap-4 text-4xl">
               <li>
                 <a
                   href="YOUR_INSTAGRAM_URL"
@@ -156,62 +161,86 @@ onBeforeUnmount(() => {
               </li>
             </ul>
           </nav>
-          <img src="/images/moko/moko-cellphone.png" alt="" class="md:w-1/2" />
+          <img
+            src="/images/moko/moko-cellphone.png"
+            alt=""
+            class="xs:w-1/2 mx-auto"
+          />
         </div>
       </section>
 
       <!-- Slide 2: Contact info -->
       <section
-        class="panel green bg-niko-purple saturate-80 md:place-content-center"
+        class="panel green relative bg-niko-purple-soft place-content-center md:grid md:grid-cols-1 md:place-items-center"
       >
-        <h2
-          class="opacity-30 text-7xl md:text-9xl dark:text-light-primary md:absolute md:left-10 md:top-5"
-        >
-          16.
-        </h2>
+        <img
+          src="/images/bg-icons/textbooks-bg.png"
+          alt="background-icon"
+          class="absolute opacity-25 w-40 right-0 rotate-12 top-0 lg:w-1/5"
+        />
+        <img
+          src="/images/bg-icons/whiteboard-light-bg.png"
+          alt="background-icon"
+          class="hidden opacity-25 lg:block lg:-rotate-12 lg:absolute lg:bottom-0 lg:left-0"
+        />
+        <h2 class="section-big-numbers md:absolute md:left-4 md:top-0">16.</h2>
 
         <div class="panel-content">
           <h3 class="font-bold mb-2 text-xl mt-4 xs:text-4xl">
             {{ $t("homeSectionSix.contact.title") }}
           </h3>
-          <p class="leading-5 text-lg xs:text-2xl md:leading-8">
+          <p class="leading-6 text-lg xs:text-2xl md:leading-8">
             {{ $t("homeSectionSix.contact.description") }}
           </p>
 
-          <ul class="space-y-2 mt-4">
-            <li class="flex flex-col items-start xs:text-xl">
-              <Icon name="mdi:email-outline" class="font-bold" />
-              <span> {{ $t("homeSectionSix.contact.email") }}</span>
+          <ul class="space-y-2 mt-4 md:flex md:gap-2">
+            <li class="xs:text-xl">
+              <span class="font-bold">
+                {{ $t("homeSectionSix.contact.email") }}</span
+              >
+              languagefriends@gmail.com
             </li>
 
-            <li class="flex flex-col items-start xs:text-xl">
-              <Icon name="mdi:phone-outline" />
-              <span> {{ $t("homeSectionSix.contact.phone") }}</span>
+            <li class="xs:text-xl">
+              <span class="font-bold">
+                {{ $t("homeSectionSix.contact.phone") }}</span
+              >
+              080-9533-4142
             </li>
 
-            <li class="flex flex-col items-start xs:text-xl">
-              <Icon name="mdi:account-group-outline" />
-              <span> {{ $t("homeSectionSix.contact.author") }}</span>
+            <li class="xs:text-xl">
+              <span class="font-bold">
+                {{ $t("homeSectionSix.contact.author") }}</span
+              >
+              Joe Lapalo
             </li>
           </ul>
           <img
             src="/images/niko/niko-cellphone.png"
             alt=""
-            class="mx-auto h-76 w-auto"
+            class="mx-auto xs:w-1/2 lg:w-1/4"
           />
         </div>
       </section>
 
       <!-- Slide 3: Final CTA -->
-      <section class="panel bg-okja-yellow saturate-70 md:place-content-center">
-        <h2
-          class="opacity-30 text-7xl md:text-9xl dark:text-light-primary md:absolute md:left-10 md:top-5"
-        >
-          17.
-        </h2>
+      <section
+        class="panel bg-okja-yellow-soft relative place-content-center md:grid md:grid-cols-1 md:place-items-center"
+      >
+        <img
+          src="/images/bg-icons/textbooks-bg.png"
+          alt="background-icon"
+          class="absolute opacity-25 w-40 right-0 rotate-12 top-0 lg:w-1/5"
+        />
+        <img
+          src="/images/bg-icons/whiteboard-light-bg.png"
+          alt="background-icon"
+          class="hidden opacity-25 lg:block lg:-rotate-12 lg:absolute lg:bottom-0 lg:left-0"
+        />
+        <h2 class="section-big-numbers md:absolute md:left-4 md:top-0">17.</h2>
 
         <div class="panel-content">
-          <h3 class="font-bold mb-2 text-xl mt-4 xs:text-4xl">
+          <h3 class="font-bold mb-4 text-xl mt-4 xs:text-4xl">
             Get Updates by Email
           </h3>
 
@@ -248,7 +277,11 @@ onBeforeUnmount(() => {
             </div>
           </form>
         </div>
-        <img src="/images/okja/okja-please.png" alt="" class="xs:max-h-125" />
+        <img
+          src="/images/okja/okja-please.png"
+          alt=""
+          class="xs:w-1/2 mx-auto lg:w-1/4"
+        />
       </section>
     </main>
   </div>

@@ -131,9 +131,9 @@
     "contact": {
       "title": "お問い合わせ情報",
       "description": "The Language Friends は、日本で育つ子どもたちのために、やさしい英語学習をサポートする独立した絵本プロジェクトです。",
-      "email": "メール：languagefriendsgmail",
-      "phone": "電話：000-0000-0000",
-      "author": "作者：Joe Lapalo"
+      "email": "メール：",
+      "phone": "電話：",
+      "author": "作者："
     }
   }
 }

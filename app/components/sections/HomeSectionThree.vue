@@ -71,9 +71,9 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <section ref="sectionRef" class="font-yomogi relative xs:mt-40">
+  <section ref="sectionRef" class="font-yomogi relative xs:mt-8">
     <h2
-      class="text-4xl font-bold text-center mx-auto px-2 mb-2 md:text-6xl md:mb-4"
+      class="text-3xl font-bold text-center mx-auto px-2 mb-2 md:text-6xl md:mb-4"
     >
       {{ $t("homeSectionThree.title") }}
     </h2>
@@ -109,9 +109,7 @@ onBeforeUnmount(() => {
             {{ $t("homeSectionThree.moko.text") }}
           </p>
 
-          <button
-            class="border border-dashed border-dark-primary mt-4 px-6 py-1 md:text-2xl dark:border-light-primary"
-          >
+          <button class="dashed-btn mt-4">
             {{ $t("ui.cta") }}
           </button>
         </div>
@@ -142,9 +140,7 @@ onBeforeUnmount(() => {
           <p class="md:text-2xl md:leading-6 md:mt-2">
             {{ $t("homeSectionThree.niko.text") }}
           </p>
-          <button
-            class="border border-dashed border-dark-primary mt-4 px-6 py-1 md:text-2xl dark:border-light-primary"
-          >
+          <button class="dashed-btn mt-4">
             {{ $t("ui.cta") }}
           </button>
         </div>
@@ -175,9 +171,7 @@ onBeforeUnmount(() => {
           <p class="md:text-2xl md:leading-6 md:mt-2">
             {{ $t("homeSectionThree.okja.text") }}
           </p>
-          <button
-            class="border border-dashed border-dark-primary mt-4 px-6 py-1 md:text-2xl dark:border-light-primary"
-          >
+          <button class="dashed-btn mt-4">
             {{ $t("ui.cta") }}
           </button>
         </div>
@@ -191,7 +185,7 @@ onBeforeUnmount(() => {
     <img
       src="/images/bg-icons/arrow-bg.png"
       alt=""
-      class="absolute -bottom-70 -rotate-12"
+      class="absolute -bottom-50 -rotate-12 w-1/3 md:right-52 md:-bottom-10 md:w-1/4"
     />
     <div style="height: 100vh"></div>
   </section>

@@ -50,6 +50,10 @@ onMounted(async () => {
             end: () => `+=${window.innerHeight}`,
             scrub: true,
             invalidateOnRefresh: true,
+            onEnter: () => gsap.set(text, { pointerEvents: "auto" }),
+            onLeave: () => gsap.set(text, { pointerEvents: "none" }),
+            onEnterBack: () => gsap.set(text, { pointerEvents: "auto" }),
+            onLeaveBack: () => gsap.set(text, { pointerEvents: "none" }),
           },
         })
         .to(text, { opacity: 1, y: "50%", duration: 0.33 })
@@ -76,105 +80,99 @@ onBeforeUnmount(() => {
 
 <template>
   <section ref="sectionRef" class="font-yomogi">
-    <div class="description panel hr-bottom">
-      <div class="scroll-down">
-        <div class="arrow"></div>
-      </div>
-    </div>
-
-    <section class="black">
+    <section class="black relative">
+      <img
+        src="/images/bg-icons/abc-bg.png"
+        alt=""
+        class="absolute top-0 left-0 -rotate-45 opacity-10"
+      />
+      <img
+        src="/images/bg-icons/whiteboard-bg.png"
+        alt=""
+        class="absolute bottom-0 right-0 rotate-45 opacity-10"
+      />
       <div class="text-wrap">
-        <div class="panel-text pl-2 relative md:px-8">
+        <div class="panel-text relative px-8">
           <p
-            class="opacity-30 -top-24 md:-top-52 left-4 text-7xl md:text-9xl absolute dark:text-light-primary"
+            class="section-big-numbers absolute -top-30 dark:text-light-primary lg:-top-40"
           >
             10.
           </p>
-          <h2 class="font-bold text-xl mb-2 sm:text-2xl md:text-3xl">
+          <h2 class="font-bold text-4xl mb-2">
             {{ $t("homeSectionFour.series.like.title") }}
           </h2>
-          <p class="leading-4 sm:text-lg md:text-2xl md:leading-6">
+          <p class="text-3xl leading-8">
             {{ $t("homeSectionFour.series.like.text") }}
           </p>
-          <button
-            class="border border-dashed border-dark-primary mt-4 px-6 py-1 md:text-2xl dark:border-light-primary"
-          >
+          <button class="dashed-btn mt-4">
             {{ $t("ui.cta") }}
           </button>
         </div>
 
         <div class="panel-text pl-2 relative md:px-8">
           <p
-            class="opacity-30 -top-24 md:-top-52 left-4 text-7xl md:text-9xl absolute dark:text-light-primary"
+            class="section-big-numbers absolute -top-30 dark:text-light-primary lg:-top-40"
           >
             11.
           </p>
-          <h2 class="font-bold text-xl mb-2 sm:text-2xl md:text-3xl">
+          <h2 class="font-bold text-4xl mb-2">
             {{ $t("homeSectionFour.series.verb.title") }}
           </h2>
-          <p class="leading-4 sm:text-lg md:text-2xl md:leading-6">
+          <p class="text-3xl leading-8">
             {{ $t("homeSectionFour.series.verb.text") }}
           </p>
-          <button
-            class="border border-dashed border-dark-primary mt-4 px-6 py-1 md:text-2xl dark:border-light-primary"
-          >
+          <button class="dashed-btn mt-4">
             {{ $t("ui.cta") }}
           </button>
         </div>
 
         <div class="panel-text pl-2 relative md:px-8">
           <p
-            class="opacity-30 -top-24 md:-top-52 left-4 text-7xl md:text-9xl absolute dark:text-light-primary"
+            class="section-big-numbers absolute -top-30 dark:text-light-primary lg:-top-40"
           >
             12.
           </p>
-          <h2 class="font-bold text-xl mb-2 sm:text-2xl md:text-3xl">
+          <h2 class="font-bold text-4xl mb-2">
             {{ $t("homeSectionFour.series.adjective.title") }}
           </h2>
-          <p class="leading-4 sm:text-lg md:text-2xl md:leading-6">
+          <p class="text-3xl leading-8">
             {{ $t("homeSectionFour.series.adjective.text") }}
           </p>
-          <button
-            class="border border-dashed border-dark-primary mt-4 px-6 py-1 md:text-2xl dark:border-light-primary"
-          >
+          <button class="dashed-btn mt-4">
             {{ $t("ui.cta") }}
           </button>
         </div>
 
         <div class="panel-text pl-2 md:px-8 relative">
           <p
-            class="opacity-30 -top-24 md:-top-52 left-4 text-7xl md:text-9xl absolute dark:text-light-primary"
+            class="section-big-numbers absolute -top-30 dark:text-light-primary lg:-top-40"
           >
             13.
           </p>
-          <h2 class="font-bold text-xl mb-2 sm:text-2xl md:text-3xl">
+          <h2 class="font-bold text-4xl mb-2">
             {{ $t("homeSectionFour.series.dislike.title") }}
           </h2>
-          <p class="leading-4 sm:text-lg md:text-2xl md:leading-6">
+          <p class="text-3xl leading-8">
             {{ $t("homeSectionFour.series.dislike.text") }}
           </p>
-          <button
-            class="border border-dashed border-dark-primary mt-4 px-6 py-1 md:text-2xl dark:border-light-primary"
-          >
+          <button class="dashed-btn mt-4">
             {{ $t("ui.cta") }}
           </button>
         </div>
 
         <div class="panel-text pl-2 md:px-8 relative">
           <p
-            class="opacity-30 -top-24 md:-top-52 left-4 text-7xl md:text-9xl absolute dark:text-light-primary"
+            class="section-big-numbers absolute -top-30 dark:text-light-primary lg:-top-40"
           >
             14.
           </p>
-          <h2 class="font-bold text-xl mb-2 sm:text-2xl md:text-3xl">
+          <h2 class="font-bold text-4xl mb-2">
             {{ $t("homeSectionFour.series.friends.title") }}
           </h2>
-          <p class="leading-4 sm:text-lg md:text-2xl md:leading-6">
+          <p class="text-3xl leading-8">
             {{ $t("homeSectionFour.series.friends.text") }}
           </p>
-          <button
-            class="border border-dashed border-dark-primary mt-4 px-6 py-1 md:text-2xl dark:border-light-primary"
-          >
+          <button class="dashed-btn mt-4">
             {{ $t("ui.cta") }}
           </button>
         </div>
@@ -188,8 +186,6 @@ onBeforeUnmount(() => {
         <div class="block five"></div>
       </div>
     </section>
-
-    <section class="panel plain"></section>
   </section>
 </template>
 
@@ -231,6 +227,7 @@ onBeforeUnmount(() => {
   height: 100%;
   transform: translateY(100%);
   opacity: 0;
+  pointer-events: none;
 }
 
 .p-wrap {

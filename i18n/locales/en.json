@@ -131,9 +131,9 @@
     "contact": {
       "title": "Contact Information",
       "description": "The Language Friends is an independent picture book project created to support gentle English learning for children in Japan.",
-      "email": "Email: languagefriendsgmail",
-      "phone": "Phone: 000-0000-0000",
-      "author": "Author: Joe Lapalo"
+      "email": "Email:",
+      "phone": "Phone:",
+      "author": "Author:"
     }
   }
 }
