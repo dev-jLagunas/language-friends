@@ -9,7 +9,7 @@ onMounted(() => {
   const slides = gsap.utils.toArray<HTMLElement>(".slide");
   const delay = 0.5;
 
-  const height = 500;
+  const height = 450;
   const depth = -height / 2;
   const transformOrigin = `center center ${depth}px`;
 
@@ -73,7 +73,7 @@ onMounted(() => {
 
     <div class="spacer"></div>
 
-    <div class="wrapper">
+    <div class="wrapper place-content-center">
       <div class="flex-col-center-center mb-4">
         <h2 class="text-4xl font-bold text-center mx-auto mb-2">
           {{ $t("firstTime.title") }}
@@ -88,24 +88,25 @@ onMounted(() => {
         <div
           class="slide center bg-moko-blue-soft flex-col-center-center shadow-lg"
         >
-          <div class="text-dark-primary space-y-2 relative">
+          <div
+            class="text-dark-primary space-y-2 grid grid-cols-2 place-items-center relative"
+          >
             <p class="absolute -top-26 -left-2 section-big-numbers">1.</p>
-
-            <h2 class="font-bold text-2xl">
-              {{ $t("firstTime.what.title") }}
-            </h2>
-
-            <figure class="w-full h-60">
+            <div>
+              <h2 class="font-bold text-2xl">
+                {{ $t("firstTime.what.title") }}
+              </h2>
+              <p class="leading-5 text-lg">
+                {{ $t("firstTime.what.text") }}
+              </p>
+            </div>
+            <figure class="w-full">
               <img
                 src="/images/mockups/mon-and-son1.png"
                 alt=""
-                class="w-full h-full object-cover"
+                class="w-full h-full object-cover rounded-sm shadow-sm"
               />
             </figure>
-
-            <p class="leading-5 text-lg">
-              {{ $t("firstTime.what.text") }}
-            </p>
           </div>
         </div>
 
@@ -113,49 +114,51 @@ onMounted(() => {
           class="slide center bg-niko-purple-soft flex-col-center-center shadow-lg"
         >
           <div
-            class="text-dark-primary flex flex-col justify-center items-start gap-2 relative"
+            class="text-dark-primary grid grid-cols-2 place-items-center relative"
           >
             <p class="absolute -top-26 -left-2 section-big-numbers">2.</p>
+            <div>
+              <h2 class="font-bold text-2xl">
+                {{ $t("firstTime.who.title") }}
+              </h2>
+              <p class="leading-5 text-lg">
+                {{ $t("firstTime.who.text") }}
+              </p>
+            </div>
 
-            <h2 class="font-bold text-2xl">
-              {{ $t("firstTime.who.title") }}
-            </h2>
-
-            <figure class="w-full h-60">
+            <figure class="w-full">
               <img
                 src="/images/mockups/mom-and-son2.png"
                 alt=""
-                class="w-full h-full object-cover"
+                class="w-full h-full object-cover rounded-sm shadow-sm"
               />
             </figure>
-
-            <p class="leading-5 text-lg">
-              {{ $t("firstTime.who.text") }}
-            </p>
           </div>
         </div>
 
         <div
           class="slide center bg-okja-yellow-soft flex-col-center-center shadow-lg"
         >
-          <div class="text-dark-primary flex-col-center-start gap-2 relative">
+          <div
+            class="text-dark-primary grid grid-cols-2 place-items-center relative"
+          >
             <p class="absolute -top-26 -left-2 section-big-numbers">3.</p>
+            <div>
+              <h2 class="font-bold text-2xl">
+                {{ $t("firstTime.why.title") }}
+              </h2>
+              <p class="leading-5 text-lg">
+                {{ $t("firstTime.why.text") }}
+              </p>
+            </div>
 
-            <h2 class="font-bold text-2xl">
-              {{ $t("firstTime.why.title") }}
-            </h2>
-
-            <figure class="w-full h-60">
+            <figure class="w-full">
               <img
                 src="/images/mockups/mom-and-son3.png"
                 alt=""
-                class="w-full h-full object-cover"
+                class="w-full h-full object-cover rounded-sm shadow-sm"
               />
             </figure>
-
-            <p class="leading-5 text-lg">
-              {{ $t("firstTime.why.text") }}
-            </p>
           </div>
         </div>
       </div>
@@ -182,6 +185,12 @@ onMounted(() => {
   position: relative;
   perspective: 500px;
   transform-style: preserve-3d;
+
+  @media (width >= 768px) {
+    width: 700px;
+    height: 450px;
+    perspective: 900px;
+  }
 }
 
 .slider:after {

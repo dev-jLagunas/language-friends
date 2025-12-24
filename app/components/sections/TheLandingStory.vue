@@ -1,12 +1,20 @@
-<script setup></script>
+<script setup lang="ts">
+import { useMediaQuery } from "@vueuse/core";
+
+const isLarge = useMediaQuery("(min-width: 768px)");
+</script>
 
 <template>
   <main class="relative">
-    <HomeSectionOne />
+    <HomeSectionOne v-if="!isLarge" />
+    <HomeSectionOneLg v-else />
+
     <HomeSectionTwo />
     <HomeSectionThree />
-    <HomeSectionFour class="hidden md:block" />
-    <HomeSectionFourMobile class="md:hidden" />
+
+    <HomeSectionFour v-if="isLarge" />
+    <HomeSectionFourMobile v-else />
+
     <HomeSectionSix />
     <HomeSectionFinal />
   </main>
