@@ -23,7 +23,9 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="theme-toggle-styles min-h-screen xl:px-20">
+  <div
+    class="theme-toggle-styles min-h-screen md:px-4 lg:px-8 xl:px-16 2xl:px-32"
+  >
     <header>
       <TheNavbar />
     </header>
@@ -73,5 +75,15 @@ onBeforeUnmount(() => {
   opacity: 1;
   transform: translateY(-2px);
   cursor: pointer;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.2s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
 }
 </style>

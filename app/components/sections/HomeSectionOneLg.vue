@@ -9,7 +9,7 @@ onMounted(() => {
   const slides = gsap.utils.toArray<HTMLElement>(".slide");
   const delay = 0.5;
 
-  const height = 450;
+  const height = 400;
   const depth = -height / 2;
   const transformOrigin = `center center ${depth}px`;
 
@@ -162,12 +162,7 @@ onMounted(() => {
           </div>
         </div>
       </div>
-
-      <div class="text-center mt-4">
-        <button class="dashed-btn">Learn More</button>
-      </div>
     </div>
-
     <div class="spacer"></div>
   </section>
 </template>
@@ -180,17 +175,11 @@ onMounted(() => {
 }
 
 .slider {
-  width: 300px;
-  height: 500px;
+  width: 700px;
+  height: 400px;
   position: relative;
-  perspective: 500px;
+  perspective: 900px;
   transform-style: preserve-3d;
-
-  @media (width >= 768px) {
-    width: 700px;
-    height: 450px;
-    perspective: 900px;
-  }
 }
 
 .slider:after {

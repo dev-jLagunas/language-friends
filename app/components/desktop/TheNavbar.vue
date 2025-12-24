@@ -160,7 +160,7 @@ const closeStart = () => {
             </span>
           </NuxtLink>
         </li>
-        <li class="flex gap-4 mt-4 justify-center">
+        <li class="flex gap-4 mt-4 justify-center items-center">
           <ThemeToggleBtn /> <LangToggleBtn />
         </li>
       </ul>

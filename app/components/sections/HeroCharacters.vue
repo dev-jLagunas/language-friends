@@ -22,7 +22,7 @@ onUnmounted(() => {
 <template>
   <section class="characters gap-2 px-4">
     <article
-      class="card bg-moko-blue"
+      class="card bg-moko-blue rounded-md"
       :class="{ active: active === 0 }"
       @click="toggle(0)"
     >
@@ -48,7 +48,7 @@ onUnmounted(() => {
     </article>
 
     <article
-      class="card bg-niko-purple"
+      class="card bg-niko-purple rounded-md"
       :class="{ active: active === 1 }"
       @click="toggle(1)"
     >
@@ -73,7 +73,7 @@ onUnmounted(() => {
     </article>
 
     <article
-      class="card bg-okja-yellow"
+      class="card bg-okja-yellow rounded-md"
       :class="{ active: active === 2 }"
       @click="toggle(2)"
     >
