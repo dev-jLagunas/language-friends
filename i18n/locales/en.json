@@ -135,5 +135,8 @@
       "phone": "Phone:",
       "author": "Author:"
     }
+  },
+  "homeSectionFinal": {
+    "thanks": "Thank You"
   }
 }

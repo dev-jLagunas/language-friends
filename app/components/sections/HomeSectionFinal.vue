@@ -13,23 +13,42 @@ onMounted(async () => {
   gsap.registerPlugin(ScrollTrigger);
 
   ctx = gsap.context(() => {
+    const title = sectionRef.value!.querySelector("h1");
     const chars = gsap.utils.toArray<HTMLElement>(".character");
 
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: sectionRef.value!,
-          start: "top center",
-          end: "bottom center",
-          scrub: true,
-        },
-      })
-      .to(chars, {
+    // Initial state
+    gsap.set(title, { opacity: 0, y: 40 });
+    gsap.set(chars, { opacity: 0, y: 30, scale: 0.9 });
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: sectionRef.value!,
+        start: "top 80%",
+        toggleActions: "play none none reverse",
+      },
+    });
+
+    // Thank you
+    tl.to(title, {
+      opacity: 1,
+      y: 0,
+      ease: "power2.out",
+      duration: 0.6,
+    });
+
+    // Characters left → right
+    tl.to(
+      chars,
+      {
         opacity: 1,
+        y: 0,
         scale: 1,
-        stagger: 0.15,
+        stagger: 0.25,
         ease: "power2.out",
-      });
+        duration: 0.6,
+      },
+      "-=0.2"
+    );
   }, sectionRef.value);
 });
 
@@ -39,86 +58,22 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <section ref="sectionRef" class="thankyou-section">
-    <h1 class="thankyou-text">Thank you</h1>
-
-    <div class="characters">
-      <div class="character moko">
-        <img
-          src="/images/moko/moko-hello-1.png"
-          alt=""
-          class="animate-bounce"
-        />
-      </div>
-      <div class="character niko">
-        <img
-          src="/images/niko/niko-hello-1.png"
-          alt=""
-          class="animate-bounce"
-        />
-      </div>
-      <div class="character okja">
-        <img
-          src="/images/okja/okja-hello-1.png"
-          alt=""
-          class="animate-bounce"
-        />
-      </div>
-    </div>
+  <section ref="sectionRef" class="h-screen place-content-center">
+    <h1 class="font-cherry text-center text-6xl md:text-9xl">
+      {{ $t("homeSectionFinal.thanks") }}
+    </h1>
+    <article class="characters grid grid-cols-3 px-4 mt-4 lg:w-1/2 mx-auto">
+      <figure class="character moko">
+        <img src="/images/moko/moko-hello-1.png" alt="" />
+      </figure>
+      <figure class="character niko">
+        <img src="/images/niko/niko-hello-1.png" alt="" />
+      </figure>
+      <figure class="character okja">
+        <img src="/images/okja/okja-hello-1.png" alt="" />
+      </figure>
+    </article>
   </section>
 </template>
 
-<style scoped>
-.thankyou-section {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.thankyou-text {
-  font-size: clamp(4rem, 12vw, 10rem);
-  font-weight: 700;
-  z-index: 2;
-}
-
-/* Character container */
-.characters {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-}
-
-/* Individual characters (placeholder boxes for now) */
-.character {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 5rem;
-  opacity: 0;
-  transform: scale(0.2);
-}
-
-/* Rough starting positions */
-.moko {
-  top: 20%;
-  left: 30%;
-}
-
-.niko {
-  top: 60%;
-  left: 50%;
-}
-
-.okja {
-  top: 35%;
-  left: 70%;
-}
-</style>
+<style scoped></style>
