@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import { useMediaQuery } from "@vueuse/core";
 
 const isLarge = useMediaQuery("(min-width: 768px)");
@@ -10,6 +10,7 @@ const isLarge = useMediaQuery("(min-width: 768px)");
     <HomeSectionOneLg v-else />
 
     <HomeSectionTwo />
+
     <HomeSectionThree />
 
     <HomeSectionFour v-if="isLarge" />

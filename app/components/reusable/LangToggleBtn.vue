@@ -21,7 +21,7 @@ const changeLocale = async (code: "ja" | "en") => {
     type="button"
     @click="changeLocale(l.code)"
     :aria-label="l.name"
-    class="flex flex-row items-center dashed-btn"
+    class="flex flex-row items-center hover:cursor-pointer"
   >
     <span>{{ l.name }}</span>
   </button>

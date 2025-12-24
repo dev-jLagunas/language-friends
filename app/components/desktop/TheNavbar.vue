@@ -21,7 +21,7 @@ const closeStart = () => {
       class="hidden font-yomogi md:block"
     >
       <ul
-        class="flex justify-around items-center border-b w-full border-b-dark-primary/20 py-4 dark:border-b-light-primary/20"
+        class="py-4 flex justify-around items-center border-b w-full border-b-dark-primary/20 dark:border-b-light-primary/20"
       >
         <!-- 1. Home -->
         <li class="group">
@@ -29,9 +29,9 @@ const closeStart = () => {
             :to="$localePath('/')"
             :aria-label="$t('footer.nav.home')"
             class="flex flex-col items-center"
-            active-class="border-b border-dashed border-dark-primary dark:border-light-primary"
+            active-class="border-b border-dashed"
           >
-            <Icon name="heroicons:home" class="text-3xl group-hover-rotate" />
+            <Icon name="heroicons:home" class="text-2xl group-hover-rotate" />
             <span class="hover:font-bold lg:text-lg">
               {{ $t("footer.nav.home") }}
             </span>
@@ -51,7 +51,7 @@ const closeStart = () => {
           >
             <Icon
               name="heroicons:information-circle"
-              class="text-moko-blue text-3xl group-hover-rotate"
+              class="text-moko-blue text-2xl group-hover-rotate"
             />
 
             <div class="flex items-center gap-1">
@@ -117,7 +117,7 @@ const closeStart = () => {
           >
             <Icon
               name="heroicons:book-open  group-hover-rotate"
-              class="text-sunny-orange text-3xl"
+              class="text-sunny-orange text-2xl"
             />
             <span class="hover:font-bold lg:text-lg">
               {{ $t("footer.nav.books") }}
@@ -135,7 +135,7 @@ const closeStart = () => {
           >
             <Icon
               name="heroicons:puzzle-piece"
-              class="text-okja-yellow text-3xl group-hover-rotate"
+              class="text-okja-yellow text-2xl group-hover-rotate"
             />
             <span class="hover:font-bold lg:text-lg">
               {{ $t("footer.menu.kids") }}
@@ -153,22 +153,17 @@ const closeStart = () => {
           >
             <Icon
               name="heroicons:envelope"
-              class="text-green-signifier text-3xl group-hover-rotate"
+              class="text-green-signifier text-2xl group-hover-rotate"
             />
             <span class="hover:font-bold lg:text-lg">
               {{ $t("footer.menu.contact") }}
             </span>
           </NuxtLink>
         </li>
-        <li
-          class="flex-col-center-center gap-2 xl:flex-row-center-center xl:gap-4"
-        >
-          <ThemeToggleBtn />
-          <LangToggleBtn />
+        <li class="flex gap-4 mt-4 justify-center">
+          <ThemeToggleBtn /> <LangToggleBtn />
         </li>
       </ul>
-
-      <div class="flex items-center mt-4 w-fit mx-auto gap-8"></div>
     </nav>
   </div>
 </template>
