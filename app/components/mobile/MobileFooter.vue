@@ -12,7 +12,7 @@ const toggleMenu = () => {
   <footer class="fixed bottom-0 left-0 w-full z-100">
     <nav aria-label="モバイルフッターナビゲーション" class="relative">
       <ul
-        class="flex-row-evenly-center theme-toggle-styles py-4 font-yomogi font-bold"
+        class="flex-row-evenly-center theme-toggle-styles py-4 font-yomogi font-bold border-t border-dark-primary/20 dark:border-light-primary/20"
       >
         <li class="group">
           <NuxtLink
@@ -81,7 +81,7 @@ const toggleMenu = () => {
         id="mobile-menu"
         role="dialog"
         aria-modal="true"
-        class="theme-toggle-styles font-yomogi"
+        class="theme-toggle-styles font-yomogi border-r shadow-sm border-dark-primary dark:border-light-primary"
       >
         <nav
           aria-label="フルメニュー"
@@ -218,8 +218,8 @@ const toggleMenu = () => {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 90vh;
+  width: 80vw;
+  height: 100vh;
   z-index: 10;
 }
 
@@ -230,7 +230,7 @@ const toggleMenu = () => {
 
 .slide-down-enter-from,
 .slide-down-leave-to {
-  transform: translateX(100%);
+  transform: translateX(-100%);
 }
 
 .slide-down-enter-to,

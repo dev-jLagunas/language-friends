@@ -118,7 +118,7 @@ onBeforeUnmount(() => {
         >
           4.
         </h2>
-        <div class="md:px-8 lg:place-content-center">
+        <div class="md:px-8 lg:place-content-center dark:text-dark-primary">
           <h3 class="font-bold mb-2 text-2xl mt-4 xs:text-3xl">
             {{ $t("homeSectionTwo.sectionA.title") }}
           </h3>
@@ -126,7 +126,11 @@ onBeforeUnmount(() => {
             {{ $t("homeSectionTwo.sectionA.text") }}
           </p>
         </div>
-        <img src="/images/everyone/cats-together-school.png" alt="" class="" />
+        <img
+          src="/images/everyone/cats-together-school.png"
+          alt=""
+          class="md:w-2/3"
+        />
       </section>
       <!-- Slide 2: Contact info -->
       <section
@@ -147,7 +151,7 @@ onBeforeUnmount(() => {
         >
           5.
         </h2>
-        <div class="md:px-8 lg:place-content-center">
+        <div class="md:px-8 lg:place-content-center dark:text-dark-primary">
           <h3 class="font-bold mb-2 text-2xl mt-4 xs:text-3xl">
             {{ $t("homeSectionTwo.sectionB.title") }}
           </h3>
@@ -155,7 +159,11 @@ onBeforeUnmount(() => {
             {{ $t("homeSectionTwo.sectionB.text") }}
           </p>
         </div>
-        <img src="/images/everyone/cats-together-bike.png" alt="" class="" />
+        <img
+          src="/images/everyone/cats-together-bike.png"
+          alt=""
+          class="md:w-2/3"
+        />
       </section>
 
       <!-- Slide 3: Final CTA -->
@@ -177,7 +185,7 @@ onBeforeUnmount(() => {
         >
           6.
         </h2>
-        <div class="md:px-8 lg:place-content-center">
+        <div class="md:px-8 lg:place-content-center dark:text-dark-primary">
           <h3 class="font-bold mb-2 text-2xl mt-4 xs:text-3xl">
             {{ $t("homeSectionTwo.sectionC.title") }}
           </h3>
@@ -185,7 +193,11 @@ onBeforeUnmount(() => {
             {{ $t("homeSectionTwo.sectionC.text") }}
           </p>
         </div>
-        <img src="/images/everyone/cats-together-hug.png" alt="" class="" />
+        <img
+          src="/images/everyone/cats-together-hug.png"
+          alt=""
+          class="md:w-2/3"
+        />
       </section>
     </main>
   </div>

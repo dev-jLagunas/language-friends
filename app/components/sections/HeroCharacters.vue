@@ -31,7 +31,9 @@ onUnmounted(() => {
         alt="Moko"
         class="w-full max-w-45"
       />
-      <span class="text-3xl">{{ $t("characters.moko") }}</span>
+      <span class="text-sm font-bold text-dark-primary xs:text-lg">{{
+        $t("characters.moko")
+      }}</span>
       <!-- Hidden expandable content -->
       <div
         class="card-content flex-col-center-center absolute bg-light-primary w-full py-2 text-dark-primary md:w-fit md:px-4"
@@ -55,7 +57,9 @@ onUnmounted(() => {
         alt="Niko"
         class="w-full max-w-45"
       />
-      <span class="text-3xl">{{ $t("characters.niko") }}</span>
+      <span class="text-sm font-bold text-dark-primary xs:text-lg">{{
+        $t("characters.niko")
+      }}</span>
       <div
         class="card-content flex-col-center-center absolute bg-light-primary w-full py-2 text-dark-primary md:w-fit md:px-4"
       >
@@ -78,7 +82,9 @@ onUnmounted(() => {
         alt="Okja"
         class="w-full max-w-45"
       />
-      <span class="text-3xl">{{ $t("characters.okja") }}</span>
+      <span class="text-sm font-bold text-dark-primary xs:text-lg">{{
+        $t("characters.okja")
+      }}</span>
       <div
         class="card-content flex-col-center-center absolute bg-light-primary w-full py-2 text-dark-primary md:w-fit md:px-4"
       >

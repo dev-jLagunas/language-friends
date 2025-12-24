@@ -115,7 +115,7 @@ onBeforeUnmount(() => {
         />
         <h2 class="section-big-numbers md:absolute md:left-4 md:top-0">15.</h2>
 
-        <div class="panel-content">
+        <div class="panel-content text-dark-primary">
           <h3 class="font-bold mb-2 text-xl mt-4 xs:text-4xl">
             {{ $t("homeSectionSix.connect.title") }}
           </h3>
@@ -185,7 +185,7 @@ onBeforeUnmount(() => {
         />
         <h2 class="section-big-numbers md:absolute md:left-4 md:top-0">16.</h2>
 
-        <div class="panel-content">
+        <div class="panel-content text-dark-primary">
           <h3 class="font-bold mb-2 text-xl mt-4 xs:text-4xl">
             {{ $t("homeSectionSix.contact.title") }}
           </h3>
@@ -239,7 +239,7 @@ onBeforeUnmount(() => {
         />
         <h2 class="section-big-numbers md:absolute md:left-4 md:top-0">17.</h2>
 
-        <div class="panel-content">
+        <div class="panel-content text-dark-primary">
           <h3 class="font-bold mb-4 text-xl mt-4 xs:text-4xl">
             Get Updates by Email
           </h3>
