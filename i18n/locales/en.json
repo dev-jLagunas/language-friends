@@ -138,5 +138,11 @@
   },
   "homeSectionFinal": {
     "thanks": "Thank You"
+  },
+  "comingSoon": {
+    "title": "Coming Soon",
+    "message": "We’re still getting things ready. Thanks for your patience.",
+    "emailPlaceholder": "Your email",
+    "cta": "Notify Me"
   }
 }

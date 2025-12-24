@@ -1,10 +1,10 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>
-    <h1>Kids Corner Page</h1>
-    <!-- Content for displaying books will go here -->
-  </div>
+  <main>
+    <ComingSoon />
+  </main>
+  >
 </template>
 
 <style scoped></style>

@@ -63,13 +63,13 @@ onBeforeUnmount(() => {
     <!-- PANEL 1 -->
     <section class="mobile-panel text-start relative">
       <p
-        class="section-big-numbers right-0 top-10 absolute dark:text-light-primary"
+        class="section-big-numbers left-0 top-10 absolute dark:text-light-primary"
       >
         10.
       </p>
       <img
         src="/images/mockups/book-mockup-2.png"
-        class="mobile-image w-1/2"
+        class="mobile-image w-1/2 ml-auto"
         alt=""
       />
       <div class="mobile-text">
@@ -107,13 +107,13 @@ onBeforeUnmount(() => {
     <!-- PANEL 3 -->
     <section class="mobile-panel relative">
       <p
-        class="section-big-numbers right-0 top-10 absolute dark:text-light-primary"
+        class="section-big-numbers left-0 top-10 absolute dark:text-light-primary"
       >
         12.
       </p>
       <img
         src="/images/mockups/book-mockup-2.png"
-        class="mobile-image w-1/2"
+        class="mobile-image w-1/2 ml-auto"
         alt=""
       />
       <div class="mobile-text">
@@ -151,13 +151,13 @@ onBeforeUnmount(() => {
     <!-- PANEL 5 -->
     <section class="mobile-panel relative">
       <p
-        class="section-big-numbers right-0 top-10 absolute dark:text-light-primary"
+        class="section-big-numbers left-0 top-10 absolute dark:text-light-primary"
       >
         14.
       </p>
       <img
         src="/images/mockups/book-mockup-2.png"
-        class="mobile-image w-1/2"
+        class="mobile-image w-1/2 ml-auto"
         alt=""
       />
       <div class="mobile-text">

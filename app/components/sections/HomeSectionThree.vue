@@ -73,14 +73,14 @@ onBeforeUnmount(() => {
 <template>
   <section ref="sectionRef" class="font-yomogi relative xs:mt-8">
     <h2
-      class="text-3xl font-bold text-center mx-auto px-2 mb-2 md:text-6xl md:mb-4"
+      class="text-2xl font-bold text-center mx-auto px-2 mb-2 md:text-5xl md:mb-4"
     >
       {{ $t("homeSectionThree.title") }}
     </h2>
     <p
       class="text-center px-4 leading-5 mb-4 md:text-2xl md:leading-7 md:mb-16"
     >
-      {{ $t("tour.intro") }}
+      {{ $t("homeSectionThree.intro") }}
     </p>
     <div class="row-wrap">
       <div class="row">
@@ -95,10 +95,10 @@ onBeforeUnmount(() => {
           />
         </div>
         <div
-          class="right h-120 place-content-center bg-moko-blue/50 leading-5 px-2 shadow-sm relative sm:px-8"
+          class="right h-120 place-content-center bg-moko-blue-soft leading-5 px-2 shadow-sm relative sm:px-8 text-dark-primary"
         >
           <p
-            class="opacity-30 top-0 left-4 text-9xl absolute dark:text-light-primary"
+            class="opacity-30 top-0 left-4 text-9xl absolute text-dark-primary"
           >
             7.
           </p>
@@ -127,10 +127,10 @@ onBeforeUnmount(() => {
           />
         </div>
         <div
-          class="right h-120 place-content-center bg-niko-purple/50 leading-5 px-2 shadow-sm relative sm:px-8"
+          class="right h-120 place-content-center bg-niko-purple-soft leading-5 px-2 shadow-sm relative sm:px-8 text-dark-primary"
         >
           <p
-            class="opacity-30 top-0 left-4 text-9xl absolute dark:text-light-primary"
+            class="opacity-30 top-0 left-4 text-9xl absolute text-dark-primary"
           >
             8.
           </p>
@@ -158,10 +158,10 @@ onBeforeUnmount(() => {
           />
         </div>
         <div
-          class="right h-120 place-content-center bg-okja-yellow/50 leading-5 px-2 shadow-sm relative sm:px-8"
+          class="right h-120 place-content-center bg-okja-yellow-soft leading-5 px-2 shadow-sm relative sm:px-8 text-dark-primary"
         >
           <p
-            class="opacity-30 top-0 left-4 text-9xl absolute dark:text-light-primary"
+            class="opacity-30 top-0 left-4 text-9xl absolute text-dark-primary"
           >
             9.
           </p>
@@ -182,11 +182,6 @@ onBeforeUnmount(() => {
     >
       {{ $t("homeSectionThree.books") }}
     </h5>
-    <img
-      src="/images/bg-icons/arrow-bg.png"
-      alt=""
-      class="absolute -bottom-50 -rotate-12 w-1/3 md:right-52 md:-bottom-10 md:w-1/4"
-    />
     <div style="height: 100vh"></div>
   </section>
 </template>
