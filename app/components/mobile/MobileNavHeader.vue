@@ -10,9 +10,11 @@
           <LangToggleBtn />
           <ThemeToggleBtn />
         </div>
-        <button class="green-cta-btn">
-          {{ $t("footer.menu.start") }}
-        </button>
+        <NuxtLink :to="$localePath({ path: '/', hash: '#landingStory' })"
+          ><button class="green-cta-btn">
+            {{ $t("footer.menu.start") }}
+          </button></NuxtLink
+        >
       </div>
     </section>
   </div>

@@ -50,8 +50,8 @@ const closeStart = () => {
             :aria-expanded="isStartOpen"
           >
             <Icon
-              name="heroicons:information-circle  group-hover-rotate"
-              class="text-moko-blue text-3xl"
+              name="heroicons:information-circle"
+              class="text-moko-blue text-3xl group-hover-rotate"
             />
 
             <div class="flex items-center gap-1">
@@ -77,7 +77,7 @@ const closeStart = () => {
           >
             <li>
               <NuxtLink
-                :to="$localePath('/new-customers')"
+                :to="$localePath({ path: '/', hash: '#landingStory' })"
                 @click="closeStart"
                 class="block px-4 py-2 hover:bg-moko-blue/10"
               >
@@ -152,8 +152,8 @@ const closeStart = () => {
             active-class="border-b border-dashed border-green-signifier"
           >
             <Icon
-              name="heroicons:envelope  group-hover-rotate"
-              class="text-green-signifier text-3xl"
+              name="heroicons:envelope"
+              class="text-green-signifier text-3xl group-hover-rotate"
             />
             <span class="hover:font-bold lg:text-lg">
               {{ $t("footer.menu.contact") }}

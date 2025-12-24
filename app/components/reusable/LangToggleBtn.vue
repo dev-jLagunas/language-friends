@@ -1,11 +1,17 @@
 <script setup lang="ts">
-import { ref, computed } from "vue";
+import { computed } from "vue";
 
+const router = useRouter();
 const { locales, locale, setLocale } = useI18n();
 
 const switchableLocales = computed(() =>
   locales.value.filter((l) => l.code !== locale.value)
 );
+
+const changeLocale = async (code: "ja" | "en") => {
+  router.replace({ hash: "" });
+  await setLocale(code);
+};
 </script>
 
 <template>
@@ -13,7 +19,7 @@ const switchableLocales = computed(() =>
     v-for="l in switchableLocales"
     :key="l.code"
     type="button"
-    @click="setLocale(l.code)"
+    @click="changeLocale(l.code)"
     :aria-label="l.name"
     class="flex flex-row items-center dashed-btn"
   >

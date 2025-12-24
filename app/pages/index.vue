@@ -3,7 +3,7 @@
 <template>
   <main class="dark:bg-dark-secondary dark:text-light-primary">
     <TheHero />
-    <TheLandingStory />
+    <TheLandingStory id="landingStory" />
   </main>
 </template>
 

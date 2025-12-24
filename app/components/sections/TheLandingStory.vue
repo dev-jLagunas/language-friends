@@ -1,14 +1,12 @@
 <script setup></script>
 
 <template>
-  <main>
-    <!-- <ScrollPath /> -->
+  <main class="relative">
     <HomeSectionOne />
     <HomeSectionTwo />
     <HomeSectionThree />
     <HomeSectionFour class="hidden md:block" />
     <HomeSectionFourMobile class="md:hidden" />
-    <!-- <HomeSectionFive /> -->
     <HomeSectionSix />
     <HomeSectionFinal />
   </main>
