@@ -1,209 +1,137 @@
 <script setup lang="ts">
-import { onMounted, onBeforeUnmount, ref, nextTick } from "vue";
+import { onMounted } from "vue";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
-const sectionRef = ref<HTMLElement | null>(null);
+gsap.registerPlugin(ScrollTrigger);
 
-let offsets: number[] = [];
-let totalOffset = 0;
-let resizeHandler: (() => void) | null = null;
-let ctx: gsap.Context | null = null;
+onMounted(() => {
+  const cards = gsap.utils.toArray<HTMLElement>(".card");
 
-onMounted(async () => {
-  await nextTick();
-  if (!sectionRef.value) return;
-
-  gsap.registerPlugin(ScrollTrigger);
-
-  ctx = gsap.context(() => {
-    const rows = gsap.utils.toArray<HTMLElement>(".row", sectionRef.value!);
-
-    const calculateOffsets = () => {
-      totalOffset = 0;
-      offsets = rows.map((row) => {
-        const prev = totalOffset;
-        const h1 = row.querySelector("h1");
-        totalOffset += h1 ? h1.offsetHeight : 0;
-        return prev;
-      });
-
-      ScrollTrigger.refresh();
-    };
-
-    calculateOffsets();
-    resizeHandler = calculateOffsets;
-    window.addEventListener("resize", resizeHandler);
-
-    rows.forEach((row, i) => {
-      const heading = row.querySelector(".left");
-      if (!heading) return;
-      const image = row.querySelector("img");
-      if (!image) return;
-
-      ScrollTrigger.create({
-        trigger: heading,
-        start: () => `top ${offsets[i]}`,
-        endTrigger: sectionRef.value!,
-        end: () => `bottom ${totalOffset}`,
-        onEnter: () => gsap.to(image, { autoAlpha: 0, duration: 0.3 }),
-        onLeaveBack: () => gsap.to(image, { autoAlpha: 1, duration: 0.3 }),
-      });
-
-      ScrollTrigger.create({
-        trigger: heading,
-        start: () => `top ${offsets[i]}`,
-        endTrigger: sectionRef.value!,
-        end: () => `bottom ${totalOffset}`,
-        pin: heading,
-        pinSpacing: false,
-      });
-    });
-  }, sectionRef.value);
-});
-
-onBeforeUnmount(() => {
-  if (resizeHandler) {
-    window.removeEventListener("resize", resizeHandler);
-  }
-  ctx?.revert();
+  cards.forEach((card) => {
+    gsap.fromTo(
+      card,
+      {
+        opacity: 0,
+        y: 80,
+        scale: 0.95,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 0.8,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: card,
+          start: "top 85%",
+          toggleActions: "play none none none",
+        },
+      }
+    );
+  });
 });
 </script>
 
 <template>
-  <section ref="sectionRef" class="font-yomogi relative xs:mt-8">
-    <h2
-      class="text-2xl font-bold text-center mx-auto px-2 mb-2 md:text-5xl md:mb-4"
+  <section class="wrapper theme-toggle-styles font-yomogi">
+    <!-- Intro Card -->
+    <div
+      class="relative card p-4 border border-dashed rounded-lg border-dark-primary/30 dark:border-light-primary/30 shadow-sm"
     >
-      {{ $t("homeSectionThree.title") }}
-    </h2>
-    <p
-      class="text-center px-4 leading-5 mb-4 md:text-2xl md:leading-7 md:mb-16"
-    >
-      {{ $t("homeSectionThree.intro") }}
-    </p>
-    <div class="row-wrap">
-      <div class="row">
-        <div class="left">
-          <h1 class="font-black text-6xl text-center">
-            {{ $t("homeSectionThree.moko.name") }}
-          </h1>
-          <img
-            src="/images/moko/moko-hello-1.png"
-            alt=""
-            class="lg:max-w-100 md:mx-auto"
-          />
-        </div>
-        <div
-          class="right h-120 place-content-center bg-moko-blue-soft leading-5 px-2 shadow-sm relative sm:px-8 text-dark-primary"
-        >
-          <p
-            class="opacity-30 top-0 left-4 text-9xl absolute text-dark-primary"
-          >
-            7.
-          </p>
-          <h4 class="font-bold text-lg md:text-4xl">
-            {{ $t("homeSectionThree.about.moko") }}
-          </h4>
-          <p class="md:text-2xl md:leading-6 md:mt-2">
-            {{ $t("homeSectionThree.moko.text") }}
-          </p>
-
-          <button class="dashed-btn mt-4">
-            {{ $t("ui.cta") }}
-          </button>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="left">
-          <h1 class="font-black text-6xl text-center">
-            {{ $t("homeSectionThree.niko.name") }}
-          </h1>
-          <img
-            src="/images/niko/niko-hello-1.png"
-            alt=""
-            class="lg:max-w-100 md:mx-auto"
-          />
-        </div>
-        <div
-          class="right h-120 place-content-center bg-niko-purple-soft leading-5 px-2 shadow-sm relative sm:px-8 text-dark-primary"
-        >
-          <p
-            class="opacity-30 top-0 left-4 text-9xl absolute text-dark-primary"
-          >
-            8.
-          </p>
-          <h4 class="font-bold text-lg md:text-4xl">
-            {{ $t("homeSectionThree.about.niko") }}
-          </h4>
-          <p class="md:text-2xl md:leading-6 md:mt-2">
-            {{ $t("homeSectionThree.niko.text") }}
-          </p>
-          <button class="dashed-btn mt-4">
-            {{ $t("ui.cta") }}
-          </button>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="left">
-          <h1 class="font-black text-6xl text-center">
-            {{ $t("homeSectionThree.okja.name") }}
-          </h1>
-          <img
-            src="/images/okja/okja-hello-1.png"
-            alt=""
-            class="lg:max-w-100 md:mx-auto"
-          />
-        </div>
-        <div
-          class="right h-120 place-content-center bg-okja-yellow-soft leading-5 px-2 shadow-sm relative sm:px-8 text-dark-primary"
-        >
-          <p
-            class="opacity-30 top-0 left-4 text-9xl absolute text-dark-primary"
-          >
-            9.
-          </p>
-          <h4 class="font-bold text-lg md:text-4xl">
-            {{ $t("homeSectionThree.about.okja") }}
-          </h4>
-          <p class="md:text-2xl md:leading-6 md:mt-2">
-            {{ $t("homeSectionThree.okja.text") }}
-          </p>
-          <button class="dashed-btn mt-4">
-            {{ $t("ui.cta") }}
-          </button>
-        </div>
-      </div>
+      <p
+        class="section-big-numbers dark:text-light-primary absolute -top-14 left-0"
+      >
+        7.
+      </p>
+      <img
+        src="/images/everyone/cats-wall-sitting.png"
+        alt=""
+        class="mx-auto"
+      />
+      <h2 class="font-bold leading-5 mb-2 text-lg xs:text-2xl xs:leading-7">
+        {{ $t("homeSectionThree.title") }}
+      </h2>
+      <p class="leading-5 xs:text-xl xs:leading-6">
+        {{ $t("homeSectionThree.intro") }}
+      </p>
     </div>
-    <h5
-      class="text-6xl font-bold text-center absolute bottom-20 left-1/2 md:bottom-96 md:text-9xl"
+
+    <!-- Moko -->
+    <div class="relative card bg-moko-blue-soft p-4 rounded-lg shadow-sm">
+      <p
+        class="section-big-numbers dark:text-light-primary absolute -top-14 left-0"
+      >
+        8.
+      </p>
+      <img src="/images/moko/moko-hello-1.png" alt="" class="w-1/2 mx-auto" />
+      <h2 class="font-bold leading-5 mb-2 text-lg xs:text-2xl xs:leading-7">
+        {{ $t("homeSectionThree.moko.name") }}
+      </h2>
+      <p class="leading-5 xs:text-xl xs:leading-6">
+        {{ $t("homeSectionThree.moko.text") }}
+      </p>
+    </div>
+
+    <!-- Niko -->
+    <div class="relative card bg-niko-purple-soft p-4 rounded-lg shadow-sm">
+      <p
+        class="section-big-numbers dark:text-light-primary absolute -top-14 left-0"
+      >
+        9.
+      </p>
+      <img src="/images/niko/niko-hello-1.png" alt="" class="w-1/2 mx-auto" />
+      <h2 class="font-bold leading-5 mb-2 text-lg xs:text-2xl xs:leading-7">
+        {{ $t("homeSectionThree.niko.name") }}
+      </h2>
+      <p class="leading-5 xs:text-xl xs:leading-6">
+        {{ $t("homeSectionThree.niko.text") }}
+      </p>
+    </div>
+
+    <!-- Okja -->
+    <div class="relative card bg-okja-yellow-soft p-4 rounded-lg shadow-sm">
+      <p
+        class="section-big-numbers dark:text-light-primary absolute -top-14 left-0"
+      >
+        10.
+      </p>
+      <img src="/images/okja/okja-hello-1.png" alt="" class="w-1/2 mx-auto" />
+      <h2 class="font-bold leading-5 mb-2 text-lg xs:text-2xl xs:leading-7">
+        {{ $t("homeSectionThree.okja.name") }}
+      </h2>
+      <p class="leading-5 xs:text-xl xs:leading-6">
+        {{ $t("homeSectionThree.okja.text") }}
+      </p>
+    </div>
+
+    <!-- Outro -->
+    <div
+      class="card relative card p-4 border border-dashed rounded-lg border-dark-primary/30 dark:border-light-primary/30 shadow-sm"
     >
-      {{ $t("homeSectionThree.books") }}
-    </h5>
-    <div style="height: 100vh"></div>
+      <p
+        class="section-big-numbers dark:text-light-primary absolute -top-14 left-0"
+      >
+        11.
+      </p>
+      <img src="/images/everyone/cats-peace-sign.png" alt="" class="mx-auto" />
+      <h2 class="font-bold leading-5 mb-2 text-lg">
+        {{ $t("homeSectionThree.books") }}
+      </h2>
+      <p class="leading-5 xs:text-xl xs:leading-6">
+        Discover stories designed to grow curiosity, kindness, and confidence.
+      </p>
+    </div>
   </section>
 </template>
 
 <style scoped>
-.row {
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
   display: flex;
-  flex-wrap: nowrap;
-  padding: 1rem;
-  border-top: dashed 1px var(--mid);
-}
-.row .left {
-  width: 40%;
-}
-.row .right {
-  width: 60%;
-}
-.row + .row {
-  margin-top: 50px;
-}
-.pin-spacer {
-  /* to get around an odd browser rounding issue that happens when it gets converted to pixels */
-  width: 40% !important;
+  flex-direction: column;
+  gap: 6rem;
 }
 </style>
