@@ -9,23 +9,45 @@ onMounted(() => {
   const cards = document.querySelectorAll(".story-card");
 
   cards.forEach((card) => {
-    gsap.from(card, {
-      opacity: 0,
-      y: 40,
-      duration: 0.8,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: card,
-        start: "top 80%",
-        toggleActions: "play none none none",
-      },
-    });
+    const items = card.querySelectorAll("h3, p, img");
+
+    gsap.fromTo(
+      card,
+      { opacity: 0, y: 40 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.7,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: card,
+          start: "top 75%",
+          once: true,
+        },
+      }
+    );
+
+    gsap.fromTo(
+      items,
+      { opacity: 0, y: 20 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.6,
+        ease: "power2.out",
+        stagger: 0.12,
+        scrollTrigger: {
+          trigger: card,
+          start: "top 75%",
+        },
+      }
+    );
   });
 });
 </script>
 
 <template>
-  <section id="landingStory" class="relative py-24">
+  <section id="s1" class="relative py-24">
     <!-- Background visuals -->
     <img
       src="/images/bg-icons/abc-bg.png"
@@ -37,24 +59,16 @@ onMounted(() => {
       class="absolute opacity-10 bottom-0 right-0 w-1/2 pointer-events-none"
       alt=""
     />
-
     <div class="max-w-5xl mx-auto px-4 space-y-20">
       <!-- Header -->
       <div class="text-center">
-        <h2 class="text-4xl font-bold mb-2">
-          {{ $t("firstTime.title") }}
-        </h2>
-        <p class="max-w-xl mx-auto text-base">
-          {{ $t("tour.intro") }}
-        </p>
+        <h2 class="text-4xl font-bold mb-2">{{ $t("firstTime.title") }}</h2>
+        <p class="max-w-xl mx-auto text-base">{{ $t("tour.intro") }}</p>
       </div>
-
       <!-- Card 1 -->
       <section class="story-card bg-moko-blue-soft">
         <p class="section-number">1.</p>
-        <h3 class="text-2xl font-bold">
-          {{ $t("firstTime.what.title") }}
-        </h3>
+        <h3 class="text-2xl font-bold">{{ $t("firstTime.what.title") }}</h3>
         <figure class="w-full h-60">
           <img
             src="/images/mockups/mon-and-son1.png"
@@ -64,13 +78,10 @@ onMounted(() => {
         </figure>
         <p>{{ $t("firstTime.what.text") }}</p>
       </section>
-
       <!-- Card 2 -->
       <section class="story-card bg-niko-purple-soft">
         <p class="section-number">2.</p>
-        <h3 class="text-2xl font-bold">
-          {{ $t("firstTime.who.title") }}
-        </h3>
+        <h3 class="text-2xl font-bold">{{ $t("firstTime.who.title") }}</h3>
         <figure class="w-full h-60">
           <img
             src="/images/mockups/mom-and-son2.png"
@@ -80,13 +91,10 @@ onMounted(() => {
         </figure>
         <p>{{ $t("firstTime.who.text") }}</p>
       </section>
-
       <!-- Card 3 -->
       <section class="story-card bg-okja-yellow-soft">
         <p class="section-number">3.</p>
-        <h3 class="text-2xl font-bold">
-          {{ $t("firstTime.why.title") }}
-        </h3>
+        <h3 class="text-2xl font-bold">{{ $t("firstTime.why.title") }}</h3>
         <figure class="w-full h-60">
           <img
             src="/images/mockups/mom-and-son3.png"
@@ -96,14 +104,12 @@ onMounted(() => {
         </figure>
         <p>{{ $t("firstTime.why.text") }}</p>
       </section>
-
       <div class="text-center pt-8">
         <button class="dashed-btn">Learn More</button>
       </div>
     </div>
   </section>
 </template>
-
 <style scoped>
 .story-card {
   position: relative;
@@ -115,7 +121,6 @@ onMounted(() => {
   gap: 1rem;
   will-change: transform, opacity;
 }
-
 .section-number {
   position: absolute;
   top: -1.5rem;

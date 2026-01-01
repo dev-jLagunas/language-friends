@@ -59,7 +59,7 @@ onBeforeUnmount(() => {
 });
 </script>
 <template>
-  <section ref="sectionRef" class="font-yomogi px-4 space-y-8 xs:px-8">
+  <section ref="sectionRef" id="s4" class="font-yomogi px-4 space-y-8 xs:px-8">
     <!-- PANEL 1 -->
     <section class="mobile-panel text-start relative">
       <p

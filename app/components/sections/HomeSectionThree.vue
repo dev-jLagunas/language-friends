@@ -34,7 +34,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="wrapper theme-toggle-styles font-yomogi">
+  <section id="s3" class="wrapper theme-toggle-styles font-yomogi">
     <!-- Intro Card -->
     <div
       class="relative card p-4 border border-dashed rounded-lg border-dark-primary/30 dark:border-light-primary/30 shadow-sm"

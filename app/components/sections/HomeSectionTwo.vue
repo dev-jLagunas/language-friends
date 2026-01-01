@@ -28,7 +28,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="relative py-24">
+  <section id="s2" class="relative py-24">
     <div class="max-w-5xl mx-auto px-4 space-y-28">
       <!-- Section 1 -->
       <section class="story-panel bg-moko-blue-soft">
