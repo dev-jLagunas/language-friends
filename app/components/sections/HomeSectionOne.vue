@@ -1,212 +1,127 @@
 <script setup lang="ts">
+import { onMounted } from "vue";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { onMounted } from "vue";
+
+gsap.registerPlugin(ScrollTrigger);
 
 onMounted(() => {
-  gsap.registerPlugin(ScrollTrigger);
+  const cards = document.querySelectorAll(".story-card");
 
-  const slides = gsap.utils.toArray<HTMLElement>(".slide");
-  const delay = 0.5;
-
-  const height = 500;
-  const depth = -height / 2;
-  const transformOrigin = `center center ${depth}px`;
-
-  const tl = gsap.timeline({
-    defaults: {
-      ease: "power1.inOut",
-      transformOrigin,
-    },
-    scrollTrigger: {
-      trigger: ".wrapper",
-      start: "top top",
-      end: "+=" + (slides.length - 1) * 50 + "%",
-      pin: true,
-      scrub: true,
-    },
-  });
-
-  gsap.set(slides, {
-    rotationX: (i) => (i ? -90 : 0),
-    transformOrigin,
-  });
-
-  slides.forEach((slide, i) => {
-    const nextSlide = slides[i + 1];
-    if (!nextSlide) return;
-
-    tl.to(
-      slide,
-      {
-        rotationX: 90,
-        onComplete: () => {
-          gsap.set(slide, { rotationX: -90 });
-        },
+  cards.forEach((card) => {
+    gsap.from(card, {
+      opacity: 0,
+      y: 40,
+      duration: 0.8,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: card,
+        start: "top 80%",
+        toggleActions: "play none none none",
       },
-      "+=" + delay
-    ).to(
-      nextSlide,
-      {
-        rotationX: 0,
-      },
-      "<"
-    );
+    });
   });
-
-  tl.to({}, { duration: delay });
 });
 </script>
 
 <template>
-  <section class="relative font-yomogi">
+  <section id="landingStory" class="relative py-24">
+    <!-- Background visuals -->
     <img
       src="/images/bg-icons/abc-bg.png"
-      alt="bg-icon-img"
-      class="absolute opacity-10 -left-10 -rotate-12 w-1/2"
+      class="absolute opacity-10 -left-10 top-0 w-1/2 pointer-events-none"
+      alt=""
     />
     <img
       src="/images/bg-icons/whiteboard-bg.png"
-      alt="bg-icon-img"
-      class="absolute opacity-10 bottom-10 right-0 rotate-12 w-1/2"
+      class="absolute opacity-10 bottom-0 right-0 w-1/2 pointer-events-none"
+      alt=""
     />
 
-    <div class="spacer"></div>
-
-    <div class="wrapper">
-      <div class="flex-col-center-center mb-4">
-        <h2 class="text-4xl font-bold text-center mx-auto mb-2">
+    <div class="max-w-5xl mx-auto px-4 space-y-20">
+      <!-- Header -->
+      <div class="text-center">
+        <h2 class="text-4xl font-bold mb-2">
           {{ $t("firstTime.title") }}
         </h2>
-
-        <p class="text-center px-4 leading-5">
+        <p class="max-w-xl mx-auto text-base">
           {{ $t("tour.intro") }}
         </p>
       </div>
 
-      <div class="slider mx-auto">
-        <div
-          class="slide center bg-moko-blue-soft flex-col-center-center shadow-lg"
-        >
-          <div class="text-dark-primary space-y-2 relative">
-            <p class="absolute -top-26 -left-2 section-big-numbers">1.</p>
+      <!-- Card 1 -->
+      <section class="story-card bg-moko-blue-soft">
+        <p class="section-number">1.</p>
+        <h3 class="text-2xl font-bold">
+          {{ $t("firstTime.what.title") }}
+        </h3>
+        <figure class="w-full h-60">
+          <img
+            src="/images/mockups/mon-and-son1.png"
+            class="w-full h-full object-cover"
+            alt=""
+          />
+        </figure>
+        <p>{{ $t("firstTime.what.text") }}</p>
+      </section>
 
-            <h2 class="font-bold text-2xl">
-              {{ $t("firstTime.what.title") }}
-            </h2>
+      <!-- Card 2 -->
+      <section class="story-card bg-niko-purple-soft">
+        <p class="section-number">2.</p>
+        <h3 class="text-2xl font-bold">
+          {{ $t("firstTime.who.title") }}
+        </h3>
+        <figure class="w-full h-60">
+          <img
+            src="/images/mockups/mom-and-son2.png"
+            class="w-full h-full object-cover"
+            alt=""
+          />
+        </figure>
+        <p>{{ $t("firstTime.who.text") }}</p>
+      </section>
 
-            <figure class="w-full h-60">
-              <img
-                src="/images/mockups/mon-and-son1.png"
-                alt=""
-                class="w-full h-full object-cover"
-              />
-            </figure>
+      <!-- Card 3 -->
+      <section class="story-card bg-okja-yellow-soft">
+        <p class="section-number">3.</p>
+        <h3 class="text-2xl font-bold">
+          {{ $t("firstTime.why.title") }}
+        </h3>
+        <figure class="w-full h-60">
+          <img
+            src="/images/mockups/mom-and-son3.png"
+            class="w-full h-full object-cover"
+            alt=""
+          />
+        </figure>
+        <p>{{ $t("firstTime.why.text") }}</p>
+      </section>
 
-            <p class="leading-5 text-lg">
-              {{ $t("firstTime.what.text") }}
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="slide center bg-niko-purple-soft flex-col-center-center shadow-lg"
-        >
-          <div
-            class="text-dark-primary flex flex-col justify-center items-start gap-2 relative"
-          >
-            <p class="absolute -top-26 -left-2 section-big-numbers">2.</p>
-
-            <h2 class="font-bold text-2xl">
-              {{ $t("firstTime.who.title") }}
-            </h2>
-
-            <figure class="w-full h-60">
-              <img
-                src="/images/mockups/mom-and-son2.png"
-                alt=""
-                class="w-full h-full object-cover"
-              />
-            </figure>
-
-            <p class="leading-5 text-lg">
-              {{ $t("firstTime.who.text") }}
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="slide center bg-okja-yellow-soft flex-col-center-center shadow-lg"
-        >
-          <div class="text-dark-primary flex-col-center-start gap-2 relative">
-            <p class="absolute -top-26 -left-2 section-big-numbers">3.</p>
-
-            <h2 class="font-bold text-2xl">
-              {{ $t("firstTime.why.title") }}
-            </h2>
-
-            <figure class="w-full h-60">
-              <img
-                src="/images/mockups/mom-and-son3.png"
-                alt=""
-                class="w-full h-full object-cover"
-              />
-            </figure>
-
-            <p class="leading-5 text-lg">
-              {{ $t("firstTime.why.text") }}
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="text-center mt-4">
+      <div class="text-center pt-8">
         <button class="dashed-btn">Learn More</button>
       </div>
     </div>
-
-    <div class="spacer"></div>
   </section>
 </template>
 
 <style scoped>
-.wrapper {
-  width: 100%;
-  height: 100vh;
+.story-card {
   position: relative;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  will-change: transform, opacity;
 }
 
-.slider {
-  width: 300px;
-  height: 500px;
-  position: relative;
-  perspective: 500px;
-  transform-style: preserve-3d;
-}
-
-.slider:after {
+.section-number {
   position: absolute;
-  content: "";
-  top: -2rem;
-  bottom: -2rem;
-  right: -2rem;
-  left: -2rem;
-  outline: 1.5px dashed var(--light);
-  border-radius: 12px;
-}
-
-.slide {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 1.5rem;
-  backface-visibility: hidden;
-  padding: 1rem;
-}
-
-.spacer {
-  height: 15vh;
+  top: -1.5rem;
+  left: -0.5rem;
+  font-size: 3rem;
+  font-weight: 700;
+  opacity: 0.15;
 }
 </style>
