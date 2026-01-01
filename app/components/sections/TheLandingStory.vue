@@ -11,7 +11,7 @@ const steps = [
 
 <template>
   <main class="relative">
-    <ScrollIndicator :steps="steps" />
+    <!-- <ScrollIndicator :steps="steps" /> -->
     <HomeSectionOne />
     <HomeSectionTwo />
     <HomeSectionThree />

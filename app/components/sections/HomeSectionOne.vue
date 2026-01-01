@@ -47,86 +47,81 @@ onMounted(() => {
 </script>
 
 <template>
-  <section id="s1" class="relative py-24">
-    <!-- Background visuals -->
-    <img
-      src="/images/bg-icons/abc-bg.png"
-      class="absolute opacity-10 -left-10 top-0 w-1/2 pointer-events-none"
-      alt=""
-    />
-    <img
-      src="/images/bg-icons/whiteboard-bg.png"
-      class="absolute opacity-10 bottom-0 right-0 w-1/2 pointer-events-none"
-      alt=""
-    />
-    <div class="max-w-5xl mx-auto px-4 space-y-20">
+  <section id="s1" class="relative py-20 font-yomogi theme-toggle-styles px-4">
+    <div class="flex-col-center-center gap-4 md:gap-12">
       <!-- Header -->
       <div class="text-center">
-        <h2 class="text-4xl font-bold mb-2">{{ $t("firstTime.title") }}</h2>
-        <p class="max-w-xl mx-auto text-base">{{ $t("tour.intro") }}</p>
+        <h2 class="section-title-type">
+          {{ $t("firstTime.title") }}
+        </h2>
+        <p class="mt-2 mb-4 section-body-type">
+          {{ $t("tour.intro") }}
+        </p>
       </div>
       <!-- Card 1 -->
-      <section class="story-card bg-moko-blue-soft">
-        <p class="section-number">1.</p>
-        <h3 class="text-2xl font-bold">{{ $t("firstTime.what.title") }}</h3>
-        <figure class="w-full h-60">
+      <section
+        class="story-card relative bg-moko-blue-soft rounded-2xl p-4 text-dark-primary md:grid md:grid-cols-2 md:place-items-center max-w-6xl"
+      >
+        <p class="section-big-numbers md:hidden">1.</p>
+        <figure class="my-2">
           <img
             src="/images/mockups/mon-and-son1.png"
-            class="w-full h-full object-cover"
+            class="rounded-2xl w-full object-cover max-h-100"
             alt=""
           />
         </figure>
-        <p>{{ $t("firstTime.what.text") }}</p>
+        <div class="my-4 md:px-4">
+          <p class="section-big-numbers hidden md:block">1.</p>
+          <h3 class="font-black mb-2 text-3xl xs:text-4xl">
+            {{ $t("firstTime.what.title") }}
+          </h3>
+          <p class="section-body-type">{{ $t("firstTime.what.text") }}</p>
+          <p class="section-body-type mt-2">{{ $t("firstTime.what.extra") }}</p>
+        </div>
       </section>
       <!-- Card 2 -->
-      <section class="story-card bg-niko-purple-soft">
-        <p class="section-number">2.</p>
-        <h3 class="text-2xl font-bold">{{ $t("firstTime.who.title") }}</h3>
-        <figure class="w-full h-60">
+      <section
+        class="story-card relative bg-niko-purple-soft rounded-2xl p-4 text-dark-primary md:grid md:grid-cols-2 md:place-items-center max-w-6xl"
+      >
+        <p class="section-big-numbers md:absolute md:-top-16 md:left-0">2.</p>
+
+        <figure class="my-2">
           <img
             src="/images/mockups/mom-and-son2.png"
-            class="w-full h-full object-cover"
+            class="rounded-2xl w-full object-cover max-h-100"
             alt=""
           />
         </figure>
-        <p>{{ $t("firstTime.who.text") }}</p>
+        <div class="my-4 md:px-4">
+          <h3 class="font-black mb-2 text-3xl xs:text-4xl">
+            {{ $t("firstTime.who.title") }}
+          </h3>
+          <p class="section-body-type">{{ $t("firstTime.who.text") }}</p>
+          <p class="section-body-type mt-2">{{ $t("firstTime.who.extra") }}</p>
+        </div>
       </section>
       <!-- Card 3 -->
-      <section class="story-card bg-okja-yellow-soft">
-        <p class="section-number">3.</p>
-        <h3 class="text-2xl font-bold">{{ $t("firstTime.why.title") }}</h3>
-        <figure class="w-full h-60">
+      <section
+        class="relative story-card bg-okja-yellow-soft rounded-2xl p-4 text-dark-primary md:grid md:grid-cols-2 md:place-items-center max-w-6xl"
+      >
+        <p class="section-big-numbers md:absolute md:-top-16 md:left-0">3.</p>
+
+        <figure class="my-2">
           <img
             src="/images/mockups/mom-and-son3.png"
-            class="w-full h-full object-cover"
+            class="rounded-2xl w-full object-cover max-h-100"
             alt=""
           />
         </figure>
-        <p>{{ $t("firstTime.why.text") }}</p>
+        <div class="my-4 md:px-4">
+          <h3 class="font-black mb-2 text-3xl xs:text-4xl">
+            {{ $t("firstTime.why.title") }}
+          </h3>
+          <p class="section-body-type">{{ $t("firstTime.why.text") }}</p>
+          <p class="section-body-type mt-2">{{ $t("firstTime.why.extra") }}</p>
+        </div>
       </section>
-      <div class="text-center pt-8">
-        <button class="dashed-btn">Learn More</button>
-      </div>
     </div>
   </section>
 </template>
-<style scoped>
-.story-card {
-  position: relative;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  will-change: transform, opacity;
-}
-.section-number {
-  position: absolute;
-  top: -1.5rem;
-  left: -0.5rem;
-  font-size: 3rem;
-  font-weight: 700;
-  opacity: 0.15;
-}
-</style>
+<style scoped></style>

@@ -100,5 +100,13 @@ body {
 }
 
 .section-big-numbers {
-  @apply opacity-30 font-extralight text-8xl dark:text-light-primary lg:text-9xl;
+  @apply font-extralight text-7xl text-dark-primary/50 md:text-9xl;
+}
+
+.section-title-type {
+  @apply font-bold text-4xl xs:text-5xl lg:text-6xl;
+}
+
+.section-body-type {
+  @apply text-lg leading-5 xs:text-2xl xs:leading-7;
 }
