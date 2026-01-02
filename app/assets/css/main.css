@@ -99,14 +99,48 @@ body {
   @apply border-t border-dark-primary/20 shadow-sm dark:border-light-primary/20;
 }
 
+/********************************************
+        LANDING SECTION REUSABLE 
+********************************************/
+
+.section-wrapper {
+  @apply relative py-12 font-yomogi theme-toggle-styles px-4 xs:px-8;
+}
+
 .section-big-numbers {
-  @apply font-extralight text-7xl text-dark-primary/50 md:text-9xl;
+  @apply font-extralight z-50 text-7xl md:text-9xl;
 }
 
 .section-title-type {
-  @apply font-bold text-4xl xs:text-5xl lg:text-6xl;
+  @apply font-bold text-4xl sm:text-5xl sm:tracking-tight lg:text-6xl lg:tracking-tighter;
 }
 
 .section-body-type {
-  @apply text-lg leading-5 xs:text-2xl xs:leading-7;
+  @apply text-lg leading-5 tracking-tight xs:text-2xl xs:leading-7 md:text-xl md:leading-6 xl:text-2xl xl:leading-7;
+}
+
+.section-card-title {
+  @apply font-black mb-2 tracking-tighter text-2xl  xs:text-4xl md:text-3xl lg:text-4xl;
+}
+
+.section-title-underline {
+  @apply border-b-2 border-dashed border-dark-primary/50 dark:border-light-primary/50 w-fit pb-2 mb-4;
+}
+
+/********************************************
+        HOME SECTION ONE
+********************************************/
+.one-intro-card {
+  @apply rounded-2xl relative p-4 text-dark-primary md:grid md:grid-cols-2 md:place-items-center lg:gap-8 max-w-7xl;
+}
+
+.one-intro-card-img {
+  @apply rounded-2xl w-full object-cover max-h-100;
+}
+
+/********************************************
+        HOME SECTION TWO
+********************************************/
+.two-story-card {
+  @apply relative border-2 border-dark-primary/50 border-dashed p-4 rounded-2xl dark:border-light-primary/50 md:grid md:grid-cols-2 md:place-items-center max-w-7xl mx-auto;
 }

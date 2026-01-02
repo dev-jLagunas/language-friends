@@ -47,7 +47,7 @@
     "closeMenu": "Close Menu",
     "cta": "Learn more"
   },
-  "firstTime": {
+  "homeSectionOne": {
     "title": "First time here?",
     "what": {
       "title": "What is this?",
@@ -66,17 +66,22 @@
     }
   },
   "homeSectionTwo": {
+    "sectionTitle": "How It Works",
+    "sectionSubtitle": "A simple, gentle way for children to start learning English with confidence.",
     "sectionA": {
-      "title": "How The Language Friends Began",
-      "text": "The Language Friends began with a simple question: how can young children learn English naturally, without pressure or memorization? We wanted to create something gentle, playful, and realistic for families raising children in Japan."
+      "title": "Built for Natural Learning",
+      "textA": "The Language Friends is designed to help children learn English the same way they learn their first language through repetition, familiarity, and everyday experiences.",
+      "textB": "Instead of focusing on rules, children see and hear the same patterns again and again until they begin to feel natural."
     },
     "sectionB": {
-      "title": "Designed for Japanese Families",
-      "text": "Our books are created specifically for children growing up in Japan. Short sentences, familiar situations, and a pace that feels comfortable for both parents and kids."
+      "title": "Made for Real Families",
+      "textA": "Each book is created for families who want to learn together, even if parents are not confident English speakers themselves.",
+      "textB": "The structure is simple and predictable, making it easy to read together without pressure or preparation."
     },
     "sectionC": {
-      "title": "English Through Everyday Life",
-      "text": "Children learn best when language feels useful and familiar. The Language Friends focuses on everyday actions like eating, playing, and going outside so English feels natural, not academic."
+      "title": "Learning Through Daily Life",
+      "textA": "The stories focus on everyday moments—eating, playing, going outside—so children can connect language to their own experiences.",
+      "textB": "By seeing English used in familiar situations, children begin to understand meaning naturally and gain confidence over time."
     }
   },
   "homeSectionThree": {
