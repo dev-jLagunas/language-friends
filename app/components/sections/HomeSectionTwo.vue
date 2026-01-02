@@ -79,7 +79,7 @@ onMounted(() => {
         {{ $t("homeSectionTwo.sectionSubtitle") }}
       </p>
     </header>
-    <div class="space-y-8 md:space-y-12">
+    <div class="space-y-8 md:space-y-20">
       <!-- Section 1 -->
       <section id="card-4" data-step="4" class="story-panel two-story-card">
         <figure class="">

@@ -62,7 +62,7 @@ onBeforeUnmount(() => {
   <section
     ref="sectionRef"
     id="s4"
-    class="section-wrapper theme-toggle-styles space-y-8"
+    class="section-wrapper theme-toggle-styles space-y-8 max-w-7xl mx-auto"
   >
     <div class="text-center">
       <h2 class="section-title-type">

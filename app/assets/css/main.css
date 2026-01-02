@@ -149,7 +149,7 @@ body {
         HOME SECTION THREE
 ********************************************/
 .three-story-card {
-  @apply rounded-2xl p-4 relative mb-8 md:mb-12 md:grid md:grid-cols-2 md:place-items-center max-w-7xl mx-auto text-dark-primary;
+  @apply rounded-2xl p-4 relative mb-8 md:mb-20 md:grid md:grid-cols-2 md:place-items-center max-w-7xl mx-auto text-dark-primary;
 }
 
 /********************************************

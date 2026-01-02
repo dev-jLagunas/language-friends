@@ -1,8 +1,12 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section class="home-section-final py-12 section-wrapper theme-toggle-styles">
-    <div class="text-center">
+  <section
+    class="home-section-final py-12 section-wrapper theme-toggle-styles max-w-7xl mx-auto"
+  >
+    <div
+      class="text-center border-2 border-dark-primary/50 border-dashed p-4 rounded-2xl dark:border-light-primary/50"
+    >
       <div>
         <h2 class="section-title-type">
           {{ $t("homeSectionFive.title") }}

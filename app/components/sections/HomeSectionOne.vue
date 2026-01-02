@@ -48,7 +48,7 @@ onMounted(() => {
 
 <template>
   <section id="s1" class="section-wrapper">
-    <div class="flex-col-center-center gap-8 md:gap-12">
+    <div class="flex-col-center-center gap-8 md:gap-20">
       <!-- Header -->
       <div class="text-center">
         <h2 class="section-title-type">
