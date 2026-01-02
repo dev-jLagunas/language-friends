@@ -145,5 +145,34 @@
     "message": "We’re still getting things ready. Thanks for your patience.",
     "emailPlaceholder": "Your email",
     "cta": "Notify Me"
+  },
+  "about": {
+    "title": "About The Language Friends",
+    "intro": "The Language Friends is a gentle English learning project designed to help children feel confident, curious, and comfortable using English in their everyday lives.",
+
+    "philosophy": {
+      "title": "Our Approach",
+      "text": "We believe children learn best through familiarity, repetition, and positive experiences. Instead of memorization or pressure, our approach focuses on simple patterns, clear visuals, and friendly repetition that builds confidence over time."
+    },
+
+    "learning": {
+      "title": "How Children Learn With Us",
+      "text": "Each book introduces a small set of words and sentence patterns through everyday situations. By seeing and hearing the same structures again and again, children naturally begin to understand and use English without fear or stress."
+    },
+
+    "characters": {
+      "title": "Meet the Characters",
+      "text": "The Language Friends are friendly guides who help children feel safe and motivated. Each character has a unique personality that reflects different learning styles and emotions, helping children connect naturally with the language."
+    },
+
+    "parents": {
+      "title": "For Parents",
+      "text": "Designed with parents in mind, The Language Friends supports shared learning moments. You don’t need to be fluent in English — the books guide both you and your child through simple, meaningful experiences."
+    },
+
+    "closing": {
+      "title": "A Gentle Start to English",
+      "text": "The Language Friends is not about perfection or testing. It’s about curiosity, confidence, and enjoying the journey of learning together."
+    }
   }
 }
