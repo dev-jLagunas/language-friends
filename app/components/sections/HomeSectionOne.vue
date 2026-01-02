@@ -59,7 +59,11 @@ onMounted(() => {
         </p>
       </div>
       <!-- Card 1 -->
-      <section id="card-1" class="story-card bg-moko-blue-soft one-intro-card">
+      <section
+        id="card-1"
+        data-step="1"
+        class="story-card bg-moko-blue-soft one-intro-card"
+      >
         <p
           class="section-big-numbers text-dark-primary/50 md:absolute md:-top-16 md:right-0 dark:text-light-primary/50"
         >
@@ -85,6 +89,7 @@ onMounted(() => {
       <!-- Card 2 -->
       <section
         id="card-2"
+        data-step="2"
         class="story-card bg-niko-purple-soft one-intro-card"
       >
         <p
@@ -110,6 +115,7 @@ onMounted(() => {
       <!-- Card 3 -->
       <section
         id="card-3"
+        data-step="3"
         class="story-card bg-okja-yellow-soft one-intro-card"
       >
         <p

@@ -73,7 +73,7 @@ onBeforeUnmount(() => {
       </p>
     </div>
     <!-- PANEL 1 -->
-    <section class="mobile-panel four-story-card">
+    <section id="card-10" data-step="10" class="mobile-panel four-story-card">
       <p
         class="section-big-numbers absolute text-dark-primary/50 top-20 md:hidden dark:text-light-primary/50"
       >
@@ -100,7 +100,7 @@ onBeforeUnmount(() => {
     </section>
 
     <!-- PANEL 2 -->
-    <section class="mobile-panel four-story-card">
+    <section id="card-11" data-step="11" class="mobile-panel four-story-card">
       <p
         class="section-big-numbers absolute text-dark-primary/50 top-20 md:hidden dark:text-light-primary/50"
       >
@@ -127,7 +127,7 @@ onBeforeUnmount(() => {
     </section>
 
     <!-- PANEL 3 -->
-    <section class="mobile-panel four-story-card">
+    <section id="card-12" data-step="12" class="mobile-panel four-story-card">
       <p
         class="section-big-numbers absolute text-dark-primary/50 top-20 md:hidden dark:text-light-primary/50"
       >
@@ -154,7 +154,7 @@ onBeforeUnmount(() => {
     </section>
 
     <!-- PANEL 5 -->
-    <section class="mobile-panel four-story-card">
+    <section id="card-13" data-step="13" class="mobile-panel four-story-card">
       <p
         class="section-big-numbers absolute text-dark-primary/50 top-20 md:hidden dark:text-light-primary/50"
       >

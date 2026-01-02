@@ -81,7 +81,7 @@ onMounted(() => {
     </header>
     <div class="space-y-8 md:space-y-12">
       <!-- Section 1 -->
-      <section id="card-4" class="story-panel two-story-card">
+      <section id="card-4" data-step="4" class="story-panel two-story-card">
         <figure class="">
           <p
             class="section-big-numbers text-dark-primary/50 dark:text-light-primary/50 md:absolute md:-top-24 md:-left-4"
@@ -108,7 +108,7 @@ onMounted(() => {
       </section>
 
       <!-- Section 2 -->
-      <section id="card-5" class="story-panel two-story-card">
+      <section id="card-5" data-step="5" class="story-panel two-story-card">
         <figure class="">
           <p
             class="section-big-numbers text-dark-primary/50 dark:text-light-primary/50 md:absolute md:-top-24 md:-left-4"
@@ -135,7 +135,7 @@ onMounted(() => {
       </section>
 
       <!-- Section 3 -->
-      <section id="card-6" class="story-panel two-story-card">
+      <section id="card-6" data-step="6" class="story-panel two-story-card">
         <figure class="">
           <p
             class="section-big-numbers text-dark-primary/50 dark:text-light-primary/50 md:absolute md:-top-24 md:-left-4"
