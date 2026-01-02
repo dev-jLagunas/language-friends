@@ -9,7 +9,7 @@ const heroTitleFont = computed(() =>
 </script>
 
 <template>
-  <section class="theme-toggle-styles font-yomogi">
+  <section class="theme-toggle-styles font-yomogi md:pt-24">
     <header class="relative px-4 text-center md:mb-4">
       <h1
         :class="heroTitleFont"

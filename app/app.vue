@@ -26,9 +26,7 @@ onBeforeUnmount(() => {
   <div
     class="theme-toggle-styles min-h-screen md:px-4 lg:px-8 xl:px-16 2xl:px-32"
   >
-    <header>
-      <TheNavbar />
-    </header>
+    <TheNavbar />
 
     <main class="flex-1 mt-4 bg-light-primary">
       <NuxtPage />

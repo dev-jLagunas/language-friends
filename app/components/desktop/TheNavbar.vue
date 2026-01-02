@@ -18,7 +18,7 @@ const closeStart = () => {
 
     <nav
       aria-label="デスクトップナビゲーション"
-      class="hidden font-yomogi md:block"
+      class="hidden md:block fixed top-0 left-0 right-0 z-50 bg-light-primary dark:bg-dark-secondary"
     >
       <ul
         class="py-4 flex justify-around items-center border-b w-full border-b-dark-primary/20 dark:border-b-light-primary/20"
@@ -32,7 +32,7 @@ const closeStart = () => {
             active-class="border-b border-dashed"
           >
             <Icon name="heroicons:home" class="text-2xl group-hover-rotate" />
-            <span class="hover:font-bold lg:text-lg">
+            <span class="lg:text-lg">
               {{ $t("footer.nav.home") }}
             </span>
           </NuxtLink>
@@ -119,7 +119,7 @@ const closeStart = () => {
               name="heroicons:book-open  group-hover-rotate"
               class="text-sunny-orange text-2xl"
             />
-            <span class="hover:font-bold lg:text-lg">
+            <span class="lg:text-lg">
               {{ $t("footer.nav.books") }}
             </span>
           </NuxtLink>
@@ -137,7 +137,7 @@ const closeStart = () => {
               name="heroicons:puzzle-piece"
               class="text-okja-yellow text-2xl group-hover-rotate"
             />
-            <span class="hover:font-bold lg:text-lg">
+            <span class="lg:text-lg">
               {{ $t("footer.menu.kids") }}
             </span>
           </NuxtLink>
@@ -155,7 +155,7 @@ const closeStart = () => {
               name="heroicons:envelope"
               class="text-green-signifier text-2xl group-hover-rotate"
             />
-            <span class="hover:font-bold lg:text-lg">
+            <span class="lg:text-lg">
               {{ $t("footer.menu.contact") }}
             </span>
           </NuxtLink>

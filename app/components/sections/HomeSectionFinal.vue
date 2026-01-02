@@ -58,7 +58,11 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <section id="s6" ref="sectionRef" class="h-screen place-content-center">
+  <section
+    id="s6"
+    ref="sectionRef"
+    class="h-screen place-content-center max-w-7xl mx-auto"
+  >
     <h1 class="font-cherry text-center text-6xl md:text-9xl">
       {{ $t("homeSectionFinal.thanks") }}
     </h1>

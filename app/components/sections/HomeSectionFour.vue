@@ -90,7 +90,7 @@ onBeforeUnmount(() => {
         >
           10.
         </p>
-        <h2 class="section-card-title">
+        <h2 class="section-card-title section-title-underline">
           {{ $t("homeSectionFour.series.like.title") }}
         </h2>
         <p class="section-body-type mt-2">
@@ -117,7 +117,7 @@ onBeforeUnmount(() => {
         >
           11.
         </p>
-        <h2 class="section-card-title">
+        <h2 class="section-card-title section-title-underline">
           {{ $t("homeSectionFour.series.verb.title") }}
         </h2>
         <p class="section-body-type mt-2">
@@ -144,7 +144,7 @@ onBeforeUnmount(() => {
         >
           12.
         </p>
-        <h2 class="section-card-title">
+        <h2 class="section-card-title section-title-underline">
           {{ $t("homeSectionFour.series.adjective.title") }}
         </h2>
         <p class="section-body-type mt-2">
@@ -171,7 +171,7 @@ onBeforeUnmount(() => {
         >
           13.
         </p>
-        <h2 class="section-card-title">
+        <h2 class="section-card-title section-title-underline">
           {{ $t("homeSectionFour.series.friends.title") }}
         </h2>
         <p class="section-body-type mt-2">
