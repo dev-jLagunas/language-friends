@@ -80,34 +80,32 @@
     },
     "sectionC": {
       "title": "Learning Through Daily Life",
-      "textA": "The stories focus on everyday moments—eating, playing, going outside—so children can connect language to their own experiences.",
+      "textA": "The stories focus on everyday moments—eating, playing, going outside so children can connect language to their own experiences.",
       "textB": "By seeing English used in familiar situations, children begin to understand meaning naturally and gain confidence over time."
     }
   },
   "homeSectionThree": {
     "title": "Meet The Language Friends!",
-    "intro": "Get to know The Language Friends and meet the characters who guide children through gentle English learning.",
+    "intro": "Get to know the friendly characters who guide children through their English learning journey.",
     "moko": {
       "name": "Moko",
-      "text": "Moko is adventurous and curious. He loves taking walks, exploring new places, and trying fun things."
+      "textA": "Moko is adventurous and curious. He loves exploring new places and trying new things.",
+      "textB": "Moko helps children feel confident by showing that trying something new can be fun and exciting."
     },
     "niko": {
       "name": "Niko",
-      "text": "Niko is gentle and kind. She enjoys quiet moments, learning new things, and helping her friends."
+      "textA": "Niko is gentle and thoughtful. She enjoys calm moments and learning at her own pace.",
+      "textB": "Niko shows children that it’s okay to take things slowly and learn in a comfortable way."
     },
     "okja": {
       "name": "Okja",
-      "text": "Okja is energetic and playful. He’s always moving, making noise, and turning everyday moments into fun."
-    },
-    "about": {
-      "moko": "About Moko",
-      "niko": "About Niko",
-      "okja": "About Okja"
-    },
-    "books": "Our Books"
+      "textA": "Okja is energetic and playful. He loves moving, laughing, and exploring the world around him.",
+      "textB": "Okja helps children learn through action and reminds them that learning can be fun and active."
+    }
   },
   "homeSectionFour": {
     "title": "Book Series",
+    "subtitle": "Each series focuses on a different way children naturally use and understand language.",
     "series": {
       "like": {
         "title": "The Like Series",
@@ -120,10 +118,6 @@
       "adjective": {
         "title": "The Adjective Series",
         "text": "Children explore describing words like big, small, happy, and sad using clear visual comparisons."
-      },
-      "dislike": {
-        "title": "The Doesn’t Like Series",
-        "text": "This series helps children express preferences and feelings by learning how to say what they don’t like."
       },
       "friends": {
         "title": "The Friends Series",

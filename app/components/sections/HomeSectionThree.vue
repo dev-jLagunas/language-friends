@@ -34,104 +34,126 @@ onMounted(() => {
 </script>
 
 <template>
-  <section id="s3" class="wrapper theme-toggle-styles font-yomogi">
+  <section id="s3" class="wrapper theme-toggle-styles section-wrapper">
     <!-- Intro Card -->
-    <div
-      class="relative card p-4 border border-dashed rounded-lg border-dark-primary/30 dark:border-light-primary/30 shadow-sm"
-    >
-      <p
-        class="section-big-numbers dark:text-light-primary absolute -top-14 left-0"
-      >
-        7.
+    <div class="text-center">
+      <h2 class="section-title-type mb-2">
+        {{ $t("homeSectionThree.title") }}
+      </h2>
+      <p class="section-body-type">
+        {{ $t("homeSectionThree.intro") }}
       </p>
       <img
         src="/images/everyone/cats-wall-sitting.png"
-        alt=""
-        class="mx-auto"
+        alt="characters together sitting"
+        class="mx-auto md:w-1/2 lg:w-1/3"
       />
-      <h2 class="font-bold leading-5 mb-2 text-lg xs:text-2xl xs:leading-7">
-        {{ $t("homeSectionThree.title") }}
-      </h2>
-      <p class="leading-5 xs:text-xl xs:leading-6">
-        {{ $t("homeSectionThree.intro") }}
-      </p>
     </div>
 
     <!-- Moko -->
-    <div class="relative card bg-moko-blue-soft p-4 rounded-lg shadow-sm">
+    <div class="card bg-moko-blue-soft three-story-card">
       <p
-        class="section-big-numbers dark:text-light-primary absolute -top-14 left-0"
+        class="section-big-numbers text-dark-primary/50 md:absolute md:-top-16 md:right-0"
       >
-        8.
+        7.
       </p>
-      <img src="/images/moko/moko-hello-1.png" alt="" class="w-1/2 mx-auto" />
-      <h2 class="font-bold leading-5 mb-2 text-lg xs:text-2xl xs:leading-7">
-        {{ $t("homeSectionThree.moko.name") }}
-      </h2>
-      <p class="leading-5 xs:text-xl xs:leading-6">
-        {{ $t("homeSectionThree.moko.text") }}
-      </p>
+      <div class="">
+        <img
+          src="/images/moko/moko-hello-1.png"
+          alt="image of Moko cat character"
+          class="w-1/3 mx-auto md:w-3/4 lg:w-1/2"
+        />
+        <h2
+          class="section-card-title mx-auto section-title-underline md:hidden"
+        >
+          {{ $t("homeSectionThree.moko.name") }}
+        </h2>
+      </div>
+      <div>
+        <h2 class="section-card-title section-title-underline hidden md:block">
+          {{ $t("homeSectionThree.moko.name") }}
+        </h2>
+        <p class="section-body-type">
+          {{ $t("homeSectionThree.moko.textA") }}
+        </p>
+
+        <p class="section-body-type mt-2">
+          {{ $t("homeSectionThree.moko.textB") }}
+        </p>
+      </div>
     </div>
 
     <!-- Niko -->
-    <div class="relative card bg-niko-purple-soft p-4 rounded-lg shadow-sm">
+    <div class="card bg-niko-purple-soft three-story-card">
       <p
-        class="section-big-numbers dark:text-light-primary absolute -top-14 left-0"
+        class="section-big-numbers text-dark-primary/50 md:absolute md:-top-16 md:right-0"
       >
-        9.
+        8.
       </p>
-      <img src="/images/niko/niko-hello-1.png" alt="" class="w-1/2 mx-auto" />
-      <h2 class="font-bold leading-5 mb-2 text-lg xs:text-2xl xs:leading-7">
-        {{ $t("homeSectionThree.niko.name") }}
-      </h2>
-      <p class="leading-5 xs:text-xl xs:leading-6">
-        {{ $t("homeSectionThree.niko.text") }}
-      </p>
+      <div class="">
+        <img
+          src="/images/niko/niko-hello-1.png"
+          alt="image of Niko cat character"
+          class="w-1/3 mx-auto md:w-3/4 lg:w-1/2"
+        />
+        <h2
+          class="section-card-title mx-auto section-title-underline md:hidden"
+        >
+          {{ $t("homeSectionThree.niko.name") }}
+        </h2>
+      </div>
+      <div>
+        <h2 class="section-card-title section-title-underline hidden md:block">
+          {{ $t("homeSectionThree.niko.name") }}
+        </h2>
+        <p class="section-body-type">
+          {{ $t("homeSectionThree.niko.textA") }}
+        </p>
+
+        <p class="section-body-type mt-2">
+          {{ $t("homeSectionThree.niko.textB") }}
+        </p>
+      </div>
     </div>
 
     <!-- Okja -->
-    <div class="relative card bg-okja-yellow-soft p-4 rounded-lg shadow-sm">
+    <div class="card bg-okja-yellow-soft three-story-card">
       <p
-        class="section-big-numbers dark:text-light-primary absolute -top-14 left-0"
+        class="section-big-numbers text-dark-primary/50 md:absolute md:-top-16 md:right-0"
       >
-        10.
+        9.
       </p>
-      <img src="/images/okja/okja-hello-1.png" alt="" class="w-1/2 mx-auto" />
-      <h2 class="font-bold leading-5 mb-2 text-lg xs:text-2xl xs:leading-7">
-        {{ $t("homeSectionThree.okja.name") }}
-      </h2>
-      <p class="leading-5 xs:text-xl xs:leading-6">
-        {{ $t("homeSectionThree.okja.text") }}
-      </p>
-    </div>
+      <div class="">
+        <img
+          src="/images/okja/okja-hello-1.png"
+          alt="image of Okja cat character"
+          class="w-1/3 mx-auto md:w-3/4 lg:w-1/2"
+        />
+        <h2
+          class="section-card-title mx-auto section-title-underline md:hidden"
+        >
+          {{ $t("homeSectionThree.okja.name") }}
+        </h2>
+      </div>
+      <div>
+        <h2 class="section-card-title section-title-underline hidden md:block">
+          {{ $t("homeSectionThree.okja.name") }}
+        </h2>
+        <p class="section-body-type">
+          {{ $t("homeSectionThree.okja.textA") }}
+        </p>
 
-    <!-- Outro -->
-    <div
-      class="card relative card p-4 border border-dashed rounded-lg border-dark-primary/30 dark:border-light-primary/30 shadow-sm"
-    >
-      <p
-        class="section-big-numbers dark:text-light-primary absolute -top-14 left-0"
-      >
-        11.
-      </p>
-      <img src="/images/everyone/cats-peace-sign.png" alt="" class="mx-auto" />
-      <h2 class="font-bold leading-5 mb-2 text-lg">
-        {{ $t("homeSectionThree.books") }}
-      </h2>
-      <p class="leading-5 xs:text-xl xs:leading-6">
-        Discover stories designed to grow curiosity, kindness, and confidence.
-      </p>
+        <p class="section-body-type mt-2">
+          {{ $t("homeSectionThree.okja.textB") }}
+        </p>
+      </div>
     </div>
+    <img
+      src="/images/everyone/cats-peace-sign.png"
+      alt="characters together peace sign"
+      class="mx-auto md:w-1/2 lg:w-1/3"
+    />
   </section>
 </template>
 
-<style scoped>
-.wrapper {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 4rem 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 6rem;
-}
-</style>
+<style scoped></style>

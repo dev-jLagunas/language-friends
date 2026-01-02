@@ -144,3 +144,17 @@ body {
 .two-story-card {
   @apply relative border-2 border-dark-primary/50 border-dashed p-4 rounded-2xl dark:border-light-primary/50 md:grid md:grid-cols-2 md:place-items-center max-w-7xl mx-auto;
 }
+
+/********************************************
+        HOME SECTION THREE
+********************************************/
+.three-story-card {
+  @apply rounded-2xl p-4 relative mb-8 md:mb-12 md:grid md:grid-cols-2 md:place-items-center max-w-7xl mx-auto;
+}
+
+/********************************************
+        HOME SECTION FOUR
+********************************************/
+.four-story-card {
+  @apply relative md:grid md:grid-cols-2 md:place-items-center md:gap-4 max-w-7xl mx-auto;
+}
