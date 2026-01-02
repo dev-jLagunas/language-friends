@@ -125,18 +125,17 @@
       }
     }
   },
-  "homeSectionSix": {
-    "connect": {
-      "title": "Connect With Us",
-      "text": "Follow The Language Friends for updates, previews, and new releases."
-    },
-    "contact": {
-      "title": "Contact Information",
-      "description": "The Language Friends is an independent picture book project created to support gentle English learning for children in Japan.",
-      "email": "Email:",
-      "phone": "Phone:",
-      "author": "Author:"
-    }
+  "homeSectionFive": {
+    "title": "Let’s Keep Learning Together",
+    "subtitle": "The Language Friends is designed to grow with your child and support their English journey step by step.",
+    "connectTitle": "Stay Connected",
+    "instagram": "Instagram",
+    "youtube": "YouTube",
+    "email": "Email",
+    "newsletter": "Get updates about new books, activities, and upcoming releases.",
+    "placeholder": "Enter your email address",
+    "button": "Subscribe",
+    "cta": "Explore the Books"
   },
   "homeSectionFinal": {
     "thanks": "Thank You"

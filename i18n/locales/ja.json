@@ -125,18 +125,17 @@
       }
     }
   },
-  "homeSectionSix": {
-    "connect": {
-      "title": "つながろう",
-      "text": "最新情報やえほんのプレビュー、新しいリリースをお届けします。"
-    },
-    "contact": {
-      "title": "お問い合わせ情報",
-      "description": "The Language Friends は、日本で育つ子どもたちのために、やさしい英語学習をサポートする独立した絵本プロジェクトです。",
-      "email": "メール：",
-      "phone": "電話：",
-      "author": "作者："
-    }
+  "homeSectionFive": {
+    "title": "いっしょに学びつづけよう",
+    "subtitle": "ランゲージフレンズは、子どもたちの成長に寄りそいながら英語学習をサポートします。",
+    "connectTitle": "つながろう",
+    "instagram": "インスタグラム",
+    "youtube": "ユーチューブ",
+    "email": "メール",
+    "newsletter": "最新情報や新しい本のお知らせをお届けします。",
+    "placeholder": "メールアドレスを入力",
+    "button": "登録する",
+    "cta": "本を見てみる"
   },
   "homeSectionFinal": {
     "thanks": "ありがとう"

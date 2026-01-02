@@ -53,7 +53,7 @@ onMounted(() => {
     <!-- Moko -->
     <div class="card bg-moko-blue-soft three-story-card">
       <p
-        class="section-big-numbers text-dark-primary/50 md:absolute md:-top-16 md:right-0"
+        class="section-big-numbers text-dark-primary/50 md:absolute md:-top-16 md:right-0 dark:text-light-primary/50"
       >
         7.
       </p>
@@ -86,7 +86,7 @@ onMounted(() => {
     <!-- Niko -->
     <div class="card bg-niko-purple-soft three-story-card">
       <p
-        class="section-big-numbers text-dark-primary/50 md:absolute md:-top-16 md:right-0"
+        class="section-big-numbers text-dark-primary/50 md:absolute md:-top-16 md:right-0 dark:text-light-primary/50"
       >
         8.
       </p>
@@ -119,7 +119,7 @@ onMounted(() => {
     <!-- Okja -->
     <div class="card bg-okja-yellow-soft three-story-card">
       <p
-        class="section-big-numbers text-dark-primary/50 md:absolute md:-top-16 md:right-0"
+        class="section-big-numbers text-dark-primary/50 md:absolute md:-top-16 md:right-0 dark:text-light-primary/50"
       >
         9.
       </p>

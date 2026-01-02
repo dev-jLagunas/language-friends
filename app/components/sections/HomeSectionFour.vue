@@ -75,7 +75,7 @@ onBeforeUnmount(() => {
     <!-- PANEL 1 -->
     <section class="mobile-panel four-story-card">
       <p
-        class="section-big-numbers absolute text-dark-primary/50 top-20 md:hidden"
+        class="section-big-numbers absolute text-dark-primary/50 top-20 md:hidden dark:text-light-primary/50"
       >
         10.
       </p>
@@ -85,7 +85,9 @@ onBeforeUnmount(() => {
         alt="mockup of book with ipad"
       />
       <div class="mobile-text">
-        <p class="section-big-numbers text-dark-primary/50 hidden md:block">
+        <p
+          class="section-big-numbers text-dark-primary/50 hidden md:block dark:text-light-primary/50"
+        >
           10.
         </p>
         <h2 class="section-card-title">
@@ -100,7 +102,7 @@ onBeforeUnmount(() => {
     <!-- PANEL 2 -->
     <section class="mobile-panel four-story-card">
       <p
-        class="section-big-numbers absolute text-dark-primary/50 top-20 md:hidden"
+        class="section-big-numbers absolute text-dark-primary/50 top-20 md:hidden dark:text-light-primary/50"
       >
         11.
       </p>
@@ -110,7 +112,9 @@ onBeforeUnmount(() => {
         alt="mockup of book with ipad"
       />
       <div class="mobile-text md:order-1">
-        <p class="section-big-numbers text-dark-primary/50 hidden md:block">
+        <p
+          class="section-big-numbers text-dark-primary/50 hidden md:block dark:text-light-primary/50"
+        >
           11.
         </p>
         <h2 class="section-card-title">
@@ -125,7 +129,7 @@ onBeforeUnmount(() => {
     <!-- PANEL 3 -->
     <section class="mobile-panel four-story-card">
       <p
-        class="section-big-numbers absolute text-dark-primary/50 top-20 md:hidden"
+        class="section-big-numbers absolute text-dark-primary/50 top-20 md:hidden dark:text-light-primary/50"
       >
         12.
       </p>
@@ -135,7 +139,9 @@ onBeforeUnmount(() => {
         alt="mockup of book with ipad"
       />
       <div class="mobile-text">
-        <p class="section-big-numbers text-dark-primary/50 hidden md:block">
+        <p
+          class="section-big-numbers text-dark-primary/50 hidden md:block dark:text-light-primary/50"
+        >
           12.
         </p>
         <h2 class="section-card-title">
@@ -150,7 +156,7 @@ onBeforeUnmount(() => {
     <!-- PANEL 5 -->
     <section class="mobile-panel four-story-card">
       <p
-        class="section-big-numbers absolute text-dark-primary/50 top-20 md:hidden"
+        class="section-big-numbers absolute text-dark-primary/50 top-20 md:hidden dark:text-light-primary/50"
       >
         13.
       </p>
@@ -160,7 +166,9 @@ onBeforeUnmount(() => {
         alt="mockup of book with ipad"
       />
       <div class="mobile-text md:order-1">
-        <p class="section-big-numbers text-dark-primary/50 hidden md:block">
+        <p
+          class="section-big-numbers text-dark-primary/50 hidden md:block dark:text-light-primary/50"
+        >
           13.
         </p>
         <h2 class="section-card-title">

@@ -61,7 +61,7 @@ onMounted(() => {
       <!-- Card 1 -->
       <section id="card-1" class="story-card bg-moko-blue-soft one-intro-card">
         <p
-          class="section-big-numbers text-dark-primary/50 md:absolute md:-top-16 md:right-0"
+          class="section-big-numbers text-dark-primary/50 md:absolute md:-top-16 md:right-0 dark:text-light-primary/50"
         >
           1.
         </p>
@@ -88,7 +88,7 @@ onMounted(() => {
         class="story-card bg-niko-purple-soft one-intro-card"
       >
         <p
-          class="section-big-numbers text-dark-primary/50 md:absolute md:-top-16 md:right-0"
+          class="section-big-numbers text-dark-primary/50 md:absolute md:-top-16 md:right-0 dark:text-light-primary/50"
         >
           2.
         </p>
@@ -113,7 +113,7 @@ onMounted(() => {
         class="story-card bg-okja-yellow-soft one-intro-card"
       >
         <p
-          class="section-big-numbers text-dark-primary/50 md:absolute md:-top-16 md:right-0"
+          class="section-big-numbers text-dark-primary/50 md:absolute md:-top-16 md:right-0 dark:text-light-primary/50"
         >
           3.
         </p>
