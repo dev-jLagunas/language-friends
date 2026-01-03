@@ -32,14 +32,14 @@ onUnmounted(() => {
         class="w-full max-w-45"
       />
       <span class="text-sm font-bold text-dark-primary xs:text-lg">{{
-        $t("characters.moko")
+        $t("characterss.moko")
       }}</span>
       <!-- Hidden expandable content -->
       <div
         class="card-content flex-col-center-center absolute bg-light-primary w-full py-2 text-dark-primary md:w-fit md:px-4"
       >
         <p class="md:text-2xl">
-          {{ $t("characters.mokoGreet") }}
+          {{ $t("characterss.mokoGreet") }}
         </p>
         <button class="bg-moko-blue font-bold px-3 py-1 font-work text-sm mt-2">
           {{ $t("ui.cta") }}
@@ -58,12 +58,12 @@ onUnmounted(() => {
         class="w-full max-w-45"
       />
       <span class="text-sm font-bold text-dark-primary xs:text-lg">{{
-        $t("characters.niko")
+        $t("characterss.niko")
       }}</span>
       <div
         class="card-content flex-col-center-center absolute bg-light-primary w-full py-2 text-dark-primary md:w-fit md:px-4"
       >
-        <p class="md:text-2xl">{{ $t("characters.nikoGreet") }}</p>
+        <p class="md:text-2xl">{{ $t("characterss.nikoGreet") }}</p>
         <button
           class="bg-niko-purple font-bold px-3 text-sm py-1 font-work mt-2"
         >
@@ -83,12 +83,12 @@ onUnmounted(() => {
         class="w-full max-w-45"
       />
       <span class="text-sm font-bold text-dark-primary xs:text-lg">{{
-        $t("characters.okja")
+        $t("characterss.okja")
       }}</span>
       <div
         class="card-content flex-col-center-center absolute bg-light-primary w-full py-2 text-dark-primary md:w-fit md:px-4"
       >
-        <p class="md:text-2xl">{{ $t("characters.okjaGreet") }}</p>
+        <p class="md:text-2xl">{{ $t("characterss.okjaGreet") }}</p>
         <button
           class="bg-okja-yellow font-bold px-3 py-1 text-sm font-work mt-2"
         >

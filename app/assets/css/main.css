@@ -158,3 +158,14 @@ body {
 .four-story-card {
   @apply relative md:grid md:grid-cols-2 md:place-items-center md:gap-4 max-w-7xl mx-auto;
 }
+
+/********************************************
+        ABOUT STORY SECTION
+********************************************/
+.about-wrapper {
+  @apply max-w-7xl mx-auto px-4 md:px-8 py-12 md:py-20 space-y-16 md:space-y-24 font-yomogi  bg-light-primary dark:bg-dark-secondary;
+}
+
+.about-card-container {
+  @apply grid grid-cols-1 relative md:grid-cols-2 gap-16 items-center;
+}
