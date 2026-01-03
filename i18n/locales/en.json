@@ -31,7 +31,7 @@
     "prompt2": "English is part of our day.",
     "prompt3": "We enjoy English together."
   },
-  "characters": {
+  "characterss": {
     "moko": "Moko",
     "mokoGreet": "Hi, I'm Moko",
     "niko": "Niko",
@@ -160,7 +160,7 @@
       "text": "Each book introduces a small set of words and sentence patterns through everyday situations. By seeing and hearing the same structures again and again, children naturally begin to understand and use English without fear or stress."
     },
 
-    "characters": {
+    "characterss": {
       "title": "Meet the Characters",
       "text": "The Language Friends are friendly guides who help children feel safe and motivated. Each character has a unique personality that reflects different learning styles and emotions, helping children connect naturally with the language."
     },
@@ -184,6 +184,35 @@
         "four": "Learning together with parents",
         "five": "A gentle start to English"
       }
+    }
+  },
+  "characters": {
+    "title": "Meet the Characters",
+    "intro": "The Language Friends are gentle guides who help children feel comfortable, confident, and curious while learning English.",
+
+    "moko": {
+      "name": "Moko",
+      "personality": "Curious and adventurous",
+      "learningRole": "Encourages children to try new words and ideas with confidence.",
+      "realWorld": "Inspired by curious animals who love exploring their surroundings."
+    },
+
+    "niko": {
+      "name": "Niko",
+      "personality": "Calm and thoughtful",
+      "learningRole": "Shows children that learning can happen slowly and comfortably.",
+      "realWorld": "Inspired by gentle animals who observe and learn at their own pace."
+    },
+
+    "okja": {
+      "name": "Okja",
+      "personality": "Playful and energetic",
+      "learningRole": "Helps children learn through movement, repetition, and fun.",
+      "realWorld": "Inspired by active animals who learn by doing."
+    },
+
+    "closing": {
+      "text": "You’ll meet the Language Friends throughout the stories as they learn, play, and explore together."
     }
   }
 }

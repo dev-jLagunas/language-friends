@@ -81,7 +81,7 @@ body {
 }
 
 @utility dashed-border {
-  @apply border border-dark-primary/50 dark:border-light-primary/50 border-dashed;
+  @apply border-2 border-dark-primary/50 border-dashed p-4 dark:border-light-primary/50;
 }
 
 @utility green-cta-btn {
