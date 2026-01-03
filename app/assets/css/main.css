@@ -116,7 +116,7 @@ body {
 }
 
 .section-body-type {
-  @apply text-lg leading-5 tracking-tight xs:text-2xl xs:leading-7 md:text-xl md:leading-6 xl:text-2xl xl:leading-7;
+  @apply text-lg leading-6 tracking-tight xs:text-2xl xs:leading-7 md:text-xl md:leading-6 xl:text-2xl xl:leading-7;
 }
 
 .section-card-title {

@@ -173,6 +173,17 @@
     "closing": {
       "title": "A Gentle Start to English",
       "text": "The Language Friends is not about perfection or testing. It’s about curiosity, confidence, and enjoying the journey of learning together."
+    },
+    "aboutIntro": {
+      "title": "Welcome to The Language Friends",
+      "text": "This page is a short story about how The Language Friends works. Scroll down to learn our approach, how children learn with us, who the characters are, and how parents fit into the experience.",
+      "contents": {
+        "one": "Our learning approach",
+        "two": "How children learn with our books",
+        "three": "Meet the characters",
+        "four": "Learning together with parents",
+        "five": "A gentle start to English"
+      }
     }
   }
 }
