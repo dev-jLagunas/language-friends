@@ -228,5 +228,76 @@
     "socialLabel": "Follow Along",
     "socialText": "We share updates, behind-the-scenes moments, and new releases here:",
     "note": "We may not reply immediately, but we read every message with care."
+  },
+  "books": {
+    "title": "Our Book Series",
+    "intro": "Each series is designed around a simple language pattern children naturally use in everyday life. All books follow the same structure to reduce cognitive load and build confidence through familiarity.",
+
+    "series": {
+      "like": {
+        "title": "The Like Series",
+        "shortLabel": "Likes & Preferences",
+        "description": "Children learn the sentence pattern “I like ___” through familiar foods, objects, and activities they already recognize.",
+        "learningFocus": "Expressing preferences",
+        "languagePattern": "I like ___",
+        "howItWorks": "Each book focuses on one clear preference. The character’s expression and actions visually reinforce what they like.",
+        "visualApproach": "Characters are shown enjoying or choosing familiar things, making the meaning easy to understand without explanation.",
+        "example": "Moko likes apples.",
+        "ageRange": "Ages 2–6",
+        "tone": "Comforting and familiar"
+      },
+
+      "verb": {
+        "title": "The Verb Series",
+        "shortLabel": "Actions & Movement",
+        "description": "This series introduces simple action verbs through movement, play, and daily routines children already experience.",
+        "learningFocus": "Understanding actions",
+        "languagePattern": "___ runs / jumps / eats",
+        "howItWorks": "Each book highlights one action. The character’s body movement clearly shows what the verb means.",
+        "visualApproach": "Characters are illustrated mid-action to make verbs intuitive and energetic.",
+        "example": "Okja runs.",
+        "ageRange": "Ages 2–6",
+        "tone": "Active and playful"
+      },
+
+      "adjective": {
+        "title": "The Adjective Series",
+        "shortLabel": "Describing Words",
+        "description": "Children explore describing words like big, small, happy, and sad using clear visual contrasts.",
+        "learningFocus": "Describing feelings and qualities",
+        "languagePattern": "___ is big / happy / sad",
+        "howItWorks": "Each book focuses on one adjective using a clear emotional or visual state.",
+        "visualApproach": "Characters’ expressions and environments visually communicate meaning without needing explanation.",
+        "example": "Moko is sad.",
+        "ageRange": "Ages 2–6",
+        "tone": "Gentle and emotionally clear"
+      },
+
+      "preposition": {
+        "title": "The Preposition Series",
+        "shortLabel": "Location & Space",
+        "description": "This series introduces spatial words like in, on, under, and next to through everyday environments.",
+        "learningFocus": "Understanding position and space",
+        "languagePattern": "___ is in / on / under ___",
+        "howItWorks": "Each book shows one clear spatial relationship using familiar settings.",
+        "visualApproach": "Objects and characters are positioned clearly to reinforce meaning visually.",
+        "example": "Niko is under the table.",
+        "ageRange": "Ages 2–6",
+        "tone": "Clear and grounding"
+      },
+
+      "friends": {
+        "title": "The Friends Series",
+        "shortLabel": "Social Language",
+        "description": "Children learn social language through simple interactions like sharing, helping, and playing together.",
+        "learningFocus": "Communication and relationships",
+        "languagePattern": "___ plays with ___",
+        "howItWorks": "Each book focuses on one social interaction using familiar emotional situations.",
+        "visualApproach": "Characters interact with each other in ways children recognize from real life.",
+        "example": "Moko plays with Niko.",
+        "ageRange": "Ages 2–6",
+        "tone": "Warm and reassuring"
+      }
+    }
   }
 }

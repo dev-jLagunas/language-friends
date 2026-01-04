@@ -228,5 +228,76 @@
     "socialLabel": "SNS",
     "socialText": "制作の様子や最新情報はこちらで発信しています。",
     "note": "すぐにお返事できない場合もありますが、すべてのメッセージに目を通しています。"
+  },
+  "books": {
+    "title": "えほんシリーズ",
+    "intro": "それぞれのシリーズは、子どもが日常で自然に使う言葉の形をもとに作られています。すべての本は同じ構成で作られており、安心感と自信を育てます。",
+
+    "series": {
+      "like": {
+        "title": "すきシリーズ",
+        "shortLabel": "すき・このみ",
+        "description": "「〜がすき」という文の形を、食べものや身近なものを通して学びます。",
+        "learningFocus": "このみを伝える",
+        "languagePattern": "〜がすき",
+        "howItWorks": "1冊につき1つの「すき」を中心に構成されています。",
+        "visualApproach": "キャラクターの表情や行動で意味が自然に伝わります。",
+        "example": "モコはりんごがすき。",
+        "ageRange": "2〜6さい",
+        "tone": "あんしん・なじみやすい"
+      },
+
+      "verb": {
+        "title": "どうしシリーズ",
+        "shortLabel": "うごき",
+        "description": "あそびや日常の動きを通して、基本的などうしを学びます。",
+        "learningFocus": "うごきを理解する",
+        "languagePattern": "〜する",
+        "howItWorks": "キャラクターの動きが、そのまま意味になります。",
+        "visualApproach": "うごいている場面を見て、ことばを理解します。",
+        "example": "オクジャははしる。",
+        "ageRange": "2〜6さい",
+        "tone": "げんき・たのしい"
+      },
+
+      "adjective": {
+        "title": "けいようしシリーズ",
+        "shortLabel": "ようす・きもち",
+        "description": "おおきい・ちいさい・うれしい・かなしいなどの言葉を学びます。",
+        "learningFocus": "ようすや気もちを表す",
+        "languagePattern": "〜は〜",
+        "howItWorks": "1つのようすや気もちを、はっきりと表します。",
+        "visualApproach": "表情や色で意味がすぐにわかります。",
+        "example": "モコはかなしい。",
+        "ageRange": "2〜6さい",
+        "tone": "やさしい・わかりやすい"
+      },
+
+      "preposition": {
+        "title": "ばしょシリーズ",
+        "shortLabel": "いち・ばしょ",
+        "description": "「〜のなか」「〜のうえ」など、ばしょを表す言葉を学びます。",
+        "learningFocus": "ばしょを理解する",
+        "languagePattern": "〜にある",
+        "howItWorks": "1つのばしょ関係を、はっきり見せます。",
+        "visualApproach": "ものの位置で意味を理解します。",
+        "example": "ニコはテーブルのした。",
+        "ageRange": "2〜6さい",
+        "tone": "おちついている"
+      },
+
+      "friends": {
+        "title": "ともだちシリーズ",
+        "shortLabel": "かかわり",
+        "description": "あそぶ・わける・たすけるなど、社会的な言葉を学びます。",
+        "learningFocus": "人とのかかわり",
+        "languagePattern": "〜と〜する",
+        "howItWorks": "キャラクター同士のやりとりを通して学びます。",
+        "visualApproach": "日常に近い場面で、気もちが伝わります。",
+        "example": "モコはニコとあそぶ。",
+        "ageRange": "2〜6さい",
+        "tone": "あたたかい・やさしい"
+      }
+    }
   }
 }
