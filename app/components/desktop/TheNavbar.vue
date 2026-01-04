@@ -104,6 +104,15 @@ const closeStart = () => {
                 {{ $t("footer.menu.characters") }}
               </NuxtLink>
             </li>
+            <li>
+              <NuxtLink
+                :to="$localePath('/how-to-use')"
+                @click="closeStart"
+                class="block px-4 py-2 hover:bg-okja-yellow/10"
+              >
+                {{ $t("footer.menu.howTo") }}
+              </NuxtLink>
+            </li>
           </ul>
         </li>
 

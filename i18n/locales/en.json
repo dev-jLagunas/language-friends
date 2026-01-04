@@ -13,6 +13,7 @@
       "characters": "Characters",
       "kids": "Kids Corner",
       "contact": "Contact",
+      "howTo": "How to use",
       "languageToggle": "EN / JP"
     }
   },
@@ -298,6 +299,65 @@
         "ageRange": "Ages 2–6",
         "tone": "Warm and reassuring"
       }
+    }
+  },
+  "howToUse": {
+    "title": "How to Use These Books",
+    "intro": "The Language Friends books are designed to help children learn English naturally through patterns, repetition, and visual understanding. This page explains how we recommend using the books depending on who is reading them.",
+
+    "pedagogy": {
+      "title": "Our Learning Approach",
+      "text": "These books focus on pattern recognition rather than translation. Children learn by seeing the same sentence structure repeated with clear visual support. Grammar is introduced naturally through use, not memorization."
+    },
+
+    "structure": {
+      "title": "How the Books Are Structured",
+      "points": [
+        "One clear sentence per page",
+        "Consistent sentence patterns within each series",
+        "Strong color and character associations",
+        "Simple English supported by visual context",
+        "Short review and activity pages at the end",
+        "Pages with little or no Japanese to encourage independent reading"
+      ]
+    },
+
+    "parents": {
+      "title": "For Parents Reading With Children",
+      "text": "We recommend reading the book together with your child. Show them the page clearly, read aloud, and enjoy the rhythm of the language.",
+      "tips": [
+        "Use different voices for Moko, Niko, and Okja",
+        "Read slowly and naturally, even if English feels difficult",
+        "Use the images and colors to guide understanding",
+        "Katakana is there to help, but natural pronunciation is encouraged",
+        "Focus on enjoying the story rather than explaining grammar"
+      ]
+    },
+
+    "children": {
+      "title": "For Children Reading Independently",
+      "text": "Children who can read on their own are encouraged to use the books as a challenge.",
+      "tips": [
+        "Look at the pictures first, then read the sentence",
+        "Notice repeating patterns across pages",
+        "Use the review and activity pages to check understanding",
+        "Try reading pages without Japanese as confidence practice"
+      ]
+    },
+
+    "bilingual": {
+      "title": "For Bilingual or International Children",
+      "text": "For children growing up with English and Japanese, the books support learning both languages together.",
+      "tips": [
+        "Use visuals to connect meaning across languages",
+        "Notice how English patterns repeat while Japanese provides support",
+        "Exposure to hiragana, katakana, and English happens naturally",
+        "Repetition across books strengthens understanding over time"
+      ]
+    },
+
+    "closing": {
+      "text": "There is no single right way to use these books. Read together, read alone, repeat pages, make voices, and have fun. The goal is comfort, confidence, and curiosity with language."
     }
   }
 }
