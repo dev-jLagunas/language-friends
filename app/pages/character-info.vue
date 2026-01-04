@@ -1,7 +1,62 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { onMounted, onUnmounted, ref } from "vue";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+const root = ref<HTMLElement | null>(null);
+let ctx: gsap.Context;
+
+onMounted(() => {
+  ctx = gsap.context(() => {
+    const sections = gsap.utils.toArray<HTMLElement>(".character-section");
+
+    sections.forEach((section, index) => {
+      const textEl = section.querySelector(
+        ".character-text"
+      ) as HTMLElement | null;
+      const imageEl = section.querySelector(
+        ".character-image"
+      ) as HTMLElement | null;
+
+      if (!textEl || !imageEl) return;
+
+      gsap.from(textEl, {
+        x: index % 2 === 0 ? -60 : 60,
+        opacity: 0,
+        duration: 0.8,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: section,
+          start: "top 80%",
+          toggleActions: "play none none none",
+        },
+      });
+
+      gsap.from(imageEl, {
+        x: index % 2 === 0 ? 60 : -60,
+        opacity: 0,
+        duration: 0.8,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: section,
+          start: "top 80%",
+          toggleActions: "play none none none",
+        },
+      });
+    });
+  }, root.value as Element);
+});
+
+onUnmounted(() => {
+  ctx.revert();
+});
+</script>
 
 <template>
   <section
+    ref="root"
     class="mx-auto pb-24 px-4 md:pt-24 font-yomogi theme-toggle-styles space-y-8 md:space-y-16"
   >
     <!-- Page Intro -->
@@ -16,14 +71,16 @@
 
     <!-- Moko -->
     <section
-      class="text-dark-primary grid grid-cols-1 mt-4 md:place-items-center md:place-content-center md:grid-cols-2 gap-10 items-center"
+      class="character-section text-dark-primary grid grid-cols-1 mt-4 md:grid-cols-2 gap-10 items-center"
     >
-      <div class="bg-moko-blue-soft relative rounded-2xl p-4 md:p-8">
+      <div
+        class="character-text bg-moko-blue-soft relative rounded-2xl p-4 md:p-8"
+      >
         <div class="flex justify-between items-center">
           <h2 class="section-card-title section-title-underline">
             {{ $t("characters.moko.name") }}
           </h2>
-          <Icon name="mdi:paw" class="text-4xl opacit-80" />
+          <Icon name="mdi:paw" class="text-4xl opacity-80" />
         </div>
 
         <p class="section-body-type">
@@ -42,21 +99,22 @@
 
       <img
         src="/images/moko/moko-collage-1.png"
-        alt=""
-        class="dashed-border rounded-2xl rotate-12 my-8"
+        class="character-image dashed-border rounded-2xl rotate-12 my-8"
       />
     </section>
 
     <!-- Niko -->
-    <section class="grid grid-cols-1 mt-4 md:grid-cols-2 gap-10 items-center">
+    <section
+      class="character-section grid grid-cols-1 mt-4 md:grid-cols-2 gap-10 items-center"
+    >
       <div
-        class="bg-niko-purple-soft rounded-2xl p-4 md:order-2 md:p-8 text-dark-primary"
+        class="character-text bg-niko-purple-soft rounded-2xl p-4 md:p-8 md:order-2 text-dark-primary"
       >
         <div class="flex justify-between items-center">
           <h2 class="section-card-title section-title-underline">
             {{ $t("characters.niko.name") }}
           </h2>
-          <Icon name="mdi:cat" class="text-4xl opacit-80" />
+          <Icon name="mdi:cat" class="text-4xl opacity-80" />
         </div>
 
         <p class="section-body-type">
@@ -75,19 +133,22 @@
 
       <img
         src="/images/niko/niko-collage-1.png"
-        alt=""
-        class="dashed-border rounded-2xl -rotate-12 my-8"
+        class="character-image dashed-border rounded-2xl -rotate-12 my-8"
       />
     </section>
 
     <!-- Okja -->
-    <section class="grid grid-cols-1 mt-4 md:grid-cols-2 gap-10 items-center">
-      <div class="bg-okja-yellow-soft rounded-2xl text-dark-primary p-4 md:p-8">
+    <section
+      class="character-section grid grid-cols-1 mt-4 md:grid-cols-2 gap-10 items-center"
+    >
+      <div
+        class="character-text bg-okja-yellow-soft rounded-2xl p-4 md:p-8 text-dark-primary"
+      >
         <div class="flex justify-between items-center">
           <h2 class="section-card-title section-title-underline">
             {{ $t("characters.okja.name") }}
           </h2>
-          <Icon name="mdi:paw" class="text-4xl opacit-80" />
+          <Icon name="mdi:paw" class="text-4xl opacity-80" />
         </div>
 
         <p class="section-body-type">
@@ -106,8 +167,7 @@
 
       <img
         src="/images/okja/okja-collage-1.png"
-        alt=""
-        class="dashed-border rounded-2xl rotate-12 my-8"
+        class="character-image dashed-border rounded-2xl rotate-12 my-8"
       />
     </section>
 
