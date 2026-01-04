@@ -116,8 +116,8 @@ const closeStart = () => {
             active-class="border-b border-dashed border-sunny-orange"
           >
             <Icon
-              name="heroicons:book-open  group-hover-rotate"
-              class="text-sunny-orange text-2xl"
+              name="heroicons:book-open"
+              class="text-sunny-orange text-2xl group-hover-rotate"
             />
             <span class="lg:text-lg">
               {{ $t("footer.nav.books") }}
