@@ -81,7 +81,7 @@ onUnmounted(() => {
       <img
         src="/images/everyone/cats-on-eachother.png"
         alt=""
-        class="contact-image rounded-xl dashed-border w-full rotate-12 xs:w-3/4 xs:mx-auto"
+        class="contact-image rounded-xl dashed-border w-full rotate-12 xs:w-3/4 xs:mx-auto md:w-full lg:w-3/4"
       />
     </section>
 
@@ -114,7 +114,7 @@ onUnmounted(() => {
       <img
         src="/images/everyone/cats-using-sns.png"
         alt=""
-        class="contact-image rounded-xl dashed-border w-full -rotate-12 xs:w-3/4 xs:mx-auto"
+        class="contact-image rounded-xl dashed-border w-full -rotate-12 xs:w-3/4 xs:mx-auto md:w-full lg:w-3/4"
       />
     </section>
 
@@ -149,7 +149,7 @@ onUnmounted(() => {
       <img
         src="/images/everyone/cats-together-bike.png"
         alt=""
-        class="contact-image rounded-xl dashed-border w-full rotate-12 xs:w-3/4 xs:mx-auto"
+        class="contact-image rounded-xl dashed-border w-full rotate-12 xs:w-3/4 xs:mx-auto md:w-full lg:w-3/4"
       />
     </section>
 

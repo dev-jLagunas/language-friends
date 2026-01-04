@@ -24,14 +24,6 @@
           <h4 class="font-bold mb-3">Start Here</h4>
           <ul class="space-y-2 text-sm">
             <li>
-              <NuxtLink
-                :to="$localePath('/new-customers')"
-                class="hover:underline"
-              >
-                {{ $t("footer.menu.firstTime") }}
-              </NuxtLink>
-            </li>
-            <li>
               <NuxtLink :to="$localePath('/about-us')" class="hover:underline">
                 {{ $t("footer.nav.about") }}
               </NuxtLink>

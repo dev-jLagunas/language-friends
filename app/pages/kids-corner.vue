@@ -4,7 +4,6 @@
   <main>
     <ComingSoon />
   </main>
-  >
 </template>
 
 <style scoped></style>
