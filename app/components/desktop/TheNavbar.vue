@@ -18,10 +18,10 @@ const closeStart = () => {
 
     <nav
       aria-label="デスクトップナビゲーション"
-      class="hidden md:block fixed top-0 left-0 right-0 z-50 bg-light-primary dark:bg-dark-secondary"
+      class="hidden md:block fixed top-0 left-0 right-0 z-50 bg-light-primary dark:bg-dark-secondary font-yomogi"
     >
       <ul
-        class="py-4 flex justify-around items-center border-b w-full border-b-dark-primary/20 dark:border-b-light-primary/20"
+        class="flex justify-around items-center py-4 border-b border-b-dark-primary/20 dark:border-b-light-primary/20"
       >
         <!-- 1. Home -->
         <li class="group">
@@ -133,6 +133,10 @@ const closeStart = () => {
             </span>
           </NuxtLink>
         </li>
+        <li class="flex-col-center-center">
+          <img src="/images/everyone/cats-peace-sign.png" alt="" class="w-20" />
+          <p class="font-black -mt-8">The Language Friends</p>
+        </li>
 
         <!-- 4. Kids Corner -->
         <li class="group">
@@ -169,8 +173,8 @@ const closeStart = () => {
             </span>
           </NuxtLink>
         </li>
-        <li class="flex gap-4 mt-4 justify-center items-center">
-          <ThemeToggleBtn /> <LangToggleBtn />
+        <li class="flex flex-col justify-center items-center gap-4">
+          <LangToggleBtn /><ThemeToggleBtn />
         </li>
       </ul>
     </nav>

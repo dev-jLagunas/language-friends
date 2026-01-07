@@ -68,7 +68,6 @@ const toggleMenu = () => {
               name="heroicons:bars-3"
               class="text-3xl group-hover:rotate-5 group-hover:scale-110 transition-transform hover:cursor-pointer"
             />
-            <span>{{ $t("footer.nav.menu") }}</span>
           </button>
         </li>
       </ul>
@@ -92,35 +91,78 @@ const toggleMenu = () => {
             <ThemeToggleBtn />
           </div>
 
-          <ul class="space-y-2 text-2xl">
+          <ul class="space-y-3 text-2xl">
+            <!-- NEW VISITORS (PARENT) -->
             <li class="group">
-              <NuxtLink
-                to="/new-customers"
-                @click="toggleMenu"
-                class="flex items-center"
-              >
+              <div class="flex items-center opacity-90">
                 <Icon
-                  name="heroicons:information-circle"
-                  class="text-moko-blue mr-2 group-hover-rotate"
+                  name="heroicons:sparkles"
+                  class="mr-2 text-sunny-orange group-hover-rotate"
                 />
-                <span class="">{{ $t("footer.menu.start") }}</span>
-              </NuxtLink>
+                <span>{{ $t("footer.menu.start") }}</span>
+              </div>
+
+              <!-- NESTED LINKS -->
+              <ul class="mt-2 ml-6 space-y-2 text-xl">
+                <li class="group">
+                  <NuxtLink
+                    :to="$localePath({ path: '/', hash: '#landingStory' })"
+                    @click="toggleMenu"
+                    class="flex items-center"
+                  >
+                    <Icon
+                      name="heroicons:map"
+                      class="mr-2 text-moko-blue group-hover-rotate"
+                    />
+                    <span>{{ $t("footer.menu.firstTime") }}</span>
+                  </NuxtLink>
+                </li>
+
+                <li class="group">
+                  <NuxtLink
+                    :to="$localePath('/about-us')"
+                    @click="toggleMenu"
+                    class="flex items-center"
+                  >
+                    <Icon
+                      name="heroicons:information-circle"
+                      class="mr-2 text-soft-pink group-hover-rotate"
+                    />
+                    <span>{{ $t("footer.nav.about") }}</span>
+                  </NuxtLink>
+                </li>
+
+                <li class="group">
+                  <NuxtLink
+                    :to="$localePath('/character-info')"
+                    @click="toggleMenu"
+                    class="flex items-center"
+                  >
+                    <Icon
+                      name="heroicons:face-smile"
+                      class="mr-2 text-niko-purple group-hover-rotate"
+                    />
+                    <span>{{ $t("footer.menu.characters") }}</span>
+                  </NuxtLink>
+                </li>
+
+                <li class="group">
+                  <NuxtLink
+                    :to="$localePath('/how-to-use')"
+                    @click="toggleMenu"
+                    class="flex items-center"
+                  >
+                    <Icon
+                      name="heroicons:book-open"
+                      class="mr-2 text-okja-yellow group-hover-rotate"
+                    />
+                    <span>{{ $t("footer.menu.howTo") }}</span>
+                  </NuxtLink>
+                </li>
+              </ul>
             </li>
 
-            <li class="group">
-              <NuxtLink
-                to="/character-info"
-                @click="toggleMenu"
-                class="flex items-center"
-              >
-                <Icon
-                  name="heroicons:face-smile"
-                  class="text-niko-purple mr-2 group-hover-rotate"
-                />
-                <span class="">{{ $t("footer.menu.characters") }}</span>
-              </NuxtLink>
-            </li>
-
+            <!-- EXISTING ITEMS (UNCHANGED) -->
             <li class="group">
               <NuxtLink
                 to="/kids-corner"
@@ -131,7 +173,7 @@ const toggleMenu = () => {
                   name="heroicons:puzzle-piece"
                   class="mr-2 text-okja-yellow group-hover-rotate"
                 />
-                <span class="">{{ $t("footer.menu.kids") }}</span>
+                <span>{{ $t("footer.menu.kids") }}</span>
               </NuxtLink>
             </li>
 
@@ -145,11 +187,11 @@ const toggleMenu = () => {
                   name="heroicons:envelope"
                   class="mr-2 text-green-signifier group-hover-rotate"
                 />
-                <span class="">{{ $t("footer.menu.contact") }}</span>
+                <span>{{ $t("footer.menu.contact") }}</span>
               </NuxtLink>
             </li>
-            <li></li>
           </ul>
+
           <ul
             aria-label="ソーシャルリンク"
             class="grid grid-cols-4 gap-4 text-3xl mt-4 md:text-4xl"
