@@ -2,7 +2,7 @@
 
 <template>
   <main>
-    <AboutStoryDesktop />
+    <AboutStory />
   </main>
 </template>
 

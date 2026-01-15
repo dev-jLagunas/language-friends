@@ -5,18 +5,18 @@
     class="mx-auto px-4 md:pt-24 pb-24 font-yomogi theme-toggle-styles space-y-16"
   >
     <!-- Page Intro -->
-    <header class="dashed-border rounded-2xl mx-auto space-y-4">
+    <!-- <header class="dashed-border rounded-2xl mx-auto space-y-4">
       <h1 class="section-card-title section-title-underline">
         {{ $t("books.title") }}
       </h1>
       <p class="section-body-type">
         {{ $t("books.intro") }}
       </p>
-    </header>
+    </header> -->
 
     <!-- LIKE SERIES -->
     <section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-      <div class="bg-moko-blue-soft rounded-2xl p-6 md:p-8 md:-rotate-3">
+      <div class="bg-moko-blue-soft rounded-2xl p-6 md:p-8">
         <h2 class="section-card-title">
           {{ $t("books.series.like.title") }}
         </h2>
@@ -50,7 +50,7 @@
       <img
         src="/images/mockups/book-mockup-2.png"
         alt=""
-        class="rounded-xl dashed-border w-full rotate-12 xs:w-3/4 xs:mx-auto"
+        class="rounded-xl dashed-border w-full xs:w-3/4 xs:mx-auto"
       />
     </section>
 
@@ -92,13 +92,13 @@
       <img
         src="/images/mockups/book-mockup-2.png"
         alt=""
-        class="rounded-xl dashed-border w-full -rotate-12 xs:w-3/4 xs:mx-auto"
+        class="rounded-xl dashed-border w-full - xs:w-3/4 xs:mx-auto"
       />
     </section>
 
     <!-- ADJECTIVE SERIES -->
     <section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-      <div class="bg-niko-purple-soft rounded-2xl p-6 md:p-8 md:-rotate-3">
+      <div class="bg-niko-purple-soft rounded-2xl p-6 md:p-8">
         <h2 class="section-card-title">
           {{ $t("books.series.adjective.title") }}
         </h2>
@@ -132,7 +132,7 @@
       <img
         src="/images/mockups/book-mockup-2.png"
         alt=""
-        class="rounded-xl dashed-border w-full rotate-12 xs:w-3/4 xs:mx-auto"
+        class="rounded-xl dashed-border w-full xs:w-3/4 xs:mx-auto"
       />
     </section>
 
@@ -174,13 +174,13 @@
       <img
         src="/images/mockups/book-mockup-2.png"
         alt=""
-        class="rounded-xl dashed-border w-full -rotate-12 xs:w-3/4 xs:mx-auto"
+        class="rounded-xl dashed-border w-full - xs:w-3/4 xs:mx-auto"
       />
     </section>
 
     <!-- FRIENDS SERIES -->
     <section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-      <div class="bg-okja-yellow-soft rounded-2xl p-6 md:p-8 md:-rotate-3">
+      <div class="bg-okja-yellow-soft rounded-2xl p-6 md:p-8">
         <h2 class="section-card-title">
           {{ $t("books.series.friends.title") }}
         </h2>
@@ -214,7 +214,7 @@
       <img
         src="/images/mockups/book-mockup-2.png"
         alt=""
-        class="rounded-xl dashed-border w-full rotate-12 xs:w-3/4 xs:mx-auto"
+        class="rounded-xl dashed-border w-full xs:w-3/4 xs:mx-auto"
       />
     </section>
   </section>

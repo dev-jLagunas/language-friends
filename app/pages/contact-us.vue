@@ -64,7 +64,7 @@ onUnmounted(() => {
       class="contact-section md:p-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
     >
       <div
-        class="contact-text bg-moko-blue-soft rounded-2xl py-6 px-4 place-content-center md:px-6 md:-rotate-3"
+        class="contact-text bg-moko-blue-soft rounded-2xl py-6 px-4 place-content-center md:px-6"
       >
         <div class="flex items-center justify-between">
           <h1 class="section-card-title section-title-underline">
@@ -81,7 +81,7 @@ onUnmounted(() => {
       <img
         src="/images/everyone/cats-on-eachother.png"
         alt=""
-        class="contact-image rounded-xl dashed-border w-full rotate-12 xs:w-3/4 xs:mx-auto md:w-full lg:w-3/4"
+        class="contact-image rounded-xl dashed-border w-full xs:w-3/4 xs:mx-auto md:w-full lg:w-3/4"
       />
     </section>
 
@@ -114,7 +114,7 @@ onUnmounted(() => {
       <img
         src="/images/everyone/cats-using-sns.png"
         alt=""
-        class="contact-image rounded-xl dashed-border w-full -rotate-12 xs:w-3/4 xs:mx-auto md:w-full lg:w-3/4"
+        class="contact-image rounded-xl dashed-border w-full - xs:w-3/4 xs:mx-auto md:w-full lg:w-3/4"
       />
     </section>
 
@@ -123,7 +123,7 @@ onUnmounted(() => {
       class="contact-section md:p-8 grid grid-cols-1 md:grid-cols-2 md:order-1 gap-12 items-center"
     >
       <div
-        class="contact-text bg-okja-yellow-soft rounded-2xl py-6 px-4 place-content-center md:px-6 md:-rotate-3"
+        class="contact-text bg-okja-yellow-soft rounded-2xl py-6 px-4 place-content-center md:px-6"
       >
         <div class="flex items-center justify-between">
           <h2 class="section-card-title">
@@ -149,7 +149,7 @@ onUnmounted(() => {
       <img
         src="/images/everyone/cats-together-bike.png"
         alt=""
-        class="contact-image rounded-xl dashed-border w-full rotate-12 xs:w-3/4 xs:mx-auto md:w-full lg:w-3/4"
+        class="contact-image rounded-xl dashed-border w-full xs:w-3/4 xs:mx-auto md:w-full lg:w-3/4"
       />
     </section>
 

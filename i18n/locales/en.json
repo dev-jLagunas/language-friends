@@ -197,21 +197,21 @@
       "moko": {
         "name": "Moko",
         "greeting": "Hi, I'm Moko",
-        "personality": "Curious and adventurous",
+        "personality": "Curious and adventurous.",
         "learningRole": "Encourages children to try new words and ideas with confidence.",
         "realWorld": "Inspired by curious animals who love exploring their surroundings."
       },
       "niko": {
         "name": "Niko",
         "greeting": "Hi, I'm Niko",
-        "personality": "Calm and thoughtful",
+        "personality": "Calm and thoughtful.",
         "learningRole": "Shows children that learning can happen slowly and comfortably.",
         "realWorld": "Inspired by gentle animals who observe and learn at their own pace."
       },
       "okja": {
         "name": "Okja",
         "greeting": "Hiya, I'm Okja",
-        "personality": "Playful and energetic",
+        "personality": "Playful and energetic.",
         "learningRole": "Helps children learn through movement, repetition, and fun.",
         "realWorld": "Inspired by active animals who learn by doing."
       }

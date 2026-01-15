@@ -60,117 +60,129 @@ onUnmounted(() => {
     class="mx-auto pb-24 px-4 md:pt-24 font-yomogi theme-toggle-styles space-y-8 md:space-y-16"
   >
     <!-- Page Intro -->
-    <header class="dashed-border rounded-2xl">
+    <!-- <header class="rounded-2xl">
       <h1 class="section-card-title section-title-underline">
         {{ $t("characters.title") }}
       </h1>
       <p class="section-body-type">
         {{ $t("characters.intro") }}
       </p>
-    </header>
+    </header> -->
 
     <!-- Moko -->
     <section
       id="character-moko"
-      class="character-section text-dark-primary grid grid-cols-1 mt-4 md:grid-cols-2 gap-10 items-center"
+      class="character-section text-dark-primary grid grid-cols-1 mt-4 md:grid md:grid-cols-2 items-center md:gap-10 place-items-center"
     >
-      <div
+      <section
         class="character-text bg-moko-blue-soft relative rounded-2xl p-4 md:p-8"
       >
+        <p
+          class="section-big-numbers text-dark-primary/50 absolute -top-10 right-0 md:-top-24"
+        >
+          1.
+        </p>
         <div class="flex justify-between items-center">
           <h2 class="section-card-title section-title-underline">
-            {{ $t("characters.moko.name") }}
+            {{ $t("characters.profiles.moko.name") }}
           </h2>
           <Icon name="mdi:paw" class="text-4xl opacity-80" />
         </div>
-
         <p class="section-body-type">
-          {{ $t("homeSectionThree.moko.textA") }}
+          {{ $t("characters.profiles.moko.learningRole") }}
         </p>
         <p class="section-body-type mt-2 pb-2">
-          {{ $t("homeSectionThree.moko.textB") }}
+          {{ $t("characters.profiles.moko.realWorld") }}
         </p>
-
         <p
           class="section-body-type mt-2 border-t border-dark-primary/50 pt-2 border-dashed"
         >
-          {{ $t("characters.moko.learningRole") }}
+          {{ $t("characters.profiles.moko.personality") }}
         </p>
-      </div>
-
+      </section>
       <img
         src="/images/moko/moko-collage-1.png"
-        class="character-image dashed-border rounded-2xl rotate-12 my-8"
+        class="character-image dashed-border rounded-2xl my-8"
       />
     </section>
 
     <!-- Niko -->
     <section
       id="character-niko"
-      class="character-section grid grid-cols-1 mt-4 md:grid-cols-2 gap-10 items-center"
+      class="character-section grid grid-cols-1 mt-4 md:grid-cols-2 gap-10 items-center place-items-center"
     >
-      <div
-        class="character-text bg-niko-purple-soft rounded-2xl p-4 md:p-8 md:order-2 text-dark-primary"
+      <section
+        class="character-text relative bg-niko-purple-soft rounded-2xl p-4 md:p-8 md:order-2 text-dark-primary"
       >
+        <p
+          class="section-big-numbers text-dark-primary/50 absolute -top-10 right-0 md:-top-24"
+        >
+          2.
+        </p>
         <div class="flex justify-between items-center">
           <h2 class="section-card-title section-title-underline">
-            {{ $t("characters.niko.name") }}
+            {{ $t("characters.profiles.niko.name") }}
           </h2>
           <Icon name="mdi:cat" class="text-4xl opacity-80" />
         </div>
 
         <p class="section-body-type">
-          {{ $t("homeSectionThree.niko.textA") }}
+          {{ $t("characters.profiles.niko.learningRole") }}
         </p>
         <p class="section-body-type mt-2 pb-2">
-          {{ $t("homeSectionThree.niko.textB") }}
+          {{ $t("characters.profiles.niko.realWorld") }}
         </p>
 
         <p
           class="section-body-type mt-2 border-t border-dark-primary/50 pt-2 border-dashed"
         >
-          {{ $t("characters.niko.learningRole") }}
+          {{ $t("characters.profiles.niko.personality") }}
         </p>
-      </div>
+      </section>
 
       <img
         src="/images/niko/niko-collage-1.png"
-        class="character-image dashed-border rounded-2xl -rotate-12 my-8"
+        class="character-image dashed-border rounded-2xl my-8"
       />
     </section>
 
     <!-- Okja -->
     <section
       id="character-okja"
-      class="character-section grid grid-cols-1 mt-4 md:grid-cols-2 gap-10 items-center"
+      class="character-section grid grid-cols-1 mt-4 md:grid-cols-2 gap-10 items-center place-items-center"
     >
       <div
-        class="character-text bg-okja-yellow-soft rounded-2xl p-4 md:p-8 text-dark-primary"
+        class="character-text relative bg-okja-yellow-soft rounded-2xl p-4 md:p-8 text-dark-primary"
       >
+        <p
+          class="section-big-numbers text-dark-primary/50 absolute -top-10 right-0 md:-top-24"
+        >
+          3.
+        </p>
         <div class="flex justify-between items-center">
           <h2 class="section-card-title section-title-underline">
-            {{ $t("characters.okja.name") }}
+            {{ $t("characters.profiles.okja.name") }}
           </h2>
           <Icon name="mdi:paw" class="text-4xl opacity-80" />
         </div>
 
         <p class="section-body-type">
-          {{ $t("homeSectionThree.okja.textA") }}
+          {{ $t("characters.profiles.okja.learningRole") }}
         </p>
         <p class="section-body-type mt-2 pb-2">
-          {{ $t("homeSectionThree.okja.textB") }}
+          {{ $t("characters.profiles.okja.realWorld") }}
         </p>
 
         <p
           class="section-body-type mt-2 border-t border-dark-primary/50 pt-2 border-dashed"
         >
-          {{ $t("characters.okja.learningRole") }}
+          {{ $t("characters.profiles.okja.personality") }}
         </p>
       </div>
 
       <img
         src="/images/okja/okja-collage-1.png"
-        class="character-image dashed-border rounded-2xl rotate-12 my-8"
+        class="character-image dashed-border rounded-2xl my-8"
       />
     </section>
 

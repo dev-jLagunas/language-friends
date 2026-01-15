@@ -2,65 +2,90 @@
 
 <template>
   <section
-    class="mx-auto px-4 md:pt-24 pb-24 font-yomogi theme-toggle-styles space-y-12 md:space-y-20"
+    class="mx-auto px-4 md:pt-32 pb-24 font-yomogi theme-toggle-styles space-y-8 md:space-y-20"
   >
     <!-- Page Intro -->
-    <section class="md:p-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-      <div class="bg-moko-blue-soft rounded-2xl p-6 md:p-8 md:-rotate-3">
-        <div class="flex items-center justify-between">
+    <section
+      class="md:p-8 grid grid-cols-1 md:grid-cols-2 gap-4 items-center md:gap-8"
+    >
+      <div class="bg-moko-blue-soft rounded-2xl p-6 relative md:p-8">
+        <p
+          class="section-big-numbers absolute -top-10 right-0 md:-top-24 md:-right-8"
+        >
+          1.
+        </p>
+        <div class="flex items-center justify-between text-dark-primary">
           <h1 class="section-card-title section-title-underline">
             {{ $t("howToUse.title") }}
           </h1>
           <Icon name="mdi:book-open-page-variant" class="text-4xl opacity-80" />
         </div>
 
-        <p class="section-body-type mt-2">
+        <p class="section-body-type mt-2 text-dark-primary">
           {{ $t("howToUse.intro") }}
         </p>
       </div>
 
       <div
-        class="dashed-border rounded-xl p-8 flex items-center justify-center rotate-12"
+        class="dashed-border rounded-xl p-8 flex items-center justify-center"
       >
-        <Icon name="mdi:book-heart-outline" class="text-6xl opacity-70" />
+        <img
+          src="/images/mockups/1-LIKE-Mockup-3.png"
+          alt="mockup image of book on iPad on childrens desk"
+          class="rounded-2xl"
+        />
       </div>
     </section>
 
     <!-- Pedagogy -->
     <section class="md:p-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
       <div
-        class="bg-niko-purple-soft rounded-2xl p-6 md:p-8 md:rotate-3 md:order-1"
+        class="bg-niko-purple-soft rounded-2xl p-6 md:p-8 relative md:order-1"
       >
-        <div class="flex items-center justify-between">
+        <p
+          class="section-big-numbers absolute -top-10 right-0 md:-top-24 md:-right-8"
+        >
+          2.
+        </p>
+        <div class="flex items-center justify-between text-dark-primary">
           <h2 class="section-card-title section-title-underline">
             {{ $t("howToUse.pedagogy.title") }}
           </h2>
           <Icon name="mdi:lightbulb-outline" class="text-4xl opacity-80" />
         </div>
 
-        <p class="section-body-type mt-2">
+        <p class="section-body-type mt-2 text-dark-primary">
           {{ $t("howToUse.pedagogy.text") }}
         </p>
       </div>
 
       <div
-        class="dashed-border rounded-xl p-8 flex items-center justify-center -rotate-12"
+        class="dashed-border rounded-xl p-8 flex items-center justify-center"
       >
-        <Icon name="mdi:repeat" class="text-6xl opacity-70" />
+        <img
+          src="/images/mockups/1-LIKE-Mockup-2.png"
+          alt="mockup image of book on iPad on childrens desk"
+          class="rounded-2xl"
+        />
       </div>
     </section>
 
     <!-- Book Structure -->
     <section class="md:p-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-      <div class="bg-okja-yellow-soft rounded-2xl p-6 md:p-8 md:-rotate-3">
-        <div class="flex items-center justify-between">
+      <div class="bg-okja-yellow-soft rounded-2xl relative p-6 md:p-8">
+        <p
+          class="section-big-numbers absolute -top-10 right-0 md:-top-24 md:-right-8"
+        >
+          3.
+        </p>
+        <div class="flex items-center justify-between text-dark-primary">
           <h2 class="section-card-title section-title-underline">
             {{ $t("howToUse.structure.title") }}
           </h2>
           <Icon name="mdi:view-list-outline" class="text-4xl opacity-80" />
         </div>
 
-        <ul class="mt-3 space-y-2">
+        <ul class="mt-3 space-y-2 text-dark-primary">
           <li
             v-for="(point, i) in $tm('howToUse.structure.points')"
             :key="i"
@@ -73,29 +98,36 @@
       </div>
 
       <div
-        class="dashed-border rounded-xl p-8 flex items-center justify-center rotate-12"
+        class="dashed-border rounded-xl p-8 flex items-center justify-center"
       >
-        <Icon name="mdi:palette-outline" class="text-6xl opacity-70" />
+        <img
+          src="/images/mockups/2-VERBS-Mockup-2.png"
+          alt="mockup image of book on iPad on childrens desk"
+          class="rounded-2xl"
+        />
       </div>
     </section>
 
     <!-- Parents -->
     <section class="md:p-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-      <div
-        class="bg-moko-blue-soft rounded-2xl p-6 md:p-8 md:rotate-3 md:order-1"
-      >
-        <div class="flex items-center justify-between">
+      <div class="bg-moko-blue-soft rounded-2xl relative p-6 md:p-8 md:order-1">
+        <p
+          class="section-big-numbers absolute -top-10 right-0 md:-top-24 md:-right-8"
+        >
+          4.
+        </p>
+        <div class="flex items-center justify-between text-dark-primary">
           <h2 class="section-card-title section-title-underline">
             {{ $t("howToUse.parents.title") }}
           </h2>
           <Icon name="mdi:account-heart-outline" class="text-4xl opacity-80" />
         </div>
 
-        <p class="section-body-type mt-2">
+        <p class="section-body-type mt-2 text-dark-primary">
           {{ $t("howToUse.parents.text") }}
         </p>
 
-        <ul class="mt-3 space-y-2">
+        <ul class="mt-3 space-y-2 text-dark-primary">
           <li
             v-for="(tip, i) in $tm('howToUse.parents.tips')"
             :key="i"
@@ -108,27 +140,36 @@
       </div>
 
       <div
-        class="dashed-border rounded-xl p-8 flex items-center justify-center -rotate-12"
+        class="dashed-border rounded-xl p-8 flex items-center justify-center"
       >
-        <Icon name="mdi:book-open-variant" class="text-6xl opacity-70" />
+        <img
+          src="/images/mockups/mom-and-son-5.png"
+          alt="mockup image of book on iPad on childrens desk"
+          class="rounded-2xl"
+        />
       </div>
     </section>
 
     <!-- Independent Children -->
     <section class="md:p-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-      <div class="bg-niko-purple-soft rounded-2xl p-6 md:p-8 md:-rotate-3">
-        <div class="flex items-center justify-between">
+      <div class="bg-niko-purple-soft rounded-2xl p-6 md:p-8 relative">
+        <p
+          class="section-big-numbers absolute -top-10 right-0 md:-top-24 md:-right-8"
+        >
+          5.
+        </p>
+        <div class="flex items-center justify-between text-dark-primary">
           <h2 class="section-card-title section-title-underline">
             {{ $t("howToUse.children.title") }}
           </h2>
           <Icon name="mdi:school-outline" class="text-4xl opacity-80" />
         </div>
 
-        <p class="section-body-type mt-2">
+        <p class="section-body-type mt-2 text-dark-primary">
           {{ $t("howToUse.children.text") }}
         </p>
 
-        <ul class="mt-3 space-y-2">
+        <ul class="mt-3 space-y-2 text-dark-primary">
           <li
             v-for="(tip, i) in $tm('howToUse.children.tips')"
             :key="i"
@@ -141,29 +182,38 @@
       </div>
 
       <div
-        class="dashed-border rounded-xl p-8 flex items-center justify-center rotate-12"
+        class="dashed-border rounded-xl p-8 flex items-center justify-center"
       >
-        <Icon name="mdi:progress-check" class="text-6xl opacity-70" />
+        <img
+          src="/images/mockups/dad-and-son-2.png"
+          alt="mockup image of book on iPad on childrens desk"
+          class="rounded-2xl"
+        />
       </div>
     </section>
 
     <!-- Bilingual -->
     <section class="md:p-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
       <div
-        class="bg-okja-yellow-soft rounded-2xl p-6 md:p-8 md:rotate-3 md:order-1"
+        class="bg-okja-yellow-soft rounded-2xl p-6 md:p-8 relative md:order-1"
       >
-        <div class="flex items-center justify-between">
+        <p
+          class="section-big-numbers absolute -top-10 right-0 md:-top-24 md:-right-8"
+        >
+          6.
+        </p>
+        <div class="flex items-center justify-between text-dark-primary">
           <h2 class="section-card-title section-title-underline">
             {{ $t("howToUse.bilingual.title") }}
           </h2>
           <Icon name="mdi:translate" class="text-4xl opacity-80" />
         </div>
 
-        <p class="section-body-type mt-2">
+        <p class="section-body-type mt-2 text-dark-primary">
           {{ $t("howToUse.bilingual.text") }}
         </p>
 
-        <ul class="mt-3 space-y-2">
+        <ul class="mt-3 space-y-2 text-dark-primary">
           <li
             v-for="(tip, i) in $tm('howToUse.bilingual.tips')"
             :key="i"
@@ -176,9 +226,13 @@
       </div>
 
       <div
-        class="dashed-border rounded-xl p-8 flex items-center justify-center -rotate-12"
+        class="dashed-border rounded-xl p-8 flex items-center justify-center"
       >
-        <Icon name="mdi:earth" class="text-6xl opacity-70" />
+        <img
+          src="/images/mockups/bilingual-student.png"
+          alt="mockup image of book on iPad on childrens desk"
+          class="rounded-2xl"
+        />
       </div>
     </section>
 
