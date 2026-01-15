@@ -1,24 +1,29 @@
 {
-  "footer": {
-    "nav": {
+  "brand": {
+    "name": "The Language Friends",
+    "tagline": "Fun English Picture Books to Read with Your Child"
+  },
+  "navigation": {
+    "main": {
       "home": "Home",
       "books": "Books",
       "about": "About",
       "menu": "Menu"
     },
-    "menu": {
-      "title": "The Language Friends",
-      "start": "New Visitors",
-      "firstTime": "Take Tour",
+    "newVisitors": {
+      "label": "New Visitors",
+      "tour": "Take Tour",
+      "about": "About",
       "characters": "Characters",
+      "howTo": "How to Use",
       "kids": "Kids Corner",
-      "contact": "Contact",
-      "howTo": "How to use",
-      "languageToggle": "EN / JP"
+      "contact": "Contact"
     }
   },
-  "navbar": {
-    "tagline": "Fun English Picture Books to Read with Your Child"
+  "ui": {
+    "closeMenu": "Close Menu",
+    "learnMore": "Learn more",
+    "languageToggle": "EN / JP"
   },
   "hero": {
     "title": "The Language Friends",
@@ -28,190 +33,180 @@
     "emailPlaceholder": "Your email address",
     "subscribeButton": "Subscribe",
     "note": "Sign up to receive updates about new books and reading tips. Get the first e-book free as a thank-you.",
-    "prompt1": "We learn English together.",
-    "prompt2": "English is part of our day.",
-    "prompt3": "We enjoy English together."
-  },
-  "characterss": {
-    "moko": "Moko",
-    "mokoGreet": "Hi, I'm Moko",
-    "niko": "Niko",
-    "nikoGreet": "Hi, I'm Niko",
-    "okja": "Okja",
-    "okjaGreet": "Hiya, I'm Okja"
+    "prompts": [
+      "We learn English together.",
+      "English is part of our day.",
+      "We enjoy English together."
+    ]
   },
   "tour": {
     "intro": "Take a short interactive tour to learn what The Language Friends is all about.",
     "instruction": "Just scroll down and follow along."
   },
-  "ui": {
-    "closeMenu": "Close Menu",
-    "cta": "Learn more"
-  },
-  "homeSectionOne": {
-    "title": "First time here?",
-    "what": {
-      "title": "What is this?",
-      "text": "The Language Friends is a children’s English picture book series made for reading together at home.",
-      "extra": "Each book teaches simple patterns through clear pictures and everyday moments."
-    },
-    "who": {
-      "title": "Who is it for?",
-      "text": "For young children and parents who want to enjoy English together, even if they don’t speak English confidently.",
-      "extra": "Perfect for families who want a gentle routine they can start anytime."
-    },
-    "why": {
-      "title": "Why is it safe and easy?",
-      "text": "Simple sentences, gentle repetition, and friendly characters help children learn naturally, without pressure or testing.",
-      "extra": "Kids can listen, repeat, and build confidence at their own pace."
-    }
-  },
-  "homeSectionTwo": {
-    "sectionTitle": "How It Works",
-    "sectionSubtitle": "A simple, gentle way for children to start learning English with confidence.",
-    "sectionA": {
-      "title": "Built for Natural Learning",
-      "textA": "The Language Friends is designed to help children learn English the same way they learn their first language through repetition, familiarity, and everyday experiences.",
-      "textB": "Instead of focusing on rules, children see and hear the same patterns again and again until they begin to feel natural."
-    },
-    "sectionB": {
-      "title": "Made for Real Families",
-      "textA": "Each book is created for families who want to learn together, even if parents are not confident English speakers themselves.",
-      "textB": "The structure is simple and predictable, making it easy to read together without pressure or preparation."
-    },
-    "sectionC": {
-      "title": "Learning Through Daily Life",
-      "textA": "The stories focus on everyday moments eating, playing, going outside so children can connect language to their own experiences.",
-      "textB": "By seeing English used in familiar situations, children begin to understand meaning naturally and gain confidence over time."
-    }
-  },
-  "homeSectionThree": {
-    "title": "Meet The Language Friends!",
-    "intro": "Get to know the friendly characters who guide children through their English learning journey.",
-    "moko": {
-      "name": "Moko",
-      "textA": "Moko is adventurous and curious. He loves exploring new places and trying new things.",
-      "textB": "Moko helps children feel confident by showing that trying something new can be fun and exciting."
-    },
-    "niko": {
-      "name": "Niko",
-      "textA": "Niko is gentle and thoughtful. She enjoys calm moments and learning at her own pace.",
-      "textB": "Niko shows children that it’s okay to take things slowly and learn in a comfortable way."
-    },
-    "okja": {
-      "name": "Okja",
-      "textA": "Okja is energetic and playful. He loves moving, laughing, and exploring the world around him.",
-      "textB": "Okja helps children learn through action and reminds them that learning can be fun and active."
-    }
-  },
-  "homeSectionFour": {
-    "title": "Book Series",
-    "subtitle": "Each series focuses on a different way children naturally use and understand language.",
-    "series": {
-      "like": {
-        "title": "The Like Series",
-        "text": "Children learn simple sentence patterns using “like” through familiar activities, food, and everyday moments."
-      },
-      "verb": {
-        "title": "The Verb Series",
-        "text": "This series introduces basic action verbs through movement, play, and daily routines children already know."
-      },
-      "adjective": {
-        "title": "The Adjective Series",
-        "text": "Children explore describing words like big, small, happy, and sad using clear visual comparisons."
-      },
-      "friends": {
-        "title": "The Friends Series",
-        "text": "Children learn social language through friendships, sharing, and simple interactions between characters."
+  "home": {
+    "intro": {
+      "title": "First time here?",
+      "cards": {
+        "what": {
+          "title": "What is this?",
+          "text": "The Language Friends is a children’s English picture book series made for reading together at home.",
+          "extra": "Each book teaches simple patterns through clear pictures and everyday moments."
+        },
+        "who": {
+          "title": "Who is it for?",
+          "text": "For young children and parents who want to enjoy English together, even if they don’t speak English confidently.",
+          "extra": "Perfect for families who want a gentle routine they can start anytime."
+        },
+        "why": {
+          "title": "Why is it safe and easy?",
+          "text": "Simple sentences, gentle repetition, and friendly characters help children learn naturally, without pressure or testing.",
+          "extra": "Kids can listen, repeat, and build confidence at their own pace."
+        }
       }
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "subtitle": "A simple, gentle way for children to start learning English with confidence.",
+      "steps": [
+        {
+          "title": "Built for Natural Learning",
+          "textA": "The Language Friends is designed to help children learn English the same way they learn their first language through repetition, familiarity, and everyday experiences.",
+          "textB": "Instead of focusing on rules, children see and hear the same patterns again and again until they begin to feel natural."
+        },
+        {
+          "title": "Made for Real Families",
+          "textA": "Each book is created for families who want to learn together, even if parents are not confident English speakers themselves.",
+          "textB": "The structure is simple and predictable, making it easy to read together without pressure or preparation."
+        },
+        {
+          "title": "Learning Through Daily Life",
+          "textA": "The stories focus on everyday moments like eating, playing, and going outside so children can connect language to their own experiences.",
+          "textB": "By seeing English used in familiar situations, children begin to understand meaning naturally and gain confidence over time."
+        }
+      ]
+    },
+    "charactersPreview": {
+      "title": "Meet The Language Friends!",
+      "intro": "Get to know the friendly characters who guide children through their English learning journey.",
+      "cards": {
+        "moko": {
+          "name": "Moko",
+          "textA": "Moko is adventurous and curious. He loves exploring new places and trying new things.",
+          "textB": "Moko helps children feel confident by showing that trying something new can be fun and exciting."
+        },
+        "niko": {
+          "name": "Niko",
+          "textA": "Niko is gentle and thoughtful. She enjoys calm moments and learning at her own pace.",
+          "textB": "Niko shows children that it’s okay to take things slowly and learn in a comfortable way."
+        },
+        "okja": {
+          "name": "Okja",
+          "textA": "Okja is energetic and playful. He loves moving, laughing, and exploring the world around him.",
+          "textB": "Okja helps children learn through action and reminds them that learning can be fun and active."
+        }
+      }
+    },
+    "seriesPreview": {
+      "title": "Book Series",
+      "subtitle": "Each series focuses on a different way children naturally use and understand language.",
+      "series": {
+        "like": {
+          "title": "The Like Series",
+          "text": "Children learn simple sentence patterns using “like” through familiar activities, food, and everyday moments."
+        },
+        "verb": {
+          "title": "The Verb Series",
+          "text": "This series introduces basic action verbs through movement, play, and daily routines children already know."
+        },
+        "adjective": {
+          "title": "The Adjective Series",
+          "text": "Children explore describing words like big, small, happy, and sad using clear visual comparisons."
+        },
+        "friends": {
+          "title": "The Friends Series",
+          "text": "Children learn social language through friendships, sharing, and simple interactions between characters."
+        }
+      }
+    },
+    "stayConnected": {
+      "title": "Let’s Keep Learning Together",
+      "subtitle": "The Language Friends is designed to grow with your child and support their English journey step by step.",
+      "connectTitle": "Stay Connected",
+      "instagram": "Instagram",
+      "youtube": "YouTube",
+      "email": "Email",
+      "newsletter": "Get updates about new books, activities, and upcoming releases.",
+      "placeholder": "Enter your email address",
+      "button": "Subscribe",
+      "cta": "Explore the Books"
+    },
+    "final": {
+      "thanks": "Thank You"
     }
-  },
-  "homeSectionFive": {
-    "title": "Let’s Keep Learning Together",
-    "subtitle": "The Language Friends is designed to grow with your child and support their English journey step by step.",
-    "connectTitle": "Stay Connected",
-    "instagram": "Instagram",
-    "youtube": "YouTube",
-    "email": "Email",
-    "newsletter": "Get updates about new books, activities, and upcoming releases.",
-    "placeholder": "Enter your email address",
-    "button": "Subscribe",
-    "cta": "Explore the Books"
-  },
-  "homeSectionFinal": {
-    "thanks": "Thank You"
-  },
-  "comingSoon": {
-    "title": "Coming Soon",
-    "message": "We’re still getting things ready. Thanks for your patience.",
-    "emailPlaceholder": "Your email",
-    "cta": "Notify Me"
   },
   "about": {
     "title": "About The Language Friends",
     "intro": "The Language Friends is a gentle English learning project designed to help children feel confident, curious, and comfortable using English in their everyday lives.",
-
-    "philosophy": {
-      "title": "Our Approach",
-      "text": "We believe children learn best through familiarity, repetition, and positive experiences. Instead of memorization or pressure, our approach focuses on simple patterns, clear visuals, and friendly repetition that builds confidence over time."
+    "sections": {
+      "approach": {
+        "title": "Our Approach",
+        "text": "We believe children learn best through familiarity, repetition, and positive experiences. Instead of memorization or pressure, our approach focuses on simple patterns, clear visuals, and friendly repetition that builds confidence over time."
+      },
+      "learning": {
+        "title": "How Children Learn With Us",
+        "text": "Each book introduces a small set of words and sentence patterns through everyday situations. By seeing and hearing the same structures again and again, children naturally begin to understand and use English without fear or stress."
+      },
+      "characters": {
+        "title": "Meet the Characters",
+        "text": "The Language Friends are friendly guides who help children feel safe and motivated. Each character has a unique personality that reflects different learning styles and emotions, helping children connect naturally with the language."
+      },
+      "parents": {
+        "title": "For Parents",
+        "text": "Designed with parents in mind, The Language Friends supports shared learning moments. You don’t need to be fluent in English. The books guide both you and your child through simple, meaningful experiences."
+      },
+      "closing": {
+        "title": "A Gentle Start to English",
+        "text": "The Language Friends is not about perfection or testing. It’s about curiosity, confidence, and enjoying the journey of learning together."
+      }
     },
-
-    "learning": {
-      "title": "How Children Learn With Us",
-      "text": "Each book introduces a small set of words and sentence patterns through everyday situations. By seeing and hearing the same structures again and again, children naturally begin to understand and use English without fear or stress."
-    },
-
-    "characterss": {
-      "title": "Meet the Characters",
-      "text": "The Language Friends are friendly guides who help children feel safe and motivated. Each character has a unique personality that reflects different learning styles and emotions, helping children connect naturally with the language."
-    },
-
-    "parents": {
-      "title": "For Parents",
-      "text": "Designed with parents in mind, The Language Friends supports shared learning moments. You don’t need to be fluent in English — the books guide both you and your child through simple, meaningful experiences."
-    },
-
-    "closing": {
-      "title": "A Gentle Start to English",
-      "text": "The Language Friends is not about perfection or testing. It’s about curiosity, confidence, and enjoying the journey of learning together."
-    },
-    "aboutIntro": {
+    "pageIntro": {
       "title": "Welcome to The Language Friends",
       "text": "This page is a short story about how The Language Friends works. Scroll down to learn our approach, how children learn with us, who the characters are, and how parents fit into the experience.",
-      "contents": {
-        "one": "Our learning approach",
-        "two": "How children learn with our books",
-        "three": "Meet the characters",
-        "four": "Learning together with parents",
-        "five": "A gentle start to English"
-      }
+      "contents": [
+        "Our learning approach",
+        "How children learn with our books",
+        "Meet the characters",
+        "Learning together with parents",
+        "A gentle start to English"
+      ]
     }
   },
   "characters": {
     "title": "Meet the Characters",
     "intro": "The Language Friends are gentle guides who help children feel comfortable, confident, and curious while learning English.",
-
-    "moko": {
-      "name": "Moko",
-      "personality": "Curious and adventurous",
-      "learningRole": "Encourages children to try new words and ideas with confidence.",
-      "realWorld": "Inspired by curious animals who love exploring their surroundings."
+    "profiles": {
+      "moko": {
+        "name": "Moko",
+        "greeting": "Hi, I'm Moko",
+        "personality": "Curious and adventurous",
+        "learningRole": "Encourages children to try new words and ideas with confidence.",
+        "realWorld": "Inspired by curious animals who love exploring their surroundings."
+      },
+      "niko": {
+        "name": "Niko",
+        "greeting": "Hi, I'm Niko",
+        "personality": "Calm and thoughtful",
+        "learningRole": "Shows children that learning can happen slowly and comfortably.",
+        "realWorld": "Inspired by gentle animals who observe and learn at their own pace."
+      },
+      "okja": {
+        "name": "Okja",
+        "greeting": "Hiya, I'm Okja",
+        "personality": "Playful and energetic",
+        "learningRole": "Helps children learn through movement, repetition, and fun.",
+        "realWorld": "Inspired by active animals who learn by doing."
+      }
     },
-
-    "niko": {
-      "name": "Niko",
-      "personality": "Calm and thoughtful",
-      "learningRole": "Shows children that learning can happen slowly and comfortably.",
-      "realWorld": "Inspired by gentle animals who observe and learn at their own pace."
-    },
-
-    "okja": {
-      "name": "Okja",
-      "personality": "Playful and energetic",
-      "learningRole": "Helps children learn through movement, repetition, and fun.",
-      "realWorld": "Inspired by active animals who learn by doing."
-    },
-
     "closing": {
       "text": "You’ll meet the Language Friends throughout the stories as they learn, play, and explore together."
     }
@@ -233,7 +228,6 @@
   "books": {
     "title": "Our Book Series",
     "intro": "Each series is designed around a simple language pattern children naturally use in everyday life. All books follow the same structure to reduce cognitive load and build confidence through familiarity.",
-
     "series": {
       "like": {
         "title": "The Like Series",
@@ -247,7 +241,6 @@
         "ageRange": "Ages 2–6",
         "tone": "Comforting and familiar"
       },
-
       "verb": {
         "title": "The Verb Series",
         "shortLabel": "Actions & Movement",
@@ -260,7 +253,6 @@
         "ageRange": "Ages 2–6",
         "tone": "Active and playful"
       },
-
       "adjective": {
         "title": "The Adjective Series",
         "shortLabel": "Describing Words",
@@ -273,7 +265,6 @@
         "ageRange": "Ages 2–6",
         "tone": "Gentle and emotionally clear"
       },
-
       "preposition": {
         "title": "The Preposition Series",
         "shortLabel": "Location & Space",
@@ -286,7 +277,6 @@
         "ageRange": "Ages 2–6",
         "tone": "Clear and grounding"
       },
-
       "friends": {
         "title": "The Friends Series",
         "shortLabel": "Social Language",
@@ -304,12 +294,10 @@
   "howToUse": {
     "title": "How to Use These Books",
     "intro": "The Language Friends books are designed to help children learn English naturally through patterns, repetition, and visual understanding. This page explains how we recommend using the books depending on who is reading them.",
-
     "pedagogy": {
       "title": "Our Learning Approach",
       "text": "These books focus on pattern recognition rather than translation. Children learn by seeing the same sentence structure repeated with clear visual support. Grammar is introduced naturally through use, not memorization."
     },
-
     "structure": {
       "title": "How the Books Are Structured",
       "points": [
@@ -321,7 +309,6 @@
         "Pages with little or no Japanese to encourage independent reading"
       ]
     },
-
     "parents": {
       "title": "For Parents Reading With Children",
       "text": "We recommend reading the book together with your child. Show them the page clearly, read aloud, and enjoy the rhythm of the language.",
@@ -333,7 +320,6 @@
         "Focus on enjoying the story rather than explaining grammar"
       ]
     },
-
     "children": {
       "title": "For Children Reading Independently",
       "text": "Children who can read on their own are encouraged to use the books as a challenge.",
@@ -344,7 +330,6 @@
         "Try reading pages without Japanese as confidence practice"
       ]
     },
-
     "bilingual": {
       "title": "For Bilingual or International Children",
       "text": "For children growing up with English and Japanese, the books support learning both languages together.",
@@ -355,9 +340,14 @@
         "Repetition across books strengthens understanding over time"
       ]
     },
-
     "closing": {
       "text": "There is no single right way to use these books. Read together, read alone, repeat pages, make voices, and have fun. The goal is comfort, confidence, and curiosity with language."
     }
+  },
+  "comingSoon": {
+    "title": "Coming Soon",
+    "message": "We’re still getting things ready. Thanks for your patience.",
+    "emailPlaceholder": "Your email",
+    "cta": "Notify Me"
   }
 }

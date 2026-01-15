@@ -22,7 +22,7 @@ const toggleMenu = () => {
             active-class="border-b border-dashed border-dark-primary dark:border-light-primary"
           >
             <Icon name="heroicons:home" class="text-3xl group-hover-rotate" />
-            <span>{{ $t("footer.nav.home") }}</span>
+            <span>{{ $t("navigation.main.home") }}</span>
           </NuxtLink>
         </li>
 
@@ -37,7 +37,7 @@ const toggleMenu = () => {
               name="heroicons:book-open"
               class="text-3xl text-sunny-orange group-hover-rotate"
             />
-            <span>{{ $t("footer.nav.books") }}</span>
+            <span>{{ $t("navigation.main.books") }}</span>
           </NuxtLink>
         </li>
 
@@ -48,11 +48,15 @@ const toggleMenu = () => {
             class="flex-col-center-center"
             active-class="border-b border-dashed border-soft-pink"
           >
-            <Icon
+            <!-- <Icon
               name="ph:cat"
               class="text-3xl text-soft-pink group-hover-rotate"
+            /> -->
+            <Icon
+              name="heroicons:envelope"
+              class="text-3xl text-green-signifier group-hover-rotate"
             />
-            <span>{{ $t("footer.nav.about") }}</span>
+            <span>{{ $t("navigation.newVisitors.contact") }}</span>
           </NuxtLink>
         </li>
 
@@ -99,7 +103,7 @@ const toggleMenu = () => {
                   name="heroicons:sparkles"
                   class="mr-2 text-sunny-orange group-hover-rotate"
                 />
-                <span>{{ $t("footer.menu.start") }}</span>
+                <span>{{ $t("navigation.newVisitors.label") }}</span>
               </div>
 
               <!-- NESTED LINKS -->
@@ -114,7 +118,7 @@ const toggleMenu = () => {
                       name="heroicons:map"
                       class="mr-2 text-moko-blue group-hover-rotate"
                     />
-                    <span>{{ $t("footer.menu.firstTime") }}</span>
+                    <span>{{ $t("navigation.newVisitors.tour") }}</span>
                   </NuxtLink>
                 </li>
 
@@ -128,7 +132,7 @@ const toggleMenu = () => {
                       name="heroicons:information-circle"
                       class="mr-2 text-soft-pink group-hover-rotate"
                     />
-                    <span>{{ $t("footer.nav.about") }}</span>
+                    <span>{{ $t("navigation.main.about") }}</span>
                   </NuxtLink>
                 </li>
 
@@ -142,7 +146,7 @@ const toggleMenu = () => {
                       name="heroicons:face-smile"
                       class="mr-2 text-niko-purple group-hover-rotate"
                     />
-                    <span>{{ $t("footer.menu.characters") }}</span>
+                    <span>{{ $t("navigation.newVisitors.characters") }}</span>
                   </NuxtLink>
                 </li>
 
@@ -156,7 +160,7 @@ const toggleMenu = () => {
                       name="heroicons:book-open"
                       class="mr-2 text-okja-yellow group-hover-rotate"
                     />
-                    <span>{{ $t("footer.menu.howTo") }}</span>
+                    <span>{{ $t("navigation.newVisitors.howTo") }}</span>
                   </NuxtLink>
                 </li>
               </ul>
@@ -173,21 +177,7 @@ const toggleMenu = () => {
                   name="heroicons:puzzle-piece"
                   class="mr-2 text-okja-yellow group-hover-rotate"
                 />
-                <span>{{ $t("footer.menu.kids") }}</span>
-              </NuxtLink>
-            </li>
-
-            <li class="group">
-              <NuxtLink
-                to="/contact-us"
-                @click="toggleMenu"
-                class="flex items-center"
-              >
-                <Icon
-                  name="heroicons:envelope"
-                  class="mr-2 text-green-signifier group-hover-rotate"
-                />
-                <span>{{ $t("footer.menu.contact") }}</span>
+                <span>{{ $t("navigation.newVisitors.kids") }}</span>
               </NuxtLink>
             </li>
           </ul>

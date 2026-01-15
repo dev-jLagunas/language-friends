@@ -71,6 +71,7 @@ onUnmounted(() => {
 
     <!-- Moko -->
     <section
+      id="character-moko"
       class="character-section text-dark-primary grid grid-cols-1 mt-4 md:grid-cols-2 gap-10 items-center"
     >
       <div
@@ -105,6 +106,7 @@ onUnmounted(() => {
 
     <!-- Niko -->
     <section
+      id="character-niko"
       class="character-section grid grid-cols-1 mt-4 md:grid-cols-2 gap-10 items-center"
     >
       <div
@@ -139,6 +141,7 @@ onUnmounted(() => {
 
     <!-- Okja -->
     <section
+      id="character-okja"
       class="character-section grid grid-cols-1 mt-4 md:grid-cols-2 gap-10 items-center"
     >
       <div

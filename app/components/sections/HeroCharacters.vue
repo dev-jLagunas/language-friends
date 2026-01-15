@@ -32,18 +32,23 @@ onUnmounted(() => {
         class="w-full max-w-45"
       />
       <span class="text-sm font-bold text-dark-primary md:text-2xl">{{
-        $t("characterss.moko")
+        $t("characters.profiles.moko.name")
       }}</span>
       <!-- Hidden expandable content -->
       <div
         class="card-content flex-col-center-center absolute bg-light-primary w-full py-2 text-dark-primary md:w-fit md:px-4 md:rounded-r-xl"
       >
         <p class="text-xl md:text-2xl">
-          {{ $t("characterss.mokoGreet") }}
+          {{ $t("characters.profiles.moko.greeting") }}
         </p>
-        <button class="bg-moko-blue character-btns">
-          {{ $t("ui.cta") }}
-        </button>
+        <NuxtLink
+          :to="
+            $localePath({ path: '/character-info', hash: '#character-moko' })
+          "
+          class="bg-moko-blue character-btns inline-block text-center"
+        >
+          {{ $t("ui.learnMore") }}
+        </NuxtLink>
       </div>
     </article>
 
@@ -58,15 +63,22 @@ onUnmounted(() => {
         class="w-full max-w-45"
       />
       <span class="text-sm font-bold text-dark-primary md:text-2xl">{{
-        $t("characterss.niko")
+        $t("characters.profiles.niko.name")
       }}</span>
       <div
         class="card-content flex-col-center-center absolute bg-light-primary w-full py-2 text-dark-primary md:w-fit md:px-4 md:rounded-r-xl"
       >
-        <p class="text-xl md:text-2xl">{{ $t("characterss.nikoGreet") }}</p>
-        <button class="bg-niko-purple character-btns">
-          {{ $t("ui.cta") }}
-        </button>
+        <p class="text-xl md:text-2xl">
+          {{ $t("characters.profiles.niko.greeting") }}
+        </p>
+        <NuxtLink
+          :to="
+            $localePath({ path: '/character-info', hash: '#character-niko' })
+          "
+          class="bg-niko-purple character-btns inline-block text-center"
+        >
+          {{ $t("ui.learnMore") }}
+        </NuxtLink>
       </div>
     </article>
 
@@ -81,15 +93,22 @@ onUnmounted(() => {
         class="w-full max-w-45"
       />
       <span class="text-sm font-bold text-dark-primary md:text-2xl">{{
-        $t("characterss.okja")
+        $t("characters.profiles.okja.name")
       }}</span>
       <div
         class="card-content flex-col-center-center absolute bg-light-primary w-full py-2 text-dark-primary md:w-fit md:px-4 md:rounded-r-xl"
       >
-        <p class="text-xl md:text-2xl">{{ $t("characterss.okjaGreet") }}</p>
-        <button class="bg-okja-yellow character-btns">
-          {{ $t("ui.cta") }}
-        </button>
+        <p class="text-xl md:text-2xl">
+          {{ $t("characters.profiles.okja.greeting") }}
+        </p>
+        <NuxtLink
+          :to="
+            $localePath({ path: '/character-info', hash: '#character-okja' })
+          "
+          class="bg-okja-yellow character-btns inline-block text-center"
+        >
+          {{ $t("ui.learnMore") }}
+        </NuxtLink>
       </div>
     </article>
   </section>

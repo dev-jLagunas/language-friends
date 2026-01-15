@@ -33,7 +33,7 @@ const closeStart = () => {
           >
             <Icon name="heroicons:home" class="text-2xl group-hover-rotate" />
             <span class="lg:text-lg">
-              {{ $t("footer.nav.home") }}
+              {{ $t("navigation.main.home") }}
             </span>
           </NuxtLink>
         </li>
@@ -56,7 +56,7 @@ const closeStart = () => {
 
             <div class="flex items-center gap-1">
               <span class="hover:font-bold lg:text-lg">
-                {{ $t("footer.menu.start") }}
+                {{ $t("navigation.newVisitors.label") }}
               </span>
 
               <!-- Caret -->
@@ -81,7 +81,7 @@ const closeStart = () => {
                 @click="closeStart"
                 class="block px-4 py-2 hover:bg-moko-blue/10"
               >
-                {{ $t("footer.menu.firstTime") }}
+                {{ $t("navigation.newVisitors.tour") }}
               </NuxtLink>
             </li>
 
@@ -91,7 +91,7 @@ const closeStart = () => {
                 @click="closeStart"
                 class="block px-4 py-2 hover:bg-niko-purple/10"
               >
-                {{ $t("footer.nav.about") }}
+                {{ $t("navigation.main.about") }}
               </NuxtLink>
             </li>
 
@@ -101,7 +101,7 @@ const closeStart = () => {
                 @click="closeStart"
                 class="block px-4 py-2 hover:bg-okja-yellow/10"
               >
-                {{ $t("footer.menu.characters") }}
+                {{ $t("navigation.newVisitors.characters") }}
               </NuxtLink>
             </li>
             <li>
@@ -110,7 +110,7 @@ const closeStart = () => {
                 @click="closeStart"
                 class="block px-4 py-2 hover:bg-okja-yellow/10"
               >
-                {{ $t("footer.menu.howTo") }}
+                {{ $t("navigation.newVisitors.howTo") }}
               </NuxtLink>
             </li>
           </ul>
@@ -129,7 +129,7 @@ const closeStart = () => {
               class="text-sunny-orange text-2xl group-hover-rotate"
             />
             <span class="lg:text-lg">
-              {{ $t("footer.nav.books") }}
+              {{ $t("navigation.main.books") }}
             </span>
           </NuxtLink>
         </li>
@@ -155,7 +155,7 @@ const closeStart = () => {
               class="text-okja-yellow text-2xl group-hover-rotate"
             />
             <span class="lg:text-lg">
-              {{ $t("footer.menu.kids") }}
+              {{ $t("navigation.newVisitors.kids") }}
             </span>
           </NuxtLink>
         </li>
@@ -173,7 +173,7 @@ const closeStart = () => {
               class="text-green-signifier text-2xl group-hover-rotate"
             />
             <span class="lg:text-lg">
-              {{ $t("footer.menu.contact") }}
+              {{ $t("navigation.newVisitors.contact") }}
             </span>
           </NuxtLink>
         </li>

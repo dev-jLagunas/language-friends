@@ -6,7 +6,7 @@
       class="dashed-border rounded-xl md:rounded-2xl flex-col-center-center p-2 md:p-6"
     >
       <figcaption class="leading-5 text-center sm:text-xl">
-        {{ $t("hero.prompt1") }}
+        {{ $t("hero.prompts[0]") }}
       </figcaption>
       <img
         src="/images/mockups/book-mockup-2.png"
@@ -19,7 +19,7 @@
       class="dashed-border rounded-xl md:rounded-2xl flex-col-center-center p-2 md:p-6"
     >
       <figcaption class="font-yomogi leading-5 text-center sm:text-xl">
-        {{ $t("hero.prompt2") }}
+        {{ $t("hero.prompts[1]") }}
       </figcaption>
 
       <img
@@ -32,7 +32,7 @@
       class="dashed-border rounded-xl md:rounded-2xl flex-col-center-center p-2 md:p-6"
     >
       <figcaption class="font-yomogi leading-5 text-center sm:text-xl">
-        {{ $t("hero.prompt3") }}
+        {{ $t("hero.prompts[2]") }}
       </figcaption>
 
       <img
@@ -41,5 +41,13 @@
         class="w-full max-w-50"
       />
     </figure>
+    <div class="col-span-3 text-center mt-4">
+      <NuxtLink
+        :to="$localePath({ path: '/', hash: '#landingStory' })"
+        class="rounded-xl py-2 px-8 bg-green-signifier font-black hover:rounded-md transition-all duration-300 ease-in-out md:text-xl"
+      >
+        {{ $t("navigation.newVisitors.label") }}
+      </NuxtLink>
+    </div>
   </div>
 </template>
