@@ -22,76 +22,72 @@ onUnmounted(() => {
 <template>
   <section class="characters gap-2 px-4">
     <article
-      class="card bg-moko-blue rounded-md"
+      class="card bg-moko-blue rounded-lg md:rounded-2xl"
       :class="{ active: active === 0 }"
       @click="toggle(0)"
     >
       <img
-        src="/images/moko/moko-hello-1.png"
+        src="/images/moko/moko-nametag.png"
         alt="Moko"
         class="w-full max-w-45"
       />
-      <span class="text-sm font-bold text-dark-primary xs:text-lg">{{
+      <span class="text-sm font-bold text-dark-primary md:text-2xl">{{
         $t("characterss.moko")
       }}</span>
       <!-- Hidden expandable content -->
       <div
-        class="card-content flex-col-center-center absolute bg-light-primary w-full py-2 text-dark-primary md:w-fit md:px-4"
+        class="card-content flex-col-center-center absolute bg-light-primary w-full py-2 text-dark-primary md:w-fit md:px-4 md:rounded-r-xl"
       >
-        <p class="md:text-2xl">
+        <p class="text-xl md:text-2xl">
           {{ $t("characterss.mokoGreet") }}
         </p>
-        <button class="bg-moko-blue font-bold px-3 py-1 font-work text-sm mt-2">
+        <button class="bg-moko-blue character-btns">
           {{ $t("ui.cta") }}
         </button>
       </div>
     </article>
 
     <article
-      class="card bg-niko-purple rounded-md"
+      class="card bg-niko-purple rounded-lg md:rounded-2xl"
       :class="{ active: active === 1 }"
       @click="toggle(1)"
     >
       <img
-        src="/images/niko/niko-hello-1.png"
+        src="/images/niko/niko-nametag.png"
         alt="Niko"
         class="w-full max-w-45"
       />
-      <span class="text-sm font-bold text-dark-primary xs:text-lg">{{
+      <span class="text-sm font-bold text-dark-primary md:text-2xl">{{
         $t("characterss.niko")
       }}</span>
       <div
-        class="card-content flex-col-center-center absolute bg-light-primary w-full py-2 text-dark-primary md:w-fit md:px-4"
+        class="card-content flex-col-center-center absolute bg-light-primary w-full py-2 text-dark-primary md:w-fit md:px-4 md:rounded-r-xl"
       >
-        <p class="md:text-2xl">{{ $t("characterss.nikoGreet") }}</p>
-        <button
-          class="bg-niko-purple font-bold px-3 text-sm py-1 font-work mt-2"
-        >
+        <p class="text-xl md:text-2xl">{{ $t("characterss.nikoGreet") }}</p>
+        <button class="bg-niko-purple character-btns">
           {{ $t("ui.cta") }}
         </button>
       </div>
     </article>
 
     <article
-      class="card bg-okja-yellow rounded-md"
+      class="card bg-okja-yellow rounded-lg md:rounded-2xl"
       :class="{ active: active === 2 }"
       @click="toggle(2)"
     >
       <img
-        src="/images/okja/okja-hello-1.png"
+        src="/images/okja/okja-nametag.png"
         alt="Okja"
         class="w-full max-w-45"
       />
-      <span class="text-sm font-bold text-dark-primary xs:text-lg">{{
+      <span class="text-sm font-bold text-dark-primary md:text-2xl">{{
         $t("characterss.okja")
       }}</span>
       <div
-        class="card-content flex-col-center-center absolute bg-light-primary w-full py-2 text-dark-primary md:w-fit md:px-4"
+        class="card-content flex-col-center-center absolute bg-light-primary w-full py-2 text-dark-primary md:w-fit md:px-4 md:rounded-r-xl"
       >
-        <p class="md:text-2xl">{{ $t("characterss.okjaGreet") }}</p>
-        <button
-          class="bg-okja-yellow font-bold px-3 py-1 text-sm font-work mt-2"
-        >
+        <p class="text-xl md:text-2xl">{{ $t("characterss.okjaGreet") }}</p>
+        <button class="bg-okja-yellow character-btns">
           {{ $t("ui.cta") }}
         </button>
       </div>

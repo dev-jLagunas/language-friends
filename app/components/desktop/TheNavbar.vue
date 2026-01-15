@@ -133,10 +133,14 @@ const closeStart = () => {
             </span>
           </NuxtLink>
         </li>
-        <li class="flex-col-center-center">
-          <img src="/images/everyone/cats-peace-sign.png" alt="" class="w-20" />
+        <!-- <li class="flex-col-center-center">
+          <img
+            src="/images/logos/language-friends-logo.png"
+            alt=""
+            class="w-32"
+          />
           <p class="font-black -mt-8">The Language Friends</p>
-        </li>
+        </li> -->
 
         <!-- 4. Kids Corner -->
         <li class="group">

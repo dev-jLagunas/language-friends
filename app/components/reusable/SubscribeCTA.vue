@@ -3,7 +3,7 @@
 <template>
   <form
     aria-label="メール登録CTA"
-    class="border border-dark-primary/50 border-dashed px-2 py-2 dark:border-light-primary/50 md:py-4"
+    class="rounded-2xl dashed-border mt-2 px-2 py-2 md:py-4"
   >
     <label for="email" class="sr-only">
       {{ $t("hero.emailPlaceholder") }}
