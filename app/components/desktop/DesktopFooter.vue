@@ -21,11 +21,11 @@
       <div class="grid grid-cols-3">
         <!-- Start Here -->
         <div>
-          <h4 class="font-bold mb-3">Start Here</h4>
+          <h4 class="font-bold mb-3">{{ $t("ui.learnMore") }}</h4>
           <ul class="space-y-2 text-sm">
             <li>
               <NuxtLink :to="$localePath('/about-us')" class="hover:underline">
-                {{ $t("footer.nav.about") }}
+                {{ $t("navigation.main.about") }}
               </NuxtLink>
             </li>
             <li>
@@ -33,7 +33,7 @@
                 :to="$localePath('/character-info')"
                 class="hover:underline"
               >
-                {{ $t("footer.menu.characters") }}
+                {{ $t("navigation.newVisitors.characters") }}
               </NuxtLink>
             </li>
           </ul>
@@ -48,15 +48,15 @@
                 :to="$localePath('/books-display')"
                 class="hover:underline"
               >
-                {{ $t("footer.nav.books") }}
+                {{ $t("navigation.main.books") }}
               </NuxtLink>
             </li>
             <li>
               <NuxtLink
-                :to="$localePath('/kids-corner')"
+                :to="$localePath('/how-to-use')"
                 class="hover:underline"
               >
-                {{ $t("footer.menu.kids") }}
+                {{ $t("navigation.newVisitors.howTo") }}
               </NuxtLink>
             </li>
           </ul>
@@ -71,7 +71,7 @@
                 :to="$localePath('/contact-us')"
                 class="hover:underline"
               >
-                {{ $t("footer.menu.contact") }}
+                {{ $t("navigation.newVisitors.contact") }}
               </NuxtLink>
             </li>
           </ul>

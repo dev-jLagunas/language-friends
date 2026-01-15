@@ -37,7 +37,7 @@ onBeforeUnmount(() => {
     <TheHero />
 
     <div ref="landingWrapper" id="landingStory">
-      <ProgressIndicator v-if="showProgress" :total="13" />
+      <ProgressIndicator v-if="showProgress" :total="15" />
       <TheLandingStory />
     </div>
   </main>

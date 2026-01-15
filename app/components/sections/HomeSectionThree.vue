@@ -38,10 +38,10 @@ onMounted(() => {
     <!-- Intro Card -->
     <div class="text-center">
       <h2 class="section-title-type mb-2">
-        {{ $t("homeSectionThree.title") }}
+        {{ $t("home.charactersPreview.title") }}
       </h2>
       <p class="section-body-type">
-        {{ $t("homeSectionThree.intro") }}
+        {{ $t("home.charactersPreview.intro") }}
       </p>
       <img
         src="/images/everyone/cats-wall-sitting.png"
@@ -52,46 +52,9 @@ onMounted(() => {
 
     <!-- Moko -->
     <div
-      id="card-7"
-      data-step="7"
-      class="card bg-moko-blue-soft three-story-card"
-    >
-      <p
-        class="section-big-numbers text-dark-primary/50 md:absolute md:-top-16 md:right-0 dark:text-light-primary/50"
-      >
-        7.
-      </p>
-      <div class="">
-        <img
-          src="/images/moko/moko-hello-1.png"
-          alt="image of Moko cat character"
-          class="w-1/3 mx-auto md:w-3/4 lg:w-1/2"
-        />
-        <h2
-          class="section-card-title mx-auto section-title-underline md:hidden"
-        >
-          {{ $t("homeSectionThree.moko.name") }}
-        </h2>
-      </div>
-      <div>
-        <h2 class="section-card-title section-title-underline hidden md:block">
-          {{ $t("homeSectionThree.moko.name") }}
-        </h2>
-        <p class="section-body-type">
-          {{ $t("homeSectionThree.moko.textA") }}
-        </p>
-
-        <p class="section-body-type mt-2">
-          {{ $t("homeSectionThree.moko.textB") }}
-        </p>
-      </div>
-    </div>
-
-    <!-- Niko -->
-    <div
       id="card-8"
       data-step="8"
-      class="card bg-niko-purple-soft three-story-card"
+      class="card bg-moko-blue-soft three-story-card"
     >
       <p
         class="section-big-numbers text-dark-primary/50 md:absolute md:-top-16 md:right-0 dark:text-light-primary/50"
@@ -100,35 +63,35 @@ onMounted(() => {
       </p>
       <div class="">
         <img
-          src="/images/niko/niko-hello-1.png"
-          alt="image of Niko cat character"
+          src="/images/moko/moko-hello.png"
+          alt="image of Moko cat character"
           class="w-1/3 mx-auto md:w-3/4 lg:w-1/2"
         />
         <h2
           class="section-card-title mx-auto section-title-underline md:hidden"
         >
-          {{ $t("homeSectionThree.niko.name") }}
+          {{ $t("home.charactersPreview.cards.moko.name") }}
         </h2>
       </div>
       <div>
         <h2 class="section-card-title section-title-underline hidden md:block">
-          {{ $t("homeSectionThree.niko.name") }}
+          {{ $t("home.charactersPreview.cards.moko.name") }}
         </h2>
         <p class="section-body-type">
-          {{ $t("homeSectionThree.niko.textA") }}
+          {{ $t("home.charactersPreview.cards.moko.textA") }}
         </p>
 
         <p class="section-body-type mt-2">
-          {{ $t("homeSectionThree.niko.textB") }}
+          {{ $t("home.charactersPreview.cards.moko.textB") }}
         </p>
       </div>
     </div>
 
-    <!-- Okja -->
+    <!-- Niko -->
     <div
       id="card-9"
       data-step="9"
-      class="card bg-okja-yellow-soft three-story-card"
+      class="card bg-niko-purple-soft three-story-card"
     >
       <p
         class="section-big-numbers text-dark-primary/50 md:absolute md:-top-16 md:right-0 dark:text-light-primary/50"
@@ -137,26 +100,63 @@ onMounted(() => {
       </p>
       <div class="">
         <img
-          src="/images/okja/okja-hello-1.png"
+          src="/images/niko/niko-hello.png"
+          alt="image of Niko cat character"
+          class="w-1/3 mx-auto md:w-3/4 lg:w-1/2"
+        />
+        <h2
+          class="section-card-title mx-auto section-title-underline md:hidden"
+        >
+          {{ $t("home.charactersPreview.cards.niko.name") }}
+        </h2>
+      </div>
+      <div>
+        <h2 class="section-card-title section-title-underline hidden md:block">
+          {{ $t("home.charactersPreview.cards.niko.name") }}
+        </h2>
+        <p class="section-body-type">
+          {{ $t("home.charactersPreview.cards.niko.textA") }}
+        </p>
+
+        <p class="section-body-type mt-2">
+          {{ $t("home.charactersPreview.cards.niko.textB") }}
+        </p>
+      </div>
+    </div>
+
+    <!-- Okja -->
+    <div
+      id="card-10"
+      data-step="10"
+      class="card bg-okja-yellow-soft three-story-card"
+    >
+      <p
+        class="section-big-numbers text-dark-primary/50 md:absolute md:-top-16 md:right-0 dark:text-light-primary/50"
+      >
+        10.
+      </p>
+      <div class="">
+        <img
+          src="/images/okja/okja-hello.png"
           alt="image of Okja cat character"
           class="w-1/3 mx-auto md:w-3/4 lg:w-1/2"
         />
         <h2
           class="section-card-title mx-auto section-title-underline md:hidden"
         >
-          {{ $t("homeSectionThree.okja.name") }}
+          {{ $t("home.charactersPreview.cards.okja.name") }}
         </h2>
       </div>
       <div>
         <h2 class="section-card-title section-title-underline hidden md:block">
-          {{ $t("homeSectionThree.okja.name") }}
+          {{ $t("home.charactersPreview.cards.okja.name") }}
         </h2>
         <p class="section-body-type">
-          {{ $t("homeSectionThree.okja.textA") }}
+          {{ $t("home.charactersPreview.cards.okja.textA") }}
         </p>
 
         <p class="section-body-type mt-2">
-          {{ $t("homeSectionThree.okja.textB") }}
+          {{ $t("home.charactersPreview.cards.okja.textB") }}
         </p>
       </div>
     </div>

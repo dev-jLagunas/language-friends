@@ -64,17 +64,17 @@ onBeforeUnmount(() => {
     class="h-screen place-content-center max-w-7xl mx-auto"
   >
     <h1 class="font-cherry text-center text-6xl md:text-9xl">
-      {{ $t("homeSectionFinal.thanks") }}
+      {{ $t("home.final.thanks") }}
     </h1>
     <article class="characters grid grid-cols-3 px-4 mt-4 lg:w-1/2 mx-auto">
       <figure class="character moko">
-        <img src="/images/moko/moko-hello-1.png" alt="" />
+        <img src="/images/moko/moko-eat-sushi.png" alt="" />
       </figure>
       <figure class="character niko">
-        <img src="/images/niko/niko-hello-1.png" alt="" />
+        <img src="/images/niko/niko-twirls.png" alt="" />
       </figure>
       <figure class="character okja">
-        <img src="/images/okja/okja-hello-1.png" alt="" />
+        <img src="/images/okja/okja-dances.png" alt="" />
       </figure>
     </article>
   </section>

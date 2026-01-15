@@ -52,7 +52,7 @@ onMounted(() => {
       <!-- Header -->
       <div class="text-center">
         <h2 class="section-title-type">
-          {{ $t("homeSectionOne.title") }}
+          {{ $t("home.intro.title") }}
         </h2>
         <p class="mt-2 section-body-type">
           {{ $t("tour.intro") }}
@@ -76,13 +76,13 @@ onMounted(() => {
         />
         <div class="my-4 md:px-4 md:my-0 md:relative">
           <h3 class="section-card-title section-title-underline">
-            {{ $t("homeSectionOne.what.title") }}
+            {{ $t("home.intro.cards.what.title") }}
           </h3>
           <p class="section-body-type">
-            {{ $t("homeSectionOne.what.text") }}
+            {{ $t("home.intro.cards.what.text") }}
           </p>
           <p class="section-body-type mt-2">
-            {{ $t("homeSectionOne.what.extra") }}
+            {{ $t("home.intro.cards.what.extra") }}
           </p>
         </div>
       </section>
@@ -104,11 +104,13 @@ onMounted(() => {
         />
         <div class="my-4 md:px-4 md:my-0 md:relative">
           <h3 class="section-card-title section-title-underline">
-            {{ $t("homeSectionOne.who.title") }}
+            {{ $t("home.intro.cards.who.title") }}
           </h3>
-          <p class="section-body-type">{{ $t("homeSectionOne.who.text") }}</p>
+          <p class="section-body-type">
+            {{ $t("home.intro.cards.who.text") }}
+          </p>
           <p class="section-body-type mt-2">
-            {{ $t("homeSectionOne.who.extra") }}
+            {{ $t("home.intro.cards.who.extra") }}
           </p>
         </div>
       </section>
@@ -130,11 +132,39 @@ onMounted(() => {
         />
         <div class="my-4 md:px-4 md:my-0 md:relative">
           <h3 class="section-card-title section-title-underline">
-            {{ $t("homeSectionOne.why.title") }}
+            {{ $t("home.intro.cards.why.title") }}
           </h3>
-          <p class="section-body-type">{{ $t("homeSectionOne.why.text") }}</p>
+          <p class="section-body-type">{{ $t("home.intro.cards.why.text") }}</p>
           <p class="section-body-type mt-2">
-            {{ $t("homeSectionOne.why.extra") }}
+            {{ $t("home.intro.cards.why.extra") }}
+          </p>
+        </div>
+      </section>
+      <!-- Card 4 -->
+      <section
+        id="card-4"
+        data-step="4"
+        class="story-card bg-moko-blue-soft one-intro-card"
+      >
+        <p
+          class="section-big-numbers text-dark-primary/50 md:absolute md:-top-16 md:right-0 dark:text-light-primary/50"
+        >
+          4.
+        </p>
+        <img
+          src="/images/mockups/dad-and-son1.png"
+          class="one-intro-card-img my-2"
+          alt="mother and son mockup"
+        />
+        <div class="my-4 md:px-4 md:my-0 md:relative">
+          <h3 class="section-card-title section-title-underline">
+            {{ $t("home.intro.cards.how.title") }}
+          </h3>
+          <p class="section-body-type">
+            {{ $t("home.intro.cards.how.text") }}
+          </p>
+          <p class="section-body-type mt-2">
+            {{ $t("home.intro.cards.how.extra") }}
           </p>
         </div>
       </section>

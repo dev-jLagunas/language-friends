@@ -13,7 +13,7 @@ const heroTitleFont = computed(() =>
     <header class="relative px-4 text-center md:mb-8">
       <h1
         :class="heroTitleFont"
-        class="font-bold leading-7 mb-2 text-3xl md:mb-6 md:text-6xl lg:text-7xl lg:mb-8 xl:text-8xl xl:mb-12"
+        class="font-bold leading-7 mb-2 text-3xl sm:mb-6 sm:text-6xl lg:text-7xl lg:mb-8 xl:text-8xl xl:mb-12"
       >
         {{ $t("brand.name") }}
       </h1>

@@ -73,20 +73,20 @@ onMounted(() => {
     <!-- Header -->
     <header class="text-center mb-8">
       <h2 class="section-title-type">
-        {{ $t("homeSectionTwo.sectionTitle") }}
+        {{ $t("home.howItWorks.title") }}
       </h2>
       <p class="mt-2 section-body-type">
-        {{ $t("homeSectionTwo.sectionSubtitle") }}
+        {{ $t("home.howItWorks.subtitle") }}
       </p>
     </header>
     <div class="space-y-8 md:space-y-20">
       <!-- Section 1 -->
-      <section id="card-4" data-step="4" class="story-panel two-story-card">
+      <section id="card-5" data-step="5" class="story-panel two-story-card">
         <figure class="">
           <p
             class="section-big-numbers text-dark-primary/50 dark:text-light-primary/50 md:absolute md:-top-24 md:-left-4"
           >
-            4.
+            5.
           </p>
           <img
             src="/images/everyone/cats-together-school.png"
@@ -96,24 +96,24 @@ onMounted(() => {
         </figure>
         <div class="">
           <h3 class="section-card-title section-title-underline">
-            {{ $t("homeSectionTwo.sectionA.title") }}
+            {{ $t("home.howItWorks.steps[0].title") }}
           </h3>
           <p class="animate section-body-type">
-            {{ $t("homeSectionTwo.sectionA.textA") }}
+            {{ $t("home.howItWorks.steps[0].textA") }}
           </p>
           <p class="animate mt-2 section-body-type">
-            {{ $t("homeSectionTwo.sectionA.textB") }}
+            {{ $t("home.howItWorks.steps[0].textB") }}
           </p>
         </div>
       </section>
 
       <!-- Section 2 -->
-      <section id="card-5" data-step="5" class="story-panel two-story-card">
+      <section id="card-6" data-step="6" class="story-panel two-story-card">
         <figure class="">
           <p
             class="section-big-numbers text-dark-primary/50 dark:text-light-primary/50 md:absolute md:-top-24 md:-left-4"
           >
-            5.
+            6.
           </p>
           <img
             src="/images/everyone/cats-together-bike.png"
@@ -123,24 +123,24 @@ onMounted(() => {
         </figure>
         <div class="">
           <h3 class="section-card-title section-title-underline">
-            {{ $t("homeSectionTwo.sectionB.title") }}
+            {{ $t("home.howItWorks.steps[1].title") }}
           </h3>
           <p class="animate section-body-type">
-            {{ $t("homeSectionTwo.sectionB.textA") }}
+            {{ $t("home.howItWorks.steps[1].textA") }}
           </p>
           <p class="animate mt-2 section-body-type">
-            {{ $t("homeSectionTwo.sectionB.textB") }}
+            {{ $t("home.howItWorks.steps[1].textB") }}
           </p>
         </div>
       </section>
 
       <!-- Section 3 -->
-      <section id="card-6" data-step="6" class="story-panel two-story-card">
+      <section id="card-7" data-step="7" class="story-panel two-story-card">
         <figure class="">
           <p
             class="section-big-numbers text-dark-primary/50 dark:text-light-primary/50 md:absolute md:-top-24 md:-left-4"
           >
-            6.
+            7.
           </p>
           <img
             src="/images/everyone/cats-together-hug.png"
@@ -150,13 +150,13 @@ onMounted(() => {
         </figure>
         <div class="">
           <h3 class="section-card-title section-title-underline">
-            {{ $t("homeSectionTwo.sectionC.title") }}
+            {{ $t("home.howItWorks.steps[2].title") }}
           </h3>
           <p class="animate section-body-type">
-            {{ $t("homeSectionTwo.sectionC.textA") }}
+            {{ $t("home.howItWorks.steps[2].textA") }}
           </p>
           <p class="animate mt-2 section-body-type">
-            {{ $t("homeSectionTwo.sectionC.textB") }}
+            {{ $t("home.howItWorks.steps[2].textB") }}
           </p>
         </div>
       </section>

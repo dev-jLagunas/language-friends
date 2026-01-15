@@ -40,7 +40,7 @@
     ]
   },
   "tour": {
-    "intro": "Take a short interactive tour to learn what The Language Friends is all about.",
+    "intro": "Take a short scroll tour to learn what The Language Friends is all about.",
     "instruction": "Just scroll down and follow along."
   },
   "home": {
@@ -61,6 +61,11 @@
           "title": "Why is it safe and easy?",
           "text": "Simple sentences, gentle repetition, and friendly characters help children learn naturally, without pressure or testing.",
           "extra": "Kids can listen, repeat, and build confidence at their own pace."
+        },
+        "how": {
+          "title": "How does this work?",
+          "text": "Young children naturally absorb language through repeated exposure, sounds, and patterns rather than explanation or study.",
+          "extra": "By hearing the same sentence structures again and again in a safe, familiar context, children build a strong foundation that allows language to grow naturally over time."
         }
       }
     },
@@ -79,9 +84,9 @@
           "textB": "The structure is simple and predictable, making it easy to read together without pressure or preparation."
         },
         {
-          "title": "Learning Through Daily Life",
-          "textA": "The stories focus on everyday moments like eating, playing, and going outside so children can connect language to their own experiences.",
-          "textB": "By seeing English used in familiar situations, children begin to understand meaning naturally and gain confidence over time."
+          "title": "Learning Through Patterns",
+          "textA": "Each book focuses on a single sentence pattern and repeats it consistently, allowing children to recognize structure before meaning.",
+          "textB": "Clear visuals, color cues, and repeated layouts work together to help children intuitively connect words, patterns, and meaning without explanation."
         }
       ]
     },
@@ -108,23 +113,27 @@
     },
     "seriesPreview": {
       "title": "Book Series",
-      "subtitle": "Each series focuses on a different way children naturally use and understand language.",
+      "subtitle": "Each series focuses on a single sentence pattern that children naturally use in everyday language.",
       "series": {
+        "phrases": {
+          "title": "The Phrase Series",
+          "text": "This series introduces the most common everyday phrases children hear and use, such as greetings and introductions, helping them recognize natural language chunks used in real situations rather than isolated words."
+        },
         "like": {
           "title": "The Like Series",
-          "text": "Children learn simple sentence patterns using “like” through familiar activities, food, and everyday moments."
+          "text": "Each book in this series focuses on the single sentence pattern “___ likes ___,” repeating it across themed books such as fruits or vegetables so children build confidence by recognizing the same structure with different familiar nouns."
         },
         "verb": {
           "title": "The Verb Series",
-          "text": "This series introduces basic action verbs through movement, play, and daily routines children already know."
+          "text": "This series teaches basic action verbs through the repeated pattern “___ ___s,” sometimes with an object added, allowing children to intuitively connect movement, action, and meaning through consistent visual repetition."
         },
         "adjective": {
           "title": "The Adjective Series",
-          "text": "Children explore describing words like big, small, happy, and sad using clear visual comparisons."
+          "text": "Children learn descriptive language through the repeated structure “___ is ___,” using clear emotional or visual states so adjectives are understood through context rather than explanation."
         },
-        "friends": {
-          "title": "The Friends Series",
-          "text": "Children learn social language through friendships, sharing, and simple interactions between characters."
+        "noun": {
+          "title": "The Noun Series",
+          "text": "This series focuses on ownership and objects using the pattern “___ has a ___,” with each book centered on a clear noun category such as stationery or everyday items to reinforce meaning through repetition."
         }
       }
     },

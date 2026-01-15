@@ -1,18 +1,14 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section
-    class="home-section-final py-12 section-wrapper theme-toggle-styles max-w-7xl mx-auto"
-  >
-    <div
-      class="text-center border-2 border-dark-primary/50 border-dashed p-4 rounded-2xl dark:border-light-primary/50"
-    >
+  <section class="py-12 section-wrapper theme-toggle-styles max-w-7xl mx-auto">
+    <div class="text-center p-4 rounded-2xl dark:border-light-primary/50">
       <div>
         <h2 class="section-title-type">
-          {{ $t("homeSectionFive.title") }}
+          {{ $t("home.stayConnected.title") }}
         </h2>
         <p class="section-body-type mt-2">
-          {{ $t("homeSectionFive.subtitle") }}
+          {{ $t("home.stayConnected.subtitle") }}
         </p>
       </div>
 
@@ -47,8 +43,8 @@
           alt="Moko using cellphone"
           class="w-1/2 mx-auto my-4 md:w-1/4"
         />
-        <p class="text-lg font-semibold">
-          {{ $t("homeSectionFive.connectTitle") }}
+        <p class="text-2xl font-bold">
+          {{ $t("home.stayConnected.connectTitle") }}
         </p>
       </div>
       <SubscribeCTA />
