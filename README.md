@@ -1,75 +1,113 @@
-# Nuxt Minimal Starter
+# The Language Friends
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A multilingual, design-led educational website for **The Language Friends**, a children’s English picture book series focused on natural language acquisition through patterns, repetition, and visual clarity.
 
-## Setup
+The site is built as a **static, e-book–first platform** that supports international families, prioritizes UX clarity, and scales as new books, characters, and learning content are added.
 
-Make sure to install dependencies:
+## Overview
 
-```bash
-# npm
-npm install
+**The Language Friends** is a gentle English-learning project designed for children ages 2–7 and their parents.Rather than teaching through explanation or memorization, the books and website emphasize:
 
-# pnpm
-pnpm install
+- Repeated sentence patterns
+- Strong visual cues
+- Consistent structure
+- Familiar characters
+- Low cognitive load
 
-# yarn
-yarn install
+The website supports this philosophy through a calm, accessible UI, modular content structure, and bilingual delivery (Japanese-first).
 
-# bun
-bun install
-```
+## Tech Stack
 
-## Development Server
+- **Framework:** Nuxt 4 (Vue 3)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS v4
+- **Animations:** GSAP + ScrollTrigger
+- **Icons:** @nuxt/icon
+- **Internationalization:** @nuxtjs/i18n (EN / JP)
+- **Forms:** Netlify Forms
+- **Hosting:** Netlify
+- **Build Type:** Static (SSR disabled)
 
-Start the development server on `http://localhost:3000`:
+## Key Features
 
-```bash
-# npm
-npm run dev
+### Multilingual Architecture
 
-# pnpm
-pnpm dev
+- Japanese-first content with English support
+- Route-based localization using prefix_except_default
+- Fully structured i18n JSON for scalable content growth
 
-# yarn
-yarn dev
+### UX-First Design System
 
-# bun
-bun run dev
-```
+- Consistent layout and spacing across pages
+- Reusable components for cards, sections, and content blocks
+- Visual hierarchy optimized for parents reading alongside children
+- Minimal cognitive load and predictable interaction patterns
 
-## Production
+### Educational Structure
 
-Build the application for production:
+- Content mirrors the pedagogy of the books:
 
-```bash
-# npm
-npm run build
+  - One pattern per book
+  - One concept per series
+  - Visual reinforcement over explanation
 
-# pnpm
-pnpm build
+- Dedicated pages for:
 
-# yarn
-yarn build
+  - How to use the books
+  - Character introductions
+  - Book series breakdowns
 
-# bun
-bun run build
-```
+### Animation & Interaction
 
-Locally preview production build:
+- Subtle GSAP scroll-based animations
+- Motion used sparingly to guide attention, not distract
+- Transitions designed to feel calm and intentional
 
-```bash
-# npm
-npm run preview
+### Netlify Forms Integration
 
-# pnpm
-pnpm preview
+- Lightweight contact form using Netlify Forms
+- No backend or API required
+- Submissions managed directly through the Netlify dashboard
 
-# yarn
-yarn preview
+## Deployment
 
-# bun
-bun run preview
-```
+The site is deployed on **Netlify** as a static Nuxt build.
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- Netlify automatically detects and processes:
+
+  - Static output
+  - Netlify Forms
+
+- No server configuration is required
+- SEO metadata is managed via Nuxt app.head
+
+## SEO & Accessibility
+
+- Full metadata setup via Nuxt head
+- Semantic HTML structure
+- Accessible navigation and readable typography
+- Clear alt text and image usage
+- Mobile-first responsive layout
+
+## Design Philosophy
+
+This project intentionally avoids:
+
+- Overly complex interactions
+- Dense instructional text
+- Gamification or reward mechanics
+
+Instead, it focuses on:
+
+- Calm, predictable UX
+- Trust-building design for parents
+- Language exposure through structure and repetition
+- Visual clarity over explanation
+
+## Status
+
+The project is actively evolving as new books and series are released.The architecture is designed to support long-term growth without restructuring.
+
+## License
+
+This project is proprietary and part of **The Language Friends** educational series.All content, designs, and characters are protected.
