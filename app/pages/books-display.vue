@@ -4,8 +4,10 @@
   <section
     class="mx-auto px-4 font-yomogi theme-toggle-styles pt-12 pb-32 md:pt-44 space-y-8 md:space-y-24 max-w-7xl"
   >
+    <ProgressIndicator :total="5" />
     <!-- phrases SERIES -->
     <article
+      data-step="1"
       class="md:grid md:grid-cols-2 items-center gap-4 text-dark-primary md:gap-8"
     >
       <section class="bg-moko-blue-soft rounded-2xl p-6 md:p-8 relative">
@@ -55,6 +57,7 @@
     </article>
     <!-- LIKE SERIES -->
     <article
+      data-step="2"
       class="md:grid md:grid-cols-2 items-center text-dark-primary gap-4 md:gap-8"
     >
       <section
@@ -106,6 +109,7 @@
     </article>
     <!-- ADJ SERIES -->
     <article
+      data-step="3"
       class="md:grid md:grid-cols-2 text-dark-primary items-center gap-4 md:gap-8"
     >
       <section class="bg-okja-yellow-soft rounded-2xl p-6 md:p-8 relative">
@@ -155,6 +159,7 @@
     </article>
     <!-- ADJ SERIES -->
     <article
+      data-step="4"
       class="md:grid md:grid-cols-2 items-center text-dark-primary gap-4 md:gap-8"
     >
       <section
@@ -206,6 +211,7 @@
     </article>
     <!-- LIKE SERIES -->
     <article
+      data-step="5"
       class="md:grid md:grid-cols-2 items-center text-dark-primary gap-4 md:gap-8"
     >
       <section class="bg-niko-purple-soft rounded-2xl p-6 md:p-8 relative">

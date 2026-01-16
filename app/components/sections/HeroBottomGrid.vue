@@ -44,7 +44,7 @@
     <div class="col-span-3 text-center mt-4">
       <NuxtLink
         :to="$localePath({ path: '/', hash: '#landingStory' })"
-        class="rounded-xl py-2 px-8 bg-green-signifier font-black hover:rounded-md transition-all duration-300 ease-in-out md:text-xl"
+        class="rounded-xl py-2 px-8 bg-green-signifier text-dark-primary font-black hover:rounded-md transition-all duration-300 ease-in-out md:text-xl"
       >
         {{ $t("navigation.newVisitors.label") }}
       </NuxtLink>

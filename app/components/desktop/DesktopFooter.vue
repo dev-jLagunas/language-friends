@@ -36,6 +36,11 @@
                 {{ $t("navigation.newVisitors.characters") }}
               </NuxtLink>
             </li>
+            <li>
+              <NuxtLink to="/privacy-policy" class="">
+                {{ $t("policy.title") }}
+              </NuxtLink>
+            </li>
           </ul>
         </div>
 
@@ -82,7 +87,7 @@
     <div
       class="text-center text-xs py-4 opacity-70 absolute bottom-0 right-1/2"
     >
-      © {{ new Date().getFullYear() }} The Language Friends
+      <p><© {{ new Date().getFullYear() }} The Language Friends</p>
     </div>
   </footer>
 </template>

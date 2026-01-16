@@ -55,8 +55,10 @@ onUnmounted(() => {
     ref="root"
     class="about-wrapper text-dark-primary mt-8 mb-16 md:mt-16"
   >
+    <ProgressIndicator :total="5" />
+
     <!-- Intro -->
-    <div class="about-card-container">
+    <div class="about-card-container" data-step="1">
       <div class="bg-moko-blue-soft rounded-2xl p-8">
         <p
           class="section-big-numbers text-dark-primary/50 absolute -top-10 right-0 md:-top-16"
@@ -80,7 +82,7 @@ onUnmounted(() => {
     </div>
 
     <!-- Philosophy -->
-    <div class="about-card-container">
+    <div class="about-card-container" data-step="2">
       <img
         src="/images/mockups/dad-and-son1.png"
         class="rounded-2xl md:rounded-3xl object-cover w-full order-last dashed-border md:order-first"
@@ -104,7 +106,7 @@ onUnmounted(() => {
     </div>
 
     <!-- Learning -->
-    <div class="about-card-container">
+    <div class="about-card-container" data-step="3">
       <div class="bg-okja-yellow-soft rounded-2xl md:rounded-3xl p-6 md:p-10">
         <p
           class="section-big-numbers text-dark-primary/50 absolute -top-10 right-0 md:-top-16"
@@ -128,7 +130,7 @@ onUnmounted(() => {
     </div>
 
     <!-- Characters -->
-    <div class="about-card-container">
+    <div class="about-card-container" data-step="4">
       <img
         src="/images/mockups/1-LIKE-Mockup-2.png"
         class="rounded-2xl md:rounded-3xl object-cover w-full order-last dashed-border md:order-first"
@@ -152,7 +154,7 @@ onUnmounted(() => {
     </div>
 
     <!-- Parents -->
-    <div class="about-card-container">
+    <div class="about-card-container" data-step="5">
       <div class="bg-niko-purple-soft rounded-2xl md:rounded-3xl p-6 md:p-10">
         <p
           class="section-big-numbers text-dark-primary/50 absolute -top-10 right-0 md:-top-16"

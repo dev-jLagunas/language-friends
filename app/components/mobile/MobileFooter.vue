@@ -92,7 +92,7 @@ const toggleMenu = () => {
           aria-label="フルメニュー"
           class="flex-col-center-center h-full relative"
         >
-          <div class="flex-row-center-center gap-4 absolute top-10">
+          <div class="flex-row-center-center gap-4 absolute top-24">
             <LangToggleBtn />
             <ThemeToggleBtn />
           </div>
@@ -179,6 +179,15 @@ const toggleMenu = () => {
                 <span>{{ $t("navigation.newVisitors.kids") }}</span>
               </NuxtLink>
             </li>
+            <li>
+              <NuxtLink
+                @click="toggleMenu"
+                to="/privacy-policy"
+                class="text-sm pl-8"
+              >
+                {{ $t("policy.title") }}
+              </NuxtLink>
+            </li>
           </ul>
 
           <ul
@@ -232,7 +241,7 @@ const toggleMenu = () => {
           <button
             type="button"
             aria-label="Close menu"
-            class="flex-col-center-center opacity-75 hover:cursor-pointer hover:opacity-100 transition-all duration-300 absolute bottom-10"
+            class="flex-col-center-center opacity-75 hover:cursor-pointer hover:opacity-100 transition-all duration-300 absolute bottom-24"
             @click="toggleMenu"
           >
             <Icon name="heroicons:arrow-right" class="" />

@@ -4,8 +4,10 @@
   <section
     class="mx-auto px-4 md:pt-32 pb-24 font-yomogi theme-toggle-styles space-y-8 md:space-y-20"
   >
+    <ProgressIndicator :total="6" />
     <!-- Page Intro -->
     <section
+      data-step="1"
       class="md:p-8 grid grid-cols-1 md:grid-cols-2 gap-4 items-center md:gap-8"
     >
       <div class="bg-moko-blue-soft rounded-2xl p-6 relative md:p-8">
@@ -38,7 +40,10 @@
     </section>
 
     <!-- Pedagogy -->
-    <section class="md:p-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <section
+      data-step="2"
+      class="md:p-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+    >
       <div
         class="bg-niko-purple-soft rounded-2xl p-6 md:p-8 relative md:order-1"
       >
@@ -71,7 +76,10 @@
     </section>
 
     <!-- Book Structure -->
-    <section class="md:p-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <section
+      data-step="3"
+      class="md:p-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+    >
       <div class="bg-okja-yellow-soft rounded-2xl relative p-6 md:p-8">
         <p
           class="section-big-numbers absolute -top-10 right-0 md:-top-24 md:-right-8"
@@ -109,7 +117,10 @@
     </section>
 
     <!-- Parents -->
-    <section class="md:p-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <section
+      data-step="4"
+      class="md:p-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+    >
       <div class="bg-moko-blue-soft rounded-2xl relative p-6 md:p-8 md:order-1">
         <p
           class="section-big-numbers absolute -top-10 right-0 md:-top-24 md:-right-8"
@@ -151,7 +162,10 @@
     </section>
 
     <!-- Independent Children -->
-    <section class="md:p-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <section
+      data-step="5"
+      class="md:p-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+    >
       <div class="bg-niko-purple-soft rounded-2xl p-6 md:p-8 relative">
         <p
           class="section-big-numbers absolute -top-10 right-0 md:-top-24 md:-right-8"
@@ -193,7 +207,10 @@
     </section>
 
     <!-- Bilingual -->
-    <section class="md:p-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <section
+      data-step="6"
+      class="md:p-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+    >
       <div
         class="bg-okja-yellow-soft rounded-2xl p-6 md:p-8 relative md:order-1"
       >

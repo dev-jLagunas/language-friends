@@ -59,19 +59,11 @@ onUnmounted(() => {
     ref="root"
     class="mx-auto pb-24 px-4 md:pt-24 font-yomogi theme-toggle-styles space-y-8 md:space-y-16"
   >
-    <!-- Page Intro -->
-    <!-- <header class="rounded-2xl">
-      <h1 class="section-card-title section-title-underline">
-        {{ $t("characters.title") }}
-      </h1>
-      <p class="section-body-type">
-        {{ $t("characters.intro") }}
-      </p>
-    </header> -->
-
+    <ProgressIndicator :total="3" />
     <!-- Moko -->
     <section
       id="character-moko"
+      data-step="1"
       class="character-section text-dark-primary grid grid-cols-1 mt-4 md:grid md:grid-cols-2 items-center md:gap-10 place-items-center"
     >
       <section
@@ -108,6 +100,7 @@ onUnmounted(() => {
 
     <!-- Niko -->
     <section
+      data-step="2"
       id="character-niko"
       class="character-section grid grid-cols-1 mt-4 md:grid-cols-2 gap-10 items-center place-items-center"
     >
@@ -148,6 +141,7 @@ onUnmounted(() => {
 
     <!-- Okja -->
     <section
+      data-step="3"
       id="character-okja"
       class="character-section grid grid-cols-1 mt-4 md:grid-cols-2 gap-10 items-center place-items-center"
     >

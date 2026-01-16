@@ -55,7 +55,7 @@ onBeforeUnmount(() => {
       v-for="n in total"
       :key="n"
       @click="scrollToSection(n)"
-      class="w-2 h-2 rounded-full cursor-pointer transition-all duration-300"
+      class="w-2 h-2 rounded-full cursor-pointer transition-all duration-300 xs:w-6 xs:h-3"
       :class="[
         n === activeIndex
           ? 'bg-dark-primary scale-125'
@@ -64,7 +64,7 @@ onBeforeUnmount(() => {
     />
 
     <div
-      class="mt-2 text-xs font-yomogi text-dark-primary dark:text-light-primary"
+      class="mt-2 text-sm font-yomogi text-dark-primary dark:text-light-primary"
     >
       {{ activeIndex }} / {{ total }}
     </div>

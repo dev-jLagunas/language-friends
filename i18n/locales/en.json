@@ -358,5 +358,47 @@
     "message": "We’re still getting things ready. Thanks for your patience.",
     "emailPlaceholder": "Your email",
     "cta": "Notify Me"
+  },
+  "policy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "January 2026",
+    "intro": "The Language Friends respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, and protect your data.",
+
+    "informationCollected": {
+      "title": "Information We Collect",
+      "content": "We may collect personal information such as your email address when you voluntarily sign up for updates, newsletters, or contact us through the website."
+    },
+
+    "howWeUse": {
+      "title": "How We Use Your Information",
+      "itemA": "To notify you about new book releases",
+      "itemB": "To share occasional educational tips or project updates",
+      "itemC": "To respond to inquiries or messages you send us"
+    },
+
+    "childrenPrivacy": {
+      "title": "Children’s Privacy",
+      "content": "Our website is intended for parents and guardians. We do not knowingly collect personal information directly from children."
+    },
+
+    "dataProtection": {
+      "title": "Data Protection",
+      "content": "We take reasonable measures to protect your information and do not sell, rent, or share your personal data with third parties."
+    },
+
+    "thirdParties": {
+      "title": "Third-Party Services",
+      "content": "Email submissions may be stored using trusted third-party services used for website hosting or email communication. These services are used only to operate and improve the website."
+    },
+
+    "yourRights": {
+      "title": "Your Rights",
+      "content": "You may request to access, update, or delete your personal information at any time by contacting us."
+    },
+
+    "contact": {
+      "title": "Contact",
+      "content": "If you have any questions about this Privacy Policy or how your information is handled, please contact us via the contact form on this website."
+    }
   }
 }
