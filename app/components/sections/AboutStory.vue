@@ -122,7 +122,7 @@ onUnmounted(() => {
       </div>
 
       <img
-        src="/images/mockups/mon-and-son1.png"
+        src="/images/everyone/cats-together-hug.png"
         class="rounded-2xl md:rounded-3xl object-cover w-full dashed-border"
       />
     </div>

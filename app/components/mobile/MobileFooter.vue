@@ -43,15 +43,10 @@ const toggleMenu = () => {
 
         <li class="group">
           <NuxtLink
-            :to="$localePath('/about-us')"
-            aria-label="わたしたちについて"
+            :to="$localePath('/contact-us')"
             class="flex-col-center-center"
             active-class="border-b border-dashed border-soft-pink"
           >
-            <!-- <Icon
-              name="ph:cat"
-              class="text-3xl text-soft-pink group-hover-rotate"
-            /> -->
             <Icon
               name="heroicons:envelope"
               class="text-3xl text-green-signifier group-hover-rotate"
@@ -66,11 +61,18 @@ const toggleMenu = () => {
             aria-label="メニューを開く"
             aria-controls="mobile-menu"
             @click="toggleMenu"
-            class="flex-col-center-center"
+            class="flex-col-center-center hover:cursor-pointer"
           >
             <Icon
+              v-if="!isMenuOpen"
               name="heroicons:bars-3"
-              class="text-3xl group-hover:rotate-5 group-hover:scale-110 transition-transform hover:cursor-pointer"
+              class="text-4xl group-hover:rotate-5 group-hover:scale-110 transition-transform"
+            />
+
+            <Icon
+              v-else
+              name="heroicons:x-mark"
+              class="text-4xl text-red-500 group-hover:scale-110 transition-transform"
             />
           </button>
         </li>
@@ -108,57 +110,54 @@ const toggleMenu = () => {
 
               <!-- NESTED LINKS -->
               <ul class="mt-2 ml-6 space-y-2 text-xl">
-                <li class="group">
+                <li>
                   <NuxtLink
                     :to="$localePath({ path: '/', hash: '#landingStory' })"
                     @click="toggleMenu"
-                    class="flex items-center"
+                    class="flex items-center px-2 py-1 rounded-md hover:bg-black/5 dark:hover:bg-white/10 transition-colors"
                   >
-                    <Icon
-                      name="heroicons:map"
-                      class="mr-2 text-moko-blue group-hover-rotate"
-                    />
+                    <Icon name="heroicons:map" class="mr-2 text-moko-blue" />
                     <span>{{ $t("navigation.newVisitors.tour") }}</span>
                   </NuxtLink>
                 </li>
 
-                <li class="group">
+                <li>
                   <NuxtLink
                     :to="$localePath('/about-us')"
                     @click="toggleMenu"
-                    class="flex items-center"
+                    class="flex items-center px-2 py-1 rounded-md hover:bg-black/5 dark:hover:bg-white/10 transition-colors"
                   >
                     <Icon
                       name="heroicons:information-circle"
-                      class="mr-2 text-soft-pink group-hover-rotate"
+                      class="mr-2 text-soft-pink"
                     />
                     <span>{{ $t("navigation.main.about") }}</span>
                   </NuxtLink>
                 </li>
 
-                <li class="group">
+                <li>
                   <NuxtLink
                     :to="$localePath('/character-info')"
                     @click="toggleMenu"
-                    class="flex items-center"
+                    class="flex items-center px-2 py-1 rounded-md hover:bg-black/5 dark:hover:bg-white/10 transition-colors"
                   >
                     <Icon
                       name="heroicons:face-smile"
-                      class="mr-2 text-niko-purple group-hover-rotate"
+                      class="mr-2 text-niko-purple"
                     />
                     <span>{{ $t("navigation.newVisitors.characters") }}</span>
                   </NuxtLink>
                 </li>
 
-                <li class="group">
+                <li>
                   <NuxtLink
                     :to="$localePath('/how-to-use')"
                     @click="toggleMenu"
-                    class="flex items-center"
+                    class="flex items-center px-2 py-1 rounded-md hover:bg-black/5 dark:hover:bg-white/10 transition-colors"
                   >
                     <Icon
                       name="heroicons:book-open"
-                      class="mr-2 text-okja-yellow group-hover-rotate"
+                      class="mr-2 text-okja-yellow"
                     />
                     <span>{{ $t("navigation.newVisitors.howTo") }}</span>
                   </NuxtLink>
@@ -167,15 +166,15 @@ const toggleMenu = () => {
             </li>
 
             <!-- EXISTING ITEMS (UNCHANGED) -->
-            <li class="group">
+            <li>
               <NuxtLink
                 to="/kids-corner"
                 @click="toggleMenu"
-                class="flex items-center"
+                class="flex items-center hover:bg-black/5 dark:hover:bg-white/10 transition-colors"
               >
                 <Icon
                   name="heroicons:puzzle-piece"
-                  class="mr-2 text-okja-yellow group-hover-rotate"
+                  class="mr-2 text-okja-yellow"
                 />
                 <span>{{ $t("navigation.newVisitors.kids") }}</span>
               </NuxtLink>
