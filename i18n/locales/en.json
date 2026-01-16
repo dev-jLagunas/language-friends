@@ -274,29 +274,29 @@
         "ageRange": "Ages 2–6",
         "tone": "Gentle and emotionally clear"
       },
-      "preposition": {
-        "title": "The Preposition Series",
-        "shortLabel": "Location & Space",
-        "description": "This series introduces spatial words like in, on, under, and next to through everyday environments.",
-        "learningFocus": "Understanding position and space",
-        "languagePattern": "___ is in / on / under ___",
-        "howItWorks": "Each book shows one clear spatial relationship using familiar settings.",
-        "visualApproach": "Objects and characters are positioned clearly to reinforce meaning visually.",
-        "example": "Niko is under the table.",
+      "noun": {
+        "title": "The Noun Series",
+        "shortLabel": "Objects & Things",
+        "description": "Children learn how to talk about everyday objects using a single, consistent sentence pattern focused on nouns.",
+        "learningFocus": "Naming and recognizing objects",
+        "languagePattern": "___ has a ___",
+        "howItWorks": "Each book repeats the same sentence structure while changing only the object, helping children recognize the pattern before focusing on new vocabulary.",
+        "visualApproach": "Clear illustrations show the character holding or using the object, making meaning obvious without explanation.",
+        "example": "Moko has a pencil.",
         "ageRange": "Ages 2–6",
-        "tone": "Clear and grounding"
+        "tone": "Clear and familiar"
       },
-      "friends": {
-        "title": "The Friends Series",
-        "shortLabel": "Social Language",
-        "description": "Children learn social language through simple interactions like sharing, helping, and playing together.",
-        "learningFocus": "Communication and relationships",
-        "languagePattern": "___ plays with ___",
-        "howItWorks": "Each book focuses on one social interaction using familiar emotional situations.",
-        "visualApproach": "Characters interact with each other in ways children recognize from real life.",
-        "example": "Moko plays with Niko.",
-        "ageRange": "Ages 2–6",
-        "tone": "Warm and reassuring"
+      "phrases": {
+        "title": "The Phrase Series",
+        "shortLabel": "Common Phrases",
+        "description": "This series introduces the most common everyday phrases children hear and use in real-life situations.",
+        "learningFocus": "Understanding and using set phrases",
+        "languagePattern": "Common fixed phrases",
+        "howItWorks": "Each book focuses on one group of related phrases, such as introductions or classroom language, allowing children to hear natural language used as complete expressions.",
+        "visualApproach": "Characters act out realistic situations where the phrases are used, helping children understand meaning through context.",
+        "example": "Nice to meet you.",
+        "ageRange": "Ages 3–7",
+        "tone": "Natural and practical"
       }
     }
   },

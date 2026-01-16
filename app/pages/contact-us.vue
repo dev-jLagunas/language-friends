@@ -57,14 +57,14 @@ onUnmounted(() => {
 <template>
   <section
     ref="root"
-    class="mx-auto px-4 md:pt-24 pb-24 font-yomogi theme-toggle-styles space-y-8 md:space-y-0"
+    class="mx-auto px-4 md:pt-24 pb-24 font-yomogi theme-toggle-styles space-y-8 md:space-y-0 relative overflow-hidden"
   >
     <!-- Contact Intro -->
     <section
       class="contact-section md:p-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
     >
       <div
-        class="contact-text bg-moko-blue-soft rounded-2xl py-6 px-4 place-content-center md:px-6"
+        class="contact-text bg-moko-blue-soft rounded-2xl py-6 px-4 place-content-center md:px-6 text-dark-primary"
       >
         <div class="flex items-center justify-between">
           <h1 class="section-card-title section-title-underline">
@@ -90,7 +90,7 @@ onUnmounted(() => {
       class="contact-section md:p-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
     >
       <div
-        class="contact-text bg-niko-purple-soft rounded-2xl py-6 px-4 place-content-center md:px-6 md:rotate-3 md:order-1"
+        class="contact-text bg-niko-purple-soft rounded-2xl py-6 px-4 place-content-center md:px-6 md:order-1 text-dark-primary"
       >
         <div class="flex items-center justify-between">
           <h2 class="section-card-title">
@@ -123,7 +123,7 @@ onUnmounted(() => {
       class="contact-section md:p-8 grid grid-cols-1 md:grid-cols-2 md:order-1 gap-12 items-center"
     >
       <div
-        class="contact-text bg-okja-yellow-soft rounded-2xl py-6 px-4 place-content-center md:px-6"
+        class="contact-text bg-okja-yellow-soft rounded-2xl py-6 px-4 place-content-center md:px-6 text-dark-primary"
       >
         <div class="flex items-center justify-between">
           <h2 class="section-card-title">
@@ -154,7 +154,7 @@ onUnmounted(() => {
     </section>
 
     <!-- Note -->
-    <p class="text-sm opacity-70 text-center">
+    <p class="text-center text-2xl">
       {{ $t("contact.note") }}
     </p>
   </section>

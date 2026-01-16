@@ -165,7 +165,7 @@ body {
         ABOUT STORY SECTION
 ********************************************/
 .about-wrapper {
-  @apply mx-auto px-4 md:px-8 py-12 md:py-20 space-y-16 md:space-y-24 font-yomogi  bg-light-primary dark:bg-dark-secondary;
+  @apply mx-auto px-4 md:px-8 py-12 md:py-20 space-y-16 md:space-y-24 font-yomogi max-w-7xl  bg-light-primary dark:bg-dark-secondary;
 }
 
 .about-card-container {

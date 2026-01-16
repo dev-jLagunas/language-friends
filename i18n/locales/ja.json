@@ -221,42 +221,72 @@
     }
   },
   "books": {
-    "title": "えほんシリーズ",
-    "intro": "すべてのえほんは同じ構成で、安心して学べるように作られています。",
+    "title": "ブックシリーズについて",
+    "intro": "それぞれのシリーズは、子どもが日常の中で自然に使うシンプルな言語パターンを中心に作られています。すべての本は同じ構成で作られており、慣れを通して理解を深め、自信を育てます。",
     "series": {
       "like": {
-        "title": "Likeシリーズ",
-        "shortLabel": "好きなもの",
-        "description": "「I like ～」を使って好みを表現します。",
+        "title": "すき・このみのシリーズ",
+        "shortLabel": "すき・このみ",
+        "description": "子どもがすでに知っている食べ物や物、活動を通して、「I like ___」という文のパターンを学びます。",
+        "learningFocus": "好みを表現すること",
         "languagePattern": "I like ___",
-        "example": "Moko likes apples."
+        "howItWorks": "1冊につき1つの「すき」をテーマにし、文の形は変えず、内容だけを変えることで自然にパターンを身につけます。",
+        "visualApproach": "キャラクターの表情や行動から、「すき」という意味が視覚的に伝わるように作られています。",
+        "example": "Moko likes apples.",
+        "ageRange": "2〜6歳",
+        "tone": "安心感があり、親しみやすい"
       },
       "verb": {
-        "title": "Verbシリーズ",
-        "shortLabel": "動き",
-        "description": "動詞を通して行動を学びます。",
-        "example": "Okja runs."
+        "title": "うごき・どうさのシリーズ",
+        "shortLabel": "どうさ",
+        "description": "動く・食べる・走るなど、基本的な動詞を、キャラクターの動きを通して学ぶシリーズです。",
+        "learningFocus": "動作を理解すること",
+        "languagePattern": "___ runs / jumps / eats",
+        "howItWorks": "1冊につき1つの動作に焦点を当て、同じ文の形を繰り返すことで動詞の意味を自然に理解します。",
+        "visualApproach": "キャラクターが実際に動いている様子を描くことで、言葉の意味を直感的に伝えます。",
+        "example": "Okja runs.",
+        "ageRange": "2〜6歳",
+        "tone": "元気で楽しい"
       },
       "adjective": {
-        "title": "Adjectiveシリーズ",
+        "title": "ようす・きもちのシリーズ",
         "shortLabel": "ようす・きもち",
-        "description": "気持ちや特徴を表します。",
-        "example": "Moko is sad."
+        "description": "happy、sad、big、small などの形容詞を、わかりやすい視覚表現で学びます。",
+        "learningFocus": "気持ちや状態を表すこと",
+        "languagePattern": "___ is big / happy / sad",
+        "howItWorks": "1冊につき1つの形容詞を使い、同じ文の形を繰り返すことで意味を定着させます。",
+        "visualApproach": "キャラクターの表情や場面から、言葉の意味が自然に伝わるように作られています。",
+        "example": "Moko is sad.",
+        "ageRange": "2〜6歳",
+        "tone": "やさしく、感情がわかりやすい"
       },
-      "preposition": {
-        "title": "Prepositionシリーズ",
-        "shortLabel": "場所",
-        "description": "位置関係を学びます。",
-        "example": "Niko is under the table."
+      "noun": {
+        "title": "もの・名詞のシリーズ",
+        "shortLabel": "もの・なまえ",
+        "description": "身の回りの物について、「___ has a ___」という1つの文の形を使って学ぶシリーズです。",
+        "learningFocus": "物の名前を知り、認識すること",
+        "languagePattern": "___ has a ___",
+        "howItWorks": "文の形はそのままに、名詞だけを入れ替えることで、パターンを先に身につけます。",
+        "visualApproach": "キャラクターが物を持ったり使ったりする様子から、意味がひと目で伝わります。",
+        "example": "Moko has a pencil.",
+        "ageRange": "2〜6歳",
+        "tone": "はっきりしていて親しみやすい"
       },
-      "friends": {
-        "title": "Friendsシリーズ",
-        "shortLabel": "ともだち",
-        "description": "社会的なやりとりを学びます。",
-        "example": "Moko plays with Niko."
+      "phrases": {
+        "title": "よく使うフレーズのシリーズ",
+        "shortLabel": "フレーズ",
+        "description": "日常生活でよく使われる英語のフレーズを、場面ごとに学ぶシリーズです。",
+        "learningFocus": "決まった表現を理解し、使うこと",
+        "languagePattern": "よく使われる定型表現",
+        "howItWorks": "あいさつや自己紹介など、関連するフレーズを1冊にまとめ、自然な英語表現に触れます。",
+        "visualApproach": "キャラクターが実際の生活場面を演じることで、文脈から意味を理解できます。",
+        "example": "Nice to meet you.",
+        "ageRange": "3〜7歳",
+        "tone": "自然で実用的"
       }
     }
   },
+
   "howToUse": {
     "title": "おすすめの使い方",
     "intro": "The Language Friends の絵本は、パターン・くり返し・視覚的な理解を通して、子どもが自然に英語を身につけられるように作られています。このページでは、読む人に合わせたおすすめの使い方をご紹介します。",
