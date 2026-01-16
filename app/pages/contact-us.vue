@@ -76,6 +76,7 @@ onUnmounted(() => {
         <p class="section-body-type">
           {{ $t("contact.intro") }}
         </p>
+        <ContactForm />
       </div>
 
       <img
