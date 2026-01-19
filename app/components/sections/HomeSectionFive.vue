@@ -39,7 +39,7 @@
           </a>
         </div>
         <img
-          src="/images/everyone/cats-with-sign.png"
+          src="/images/everyone/cats-with-sign.webp"
           alt="Moko using cellphone"
           class="w-1/2 mx-auto my-4 md:w-1/4"
         />

@@ -27,7 +27,7 @@ onUnmounted(() => {
       @click="toggle(0)"
     >
       <img
-        src="/images/moko/moko-nametag.png"
+        src="/images/moko/moko-nametag.webp"
         alt="Moko"
         class="w-full max-w-45"
       />
@@ -58,7 +58,7 @@ onUnmounted(() => {
       @click="toggle(1)"
     >
       <img
-        src="/images/niko/niko-nametag.png"
+        src="/images/niko/niko-nametag.webp"
         alt="Niko"
         class="w-full max-w-45"
       />
@@ -88,7 +88,7 @@ onUnmounted(() => {
       @click="toggle(2)"
     >
       <img
-        src="/images/okja/okja-nametag.png"
+        src="/images/okja/okja-nametag.webp"
         alt="Okja"
         class="w-full max-w-45"
       />

@@ -6,7 +6,7 @@
   >
     <NuxtLink to="/" aria-label="Go to homepage">
       <img
-        src="/images/logos/language-friends-logo.png"
+        src="/images/logos/language-friends-logo.webp"
         alt="The Language Friends logo"
         class="w-32 mx-auto"
       />

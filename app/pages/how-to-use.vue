@@ -32,7 +32,7 @@
         class="dashed-border rounded-xl p-8 flex items-center justify-center"
       >
         <img
-          src="/images/mockups/1-LIKE-Mockup-3.png"
+          src="/images/mockups/1-LIKE-Mockup-3.webp"
           alt="mockup image of book on iPad on childrens desk"
           class="rounded-2xl"
         />
@@ -68,7 +68,7 @@
         class="dashed-border rounded-xl p-8 flex items-center justify-center"
       >
         <img
-          src="/images/mockups/1-LIKE-Mockup-2.png"
+          src="/images/mockups/1-LIKE-Mockup-2.webp"
           alt="mockup image of book on iPad on childrens desk"
           class="rounded-2xl"
         />
@@ -109,7 +109,7 @@
         class="dashed-border rounded-xl p-8 flex items-center justify-center"
       >
         <img
-          src="/images/mockups/2-VERBS-Mockup-2.png"
+          src="/images/mockups/2-VERBS-Mockup-2.webp"
           alt="mockup image of book on iPad on childrens desk"
           class="rounded-2xl"
         />
@@ -154,7 +154,7 @@
         class="dashed-border rounded-xl p-8 flex items-center justify-center"
       >
         <img
-          src="/images/mockups/mom-and-son-5.png"
+          src="/images/mockups/mom-and-son-5.webp"
           alt="mockup image of book on iPad on childrens desk"
           class="rounded-2xl"
         />
@@ -199,7 +199,7 @@
         class="dashed-border rounded-xl p-8 flex items-center justify-center"
       >
         <img
-          src="/images/mockups/dad-and-son-2.png"
+          src="/images/mockups/dad-and-son-2.webp"
           alt="mockup image of book on iPad on childrens desk"
           class="rounded-2xl"
         />
@@ -246,7 +246,7 @@
         class="dashed-border rounded-xl p-8 flex items-center justify-center"
       >
         <img
-          src="/images/mockups/bilingual-student.png"
+          src="/images/mockups/bilingual-student.webp"
           alt="mockup image of book on iPad on childrens desk"
           class="rounded-2xl"
         />

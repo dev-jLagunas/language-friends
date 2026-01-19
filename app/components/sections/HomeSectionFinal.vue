@@ -47,7 +47,7 @@ onMounted(async () => {
         ease: "power2.out",
         duration: 0.6,
       },
-      "-=0.2"
+      "-=0.2",
     );
   }, sectionRef.value);
 });
@@ -68,13 +68,13 @@ onBeforeUnmount(() => {
     </h1>
     <article class="characters grid grid-cols-3 px-4 mt-4 lg:w-1/2 mx-auto">
       <figure class="character moko">
-        <img src="/images/moko/moko-eat-sushi.png" alt="" />
+        <img src="/images/moko/moko-eat-sushi.webp" alt="" />
       </figure>
       <figure class="character niko">
-        <img src="/images/niko/niko-twirls.png" alt="" />
+        <img src="/images/niko/niko-twirls.webp" alt="" />
       </figure>
       <figure class="character okja">
-        <img src="/images/okja/okja-dances.png" alt="" />
+        <img src="/images/okja/okja-dances.webp" alt="" />
       </figure>
     </article>
   </section>

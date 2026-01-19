@@ -50,7 +50,7 @@
         </div>
       </section>
       <img
-        src="/images/books/0-INTRO-Collage-1.png"
+        src="/images/books/0-INTRO-Collage-1.webp"
         alt=""
         class="rounded-2xl dashed-border w-full mt-4 md:mt-0"
       />
@@ -102,7 +102,7 @@
         </div>
       </section>
       <img
-        src="/images/books/1-LIKE-Collage-1.png"
+        src="/images/books/1-LIKE-Collage-1.webp"
         alt=""
         class="rounded-2xl dashed-border w-full mt-4 md:mt-0"
       />
@@ -152,7 +152,7 @@
         </div>
       </section>
       <img
-        src="/images/books/2-VERBS-Collage-1.png"
+        src="/images/books/2-VERBS-Collage-1.webp"
         alt=""
         class="rounded-2xl dashed-border w-full mt-4 md:mt-0"
       />
@@ -204,7 +204,7 @@
         </div>
       </section>
       <img
-        src="/images/books/3-ADJ-Collage-1.png"
+        src="/images/books/3-ADJ-Collage-1.webp"
         alt=""
         class="rounded-2xl dashed-border w-full mt-4 md:mt-0"
       />
@@ -254,7 +254,7 @@
         </div>
       </section>
       <img
-        src="/images/books/4-NOUNS-Collage-1.png"
+        src="/images/books/4-NOUNS-Collage-1.webp"
         alt=""
         class="rounded-2xl dashed-border w-full mt-4 md:mt-0"
       />

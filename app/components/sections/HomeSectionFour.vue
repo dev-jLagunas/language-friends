@@ -32,7 +32,7 @@ onMounted(async () => {
             start: "top 85%",
             toggleActions: "play none none reverse",
           },
-        }
+        },
       );
 
       gsap.fromTo(
@@ -48,7 +48,7 @@ onMounted(async () => {
             start: "top 80%",
             toggleActions: "play none none reverse",
           },
-        }
+        },
       );
     });
   }, sectionRef.value);
@@ -80,7 +80,7 @@ onBeforeUnmount(() => {
         11.
       </p>
       <img
-        src="/images/mockups/0-INTRO-Mockup-1.png"
+        src="/images/mockups/0-INTRO-Mockup-1.webp"
         class="mobile-image w-3/5 ml-auto md:w-full"
         alt="mockup of book with ipad"
       />
@@ -107,7 +107,7 @@ onBeforeUnmount(() => {
         12.
       </p>
       <img
-        src="/images/mockups/1-LIKE-Book-Mockup-1.png"
+        src="/images/mockups/1-LIKE-Book-Mockup-1.webp"
         class="mobile-image w-3/5 ml-auto md:w-full md:order-2"
         alt="mockup of book with ipad"
       />
@@ -134,7 +134,7 @@ onBeforeUnmount(() => {
         13.
       </p>
       <img
-        src="/images/mockups/2-VERBS-Mockup-1.png"
+        src="/images/mockups/2-VERBS-Mockup-1.webp"
         class="mobile-image w-3/5 ml-auto md:w-full"
         alt="mockup of book with ipad"
       />
@@ -161,7 +161,7 @@ onBeforeUnmount(() => {
         14.
       </p>
       <img
-        src="/images/mockups/3-ADJ-Mockup-1.png"
+        src="/images/mockups/3-ADJ-Mockup-1.webp"
         class="mobile-image w-3/5 ml-auto md:w-full md:order-2"
         alt="mockup of book with ipad"
       />
@@ -187,7 +187,7 @@ onBeforeUnmount(() => {
         15.
       </p>
       <img
-        src="/images/mockups/4-NOUNS-Mockup-1.png"
+        src="/images/mockups/4-NOUNS-Mockup-1.webp"
         class="mobile-image w-3/5 ml-auto md:w-full"
         alt="mockup of book with ipad"
       />

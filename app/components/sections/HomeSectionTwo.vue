@@ -38,7 +38,7 @@ onMounted(() => {
         duration: 0.4,
         ease: "power2.out",
       },
-      "-=0.3"
+      "-=0.3",
     );
 
     // image (slight scale + fade)
@@ -50,7 +50,7 @@ onMounted(() => {
         duration: 0.5,
         ease: "power2.out",
       },
-      "-=0.25"
+      "-=0.25",
     );
 
     // text
@@ -62,7 +62,7 @@ onMounted(() => {
         duration: 0.4,
         ease: "power2.out",
       },
-      "-=0.3"
+      "-=0.3",
     );
   });
 });
@@ -89,7 +89,7 @@ onMounted(() => {
             5.
           </p>
           <img
-            src="/images/everyone/cats-together-school.png"
+            src="/images/everyone/cats-together-school.webp"
             class="mx-auto w-1/2 mb-4 md:w-3/4 bg-moko-blue-soft rounded-2xl xl:w-1/2"
             alt="cat characters in a school setting"
           />
@@ -116,7 +116,7 @@ onMounted(() => {
             6.
           </p>
           <img
-            src="/images/everyone/cats-together-bike.png"
+            src="/images/everyone/cats-together-bike.webp"
             class="mx-auto mb-4 w-1/2 md:w-3/4 bg-niko-purple-soft rounded-2xl xl:w-1/2"
             alt="cat characters riding bikes"
           />
@@ -143,7 +143,7 @@ onMounted(() => {
             7.
           </p>
           <img
-            src="/images/everyone/cats-together-hug.png"
+            src="/images/everyone/cats-together-hug.webp"
             class="mx-auto mb-4 w-1/2 md:w-3/4 bg-okja-yellow-soft rounded-2xl xl:w-1/2"
             alt="cat characters hugging"
           />

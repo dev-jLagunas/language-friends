@@ -63,7 +63,7 @@ export default defineNuxtConfig({
         },
         {
           property: "og:image",
-          content: "/images/og/og-default.png",
+          content: "/images/og/og-default.webp",
         },
         {
           property: "og:image:alt",
@@ -86,7 +86,7 @@ export default defineNuxtConfig({
         },
         {
           name: "twitter:image",
-          content: "/images/og/og-default.png",
+          content: "/images/og/og-default.webp",
         },
 
         // Apple / Mobile
@@ -117,8 +117,8 @@ export default defineNuxtConfig({
         },
 
         // Favicon
-        { rel: "icon", type: "image/png", href: "/favicon.png" },
-        { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
+        { rel: "icon", type: "image/png", href: "/favicon.webp" },
+        { rel: "apple-touch-icon", href: "/apple-touch-icon.webp" },
 
         // Canonical
         {

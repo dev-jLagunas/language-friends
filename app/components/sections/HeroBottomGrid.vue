@@ -9,7 +9,7 @@
         {{ $t("hero.prompts[0]") }}
       </figcaption>
       <img
-        src="/images/mockups/book-mockup-2.png"
+        src="/images/mockups/book-mockup-2.webp"
         alt="mock up of book and ipad"
         class="w-full max-w-50"
       />
@@ -23,7 +23,7 @@
       </figcaption>
 
       <img
-        src="/images/mockups/book-mockup.png"
+        src="/images/mockups/book-mockup.webp"
         alt=""
         class="w-full max-w-50"
       />
@@ -36,7 +36,7 @@
       </figcaption>
 
       <img
-        src="/images/mockups/1-LIKE-Book-Mockup-1.png"
+        src="/images/mockups/1-LIKE-Book-Mockup-1.webp"
         alt=""
         class="w-full max-w-50"
       />

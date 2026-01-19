@@ -76,7 +76,7 @@ onUnmounted(() => {
       </div>
 
       <img
-        src="/images/mockups/teacher-and-child.png"
+        src="/images/mockups/teacher-and-child.webp"
         class="rounded-2xl object-cover w-full dashed-border"
       />
     </div>
@@ -84,7 +84,7 @@ onUnmounted(() => {
     <!-- Philosophy -->
     <div class="about-card-container" data-step="2">
       <img
-        src="/images/mockups/dad-and-son1.png"
+        src="/images/mockups/dad-and-son1.webp"
         class="rounded-2xl md:rounded-3xl object-cover w-full order-last dashed-border md:order-first"
       />
 
@@ -124,7 +124,7 @@ onUnmounted(() => {
       </div>
 
       <img
-        src="/images/everyone/cats-together-hug.png"
+        src="/images/everyone/cats-together-hug.webp"
         class="rounded-2xl md:rounded-3xl object-cover w-full dashed-border"
       />
     </div>
@@ -132,7 +132,7 @@ onUnmounted(() => {
     <!-- Characters -->
     <div class="about-card-container" data-step="4">
       <img
-        src="/images/mockups/1-LIKE-Mockup-2.png"
+        src="/images/mockups/1-LIKE-Mockup-2.webp"
         class="rounded-2xl md:rounded-3xl object-cover w-full order-last dashed-border md:order-first"
       />
 
@@ -172,7 +172,7 @@ onUnmounted(() => {
       </div>
 
       <img
-        src="/images/mockups/mom-and-son-5.png"
+        src="/images/mockups/mom-and-son-5.webp"
         class="rounded-2xl md:rounded-3xl object-cover w-full dashed-border"
       />
     </div>

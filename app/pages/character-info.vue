@@ -14,10 +14,10 @@ onMounted(() => {
 
     sections.forEach((section, index) => {
       const textEl = section.querySelector(
-        ".character-text"
+        ".character-text",
       ) as HTMLElement | null;
       const imageEl = section.querySelector(
-        ".character-image"
+        ".character-image",
       ) as HTMLElement | null;
 
       if (!textEl || !imageEl) return;
@@ -93,7 +93,7 @@ onUnmounted(() => {
         </p>
       </section>
       <img
-        src="/images/moko/moko-collage-1.png"
+        src="/images/moko/moko-collage-1.webp"
         class="character-image dashed-border rounded-2xl my-8"
       />
     </section>
@@ -134,7 +134,7 @@ onUnmounted(() => {
       </section>
 
       <img
-        src="/images/niko/niko-collage-1.png"
+        src="/images/niko/niko-collage-1.webp"
         class="character-image dashed-border rounded-2xl my-8"
       />
     </section>
@@ -175,7 +175,7 @@ onUnmounted(() => {
       </div>
 
       <img
-        src="/images/okja/okja-collage-1.png"
+        src="/images/okja/okja-collage-1.webp"
         class="character-image dashed-border rounded-2xl my-8"
       />
     </section>

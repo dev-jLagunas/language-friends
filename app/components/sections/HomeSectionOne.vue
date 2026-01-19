@@ -24,7 +24,7 @@ onMounted(() => {
           start: "top 75%",
           once: true,
         },
-      }
+      },
     );
 
     gsap.fromTo(
@@ -40,7 +40,7 @@ onMounted(() => {
           trigger: card,
           start: "top 75%",
         },
-      }
+      },
     );
   });
 });
@@ -70,7 +70,7 @@ onMounted(() => {
           1.
         </p>
         <img
-          src="/images/mockups/mon-and-son1.png"
+          src="/images/mockups/mon-and-son1.webp"
           class="one-intro-card-img my-2"
           alt="mother and son mockup"
         />
@@ -98,7 +98,7 @@ onMounted(() => {
           2.
         </p>
         <img
-          src="/images/mockups/mom-and-son2.png"
+          src="/images/mockups/mom-and-son2.webp"
           class="one-intro-card-img my-2"
           alt="mother and son reading mockup"
         />
@@ -126,7 +126,7 @@ onMounted(() => {
           3.
         </p>
         <img
-          src="/images/mockups/mom-and-son3.png"
+          src="/images/mockups/mom-and-son3.webp"
           class="one-intro-card-img"
           alt="mother and son reading together mockup"
         />
@@ -152,7 +152,7 @@ onMounted(() => {
           4.
         </p>
         <img
-          src="/images/mockups/dad-and-son1.png"
+          src="/images/mockups/dad-and-son1.webp"
           class="one-intro-card-img my-2"
           alt="mother and son mockup"
         />

@@ -14,10 +14,10 @@ onMounted(() => {
 
     sections.forEach((section, index) => {
       const textEl = section.querySelector(
-        ".contact-text"
+        ".contact-text",
       ) as HTMLElement | null;
       const imageEl = section.querySelector(
-        ".contact-image"
+        ".contact-image",
       ) as HTMLElement | null;
 
       if (!textEl || !imageEl) return;
@@ -80,7 +80,7 @@ onUnmounted(() => {
       </div>
 
       <img
-        src="/images/everyone/cats-on-eachother.png"
+        src="/images/everyone/cats-on-eachother.webp"
         alt=""
         class="contact-image rounded-xl dashed-border w-full xs:w-3/4 xs:mx-auto md:w-full lg:w-3/4"
       />
@@ -113,7 +113,7 @@ onUnmounted(() => {
       </div>
 
       <img
-        src="/images/everyone/cats-using-sns.png"
+        src="/images/everyone/cats-using-sns.webp"
         alt=""
         class="contact-image rounded-xl dashed-border w-full - xs:w-3/4 xs:mx-auto md:w-full lg:w-3/4"
       />
@@ -148,7 +148,7 @@ onUnmounted(() => {
       </div>
 
       <img
-        src="/images/everyone/cats-together-bike.png"
+        src="/images/everyone/cats-together-bike.webp"
         alt=""
         class="contact-image rounded-xl dashed-border w-full xs:w-3/4 xs:mx-auto md:w-full lg:w-3/4"
       />

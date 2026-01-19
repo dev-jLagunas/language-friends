@@ -27,7 +27,7 @@ onMounted(() => {
           start: "top 85%",
           toggleActions: "play none none none",
         },
-      }
+      },
     );
   });
 });
@@ -44,7 +44,7 @@ onMounted(() => {
         {{ $t("home.charactersPreview.intro") }}
       </p>
       <img
-        src="/images/everyone/cats-wall-sitting.png"
+        src="/images/everyone/cats-wall-sitting.webp"
         alt="characters together sitting"
         class="mx-auto md:w-1/2 lg:w-1/3"
       />
@@ -63,7 +63,7 @@ onMounted(() => {
       </p>
       <div class="">
         <img
-          src="/images/moko/moko-hello.png"
+          src="/images/moko/moko-hello.webp"
           alt="image of Moko cat character"
           class="w-1/3 mx-auto md:w-3/4 lg:w-1/2"
         />
@@ -100,7 +100,7 @@ onMounted(() => {
       </p>
       <div class="">
         <img
-          src="/images/niko/niko-hello.png"
+          src="/images/niko/niko-hello.webp"
           alt="image of Niko cat character"
           class="w-1/3 mx-auto md:w-3/4 lg:w-1/2"
         />
@@ -137,7 +137,7 @@ onMounted(() => {
       </p>
       <div class="">
         <img
-          src="/images/okja/okja-hello.png"
+          src="/images/okja/okja-hello.webp"
           alt="image of Okja cat character"
           class="w-1/3 mx-auto md:w-3/4 lg:w-1/2"
         />
@@ -161,7 +161,7 @@ onMounted(() => {
       </div>
     </div>
     <img
-      src="/images/everyone/cats-peace-sign.png"
+      src="/images/everyone/cats-peace-sign.webp"
       alt="characters together peace sign"
       class="mx-auto md:w-1/2 lg:w-1/3"
     />

@@ -7,7 +7,7 @@
     <div class="max-w-md text-center">
       <!-- Image -->
       <img
-        src="/images/everyone/cats-coming-soon.png"
+        src="/images/everyone/cats-coming-soon.webp"
         alt="The Language Friends working together"
         class="mx-auto w-64"
       />
