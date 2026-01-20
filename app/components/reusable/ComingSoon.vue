@@ -2,7 +2,7 @@
 
 <template>
   <section
-    class="flex items-center justify-center px-6 mb-16 font-yomogi theme-toggle-styles"
+    class="flex items-center justify-center font-yomogi theme-toggle-styles md:py-16"
   >
     <div class="max-w-md text-center">
       <!-- Image -->

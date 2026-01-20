@@ -57,7 +57,7 @@ onUnmounted(() => {
 <template>
   <section
     ref="root"
-    class="mx-auto pb-24 px-4 md:pt-24 font-yomogi theme-toggle-styles space-y-8 md:space-y-16"
+    class="mx-auto pb-24 px-4 pt-8 md:pt-32 font-yomogi theme-toggle-styles space-y-8 md:space-y-16 max-w-7xl"
   >
     <ProgressIndicator :total="3" />
     <!-- Moko -->
@@ -70,7 +70,7 @@ onUnmounted(() => {
         class="character-text bg-moko-blue-soft relative rounded-2xl p-4 md:p-8"
       >
         <p
-          class="section-big-numbers text-dark-primary/50 absolute -top-10 right-0 md:-top-24"
+          class="section-big-numbers text-dark-primary/50 dark:text-light-primary/50 absolute -top-10 right-0 md:-top-24"
         >
           1.
         </p>
@@ -94,7 +94,7 @@ onUnmounted(() => {
       </section>
       <img
         src="/images/moko/moko-collage-1.webp"
-        class="character-image dashed-border rounded-2xl my-8"
+        class="character-image dashed-border rounded-2xl my-8 xs:w-4/5"
       />
     </section>
 
@@ -108,7 +108,7 @@ onUnmounted(() => {
         class="character-text relative bg-niko-purple-soft rounded-2xl p-4 md:p-8 md:order-2 text-dark-primary"
       >
         <p
-          class="section-big-numbers text-dark-primary/50 absolute -top-10 right-0 md:-top-24"
+          class="section-big-numbers text-dark-primary/50 dark:text-light-primary/50 absolute -top-10 right-0 md:-top-24"
         >
           2.
         </p>
@@ -135,7 +135,7 @@ onUnmounted(() => {
 
       <img
         src="/images/niko/niko-collage-1.webp"
-        class="character-image dashed-border rounded-2xl my-8"
+        class="character-image dashed-border rounded-2xl my-8 xs:w-4/5"
       />
     </section>
 
@@ -149,7 +149,7 @@ onUnmounted(() => {
         class="character-text relative bg-okja-yellow-soft rounded-2xl p-4 md:p-8 text-dark-primary"
       >
         <p
-          class="section-big-numbers text-dark-primary/50 absolute -top-10 right-0 md:-top-24"
+          class="section-big-numbers text-dark-primary/50 dark:text-light-primary/50 absolute -top-10 right-0 md:-top-24"
         >
           3.
         </p>
@@ -176,7 +176,7 @@ onUnmounted(() => {
 
       <img
         src="/images/okja/okja-collage-1.webp"
-        class="character-image dashed-border rounded-2xl my-8"
+        class="character-image dashed-border rounded-2xl my-8 xs:w-4/5"
       />
     </section>
 

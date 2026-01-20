@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <main class="mt-24">
+  <main class="">
     <ComingSoon />
   </main>
 </template>

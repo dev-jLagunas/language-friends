@@ -18,7 +18,7 @@ const closeStart = () => {
 
     <nav
       aria-label="デスクトップナビゲーション"
-      class="hidden md:block fixed top-0 left-0 right-0 z-100 bg-light-primary dark:bg-dark-secondary font-yomogi"
+      class="hidden md:block fixed top-0 left-0 right-0 z-100 max-w-7xl mx-auto bg-light-primary dark:bg-dark-secondary font-yomogi"
     >
       <ul
         class="flex justify-around items-center py-4 border-b border-b-dark-primary/20 dark:border-b-light-primary/20"

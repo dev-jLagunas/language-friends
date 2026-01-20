@@ -2,7 +2,7 @@
 
 <template>
   <footer
-    class="hidden md:block font-yomogi relative border-t border-dark-primary/20 dark:border-light-primary/20"
+    class="hidden md:block font-yomogi relative border-t border-dark-primary/20 dark:border-light-primary/20 max-w-7xl mx-auto"
     aria-label="フッター"
   >
     <div class="mx-auto px-4 py-12 grid grid-cols-2">

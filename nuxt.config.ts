@@ -23,8 +23,6 @@ export default defineNuxtConfig({
           content:
             "The Language Friends は、親子で一緒に英語を楽しむためのやさしい英語えほんシリーズです。繰り返し・パターン・視覚的理解を通して、自然に英語に親しめます。",
         },
-
-        // Keywords (light use, still okay)
         {
           name: "keywords",
           content:
@@ -117,8 +115,8 @@ export default defineNuxtConfig({
         },
 
         // Favicon
-        { rel: "icon", type: "image/png", href: "/favicon.webp" },
-        { rel: "apple-touch-icon", href: "/apple-touch-icon.webp" },
+        { rel: "icon", type: "image/png", href: "/favicon.ico" },
+        { rel: "apple-touch-icon", href: "/apple-touch-icon.ico" },
 
         // Canonical
         {

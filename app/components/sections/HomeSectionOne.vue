@@ -65,7 +65,7 @@ onMounted(() => {
         class="story-card bg-moko-blue-soft one-intro-card"
       >
         <p
-          class="section-big-numbers text-dark-primary/50 md:absolute md:-top-16 md:right-0 dark:text-light-primary/50"
+          class="section-big-numbers text-dark-primary/50 dark:text-light-primary/50 md:absolute md:-top-16 md:right-0"
         >
           1.
         </p>

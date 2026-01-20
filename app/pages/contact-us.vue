@@ -57,7 +57,7 @@ onUnmounted(() => {
 <template>
   <section
     ref="root"
-    class="mx-auto px-4 md:pt-24 pb-24 font-yomogi theme-toggle-styles space-y-8 md:space-y-0 relative overflow-hidden"
+    class="mx-auto px-4 pt-8 md:pt-24 pb-24 font-yomogi theme-toggle-styles space-y-8 md:space-y-0 relative overflow-hidden max-w-7xl"
   >
     <!-- Contact Intro -->
     <section

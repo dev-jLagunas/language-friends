@@ -2,7 +2,7 @@
 
 <template>
   <section
-    class="mx-auto px-4 md:pt-32 pb-24 font-yomogi theme-toggle-styles space-y-8 md:space-y-20"
+    class="mx-auto px-4 pt-8 md:pt-36 pb-24 font-yomogi theme-toggle-styles space-y-8 md:space-y-20 max-w-7xl"
   >
     <ProgressIndicator :total="6" />
     <!-- Page Intro -->

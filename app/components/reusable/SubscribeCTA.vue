@@ -25,7 +25,10 @@
         class="w-full py-4 bg-dark-primary/10 dark:bg-light-primary px-2 h-10 placeholder:text--primary dark:placeholder:text-dark-primary"
       />
 
-      <button type="submit" class="green-cta-btn w-full mt-2 md:w-1/3 md:mt-0">
+      <button
+        type="submit"
+        class="bg-green-signifier font-bold text-dark-primary w-full mt-2 md:w-1/3 md:mt-0"
+      >
         {{ $t("hero.subscribeButton") }}
       </button>
     </div>

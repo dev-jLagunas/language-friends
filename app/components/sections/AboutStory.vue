@@ -51,17 +51,14 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <section
-    ref="root"
-    class="about-wrapper text-dark-primary mt-8 mb-16 md:mt-16"
-  >
+  <section ref="root" class="about-wrapper text-dark-primary">
     <ProgressIndicator :total="5" />
 
     <!-- Intro -->
     <div class="about-card-container" data-step="1">
       <div class="bg-moko-blue-soft rounded-2xl p-8">
         <p
-          class="section-big-numbers text-dark-primary/50 absolute -top-10 right-0 md:-top-16"
+          class="section-big-numbers text-dark-primary/50 dark:text-light-primary/50 absolute -top-10 right-0 md:-top-16"
         >
           1.
         </p>
@@ -90,7 +87,7 @@ onUnmounted(() => {
 
       <div class="bg-niko-purple-soft rounded-2xl md:rounded-3xl p-6 md:p-10">
         <p
-          class="section-big-numbers text-dark-primary/50 absolute -top-10 right-0 md:-top-16"
+          class="section-big-numbers text-dark-primary/50 dark:text-light-primary/50 absolute -top-10 right-0 md:-top-16"
         >
           2.
         </p>
@@ -109,7 +106,7 @@ onUnmounted(() => {
     <div class="about-card-container" data-step="3">
       <div class="bg-okja-yellow-soft rounded-2xl md:rounded-3xl p-6 md:p-10">
         <p
-          class="section-big-numbers text-dark-primary/50 absolute -top-10 right-0 md:-top-16"
+          class="section-big-numbers text-dark-primary/50 dark:text-light-primary/50 absolute -top-10 right-0 md:-top-16"
         >
           3.
         </p>
@@ -138,7 +135,7 @@ onUnmounted(() => {
 
       <div class="bg-moko-blue-soft rounded-2xl md:rounded-3xl p-6 md:p-10">
         <p
-          class="section-big-numbers text-dark-primary/50 absolute -top-10 right-0 md:-top-16"
+          class="section-big-numbers text-dark-primary/50 dark:text-light-primary/50 absolute -top-10 right-0 md:-top-16"
         >
           4.
         </p>
@@ -157,7 +154,7 @@ onUnmounted(() => {
     <div class="about-card-container" data-step="5">
       <div class="bg-niko-purple-soft rounded-2xl md:rounded-3xl p-6 md:p-10">
         <p
-          class="section-big-numbers text-dark-primary/50 absolute -top-10 right-0 md:-top-16"
+          class="section-big-numbers text-dark-primary/50 dark:text-light-primary/50 absolute -top-10 right-0 md:-top-16"
         >
           5.
         </p>

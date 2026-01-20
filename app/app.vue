@@ -24,11 +24,11 @@ onBeforeUnmount(() => {
 
 <template>
   <div
-    class="theme-toggle-styles min-h-screen md:px-4 lg:px-8 xl:px-16 2xl:px-32"
+    class="theme-toggle-styles min-h-screen md:px-4 lg:px-8 bg-light-primary dark:bg-dark-secondary"
   >
     <TheNavbar />
 
-    <main class="flex-1 mt-4 bg-light-primary">
+    <main class="flex-1 bg-light-primary dark:bg-dark-secondary">
       <NuxtPage />
     </main>
 
@@ -66,7 +66,9 @@ onBeforeUnmount(() => {
   border-radius: 999px;
 
   opacity: 0.5;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
 }
 
 .back-to-top:hover {

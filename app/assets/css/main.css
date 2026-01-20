@@ -118,11 +118,11 @@ body {
 }
 
 .section-body-type {
-  @apply text-lg leading-6 tracking-tight xs:text-2xl xs:leading-7 md:text-xl md:leading-6 xl:text-2xl xl:leading-7;
+  @apply text-lg leading-6 tracking-tight xs:text-xl xs:leading-7 md:text-xl md:leading-6 xl:text-2xl xl:leading-7;
 }
 
 .section-card-title {
-  @apply font-black mb-2 tracking-tighter text-2xl  xs:text-4xl md:text-3xl lg:text-4xl;
+  @apply font-black mb-2 tracking-tighter text-2xl  xs:text-3xl md:text-3xl lg:text-4xl;
 }
 
 .section-title-underline {
@@ -165,9 +165,20 @@ body {
         ABOUT STORY SECTION
 ********************************************/
 .about-wrapper {
-  @apply mx-auto px-4 md:px-8 py-12 md:py-20 space-y-16 md:space-y-24 font-yomogi max-w-7xl  bg-light-primary dark:bg-dark-secondary;
+  @apply mx-auto px-4 md:px-8 py-12 md:py-32 space-y-16 md:space-y-24 font-yomogi max-w-7xl  bg-light-primary dark:bg-dark-secondary;
 }
 
 .about-card-container {
   @apply grid grid-cols-1 relative md:grid-cols-2 gap-8 items-center;
+}
+
+/********************************************
+      BOOKS PAGE
+********************************************/
+.books-page-wrapper {
+  @apply px-4 font-yomogi theme-toggle-styles pt-8 pb-32 space-y-16 md:pt-40 md:space-y-24;
+}
+
+.books-info-container {
+  @apply grid grid-cols-1 lg:grid-cols-2 items-center gap-8 text-dark-primary max-w-7xl mx-auto;
 }

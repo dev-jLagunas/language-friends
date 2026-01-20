@@ -1,18 +1,13 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section
-    class="mx-auto px-4 font-yomogi theme-toggle-styles pt-12 pb-32 md:pt-44 space-y-8 md:space-y-24 max-w-7xl"
-  >
+  <section class="books-page-wrapper">
     <ProgressIndicator :total="5" />
     <!-- phrases SERIES -->
-    <article
-      data-step="1"
-      class="md:grid md:grid-cols-2 items-center gap-4 text-dark-primary md:gap-8"
-    >
-      <section class="bg-moko-blue-soft rounded-2xl p-6 md:p-8 relative">
+    <article data-step="1" class="books-info-container">
+      <section class="bg-moko-blue-soft rounded-2xl p-6 xs:p-8 relative">
         <p
-          class="section-big-numbers absolute -top-10 right-0 md:-top-24 md:-right-8"
+          class="section-big-numbers text-dark-primary/50 dark:text-light-primary/50 absolute -top-10 right-0 md:-top-24 md:-right-8"
         >
           1.
         </p>
@@ -41,10 +36,16 @@
         </ul>
 
         <div class="mt-8 space-x-8">
-          <a href="#" class="bg-green-signifier font-bold px-4 py-2 rounded-xl">
+          <a
+            href="#"
+            class="bg-green-signifier font-bold px-4 py-2 rounded-xl shadow-md"
+          >
             Amazon KDP
           </a>
-          <a href="#" class="bg-green-signifier font-bold px-4 py-2 rounded-xl">
+          <a
+            href="#"
+            class="bg-green-signifier font-bold px-4 py-2 rounded-xl shadow-md"
+          >
             Kobo
           </a>
         </div>
@@ -56,15 +57,12 @@
       />
     </article>
     <!-- LIKE SERIES -->
-    <article
-      data-step="2"
-      class="md:grid md:grid-cols-2 items-center text-dark-primary gap-4 md:gap-8"
-    >
+    <article data-step="2" class="books-info-container">
       <section
         class="bg-niko-purple-soft rounded-2xl p-6 md:p-8 relative md:order-1"
       >
         <p
-          class="section-big-numbers absolute -top-10 right-0 md:-top-24 md:-right-8"
+          class="section-big-numbers text-dark-primary/50 dark:text-light-primary/50 absolute -top-10 right-0 md:-top-24 md:-right-8"
         >
           2.
         </p>
@@ -72,7 +70,7 @@
           <h2 class="section-card-title section-title-underline">
             {{ $t("books.series.like.title") }}
           </h2>
-          <Icon name="heroicons:heart" class="text-3xl opacity-80" />
+          <Icon name="heroicons:heart" class="text-5xl opacity-80" />
         </div>
 
         <p class="section-body-type">
@@ -93,10 +91,16 @@
         </ul>
 
         <div class="mt-8 space-x-8">
-          <a href="#" class="bg-green-signifier font-bold px-4 py-2 rounded-xl">
+          <a
+            href="#"
+            class="bg-green-signifier font-bold px-4 py-2 rounded-xl shadow-md"
+          >
             Amazon KDP
           </a>
-          <a href="#" class="bg-green-signifier font-bold px-4 py-2 rounded-xl">
+          <a
+            href="#"
+            class="bg-green-signifier font-bold px-4 py-2 rounded-xl shadow-md"
+          >
             Kobo
           </a>
         </div>
@@ -108,13 +112,10 @@
       />
     </article>
     <!-- ADJ SERIES -->
-    <article
-      data-step="3"
-      class="md:grid md:grid-cols-2 text-dark-primary items-center gap-4 md:gap-8"
-    >
+    <article data-step="3" class="books-info-container">
       <section class="bg-okja-yellow-soft rounded-2xl p-6 md:p-8 relative">
         <p
-          class="section-big-numbers absolute -top-10 right-0 md:-top-24 md:-right-8"
+          class="section-big-numbers text-dark-primary/50 dark:text-light-primary/50 absolute -top-10 right-0 md:-top-24 md:-right-8"
         >
           3.
         </p>
@@ -143,10 +144,16 @@
         </ul>
 
         <div class="mt-8 space-x-8">
-          <a href="#" class="bg-green-signifier font-bold px-4 py-2 rounded-xl">
+          <a
+            href="#"
+            class="bg-green-signifier font-bold px-4 py-2 rounded-xl shadow-md"
+          >
             Amazon KDP
           </a>
-          <a href="#" class="bg-green-signifier font-bold px-4 py-2 rounded-xl">
+          <a
+            href="#"
+            class="bg-green-signifier font-bold px-4 py-2 rounded-xl shadow-md"
+          >
             Kobo
           </a>
         </div>
@@ -158,15 +165,12 @@
       />
     </article>
     <!-- ADJ SERIES -->
-    <article
-      data-step="4"
-      class="md:grid md:grid-cols-2 items-center text-dark-primary gap-4 md:gap-8"
-    >
+    <article data-step="4" class="books-info-container">
       <section
         class="bg-moko-blue-soft rounded-2xl p-6 md:p-8 relative md:order-1"
       >
         <p
-          class="section-big-numbers absolute -top-10 right-0 md:-top-24 md:-right-8"
+          class="section-big-numbers text-dark-primary/50 dark:text-light-primary/50 absolute -top-10 right-0 md:-top-24 md:-right-8"
         >
           4.
         </p>
@@ -174,7 +178,7 @@
           <h2 class="section-card-title section-title-underline">
             {{ $t("books.series.adjective.title") }}
           </h2>
-          <Icon name="heroicons:sparkles" class="text-3xl opacity-80" />
+          <Icon name="heroicons:sparkles" class="text-5xl opacity-80" />
         </div>
 
         <p class="section-body-type">
@@ -195,10 +199,16 @@
         </ul>
 
         <div class="mt-8 space-x-8">
-          <a href="#" class="bg-green-signifier font-bold px-4 py-2 rounded-xl">
+          <a
+            href="#"
+            class="bg-green-signifier font-bold px-4 py-2 rounded-xl shadow-md"
+          >
             Amazon KDP
           </a>
-          <a href="#" class="bg-green-signifier font-bold px-4 py-2 rounded-xl">
+          <a
+            href="#"
+            class="bg-green-signifier font-bold px-4 py-2 rounded-xl shadow-md"
+          >
             Kobo
           </a>
         </div>
@@ -210,13 +220,10 @@
       />
     </article>
     <!-- LIKE SERIES -->
-    <article
-      data-step="5"
-      class="md:grid md:grid-cols-2 items-center text-dark-primary gap-4 md:gap-8"
-    >
+    <article data-step="5" class="books-info-container">
       <section class="bg-niko-purple-soft rounded-2xl p-6 md:p-8 relative">
         <p
-          class="section-big-numbers absolute -top-10 right-0 md:-top-24 md:-right-8"
+          class="section-big-numbers text-dark-primary/50 dark:text-light-primary/50 absolute -top-10 right-0 md:-top-24 md:-right-8"
         >
           5.
         </p>
@@ -224,7 +231,7 @@
           <h2 class="section-card-title section-title-underline">
             {{ $t("books.series.noun.title") }}
           </h2>
-          <Icon name="heroicons:heart" class="text-3xl opacity-80" />
+          <Icon name="heroicons:heart" class="text-5xl opacity-80" />
         </div>
 
         <p class="section-body-type">
@@ -245,10 +252,16 @@
         </ul>
 
         <div class="mt-8 space-x-8">
-          <a href="#" class="bg-green-signifier font-bold px-4 py-2 rounded-xl">
+          <a
+            href="#"
+            class="bg-green-signifier font-bold px-4 py-2 rounded-xl shadow-md"
+          >
             Amazon KDP
           </a>
-          <a href="#" class="bg-green-signifier font-bold px-4 py-2 rounded-xl">
+          <a
+            href="#"
+            class="bg-green-signifier font-bold px-4 py-2 rounded-xl shadow-md"
+          >
             Kobo
           </a>
         </div>
