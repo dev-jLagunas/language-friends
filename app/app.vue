@@ -23,15 +23,11 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div
-    class="theme-toggle-styles min-h-screen md:px-4 lg:px-8 bg-light-primary dark:bg-dark-secondary"
-  >
+  <div class="theme-toggle-styles min-h-screen">
     <TheNavbar />
-
-    <main class="flex-1 bg-light-primary dark:bg-dark-secondary">
+    <main class="flex-1">
       <NuxtPage />
     </main>
-
     <footer>
       <MobileFooter class="md:hidden" />
       <DesktopFooter class="hidden md:flex" />
@@ -40,7 +36,7 @@ onBeforeUnmount(() => {
       v-if="showButton"
       aria-label="Back to top"
       @click="scrollToTop"
-      class="back-to-top"
+      class="back-to-top text-dark-primary"
     >
       <Icon name="heroicons:arrow-up" />
     </button>

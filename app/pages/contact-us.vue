@@ -55,50 +55,54 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <section
+  <main
     ref="root"
-    class="mx-auto px-4 pt-8 md:pt-24 pb-24 font-yomogi theme-toggle-styles space-y-8 md:space-y-0 relative overflow-hidden max-w-7xl"
+    class="mx-auto pb-16 page-paddings px-4 font-yomogi theme-toggle-styles relative overflow-hidden max-w-7xl"
   >
+    <ProgressIndicator :total="3" />
     <!-- Contact Intro -->
-    <section
-      class="contact-section md:p-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
-    >
-      <div
-        class="contact-text bg-moko-blue-soft rounded-2xl py-6 px-4 place-content-center md:px-6 text-dark-primary"
-      >
-        <div class="flex items-center justify-between">
+    <article data-step="1" class="contact-section md:p-8 contact-card-wrapper">
+      <section class="contact-text bg-moko-blue-soft contact-text-wrapper">
+        <header class="flex-row-between-center">
+          <p
+            class="section-big-numbers text-dark-primary/50 dark:text-light-primary/50 absolute -top-10 right-0 md:-top-24 md:-right-4"
+          >
+            1.
+          </p>
           <h1 class="section-card-title section-title-underline">
             {{ $t("contact.title") }}
           </h1>
-          <Icon name="mdi:email-outline" class="text-4xl" />
-        </div>
+          <Icon name="mdi:email-outline" class="text-4xl opacity-80" />
+        </header>
 
         <p class="section-body-type">
           {{ $t("contact.intro") }}
         </p>
         <ContactForm />
-      </div>
-
+      </section>
       <img
         src="/images/everyone/cats-on-eachother.webp"
         alt=""
-        class="contact-image rounded-xl dashed-border w-full xs:w-3/4 xs:mx-auto md:w-full lg:w-3/4"
+        class="contact-image rounded-2xl dashed-border w-full"
       />
-    </section>
+    </article>
 
     <!-- Email -->
-    <section
-      class="contact-section md:p-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
-    >
-      <div
-        class="contact-text bg-niko-purple-soft rounded-2xl py-6 px-4 place-content-center md:px-6 md:order-1 text-dark-primary"
+    <article data-step="2" class="contact-section md:p-8 contact-card-wrapper">
+      <section
+        class="contact-text bg-niko-purple-soft contact-text-wrapper md:order-1"
       >
-        <div class="flex items-center justify-between">
+        <header class="flex-row-between-center">
+          <p
+            class="section-big-numbers text-dark-primary/50 dark:text-light-primary/50 absolute -top-10 right-0 md:-top-24 md:-right-4"
+          >
+            2.
+          </p>
           <h2 class="section-card-title">
             {{ $t("contact.emailLabel") }}
           </h2>
-          <Icon name="mdi:mailbox-open-outline" class="text-4xl" />
-        </div>
+          <Icon name="mdi:mailbox-open-outline" class="text-4xl opacity-80" />
+        </header>
 
         <p class="section-body-type mt-2 mb-4">
           {{ $t("contact.emailText") }}
@@ -110,33 +114,32 @@ onUnmounted(() => {
         >
           hello@thelanguagefriends.com
         </a>
-      </div>
+      </section>
 
       <img
         src="/images/everyone/cats-using-sns.webp"
         alt=""
-        class="contact-image rounded-xl dashed-border w-full - xs:w-3/4 xs:mx-auto md:w-full lg:w-3/4"
+        class="contact-image rounded-2xl dashed-border w-full"
       />
-    </section>
+    </article>
 
     <!-- Social -->
-    <section
-      class="contact-section md:p-8 grid grid-cols-1 md:grid-cols-2 md:order-1 gap-12 items-center"
-    >
-      <div
-        class="contact-text bg-okja-yellow-soft rounded-2xl py-6 px-4 place-content-center md:px-6 text-dark-primary"
-      >
-        <div class="flex items-center justify-between">
+    <article data-step="3" class="contact-section md:p-8 contact-card-wrapper">
+      <section class="contact-text bg-okja-yellow-soft contact-text-wrapper">
+        <header class="flex-row-between-center">
+          <p
+            class="section-big-numbers text-dark-primary/50 dark:text-light-primary/50 absolute -top-10 right-0 md:-top-24 md:-right-4"
+          >
+            3.
+          </p>
           <h2 class="section-card-title">
             {{ $t("contact.socialLabel") }}
           </h2>
-          <Icon name="mdi:account-group-outline" class="text-4xl" />
-        </div>
-
+          <Icon name="mdi:account-group-outline" class="text-4xl opacity-80" />
+        </header>
         <p class="section-body-type mt-2 mb-4">
           {{ $t("contact.socialText") }}
         </p>
-
         <div class="flex gap-4">
           <a href="#" aria-label="Instagram">
             <Icon name="mdi:instagram" class="text-3xl" />
@@ -145,18 +148,17 @@ onUnmounted(() => {
             <Icon name="mdi:youtube" class="text-3xl" />
           </a>
         </div>
-      </div>
-
+      </section>
       <img
         src="/images/everyone/cats-together-bike.webp"
         alt=""
-        class="contact-image rounded-xl dashed-border w-full xs:w-3/4 xs:mx-auto md:w-full lg:w-3/4"
+        class="contact-image rounded-2xl dashed-border w-full"
       />
-    </section>
+    </article>
 
     <!-- Note -->
     <p class="text-center text-2xl">
       {{ $t("contact.note") }}
     </p>
-  </section>
+  </main>
 </template>

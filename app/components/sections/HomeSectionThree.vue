@@ -36,18 +36,13 @@ onMounted(() => {
 <template>
   <section id="s3" class="wrapper theme-toggle-styles section-wrapper">
     <!-- Intro Card -->
-    <div class="text-center">
-      <h2 class="section-title-type mb-2">
+    <div class="text-center mb-16">
+      <h2 class="section-title-type mb-4">
         {{ $t("home.charactersPreview.title") }}
       </h2>
       <p class="section-body-type">
         {{ $t("home.charactersPreview.intro") }}
       </p>
-      <img
-        src="/images/everyone/cats-wall-sitting.webp"
-        alt="characters together sitting"
-        class="mx-auto md:w-1/2 lg:w-1/3"
-      />
     </div>
 
     <!-- Moko -->
@@ -160,11 +155,6 @@ onMounted(() => {
         </p>
       </div>
     </div>
-    <img
-      src="/images/everyone/cats-peace-sign.webp"
-      alt="characters together peace sign"
-      class="mx-auto md:w-1/2 lg:w-1/3"
-    />
   </section>
 </template>
 

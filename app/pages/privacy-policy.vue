@@ -1,27 +1,17 @@
 <template>
-  <section
-    class="mx-auto px-4 md:pt-24 pb-24 font-yomogi theme-toggle-styles space-y-12 max-w-5xl"
-  >
-    <!-- Header -->
-    <section class="bg-moko-blue-soft rounded-2xl p-6 md:p-8 text-dark-primary">
+  <main class="mx-auto px-4 font-yomogi theme-toggle-styles md:pt-20 max-w-7xl">
+    <!-- CONTENT -->
+    <section class="rounded-2xl p-6 md:p-8 space-y-4">
       <div class="flex items-center justify-between">
         <h1 class="section-card-title section-title-underline">
           {{ $t("policy.title") }}
         </h1>
         <Icon name="mdi:shield-account-outline" class="text-4xl" />
       </div>
-
       <p class="section-body-type mt-2">
         {{ $t("policy.intro") }}
       </p>
 
-      <p class="section-body-type mt-2 text-sm opacity-70">
-        {{ $t("policy.lastUpdated") }}
-      </p>
-    </section>
-
-    <!-- Sections -->
-    <section class="space-y-8">
       <div class="bg-niko-purple-soft rounded-2xl p-6 md:p-8 text-dark-primary">
         <h2 class="section-card-title">
           {{ $t("policy.informationCollected.title") }}
@@ -87,5 +77,5 @@
         </p>
       </div>
     </section>
-  </section>
+  </main>
 </template>

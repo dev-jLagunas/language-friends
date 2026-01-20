@@ -55,16 +55,17 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <section
+  <main
     ref="root"
-    class="mx-auto pb-24 px-4 pt-8 md:pt-32 font-yomogi theme-toggle-styles space-y-8 md:space-y-16 max-w-7xl"
+    class="mx-auto page-paddings pb-24 font-yomogi theme-toggle-styles max-w-7xl"
   >
     <ProgressIndicator :total="3" />
+
     <!-- Moko -->
-    <section
+    <article
       id="character-moko"
       data-step="1"
-      class="character-section text-dark-primary grid grid-cols-1 mt-4 md:grid md:grid-cols-2 items-center md:gap-10 place-items-center"
+      class="character-section character-article-wrapper"
     >
       <section
         class="character-text bg-moko-blue-soft relative rounded-2xl p-4 md:p-8"
@@ -74,12 +75,12 @@ onUnmounted(() => {
         >
           1.
         </p>
-        <div class="flex justify-between items-center">
+        <header class="flex-row-between-center">
           <h2 class="section-card-title section-title-underline">
             {{ $t("characters.profiles.moko.name") }}
           </h2>
           <Icon name="mdi:paw" class="text-4xl opacity-80" />
-        </div>
+        </header>
         <p class="section-body-type">
           {{ $t("characters.profiles.moko.learningRole") }}
         </p>
@@ -94,30 +95,30 @@ onUnmounted(() => {
       </section>
       <img
         src="/images/moko/moko-collage-1.webp"
-        class="character-image dashed-border rounded-2xl my-8 xs:w-4/5"
+        class="character-image dashed-border rounded-2xl"
       />
-    </section>
+    </article>
 
     <!-- Niko -->
-    <section
+    <article
       data-step="2"
       id="character-niko"
-      class="character-section grid grid-cols-1 mt-4 md:grid-cols-2 gap-10 items-center place-items-center"
+      class="character-section character-article-wrapper"
     >
       <section
-        class="character-text relative bg-niko-purple-soft rounded-2xl p-4 md:p-8 md:order-2 text-dark-primary"
+        class="character-text relative bg-niko-purple-soft rounded-2xl p-4 md:p-8 md:order-2"
       >
         <p
           class="section-big-numbers text-dark-primary/50 dark:text-light-primary/50 absolute -top-10 right-0 md:-top-24"
         >
           2.
         </p>
-        <div class="flex justify-between items-center">
+        <header class="flex-row-between-center">
           <h2 class="section-card-title section-title-underline">
             {{ $t("characters.profiles.niko.name") }}
           </h2>
           <Icon name="mdi:cat" class="text-4xl opacity-80" />
-        </div>
+        </header>
 
         <p class="section-body-type">
           {{ $t("characters.profiles.niko.learningRole") }}
@@ -135,15 +136,15 @@ onUnmounted(() => {
 
       <img
         src="/images/niko/niko-collage-1.webp"
-        class="character-image dashed-border rounded-2xl my-8 xs:w-4/5"
+        class="character-image dashed-border rounded-2xl"
       />
-    </section>
+    </article>
 
     <!-- Okja -->
-    <section
+    <article
       data-step="3"
       id="character-okja"
-      class="character-section grid grid-cols-1 mt-4 md:grid-cols-2 gap-10 items-center place-items-center"
+      class="character-section character-article-wrapper"
     >
       <div
         class="character-text relative bg-okja-yellow-soft rounded-2xl p-4 md:p-8 text-dark-primary"
@@ -153,12 +154,12 @@ onUnmounted(() => {
         >
           3.
         </p>
-        <div class="flex justify-between items-center">
+        <header class="flex justify-between items-center">
           <h2 class="section-card-title section-title-underline">
             {{ $t("characters.profiles.okja.name") }}
           </h2>
           <Icon name="mdi:paw" class="text-4xl opacity-80" />
-        </div>
+        </header>
 
         <p class="section-body-type">
           {{ $t("characters.profiles.okja.learningRole") }}
@@ -176,9 +177,9 @@ onUnmounted(() => {
 
       <img
         src="/images/okja/okja-collage-1.webp"
-        class="character-image dashed-border rounded-2xl my-8 xs:w-4/5"
+        class="character-image dashed-border rounded-2xl"
       />
-    </section>
+    </article>
 
     <!-- Closing -->
     <footer class="text-center my-8">
@@ -186,5 +187,5 @@ onUnmounted(() => {
         {{ $t("characters.closing.text") }}
       </p>
     </footer>
-  </section>
+  </main>
 </template>

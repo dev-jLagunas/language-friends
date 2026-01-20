@@ -1,11 +1,11 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section class="books-page-wrapper">
+  <section class="books-page-wrapper page-paddings md:pt-42 md:mx-8">
     <ProgressIndicator :total="5" />
-    <!-- phrases SERIES -->
+    <!-- PHRASES SERIES -->
     <article data-step="1" class="books-info-container">
-      <section class="bg-moko-blue-soft rounded-2xl p-6 xs:p-8 relative">
+      <section class="bg-moko-blue-soft books-text-container relative">
         <p
           class="section-big-numbers text-dark-primary/50 dark:text-light-primary/50 absolute -top-10 right-0 md:-top-24 md:-right-8"
         >
@@ -15,7 +15,10 @@
           <h2 class="section-card-title section-title-underline">
             {{ $t("books.series.phrases.title") }}
           </h2>
-          <Icon name="heroicons:chat-bubble-left-right" class="text-5xl" />
+          <Icon
+            name="heroicons:chat-bubble-left-right"
+            class="text-5xl opacity-75"
+          />
         </div>
 
         <p class="section-body-type">
@@ -36,30 +39,20 @@
         </ul>
 
         <div class="mt-8 space-x-8">
-          <a
-            href="#"
-            class="bg-green-signifier font-bold px-4 py-2 rounded-xl shadow-md"
-          >
-            Amazon KDP
-          </a>
-          <a
-            href="#"
-            class="bg-green-signifier font-bold px-4 py-2 rounded-xl shadow-md"
-          >
-            Kobo
-          </a>
+          <a href="#" class="green-cta"> Amazon KDP </a>
+          <a href="#" class="green-cta"> Kobo </a>
         </div>
       </section>
       <img
         src="/images/books/0-INTRO-Collage-1.webp"
         alt=""
-        class="rounded-2xl dashed-border w-full mt-4 md:mt-0"
+        class="dashed-border books-images"
       />
     </article>
     <!-- LIKE SERIES -->
     <article data-step="2" class="books-info-container">
       <section
-        class="bg-niko-purple-soft rounded-2xl p-6 md:p-8 relative md:order-1"
+        class="bg-niko-purple-soft rounded-2xl p-6 md:p-8 relative lg:order-1"
       >
         <p
           class="section-big-numbers text-dark-primary/50 dark:text-light-primary/50 absolute -top-10 right-0 md:-top-24 md:-right-8"
@@ -91,24 +84,14 @@
         </ul>
 
         <div class="mt-8 space-x-8">
-          <a
-            href="#"
-            class="bg-green-signifier font-bold px-4 py-2 rounded-xl shadow-md"
-          >
-            Amazon KDP
-          </a>
-          <a
-            href="#"
-            class="bg-green-signifier font-bold px-4 py-2 rounded-xl shadow-md"
-          >
-            Kobo
-          </a>
+          <a href="#" class="green-cta"> Amazon KDP </a>
+          <a href="#" class="green-cta"> Kobo </a>
         </div>
       </section>
       <img
         src="/images/books/1-LIKE-Collage-1.webp"
         alt=""
-        class="rounded-2xl dashed-border w-full mt-4 md:mt-0"
+        class="dashed-border books-images"
       />
     </article>
     <!-- ADJ SERIES -->
@@ -123,7 +106,7 @@
           <h2 class="section-card-title section-title-underline">
             {{ $t("books.series.verb.title") }}
           </h2>
-          <Icon name="heroicons:bolt" class="text-5xl" />
+          <Icon name="heroicons:bolt" class="text-5xl opacity-80" />
         </div>
 
         <p class="section-body-type">
@@ -144,30 +127,20 @@
         </ul>
 
         <div class="mt-8 space-x-8">
-          <a
-            href="#"
-            class="bg-green-signifier font-bold px-4 py-2 rounded-xl shadow-md"
-          >
-            Amazon KDP
-          </a>
-          <a
-            href="#"
-            class="bg-green-signifier font-bold px-4 py-2 rounded-xl shadow-md"
-          >
-            Kobo
-          </a>
+          <a href="#" class="green-cta"> Amazon KDP </a>
+          <a href="#" class="green-cta"> Kobo </a>
         </div>
       </section>
       <img
         src="/images/books/2-VERBS-Collage-1.webp"
         alt=""
-        class="rounded-2xl dashed-border w-full mt-4 md:mt-0"
+        class="dashed-border books-images"
       />
     </article>
     <!-- ADJ SERIES -->
     <article data-step="4" class="books-info-container">
       <section
-        class="bg-moko-blue-soft rounded-2xl p-6 md:p-8 relative md:order-1"
+        class="bg-moko-blue-soft rounded-2xl p-6 md:p-8 relative lg:order-1"
       >
         <p
           class="section-big-numbers text-dark-primary/50 dark:text-light-primary/50 absolute -top-10 right-0 md:-top-24 md:-right-8"
@@ -199,24 +172,14 @@
         </ul>
 
         <div class="mt-8 space-x-8">
-          <a
-            href="#"
-            class="bg-green-signifier font-bold px-4 py-2 rounded-xl shadow-md"
-          >
-            Amazon KDP
-          </a>
-          <a
-            href="#"
-            class="bg-green-signifier font-bold px-4 py-2 rounded-xl shadow-md"
-          >
-            Kobo
-          </a>
+          <a href="#" class="green-cta"> Amazon KDP </a>
+          <a href="#" class="green-cta"> Kobo </a>
         </div>
       </section>
       <img
         src="/images/books/3-ADJ-Collage-1.webp"
         alt=""
-        class="rounded-2xl dashed-border w-full mt-4 md:mt-0"
+        class="dashed-border books-images"
       />
     </article>
     <!-- LIKE SERIES -->
@@ -252,24 +215,14 @@
         </ul>
 
         <div class="mt-8 space-x-8">
-          <a
-            href="#"
-            class="bg-green-signifier font-bold px-4 py-2 rounded-xl shadow-md"
-          >
-            Amazon KDP
-          </a>
-          <a
-            href="#"
-            class="bg-green-signifier font-bold px-4 py-2 rounded-xl shadow-md"
-          >
-            Kobo
-          </a>
+          <a href="#" class="green-cta"> Amazon KDP </a>
+          <a href="#" class="green-cta"> Kobo </a>
         </div>
       </section>
       <img
         src="/images/books/4-NOUNS-Collage-1.webp"
         alt=""
-        class="rounded-2xl dashed-border w-full mt-4 md:mt-0"
+        class="dashed-border books-images"
       />
     </article>
   </section>

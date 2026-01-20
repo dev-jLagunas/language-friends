@@ -86,7 +86,7 @@ const toggleMenu = () => {
         id="mobile-menu"
         role="dialog"
         aria-modal="true"
-        class="theme-toggle-styles font-yomogi border-r shadow-sm border-dark-primary dark:border-light-primary"
+        class="theme-toggle-styles font-yomogi border-r shadow-sm border-dark-primary/50 dark:border-light-primary/50"
       >
         <nav
           aria-label="フルメニュー"
@@ -241,11 +241,10 @@ const toggleMenu = () => {
           <button
             type="button"
             aria-label="Close menu"
-            class="flex-col-center-center opacity-75 hover:cursor-pointer hover:opacity-100 transition-all duration-300 absolute bottom-24"
+            class="absolute bottom-24 opacity-75 hover:opacity-100 transition-all duration-300 hover:cursor-pointer"
             @click="toggleMenu"
           >
-            <Icon name="heroicons:arrow-right" class="" />
-            <span>{{ $t("ui.closeMenu") }}</span>
+            <Icon name="heroicons:x-mark" class="text-red-signifier text-3xl" />
           </button>
         </nav>
       </aside>

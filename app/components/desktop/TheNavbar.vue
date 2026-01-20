@@ -15,24 +15,21 @@ const closeStart = () => {
 <template>
   <div>
     <MobileNavHeader />
-
     <nav
       aria-label="デスクトップナビゲーション"
-      class="hidden md:block fixed top-0 left-0 right-0 z-100 max-w-7xl mx-auto bg-light-primary dark:bg-dark-secondary font-yomogi"
+      class="hidden md:block navbar-wrapper"
     >
-      <ul
-        class="flex justify-around items-center py-4 border-b border-b-dark-primary/20 dark:border-b-light-primary/20"
-      >
+      <ul class="the-navbar">
         <!-- 1. Home -->
         <li class="group">
           <NuxtLink
             :to="$localePath('/')"
             :aria-label="$t('footer.nav.home')"
-            class="flex flex-col items-center"
+            class="flex-col-center-center"
             active-class="border-b border-dashed"
           >
             <Icon name="heroicons:home" class="text-2xl group-hover-rotate" />
-            <span class="lg:text-lg">
+            <span class="hover:font-bold lg:text-lg">
               {{ $t("navigation.main.home") }}
             </span>
           </NuxtLink>
@@ -128,7 +125,7 @@ const closeStart = () => {
               name="heroicons:book-open"
               class="text-sunny-orange text-2xl group-hover-rotate"
             />
-            <span class="lg:text-lg">
+            <span class="hover:font-bold lg:text-lg">
               {{ $t("navigation.main.books") }}
             </span>
           </NuxtLink>
@@ -146,7 +143,7 @@ const closeStart = () => {
               name="heroicons:puzzle-piece"
               class="text-okja-yellow text-2xl group-hover-rotate"
             />
-            <span class="lg:text-lg">
+            <span class="hover:font-bold lg:text-lg">
               {{ $t("navigation.newVisitors.kids") }}
             </span>
           </NuxtLink>
@@ -164,12 +161,12 @@ const closeStart = () => {
               name="heroicons:envelope"
               class="text-green-signifier text-2xl group-hover-rotate"
             />
-            <span class="lg:text-lg">
+            <span class="hover:font-bold lg:text-lg">
               {{ $t("navigation.newVisitors.contact") }}
             </span>
           </NuxtLink>
         </li>
-        <li class="flex flex-col justify-center items-center gap-4">
+        <li class="flex-col-center-center gap-2 lg:flex-row">
           <LangToggleBtn /><ThemeToggleBtn />
         </li>
       </ul>
