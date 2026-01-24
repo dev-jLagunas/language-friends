@@ -5,12 +5,12 @@
     name="contact"
     method="POST"
     data-netlify="true"
-    action="/"
     data-netlify-honeypot="bot-field"
     class="mt-4 space-y-4"
   >
     <!-- Netlify required hidden input -->
     <input type="hidden" name="form-name" value="contact" />
+    <input type="hidden" name="redirect" value="/thanks" />
 
     <!-- Honeypot -->
     <p class="hidden">

@@ -59,12 +59,6 @@ onUnmounted(() => {
     ref="root"
     class="mx-auto pb-16 page-paddings px-4 font-yomogi theme-toggle-styles relative overflow-hidden max-w-7xl"
   >
-    <form name="contact" method="POST" data-netlify="true" hidden>
-      <input type="hidden" name="form-name" value="contact" />
-      <input name="name" />
-      <textarea name="message"></textarea>
-    </form>
-
     <ProgressIndicator :total="3" />
     <!-- Contact Intro -->
     <article data-step="1" class="contact-section md:p-8 contact-card-wrapper">
