@@ -109,10 +109,10 @@ onUnmounted(() => {
         </p>
 
         <a
-          href="mailto:hello@thelanguagefriends.com"
+          href="mailto:thelanguagefriends@gmail.com"
           class="section-body-type underline underline-offset-4"
         >
-          hello@thelanguagefriends.com
+          thelanguagefriends@gmail.com
         </a>
       </section>
 

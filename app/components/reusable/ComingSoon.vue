@@ -9,7 +9,7 @@
       <img
         src="/images/everyone/cats-coming-soon.webp"
         alt="The Language Friends working together"
-        class="mx-auto w-64"
+        class="mx-auto w-64 md:w-full"
       />
 
       <!-- Heading -->
@@ -19,21 +19,6 @@
       <p class="mb-4">
         {{ $t("comingSoon.message") }}
       </p>
-
-      <!-- Email CTA -->
-      <form class="flex flex-col gap-3">
-        <input
-          type="email"
-          placeholder="Your email"
-          class="w-full px-4 py-2 border rounded-md"
-        />
-        <button
-          type="submit"
-          class="px-4 py-2 rounded-md bg-green-signifier text-white"
-        >
-          {{ $t("comingSoon.cta") }}
-        </button>
-      </form>
     </div>
   </section>
 </template>
