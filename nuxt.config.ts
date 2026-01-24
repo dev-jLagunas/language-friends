@@ -137,7 +137,7 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    "/contact-us": { prerender: true },
+    "/**": { prerender: true },
   },
 
   ssr: false,
