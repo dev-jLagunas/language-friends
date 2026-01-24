@@ -136,10 +136,6 @@ export default defineNuxtConfig({
     preset: "netlify",
   },
 
-  routeRules: {
-    "/**": { prerender: true },
-  },
-
   ssr: false,
   compatibilityDate: "2025-07-15",
   devtools: { enabled: false },
@@ -149,6 +145,9 @@ export default defineNuxtConfig({
   icon: {
     mode: "css",
     cssLayer: "base",
+  },
+  experimental: {
+    payloadExtraction: false,
   },
 
   modules: ["@nuxt/icon", "@nuxtjs/color-mode", "@nuxtjs/i18n"],
