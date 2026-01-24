@@ -5,6 +5,7 @@
     name="contact"
     method="POST"
     data-netlify="true"
+    action="/"
     data-netlify-honeypot="bot-field"
     class="mt-4 space-y-4"
   >
