@@ -88,12 +88,12 @@ const toggleMenu = () => {
           <NuxtLink
             @click="toggleMenu"
             to="/privacy-policy"
-            class="text-sm absolute top-8"
+            class="text-xs absolute top-8"
           >
             {{ $t("policy.title") }}
           </NuxtLink>
 
-          <div class="flex-row-center-center gap-4 absolute top-60">
+          <div class="flex-row-center-center gap-4 absolute top-32">
             <LangToggleBtn />
             <ThemeToggleBtn />
           </div>
@@ -251,7 +251,7 @@ const toggleMenu = () => {
             class="absolute bottom-24 opacity-75 hover:opacity-100 transition-all duration-300 hover:cursor-pointer"
             @click="toggleMenu"
           >
-            <Icon name="heroicons:x-mark" class="text-red-signifier text-5xl" />
+            <Icon name="heroicons:x-mark" class="text-red-signifier text-3xl" />
           </button>
           <ul class="flex flex-row gap-4">
             <li>

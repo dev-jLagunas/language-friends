@@ -221,11 +221,6 @@
       "text": "You’ll meet the Language Friends throughout the stories as they learn, play, and explore together."
     }
   },
-  "charactersReal": {
-    "title": "Inspired by Real Cats",
-    "text": "Moko, Niko, and Okja are inspired by the author’s three real-life cats. Their personalities, habits, and ways of interacting with the world helped shape how each character guides children through learning.",
-    "caption": "Here are a few everyday photos of the cats who inspired the Language Friends."
-  },
   "contact": {
     "title": "Get in Touch",
     "intro": "For quick questions or comments, please send us a message!",
@@ -240,6 +235,7 @@
     "intro": "Each series is designed around a simple language pattern children naturally use in everyday life. All books follow the same structure to reduce cognitive load and build confidence through familiarity.",
     "freePreviewTitle": "Free Book Preview",
     "freePreviewDescription": "This is a full preview of one of our books. Enjoy shared storytime together!",
+    "previewInfo": "*On mobile and tablet devices, the preview cannot be displayed directly. You will be redirected to the Canva viewing page.*",
     "series": {
       "like": {
         "title": "The Like Series",

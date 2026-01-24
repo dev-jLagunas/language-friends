@@ -4,9 +4,11 @@ const canvaUrl =
 </script>
 
 <template>
-  <section class="w-full font-yomogi max-w-7xl mx-auto page-paddings pb-32">
-    <!-- Preview Intro -->
-    <div class="">
+  <section
+    class="w-full font-yomogi max-w-7xl mx-auto px-4 h-screen pb-52 place-content-center md:page-paddings"
+  >
+    <!-- Preview Intro (always visible) -->
+    <div>
       <h2 class="section-card-title text-center">
         {{ $t("books.freePreviewTitle") }}
       </h2>
@@ -15,8 +17,8 @@ const canvaUrl =
       </p>
     </div>
 
-    <!-- Book Preview -->
-    <div class="overflow-hidden">
+    <!-- Desktop Preview (iframe only on md+) -->
+    <div class="hidden md:block overflow-hidden">
       <iframe
         :src="canvaUrl"
         class="w-full h-[80vh] rounded-2xl md:w-3/4 md:h-[50vh] mx-auto"
@@ -24,11 +26,21 @@ const canvaUrl =
         allowfullscreen
       />
     </div>
-    <!-- CTA -->
-    <div class="mt-8 flex justify-center text-dark-primary font-black text-lg">
-      <NuxtLink to="/books-display" class="green-cta">
-        本の一覧を見る｜View All Books
-      </NuxtLink>
+
+    <!-- Mobile / Tablet Fallback -->
+    <div class="block md:hidden text-center mt-8">
+      <p class="section-body-type">
+        {{ $t("books.previewInfo") }}
+      </p>
+
+      <a
+        :href="canvaUrl"
+        target="_blank"
+        rel="noopener"
+        class="green-cta inline-block mt-4"
+      >
+        無料プレビューを開く
+      </a>
     </div>
   </section>
 </template>

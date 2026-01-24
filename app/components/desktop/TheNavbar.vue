@@ -187,7 +187,7 @@ const closeStart = () => {
                 rel="noopener noreferrer"
                 class="flex items-center gap-2 text-sm hover:underline"
               >
-                <Icon name="mdi:instagram " class="w-5 h-5" />
+                <Icon name="mdi:instagram" class="w-7 h-7" />
               </a>
             </li>
 
@@ -198,7 +198,7 @@ const closeStart = () => {
                 rel="noopener noreferrer"
                 class="flex items-center gap-2 text-sm hover:underline"
               >
-                <Icon name="mdi:youtube" class="w-5 h-5" />
+                <Icon name="mdi:youtube" class="w-7 h-7" />
               </a>
             </li>
           </ul>
