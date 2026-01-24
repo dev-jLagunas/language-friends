@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const canvaUrl =
-  "https://www.canva.com/design/DAG_IPuznv8/c7TBufPaHKHtbjEx_h-z8A/view?utm_content=DAG_IPuznv8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hdb5ebfa4c9";
+  "https://www.canva.com/design/DAG_TrMRk1Q/T6yscgDeq-4aVPBjpgWAkw/view?utm_content=DAG_TrMRk1Q&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5a2c8089df";
 </script>
 
 <template>

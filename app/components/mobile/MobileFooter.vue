@@ -72,7 +72,7 @@ const toggleMenu = () => {
       </ul>
     </nav>
 
-    <!-- OPEN SIDE MENU STYLES -->
+    <!-- SIDE MENU -->
     <transition name="slide-down">
       <aside
         v-if="isMenuOpen"
@@ -98,21 +98,21 @@ const toggleMenu = () => {
             <ThemeToggleBtn />
           </div>
 
-          <ul class="space-y-3 text-2xl">
-            <!-- NEW VISITORS (PARENT) -->
-            <li class="group">
-              <div class="flex items-center opacity-90">
+          <!-- MAIN MENU LIST -->
+          <ul class="space-y-2 text-2xl">
+            <!-- NEW VISITORS -->
+            <li>
+              <div class="flex items-center opacity-90 mb-2">
                 <Icon
                   name="heroicons:sparkles"
-                  class="mr-2 text-sunny-orange group-hover-rotate"
+                  class="mr-2 text-sunny-orange"
                 />
-                <span class="font-bold">{{
-                  $t("navigation.newVisitors.label")
-                }}</span>
+                <span class="font-bold">
+                  {{ $t("navigation.newVisitors.label") }}
+                </span>
               </div>
 
-              <!-- NESTED LINKS -->
-              <ul class="mt-2 ml-6 space-y-2 text-xl">
+              <ul class="ml-6 space-y-2 text-xl">
                 <li>
                   <NuxtLink
                     :to="$localePath({ path: '/', hash: '#landingStory' })"
@@ -165,6 +165,7 @@ const toggleMenu = () => {
                     <span>{{ $t("navigation.newVisitors.howTo") }}</span>
                   </NuxtLink>
                 </li>
+
                 <li>
                   <NuxtLink
                     :to="$localePath('/book-preview')"
@@ -181,7 +182,7 @@ const toggleMenu = () => {
               </ul>
             </li>
 
-            <!-- EXISTING ITEMS (UNCHANGED) -->
+            <!-- KIDS -->
             <li>
               <NuxtLink
                 to="/kids-corner"
@@ -197,54 +198,62 @@ const toggleMenu = () => {
             </li>
           </ul>
 
+          <!-- SOCIAL LINKS -->
           <ul
             aria-label="ソーシャルリンク"
-            class="grid grid-cols-4 gap-4 text-3xl mt-4 md:text-4xl"
+            class="grid grid-cols-4 gap-4 text-3xl mt-8 md:text-4xl"
           >
             <li class="group">
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/thelanguagefriends?igsh=MXM4c2NzcDRidHg3ag%3D%3D&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
               >
-                <Icon name="simple-icons:instagram group-hover-rotate" />
+                <Icon
+                  name="simple-icons:instagram"
+                  class="group-hover-rotate"
+                />
               </a>
             </li>
 
             <li class="group">
               <a
-                href="https://www.youtube.com/"
+                href="https://www.youtube.com/channel/UC4II6bDJtBYCo1wPdUX_y1A"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YouTube"
               >
-                <Icon name="simple-icons:youtube group-hover-rotate" />
+                <Icon name="simple-icons:youtube" class="group-hover-rotate" />
               </a>
             </li>
 
             <li class="group">
               <a
-                href="https://www.amazon.co.jp/"
+                href="https://www.amazon.co.jp/s?i=digital-text&rh=p_27%3AJoe%2BLapalo&s=relevancerank&language=en&text=Joe+Lapalo&ref=dp_byline_sr_ebooks_1"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Amazon"
               >
-                <Icon name="simple-icons:amazon group-hover-rotate" />
+                <Icon name="simple-icons:amazon" class="group-hover-rotate" />
               </a>
             </li>
 
             <li class="group">
               <a
-                href="https://www.kobo.com/jp/ja"
+                href="https://www.kobo.com/jp/ja/search?query=joe%20lapalo&ac=1&acp=joe%20lapalo&ac.author=joe%20lapalo&sort=Temperature&fclanguages=en&ssid=Cb7Jj7r_3J_Wp0uJ0-8mL&sid=3ccec626-6ad5-4d6e-971a-d5f5a8ff8ace"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Kobo"
               >
-                <Icon name="simple-icons:rakutenkobo group-hover-rotate" />
+                <Icon
+                  name="simple-icons:rakutenkobo"
+                  class="group-hover-rotate"
+                />
               </a>
             </li>
           </ul>
+
           <button
             type="button"
             aria-label="Close menu"
@@ -253,29 +262,6 @@ const toggleMenu = () => {
           >
             <Icon name="heroicons:x-mark" class="text-red-signifier text-3xl" />
           </button>
-          <ul class="flex flex-row gap-4">
-            <li>
-              <a
-                href="https://www.instagram.com/thelanguagefriends?igsh=MXM4c2NzcDRidHg3ag%3D%3D&utm_source=qr"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="flex items-center gap-2 text-sm hover:underline"
-              >
-                <Icon name="mdi:instagram " class="w-7 h-7" />
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="https://www.youtube.com/channel/UC4II6bDJtBYCo1wPdUX_y1A"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="flex items-center gap-2 text-sm hover:underline"
-              >
-                <Icon name="mdi:youtube" class="w-7 h-7" />
-              </a>
-            </li>
-          </ul>
         </nav>
       </aside>
     </transition>

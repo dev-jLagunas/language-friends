@@ -2,9 +2,14 @@
 
 <template>
   <form
+    action="https://formspree.io/f/xlgjolre"
+    method="POST"
     aria-label="メール登録CTA"
-    class="rounded-2xl dashed-border mt-2 px-2 py-2 md:py-4"
+    class="rounded-2xl dashed-border mt-2 px-2 py-2 md:py-4 max-w-5xl mx-auto"
   >
+    <!-- Hidden redirect (optional, remove if not needed yet) -->
+    <input type="hidden" name="_redirect" value="/thanks" />
+
     <label for="email" class="sr-only">
       {{ $t("hero.emailPlaceholder") }}
     </label>
@@ -14,6 +19,7 @@
     >
       {{ $t("hero.note") }}
     </h3>
+
     <div class="mt-4 md:flex md:w-1/2 md:mx-auto">
       <input
         id="email"
