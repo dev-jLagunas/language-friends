@@ -1,7 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section class="books-page-wrapper pt-8 pb-32 md:pt-42 md:mx-8">
+  <section
+    class="books-page-wrapper space-y-8 md:space-y-24 pt-8 pb-32 md:pt-42 md:mx-8"
+  >
     <ProgressIndicator :total="5" />
     <!-- PHRASES SERIES -->
     <article id="phrases-container" data-step="1" class="books-info-container">
