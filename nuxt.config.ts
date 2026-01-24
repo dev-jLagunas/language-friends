@@ -132,6 +132,13 @@ export default defineNuxtConfig({
     { path: "~/components", pathPrefix: false },
     { path: "~/app/components", pathPrefix: false },
   ],
+  nitro: {
+    preset: "netlify",
+  },
+
+  routeRules: {
+    "/contact-us": { prerender: true },
+  },
 
   ssr: false,
   compatibilityDate: "2025-07-15",
