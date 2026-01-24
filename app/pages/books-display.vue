@@ -1,10 +1,10 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section class="books-page-wrapper page-paddings md:pt-42 md:mx-8">
+  <section class="books-page-wrapper pt-8 pb-32 md:pt-42 md:mx-8">
     <ProgressIndicator :total="5" />
     <!-- PHRASES SERIES -->
-    <article data-step="1" class="books-info-container">
+    <article id="phrases-container" data-step="1" class="books-info-container">
       <section class="bg-moko-blue-soft books-text-container relative">
         <p
           class="section-big-numbers text-dark-primary/50 dark:text-light-primary/50 absolute -top-10 right-0 md:-top-24 md:-right-8"
@@ -39,8 +39,21 @@
         </ul>
 
         <div class="mt-8 space-x-8">
-          <a href="#" class="green-cta"> Amazon KDP </a>
-          <a href="#" class="green-cta"> Kobo </a>
+          <a
+            href="https://www.amazon.co.jp/dp/B0GHZJYX2T"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="green-cta"
+          >
+            Amazon KDP
+          </a>
+          <a
+            href="https://www.kobo.com/jp/ja/ebook/the-language-friends-3?sId=38c227c2-3908-42c2-9624-b3cd05916668&ssId=E-24IBw_d69pqiuZnOVee&cPos=5"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="green-cta"
+            >Kobo
+          </a>
         </div>
       </section>
       <img
@@ -84,8 +97,21 @@
         </ul>
 
         <div class="mt-8 space-x-8">
-          <a href="#" class="green-cta"> Amazon KDP </a>
-          <a href="#" class="green-cta"> Kobo </a>
+          <a
+            href="https://www.amazon.co.jp/dp/B0GJ5KP8TR"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="green-cta"
+          >
+            Amazon KDP
+          </a>
+          <a
+            href="https://www.kobo.com/jp/ja/ebook/the-language-friends-2?sId=d603fb0f-18e4-40c8-9f88-630784fa6187&ssId=Z1VJ1vQoElwQf1knjLy4c&cPos=1"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="green-cta"
+            >Kobo
+          </a>
         </div>
       </section>
       <img
@@ -94,7 +120,7 @@
         class="dashed-border books-images"
       />
     </article>
-    <!-- ADJ SERIES -->
+    <!-- VERBS SERIES -->
     <article data-step="3" class="books-info-container">
       <section class="bg-okja-yellow-soft rounded-2xl p-6 md:p-8 relative">
         <p
@@ -127,8 +153,22 @@
         </ul>
 
         <div class="mt-8 space-x-8">
-          <a href="#" class="green-cta"> Amazon KDP </a>
-          <a href="#" class="green-cta"> Kobo </a>
+          <a
+            href="https://www.amazon.co.jp/dp/B0GJ5L3PSZ"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="green-cta"
+          >
+            Amazon KDP
+          </a>
+
+          <a
+            href="https://www.kobo.com/jp/ja/ebook/the-language-friends-4?sId=ced198ba-05f6-4788-9bad-25a92be9eda3&ssId=SJ70qGnHORH21VboxqijZ&cPos=2"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="green-cta"
+            >Kobo
+          </a>
         </div>
       </section>
       <img
@@ -172,8 +212,21 @@
         </ul>
 
         <div class="mt-8 space-x-8">
-          <a href="#" class="green-cta"> Amazon KDP </a>
-          <a href="#" class="green-cta"> Kobo </a>
+          <a
+            href="https://www.amazon.co.jp/dp/B0GJ64B8CG"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="green-cta"
+          >
+            Amazon KDP
+          </a>
+          <a
+            href="https://www.kobo.com/jp/ja/ebook/the-language-friends?sId=94396316-bf90-4cc9-a8a7-cba90fa85c58&ssId=K6X0Dqay_3P4g0lahRTQe&cPos=3"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="green-cta"
+            >Kobo
+          </a>
         </div>
       </section>
       <img
@@ -182,7 +235,7 @@
         class="dashed-border books-images"
       />
     </article>
-    <!-- LIKE SERIES -->
+    <!-- NOUNS SERIES -->
     <article data-step="5" class="books-info-container">
       <section class="bg-niko-purple-soft rounded-2xl p-6 md:p-8 relative">
         <p
@@ -215,8 +268,22 @@
         </ul>
 
         <div class="mt-8 space-x-8">
-          <a href="#" class="green-cta"> Amazon KDP </a>
-          <a href="#" class="green-cta"> Kobo </a>
+          <a
+            href="https://www.amazon.co.jp/dp/B0GJ6ZC6NW"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="green-cta"
+          >
+            Amazon KDP
+          </a>
+
+          <a
+            href="https://www.kobo.com/jp/ja/ebook/the-language-friends?sId=94396316-bf90-4cc9-a8a7-cba90fa85c58&ssId=K6X0Dqay_3P4g0lahRTQe&cPos=3"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="green-cta"
+            >Kobo
+          </a>
         </div>
       </section>
       <img

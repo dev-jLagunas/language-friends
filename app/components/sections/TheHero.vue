@@ -19,11 +19,11 @@ const heroTitleFont = computed(() =>
       >
         {{ $t("brand.name") }}
       </h1>
-      <h3
+      <h2
         class="font-yomogi text-xl leading-5 px-4 mb-4 md:text-2xl md:leading-7"
       >
         {{ $t("hero.description") }}
-      </h3>
+      </h2>
     </header>
     <HeroCharacters />
     <HeroBottomGrid />

@@ -109,6 +109,15 @@ const closeStart = () => {
               >
                 {{ $t("navigation.newVisitors.howTo") }}
               </NuxtLink>
+              <li>
+              <NuxtLink
+                :to="$localePath('/book-preview')"
+                @click="closeStart"
+                class="block px-4 py-2 hover:bg-moko-blue/10"
+              >
+                {{ $t("navigation.newVisitors.bookPreview") }}
+              </NuxtLink>
+            </li>
             </li>
           </ul>
         </li>
@@ -168,6 +177,31 @@ const closeStart = () => {
         </li>
         <li class="flex-col-center-center gap-2 lg:flex-row">
           <LangToggleBtn /><ThemeToggleBtn />
+        </li>
+        <li>
+          <ul class="flex-col-center-center gap-2 lg:flex-row">
+            <li>
+              <a
+                href="https://www.instagram.com/thelanguagefriends?igsh=MXM4c2NzcDRidHg3ag%3D%3D&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center gap-2 text-sm hover:underline"
+              >
+                <Icon name="mdi:instagram " class="w-5 h-5" />
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UC4II6bDJtBYCo1wPdUX_y1A"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center gap-2 text-sm hover:underline"
+              >
+                <Icon name="mdi:youtube" class="w-5 h-5" />
+              </a>
+            </li>
+          </ul>
         </li>
       </ul>
     </nav>

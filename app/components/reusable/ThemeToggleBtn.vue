@@ -16,6 +16,7 @@ const toggleColorMode = () => {
       checked="true"
       id="checkbox"
       type="checkbox"
+      aria-label="Toggle color mode"
       @click="toggleColorMode"
     />
     <span class="slider">

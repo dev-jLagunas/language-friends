@@ -17,7 +17,8 @@
       "characters": "Characters",
       "howTo": "How to Use",
       "kids": "Kids Corner",
-      "contact": "Contact"
+      "contact": "Contact",
+      "bookPreview": "Preview Book"
     }
   },
   "ui": {
@@ -237,6 +238,8 @@
   "books": {
     "title": "Our Book Series",
     "intro": "Each series is designed around a simple language pattern children naturally use in everyday life. All books follow the same structure to reduce cognitive load and build confidence through familiarity.",
+    "freePreviewTitle": "Free Book Preview",
+    "freePreviewDescription": "This is a full preview of one of our books. Enjoy shared storytime together!",
     "series": {
       "like": {
         "title": "The Like Series",

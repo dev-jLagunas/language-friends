@@ -55,25 +55,18 @@ const toggleMenu = () => {
           </NuxtLink>
         </li>
 
-        <li class="group">
+        <li>
           <button
             type="button"
             aria-label="メニューを開く"
-            aria-controls="mobile-menu"
             @click="toggleMenu"
-            class="flex-col-center-center hover:cursor-pointer"
+            class="burger"
+            :class="isMenuOpen ? 'text-red-signifier' : 'text-dark-primary'"
+            :aria-expanded="isMenuOpen"
           >
-            <Icon
-              v-if="!isMenuOpen"
-              name="heroicons:bars-3"
-              class="text-4xl group-hover:rotate-5 group-hover:scale-110 transition-transform"
-            />
-
-            <Icon
-              v-else
-              name="heroicons:x-mark"
-              class="text-4xl text-red-500 group-hover:scale-110 transition-transform"
-            />
+            <span :class="{ open: isMenuOpen }"></span>
+            <span :class="{ open: isMenuOpen }"></span>
+            <span :class="{ open: isMenuOpen }"></span>
           </button>
         </li>
       </ul>
@@ -86,13 +79,21 @@ const toggleMenu = () => {
         id="mobile-menu"
         role="dialog"
         aria-modal="true"
-        class="theme-toggle-styles font-yomogi border-r shadow-sm border-dark-primary/50 dark:border-light-primary/50"
+        class="font-yomogi theme-toggle-styles border-r shadow-sm border-dark-primary/50 dark:border-light-primary/50"
       >
         <nav
           aria-label="フルメニュー"
           class="flex-col-center-center h-full relative"
         >
-          <div class="flex-row-center-center gap-4 absolute top-24">
+          <NuxtLink
+            @click="toggleMenu"
+            to="/privacy-policy"
+            class="text-sm absolute top-8"
+          >
+            {{ $t("policy.title") }}
+          </NuxtLink>
+
+          <div class="flex-row-center-center gap-4 absolute top-60">
             <LangToggleBtn />
             <ThemeToggleBtn />
           </div>
@@ -105,7 +106,9 @@ const toggleMenu = () => {
                   name="heroicons:sparkles"
                   class="mr-2 text-sunny-orange group-hover-rotate"
                 />
-                <span>{{ $t("navigation.newVisitors.label") }}</span>
+                <span class="font-bold">{{
+                  $t("navigation.newVisitors.label")
+                }}</span>
               </div>
 
               <!-- NESTED LINKS -->
@@ -129,7 +132,7 @@ const toggleMenu = () => {
                   >
                     <Icon
                       name="heroicons:information-circle"
-                      class="mr-2 text-soft-pink"
+                      class="mr-2 text-red-signifier"
                     />
                     <span>{{ $t("navigation.main.about") }}</span>
                   </NuxtLink>
@@ -156,10 +159,23 @@ const toggleMenu = () => {
                     class="flex items-center px-2 py-1 rounded-md hover:bg-black/5 dark:hover:bg-white/10 transition-colors"
                   >
                     <Icon
-                      name="heroicons:book-open"
+                      name="heroicons:information-circle"
                       class="mr-2 text-okja-yellow"
                     />
                     <span>{{ $t("navigation.newVisitors.howTo") }}</span>
+                  </NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink
+                    :to="$localePath('/book-preview')"
+                    @click="toggleMenu"
+                    class="flex items-center px-2 py-1 rounded-md hover:bg-black/5 dark:hover:bg-white/10 transition-colors"
+                  >
+                    <Icon
+                      name="heroicons:book-open"
+                      class="mr-2 text-green-signifier"
+                    />
+                    <span>{{ $t("navigation.newVisitors.bookPreview") }}</span>
                   </NuxtLink>
                 </li>
               </ul>
@@ -177,15 +193,6 @@ const toggleMenu = () => {
                   class="mr-2 text-okja-yellow"
                 />
                 <span>{{ $t("navigation.newVisitors.kids") }}</span>
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink
-                @click="toggleMenu"
-                to="/privacy-policy"
-                class="text-sm pl-8"
-              >
-                {{ $t("policy.title") }}
               </NuxtLink>
             </li>
           </ul>
@@ -244,8 +251,31 @@ const toggleMenu = () => {
             class="absolute bottom-24 opacity-75 hover:opacity-100 transition-all duration-300 hover:cursor-pointer"
             @click="toggleMenu"
           >
-            <Icon name="heroicons:x-mark" class="text-red-signifier text-3xl" />
+            <Icon name="heroicons:x-mark" class="text-red-signifier text-5xl" />
           </button>
+          <ul class="flex flex-row gap-4">
+            <li>
+              <a
+                href="https://www.instagram.com/thelanguagefriends?igsh=MXM4c2NzcDRidHg3ag%3D%3D&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center gap-2 text-sm hover:underline"
+              >
+                <Icon name="mdi:instagram " class="w-7 h-7" />
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UC4II6bDJtBYCo1wPdUX_y1A"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center gap-2 text-sm hover:underline"
+              >
+                <Icon name="mdi:youtube" class="w-7 h-7" />
+              </a>
+            </li>
+          </ul>
         </nav>
       </aside>
     </transition>
@@ -257,7 +287,7 @@ const toggleMenu = () => {
   position: fixed;
   top: 0;
   left: 0;
-  width: 80vw;
+  width: 78vw;
   height: 100vh;
   z-index: 10;
 }
@@ -275,5 +305,57 @@ const toggleMenu = () => {
 .slide-down-enter-to,
 .slide-down-leave-from {
   transform: translateX(0);
+}
+
+.burger {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.burger span {
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: currentColor;
+  border-radius: 9px;
+  left: 0;
+  transition: 0.25s ease-in-out;
+}
+
+.burger span:nth-child(1) {
+  top: 0;
+  transform-origin: left center;
+}
+
+.burger span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-child(3) {
+  bottom: 0;
+  transform-origin: left center;
+}
+
+/* OPEN STATE */
+.burger span.open:nth-child(1) {
+  transform: rotate(45deg);
+  top: 0;
+  left: 5px;
+}
+
+.burger span.open:nth-child(2) {
+  width: 0;
+  opacity: 0;
+}
+
+.burger span.open:nth-child(3) {
+  transform: rotate(-45deg);
+  bottom: 0;
+  left: 5px;
 }
 </style>
