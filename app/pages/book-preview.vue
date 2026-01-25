@@ -39,7 +39,9 @@ const canvaUrl =
       <p class="section-body-type md:px-16">
         {{ $t("books.previewInfo") }}
       </p>
-      <Icon name="simple-icons:canva" class="text-8xl mt-8 text-moko-blue" />
+      <a :href="canvaUrl" target="_blank" rel="noopener" class="">
+        <Icon name="simple-icons:canva" class="text-6xl mt-8 text-moko-blue" />
+      </a>
     </div>
   </section>
 </template>

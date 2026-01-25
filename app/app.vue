@@ -26,7 +26,7 @@ onBeforeUnmount(() => {
   <div class="theme-toggle-styles min-h-screen">
     <TheNavbar />
     <main class="flex-1">
-      <NuxtPage />
+      <NuxtPage :transition="{ name: 'page', mode: 'out-in' }" />
     </main>
     <footer>
       <MobileFooter class="md:hidden" />

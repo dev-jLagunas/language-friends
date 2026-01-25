@@ -2,7 +2,7 @@
 
 <template>
   <main
-    class="mx-auto font-yomogi theme-toggle-styles max-w-7xl px-4 page-paddings"
+    class="mx-auto font-yomogi theme-toggle-styles max-w-7xl px-4 page-paddings pb-32"
   >
     <ProgressIndicator :total="6" />
     <!-- Page Intro -->

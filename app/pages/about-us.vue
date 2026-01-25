@@ -51,7 +51,10 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <section ref="root" class="about-wrapper text-dark-primary page-paddings">
+  <section
+    ref="root"
+    class="about-wrapper text-dark-primary pb-32 page-paddings"
+  >
     <ProgressIndicator :total="5" />
 
     <!-- Intro -->

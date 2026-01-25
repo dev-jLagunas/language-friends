@@ -57,7 +57,7 @@ onUnmounted(() => {
 <template>
   <main
     ref="root"
-    class="mx-auto pb-16 page-paddings px-4 font-yomogi theme-toggle-styles relative overflow-hidden max-w-7xl"
+    class="mx-auto pb-32 page-paddings px-4 font-yomogi theme-toggle-styles relative overflow-hidden max-w-7xl"
   >
     <ProgressIndicator :total="3" />
     <!-- Contact Intro -->
@@ -141,10 +141,20 @@ onUnmounted(() => {
           {{ $t("contact.socialText") }}
         </p>
         <div class="flex gap-4">
-          <a href="#" aria-label="Instagram">
+          <a
+            href="https://www.instagram.com/thelanguagefriends?igsh=MXM4c2NzcDRidHg3ag%3D%3D&utm_source=qr"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
             <Icon name="mdi:instagram" class="text-3xl" />
           </a>
-          <a href="#" aria-label="YouTube">
+          <a
+            href="https://www.youtube.com/channel/UC4II6bDJtBYCo1wPdUX_y1A"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="YouTube"
+          >
             <Icon name="mdi:youtube" class="text-3xl" />
           </a>
         </div>

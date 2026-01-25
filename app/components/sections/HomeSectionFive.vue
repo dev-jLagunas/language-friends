@@ -13,33 +13,27 @@
       </div>
 
       <div class="space-y-2">
-        <div class="flex justify-center gap-6 mt-2">
+        <div class="flex justify-center items-center gap-6 mt-2">
           <a
-            href="#"
+            href="https://www.instagram.com/thelanguagefriends?igsh=MXM4c2NzcDRidHg3ag%3D%3D&utm_source=qr"
+            target="_blank"
+            rel="noopener noreferrer"
             aria-label="Instagram"
-            class="text-2xl hover:opacity-70 transition"
           >
-            <Icon name="mdi:instagram" />
+            <Icon name="mdi:instagram" class="text-3xl" />
           </a>
 
           <a
-            href="#"
+            href="https://www.youtube.com/channel/UC4II6bDJtBYCo1wPdUX_y1A"
+            target="_blank"
+            rel="noopener noreferrer"
             aria-label="YouTube"
-            class="text-2xl hover:opacity-70 transition"
           >
-            <Icon name="mdi:youtube" />
-          </a>
-
-          <a
-            href="#"
-            aria-label="Email"
-            class="text-2xl hover:opacity-70 transition"
-          >
-            <Icon name="mdi:email" />
+            <Icon name="mdi:youtube" class="text-4xl" />
           </a>
         </div>
         <img
-          src="/images/everyone/cats-with-sign.webp"
+          src="/images/everyone/cats-together-school.webp"
           alt="Moko using cellphone"
           class="w-1/2 mx-auto my-4 md:w-1/4"
         />

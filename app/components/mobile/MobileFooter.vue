@@ -93,7 +93,7 @@ const toggleMenu = () => {
             {{ $t("policy.title") }}
           </NuxtLink>
 
-          <div class="flex-row-center-center gap-4 absolute top-32">
+          <div class="flex-row-center-center gap-4 absolute top-28">
             <LangToggleBtn />
             <ThemeToggleBtn />
           </div>
