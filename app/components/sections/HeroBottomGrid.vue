@@ -23,7 +23,7 @@
       </figcaption>
 
       <img
-        src="/images/mockups/book-mockup.webp"
+        src="/images/mockups/four-ipad-mockup.png"
         alt=""
         class="w-full max-w-50"
       />

@@ -79,7 +79,7 @@ onUnmounted(() => {
 
       <figure>
         <img
-          src="/images/mockups/teacher-and-child.webp"
+          src="/images/mockups/mockup-2-ipad.png"
           class="rounded-2xl object-cover w-full dashed-border"
         />
       </figure>

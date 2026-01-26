@@ -70,7 +70,7 @@ onMounted(() => {
           1.
         </p>
         <img
-          src="/images/mockups/mon-and-son1.webp"
+          src="/images/mockups/1-LIKE-Mockup-3.webp"
           class="one-intro-card-img my-2"
           alt="mother and son mockup"
         />
@@ -98,7 +98,7 @@ onMounted(() => {
           2.
         </p>
         <img
-          src="/images/mockups/mom-and-son2.webp"
+          src="/images/mockups/mockup-1-ipad.png"
           class="one-intro-card-img my-2"
           alt="mother and son reading mockup"
         />
@@ -126,7 +126,7 @@ onMounted(() => {
           3.
         </p>
         <img
-          src="/images/mockups/mom-and-son3.webp"
+          src="/images/mockups/mockup-2-ipad.png"
           class="one-intro-card-img"
           alt="mother and son reading together mockup"
         />
@@ -152,7 +152,7 @@ onMounted(() => {
           4.
         </p>
         <img
-          src="/images/mockups/dad-and-son1.webp"
+          src="/images/mockups/dad-mockup-ipad-1.png"
           class="one-intro-card-img my-2"
           alt="mother and son mockup"
         />
