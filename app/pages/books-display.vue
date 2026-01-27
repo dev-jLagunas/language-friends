@@ -280,7 +280,7 @@
           </a>
 
           <a
-            href="https://www.kobo.com/jp/ja/ebook/the-language-friends?sId=94396316-bf90-4cc9-a8a7-cba90fa85c58&ssId=K6X0Dqay_3P4g0lahRTQe&cPos=3"
+            href="https://www.kobo.com/jp/ja/ebook/the-language-friends-1?sId=f56f2aa0-6261-41ef-87cc-5204e9b01858&ssId=6XjsK0G4W5W19ZqMvh4Ke&cPos=3"
             target="_blank"
             rel="noopener noreferrer"
             class="green-cta"

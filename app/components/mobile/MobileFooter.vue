@@ -6,6 +6,11 @@ const isMenuOpen = ref(false);
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
 };
+
+const menuColorClass = computed(() => {
+  if (isMenuOpen.value) return "text-red-signifier";
+  return "text-dark-primary dark:text-light-primary";
+});
 </script>
 
 <template>
@@ -61,7 +66,7 @@ const toggleMenu = () => {
             aria-label="メニューを開く"
             @click="toggleMenu"
             class="burger"
-            :class="isMenuOpen ? 'text-red-signifier' : 'text-dark-primary'"
+            :class="menuColorClass"
             :aria-expanded="isMenuOpen"
           >
             <span :class="{ open: isMenuOpen }"></span>
